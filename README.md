@@ -146,3 +146,119 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 
 If you have any questions or suggestions, please open an issue in the repository.
+
+## GitHub Actions Setup Guide
+
+### 1. Enable GitHub Actions
+
+1. Go to your repository on GitHub
+2. Click on "Settings" tab
+3. Scroll down to "Actions" section in the left sidebar
+4. Under "Actions permissions":
+   - Select "Allow all actions and reusable workflows"
+   - Click "Save"
+
+### 2. Configure Repository Permissions
+
+GitHub Actions needs permission to push changes back to your repository:
+
+1. Still in repository Settings
+2. Go to "Actions" → "General" in the left sidebar
+3. Scroll down to "Workflow permissions"
+4. Enable "Read and write permissions"
+5. Check "Allow GitHub Actions to create and approve pull requests"
+6. Click "Save"
+
+### 3. Configure Repository Secrets (Optional)
+
+If you need to use any sensitive data (like API keys):
+
+1. Go to repository Settings
+2. Click on "Secrets and variables" → "Actions" in the left sidebar
+3. Click "New repository secret"
+4. Add your secrets (if needed)
+
+### 4. Verify Setup
+
+1. Go to the "Actions" tab in your repository
+2. You should see the workflow "Update Citations"
+3. Click on "Run workflow" → "Run workflow" to trigger manually
+4. Check if the workflow runs successfully
+
+### Troubleshooting Actions
+
+If your workflow fails, check these common issues:
+
+1. **Permission Errors**
+   ```bash
+   ! [remote rejected] main -> main (refusing to allow an OAuth App to create or update workflow)
+   ```
+   Solution: Double-check steps 1 and 2 above for permissions
+
+2. **Workflow Not Visible**
+   - Ensure `.github/workflows/update_citations.yml` is in the main branch
+   - Check if Actions is enabled in repository settings
+
+3. **Push Errors**
+   ```bash
+   ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow)
+   ```
+   Solution:
+   - Go to Settings → Actions → General
+   - Scroll to "Workflow permissions"
+   - Enable "Read and write permissions"
+
+4. **Scheduled Runs Not Working**
+   - Note that scheduled runs only work on the default branch
+   - First manual run may be needed to initialize
+   - Check your timezone vs UTC for cron schedule
+
+### Visual Guide
+
+Here's where to find key settings:
+
+```
+Repository
+└── Settings
+    ├── Actions
+    │   ├── General
+    │   │   ├── Actions permissions
+    │   │   └── Workflow permissions
+    │   └── Secrets and variables
+    └── Pages (if you want to publish results)
+```
+
+### Testing Your Setup
+
+1. Make a small change to your repository
+2. Push the change
+3. Go to the "Actions" tab
+4. You should see your workflow running
+5. After completion, check:
+   - `data/citations.md` for updated stats
+   - `data/citation_history.json` for historical data
+
+### Monitoring
+
+- Go to "Actions" tab to see all workflow runs
+- Click on any run to see detailed logs
+- Enable notifications in repository settings to get alerts on workflow failures
+
+### Best Practices
+
+1. **Always test locally first**
+   ```bash
+   python run.py
+   ```
+
+2. **Start with manual triggers**
+   - Use `workflow_dispatch` before setting up scheduled runs
+   - Helps identify issues before automation
+
+3. **Monitor initial runs**
+   - Watch the first few automated runs
+   - Check logs for any warnings or errors
+
+4. **Version Control**
+   - Keep your workflow file versioned
+   - Document any changes in commit messages
