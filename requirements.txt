@@ -1,2 +1,4 @@
-scholarly
-pandas
+scholarly==1.7.11
+plotly==5.18.0
+pandas==2.1.3
+kaleido==0.2.1  # 用于保存静态图片
