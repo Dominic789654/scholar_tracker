@@ -26,6 +26,17 @@ Last updated: 2024-11-08
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
 | 2024-11-08 | 201 | 5 |
+| 2024-11-08 | 201 | 5 |
 | 2024-11-07 | 201 | 5 |
 | 2024-11-07 | 201 | 5 |
 | 2024-11-07 | 201 | 5 |
+
+## Citation Trends
+
+### Overall Trends
+![Citation Trends](citation_trends.png)
+
+### Individual Paper Trends
+![Paper Trends](paper_trends.png)
+
+*For interactive charts, see [citation_trends.html](citation_trends.html) and [paper_trends.html](paper_trends.html)*
