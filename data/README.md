@@ -1,15 +1,15 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2024-11-11*
+*Last Updated: 2024-11-12*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 201 |
+| Total Citations | 202 |
 | H-index | 5 |
 | Total Papers | 10 |
-| Recent Citation Growth | +0 |
+| Recent Citation Growth | +1 |
 
 ## Citation Trends
 
@@ -23,7 +23,7 @@
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active Prompting with Chain-of-Thought for Large Language Models | 156 | 2023 |
+| Active Prompting with Chain-of-Thought for Large Language Models | 157 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 14 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric From Scratch for Large Language Models | 11 | 2024 |
 | Plum: Prompt Learning using Metaheuristic | 8 | 2023 |
