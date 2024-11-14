@@ -1,7 +1,7 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2024-11-13*
+*Last Updated: 2024-11-14*
 
 ### Quick Summary
 | Metric | Value |
@@ -9,7 +9,7 @@
 | Total Citations | 215 |
 | H-index | 5 |
 | Total Papers | 10 |
-| Recent Citation Growth | +13 |
+| Recent Citation Growth | +0 |
 
 ## Citation Trends
 
