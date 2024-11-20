@@ -7,6 +7,7 @@ class MarkdownWriter:
         self.data_file = data_file
         self.output_file = output_file
         self.data_dir = os.path.dirname(output_file)
+        self.daily_changes_file = os.path.join(self.data_dir, "daily_changes.json")
         
     def generate_markdown(self):
         """Generate markdown report from citation history"""
@@ -27,11 +28,33 @@ class MarkdownWriter:
                 f"\nLast updated: {latest['date']}",
                 f"\n## Overall Statistics",
                 f"- Total Citations: {latest['total_citations']}",
-                f"- H-index: {latest['h_index']}",
+                f"- H-index: {latest['h_index']}"
+            ]
+            
+            # Add today's citation changes if available
+            if os.path.exists(self.daily_changes_file):
+                with open(self.daily_changes_file, 'r') as f:
+                    daily_changes = json.load(f)
+                if daily_changes:
+                    latest_changes = daily_changes[-1]
+                    if latest_changes["date"] == latest["date"] and latest_changes["papers_with_changes"]:
+                        content.extend([
+                            "\n## Today's Citation Changes ",
+                            f"\nTotal increase: +{latest_changes['total_citations_increase']} citations",
+                            "\n| Paper | Previous | New | Increase |",
+                            "| ----- | --------- | --- | -------- |"
+                        ])
+                        for paper in latest_changes["papers_with_changes"]:
+                            content.append(
+                                f"| {paper['title']} | {paper['previous_citations']} | {paper['new_citations']} | +{paper['increase']} |"
+                            )
+            
+            # Add paper stats
+            content.extend([
                 "\n## Paper Citations",
                 "\n| Paper | Citations | Year |",
                 "| ----- | --------- | ---- |"
-            ]
+            ])
             
             # Add paper stats
             for paper in latest['papers']:
@@ -100,49 +123,26 @@ class MarkdownWriter:
                 f"| Total Citations | {latest['total_citations']} |",
                 f"| H-index | {latest['h_index']} |",
                 f"| Total Papers | {total_papers} |",
-                f"| Recent Citation Growth | {citation_growth:+d} |",
-                
-                "\n## Citation Trends",
-                "\n### Overall Citation Metrics",
-                "![Citation Trends](citation_trends.png)",
-                "\n### Individual Paper Performance",
-                "![Paper Trends](paper_trends.png)",
-                
-                "\n## Top Papers",
-                "\n| Paper | Citations | Year |",
-                "| ----- | --------- | ---- |"
+                f"| Recent Citation Growth | {'+' if citation_growth > 0 else ''}{citation_growth} |"
             ]
             
-            # Add top 5 papers by citation count
-            sorted_papers = sorted(
-                latest['papers'], 
-                key=lambda x: x['citations'], 
-                reverse=True
-            )
-            for paper in sorted_papers[:5]:
-                content.append(
-                    f"| {paper['title']} | {paper['citations']} | {paper['year']} |"
-                )
-                
-            # Add links to detailed reports
-            content.extend([
-                "\n## Detailed Reports",
-                "- [Full Citation Report](citations.md)",
-                "- [Interactive Overall Trends](citation_trends.html)",
-                "- [Interactive Paper Trends](paper_trends.html)",
-                
-                "\n## Directory Contents",
-                "- `citations.md`: Detailed daily citation report",
-                "- `citation_history.json`: Raw historical data",
-                "- `citation_trends.png/.html`: Overall citation trend visualizations",
-                "- `paper_trends.png/.html`: Individual paper trend visualizations",
-                
-                "\n---",
-                "*This report is automatically generated and updated daily*"
-            ])
+            # Add today's changes if available
+            if os.path.exists(self.daily_changes_file):
+                with open(self.daily_changes_file, 'r') as f:
+                    daily_changes = json.load(f)
+                if daily_changes:
+                    latest_changes = daily_changes[-1]
+                    if latest_changes["date"] == latest["date"] and latest_changes["papers_with_changes"]:
+                        content.extend([
+                            "\n### Today's Changes",
+                            f"- Total Citations Increase: +{latest_changes['total_citations_increase']}",
+                            "- Papers with new citations:",
+                        ])
+                        for paper in latest_changes["papers_with_changes"]:
+                            content.append(f"  - {paper['title']}: +{paper['increase']} citations")
             
-            # Write to README.md in data directory
-            readme_path = os.path.join(self.data_dir, 'README.md')
+            # Write to file
+            readme_path = os.path.join(self.data_dir, "README.md")
             with open(readme_path, 'w') as f:
                 f.write('\n'.join(content))
                 

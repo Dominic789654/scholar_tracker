@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data files
+data/*.json
+data/*.md
+data/*.html
+data/*.png
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
