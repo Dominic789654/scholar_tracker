@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2024-11-19
+Last updated: 2024-11-20
 
 ## Overall Statistics
 - Total Citations: 219
@@ -26,6 +26,7 @@ Last updated: 2024-11-19
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2024-11-20 | 219 | 5 |
 | 2024-11-19 | 219 | 5 |
 | 2024-11-18 | 216 | 5 |
 | 2024-11-17 | 215 | 5 |
@@ -35,7 +36,6 @@ Last updated: 2024-11-19
 | 2024-11-13 | 215 | 5 |
 | 2024-11-12 | 202 | 5 |
 | 2024-11-11 | 201 | 5 |
-| 2024-11-10 | 201 | 5 |
 
 ## Citation Trends
 
