@@ -1,19 +1,10 @@
 # Citation Statistics
 
-Last updated: 2024-11-29
+Last updated: 2024-11-30
 
 ## Overall Statistics
 - Total Citations: 223
 - H-index: 5
-
-## Today's Citation Changes 
-
-Total increase: +2 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 17 | 18 | +1 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 3 | 4 | +1 |
 
 ## Paper Citations
 
@@ -35,6 +26,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2024-11-30 | 223 | 5 |
 | 2024-11-29 | 223 | 5 |
 | 2024-11-28 | 221 | 5 |
 | 2024-11-27 | 219 | 5 |
@@ -44,7 +36,6 @@ Total increase: +2 citations
 | 2024-11-23 | 217 | 5 |
 | 2024-11-22 | 217 | 5 |
 | 2024-11-21 | 217 | 5 |
-| 2024-11-20 | 219 | 5 |
 
 ## Citation Trends
 
