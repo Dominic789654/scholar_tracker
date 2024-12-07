@@ -2031,5 +2031,67 @@
         "year": "2024"
       }
     ]
+  },
+  {
+    "date": "2024-12-07",
+    "total_citations": 224,
+    "h_index": 5,
+    "papers": [
+      {
+        "title": "Active prompting with chain-of-thought for large language models",
+        "citations": 168,
+        "year": "2023"
+      },
+      {
+        "title": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+        "citations": 18,
+        "year": "2024"
+      },
+      {
+        "title": "Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models",
+        "citations": 15,
+        "year": "2024"
+      },
+      {
+        "title": "Plum: Prompt learning using metaheuristic",
+        "citations": 8,
+        "year": "2023"
+      },
+      {
+        "title": "Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models",
+        "citations": 7,
+        "year": "2023"
+      },
+      {
+        "title": "ParZC: Parametric Zero-Cost Proxies for Efficient NAS",
+        "citations": 4,
+        "year": "2024"
+      },
+      {
+        "title": "LongGenBench: Long-context Generation Benchmark",
+        "citations": 2,
+        "year": "2024"
+      },
+      {
+        "title": "LPZero: Language Model Zero-cost Proxy Search from Zero",
+        "citations": 1,
+        "year": "2024"
+      },
+      {
+        "title": "Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models",
+        "citations": 1,
+        "year": "2024"
+      },
+      {
+        "title": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+        "citations": 0,
+        "year": "2024"
+      },
+      {
+        "title": "3D Question Answering for City Scene Understanding",
+        "citations": 0,
+        "year": "2024"
+      }
+    ]
   }
 ]
