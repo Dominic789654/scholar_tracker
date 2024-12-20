@@ -1,26 +1,24 @@
 # Citation Statistics
 
-Last updated: 2024-12-19
+Last updated: 2024-12-20
 
 ## Overall Statistics
-- Total Citations: 232
+- Total Citations: 233
 - H-index: 5
 
 ## Today's Citation Changes 
 
-Total increase: +3 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 170 | 171 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 20 | 21 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 15 | 16 | +1 |
+| Active prompting with chain-of-thought for large language models | 171 | 172 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 171 | 2023 |
+| Active prompting with chain-of-thought for large language models | 172 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 21 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 16 | 2024 |
 | Plum: Prompt learning using metaheuristic | 9 | 2023 |
@@ -36,6 +34,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2024-12-20 | 233 | 5 |
 | 2024-12-19 | 232 | 5 |
 | 2024-12-18 | 229 | 5 |
 | 2024-12-17 | 229 | 5 |
@@ -45,7 +44,6 @@ Total increase: +3 citations
 | 2024-12-13 | 224 | 5 |
 | 2024-12-12 | 224 | 5 |
 | 2024-12-11 | 224 | 5 |
-| 2024-12-10 | 224 | 5 |
 
 ## Citation Trends
 
