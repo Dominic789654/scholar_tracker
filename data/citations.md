@@ -1,9 +1,9 @@
 # Citation Statistics
 
-Last updated: 2024-12-21
+Last updated: 2024-12-22
 
 ## Overall Statistics
-- Total Citations: 234
+- Total Citations: 235
 - H-index: 5
 
 ## Today's Citation Changes 
@@ -12,7 +12,7 @@ Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 21 | 22 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 2 | 3 | +1 |
 
 ## Paper Citations
 
@@ -24,7 +24,7 @@ Total increase: +1 citations
 | Plum: Prompt learning using metaheuristic | 9 | 2023 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 7 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 4 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 2 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 3 | 2024 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 1 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 1 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 0 | 2024 |
@@ -34,6 +34,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2024-12-22 | 235 | 5 |
 | 2024-12-21 | 234 | 5 |
 | 2024-12-20 | 233 | 5 |
 | 2024-12-19 | 232 | 5 |
@@ -43,7 +44,6 @@ Total increase: +1 citations
 | 2024-12-15 | 228 | 5 |
 | 2024-12-14 | 226 | 5 |
 | 2024-12-13 | 224 | 5 |
-| 2024-12-12 | 224 | 5 |
 
 ## Citation Trends
 
