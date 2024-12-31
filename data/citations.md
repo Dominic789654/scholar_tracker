@@ -1,10 +1,18 @@
 # Citation Statistics
 
-Last updated: 2024-12-30
+Last updated: 2024-12-31
 
 ## Overall Statistics
-- Total Citations: 242
+- Total Citations: 243
 - H-index: 5
+
+## Today's Citation Changes 
+
+Total increase: +1 citations
+
+| Paper | Previous | New | Increase |
+| ----- | --------- | --- | -------- |
+| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 4 | 5 | +1 |
 
 ## Paper Citations
 
@@ -15,7 +23,7 @@ Last updated: 2024-12-30
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 17 | 2024 |
 | Plum: Prompt learning using metaheuristic | 9 | 2023 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 7 | 2023 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 4 | 2024 |
+| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 5 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 3 | 2024 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 1 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 1 | 2024 |
@@ -26,6 +34,7 @@ Last updated: 2024-12-30
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2024-12-31 | 243 | 5 |
 | 2024-12-30 | 242 | 5 |
 | 2024-12-29 | 242 | 5 |
 | 2024-12-28 | 241 | 5 |
@@ -35,7 +44,6 @@ Last updated: 2024-12-30
 | 2024-12-24 | 238 | 5 |
 | 2024-12-23 | 237 | 5 |
 | 2024-12-22 | 235 | 5 |
-| 2024-12-21 | 234 | 5 |
 
 ## Citation Trends
 
