@@ -1,18 +1,10 @@
 # Citation Statistics
 
-Last updated: 2024-12-31
+Last updated: 2025-01-01
 
 ## Overall Statistics
 - Total Citations: 243
 - H-index: 5
-
-## Today's Citation Changes 
-
-Total increase: +1 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 4 | 5 | +1 |
 
 ## Paper Citations
 
@@ -34,6 +26,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-01-01 | 243 | 5 |
 | 2024-12-31 | 243 | 5 |
 | 2024-12-30 | 242 | 5 |
 | 2024-12-29 | 242 | 5 |
@@ -43,7 +36,6 @@ Total increase: +1 citations
 | 2024-12-25 | 238 | 5 |
 | 2024-12-24 | 238 | 5 |
 | 2024-12-23 | 237 | 5 |
-| 2024-12-22 | 235 | 5 |
 
 ## Citation Trends
 

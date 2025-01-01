@@ -1,7 +1,7 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2024-12-31*
+*Last Updated: 2025-01-01*
 
 ### Quick Summary
 | Metric | Value |
@@ -9,9 +9,4 @@
 | Total Citations | 243 |
 | H-index | 5 |
 | Total Papers | 11 |
-| Recent Citation Growth | +1 |
-
-### Today's Changes
-- Total Citations Increase: +1
-- Papers with new citations:
-  - ParZC: Parametric Zero-Cost Proxies for Efficient NAS: +1 citations
+| Recent Citation Growth | 0 |
