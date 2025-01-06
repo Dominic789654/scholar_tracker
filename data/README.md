@@ -1,12 +1,17 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2025-01-05*
+*Last Updated: 2025-01-06*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 243 |
+| Total Citations | 244 |
 | H-index | 5 |
 | Total Papers | 11 |
-| Recent Citation Growth | 0 |
+| Recent Citation Growth | +1 |
+
+### Today's Changes
+- Total Citations Increase: +1
+- Papers with new citations:
+  - Active prompting with chain-of-thought for large language models: +1 citations
