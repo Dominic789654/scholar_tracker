@@ -1,18 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-01-14
+Last updated: 2025-01-15
 
 ## Overall Statistics
 - Total Citations: 249
 - H-index: 5
-
-## Today's Citation Changes 
-
-Total increase: +1 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 181 | 182 | +1 |
 
 ## Paper Citations
 
@@ -34,6 +26,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-01-15 | 249 | 5 |
 | 2025-01-14 | 249 | 5 |
 | 2025-01-13 | 248 | 5 |
 | 2025-01-12 | 248 | 5 |
@@ -43,7 +36,6 @@ Total increase: +1 citations
 | 2025-01-08 | 244 | 5 |
 | 2025-01-07 | 244 | 5 |
 | 2025-01-06 | 244 | 5 |
-| 2025-01-05 | 243 | 5 |
 
 ## Citation Trends
 
