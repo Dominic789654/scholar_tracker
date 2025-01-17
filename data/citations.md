@@ -1,18 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-01-16
+Last updated: 2025-01-17
 
 ## Overall Statistics
 - Total Citations: 250
 - H-index: 5
-
-## Today's Citation Changes 
-
-Total increase: +1 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Plum: Prompt learning using metaheuristic | 10 | 11 | +1 |
 
 ## Paper Citations
 
@@ -34,6 +26,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-01-17 | 250 | 5 |
 | 2025-01-16 | 250 | 5 |
 | 2025-01-15 | 249 | 5 |
 | 2025-01-14 | 249 | 5 |
@@ -43,7 +36,6 @@ Total increase: +1 citations
 | 2025-01-10 | 245 | 5 |
 | 2025-01-09 | 245 | 5 |
 | 2025-01-08 | 244 | 5 |
-| 2025-01-07 | 244 | 5 |
 
 ## Citation Trends
 
