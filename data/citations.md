@@ -1,24 +1,34 @@
 # Citation Statistics
 
-Last updated: 2025-01-29
+Last updated: 2025-02-02
 
 ## Overall Statistics
-- Total Citations: 252
+- Total Citations: 255
 - H-index: 5
+
+## Today's Citation Changes 
+
+Total increase: +3 citations
+
+| Paper | Previous | New | Increase |
+| ----- | --------- | --- | -------- |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 23 | 24 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 17 | 19 | +2 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 1 | 2 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 184 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 23 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 17 | 2024 |
-| Plum: Prompt learning using metaheuristic | 11 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 24 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 19 | 2024 |
+| Plum: Prompt learning using metaheuristic | 10 | 2023 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 7 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 5 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 3 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 2 | 2024 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 1 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 1 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 0 | 2024 |
 | 3D Question Answering for City Scene Understanding | 0 | 2024 |
 
@@ -26,6 +36,7 @@ Last updated: 2025-01-29
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-02-02 | 255 | 5 |
 | 2025-01-29 | 252 | 5 |
 | 2025-01-28 | 252 | 5 |
 | 2025-01-27 | 251 | 5 |
@@ -35,7 +46,6 @@ Last updated: 2025-01-29
 | 2025-01-23 | 250 | 5 |
 | 2025-01-22 | 250 | 5 |
 | 2025-01-21 | 250 | 5 |
-| 2025-01-20 | 250 | 5 |
 
 ## Citation Trends
 
