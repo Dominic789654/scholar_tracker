@@ -1,20 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-02-02
+Last updated: 2025-02-03
 
 ## Overall Statistics
 - Total Citations: 255
 - H-index: 5
-
-## Today's Citation Changes 
-
-Total increase: +3 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 23 | 24 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 17 | 19 | +2 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 1 | 2 | +1 |
 
 ## Paper Citations
 
@@ -36,6 +26,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-02-03 | 255 | 5 |
 | 2025-02-02 | 255 | 5 |
 | 2025-01-29 | 252 | 5 |
 | 2025-01-28 | 252 | 5 |
@@ -45,7 +36,6 @@ Total increase: +3 citations
 | 2025-01-24 | 251 | 5 |
 | 2025-01-23 | 250 | 5 |
 | 2025-01-22 | 250 | 5 |
-| 2025-01-21 | 250 | 5 |
 
 ## Citation Trends
 
