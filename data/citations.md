@@ -1,19 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-02-03
+Last updated: 2025-02-04
 
 ## Overall Statistics
 - Total Citations: 260
 - H-index: 5
-
-## Today's Citation Changes 
-
-Total increase: +5 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 184 | 188 | +4 |
-| Plum: Prompt learning using metaheuristic | 10 | 11 | +1 |
 
 ## Paper Citations
 
@@ -35,6 +26,7 @@ Total increase: +5 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-02-04 | 260 | 5 |
 | 2025-02-03 | 260 | 5 |
 | 2025-02-03 | 255 | 5 |
 | 2025-02-02 | 255 | 5 |
@@ -44,7 +36,6 @@ Total increase: +5 citations
 | 2025-01-26 | 251 | 5 |
 | 2025-01-25 | 251 | 5 |
 | 2025-01-24 | 251 | 5 |
-| 2025-01-23 | 250 | 5 |
 
 ## Citation Trends
 
