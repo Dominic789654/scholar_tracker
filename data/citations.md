@@ -1,22 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-02-09
+Last updated: 2025-02-10
 
 ## Overall Statistics
 - Total Citations: 269
 - H-index: 5
-
-## Today's Citation Changes 
-
-Total increase: +6 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 189 | 191 | +2 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 25 | 26 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 20 | 21 | +1 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 0 | 1 | +1 |
-| 3D Question Answering for City Scene Understanding | 0 | 1 | +1 |
 
 ## Paper Citations
 
@@ -40,6 +28,7 @@ Total increase: +6 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-02-10 | 269 | 5 |
 | 2025-02-09 | 269 | 5 |
 | 2025-02-08 | 263 | 5 |
 | 2025-02-07 | 260 | 5 |
@@ -49,7 +38,6 @@ Total increase: +6 citations
 | 2025-02-03 | 260 | 5 |
 | 2025-02-03 | 255 | 5 |
 | 2025-02-02 | 255 | 5 |
-| 2025-01-29 | 252 | 5 |
 
 ## Citation Trends
 
