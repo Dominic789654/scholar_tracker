@@ -3,29 +3,32 @@
 Last updated: 2025-02-14
 
 ## Overall Statistics
-- Total Citations: 272
+- Total Citations: 276
 - H-index: 5
 
 ## Today's Citation Changes 
 
-Total increase: +2 citations
+Total increase: +4 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 21 | 23 | +2 |
+| Active prompting with chain-of-thought for large language models | 191 | 192 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 27 | 28 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 23 | 24 | +1 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 2 | 3 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 191 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 27 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 23 | 2024 |
+| Active prompting with chain-of-thought for large language models | 192 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 28 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 24 | 2024 |
 | Plum: Prompt learning using metaheuristic | 11 | 2023 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 7 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 5 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 3 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 2 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 3 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 1 | 2024 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 1 | 2024 |
 | 3D Question Answering for City Scene Understanding | 1 | 2024 |
@@ -37,6 +40,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-02-14 | 276 | 5 |
 | 2025-02-14 | 272 | 5 |
 | 2025-02-13 | 270 | 5 |
 | 2025-02-12 | 270 | 5 |
@@ -46,7 +50,6 @@ Total increase: +2 citations
 | 2025-02-08 | 263 | 5 |
 | 2025-02-07 | 260 | 5 |
 | 2025-02-06 | 260 | 5 |
-| 2025-02-05 | 260 | 5 |
 
 ## Citation Trends
 
