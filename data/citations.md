@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2025-02-19
+Last updated: 2025-02-20
 
 ## Overall Statistics
 - Total Citations: 280
@@ -29,6 +29,7 @@ Last updated: 2025-02-19
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-02-20 | 280 | 5 |
 | 2025-02-19 | 280 | 5 |
 | 2025-02-18 | 280 | 5 |
 | 2025-02-17 | 278 | 5 |
@@ -38,7 +39,6 @@ Last updated: 2025-02-19
 | 2025-02-14 | 272 | 5 |
 | 2025-02-13 | 270 | 5 |
 | 2025-02-12 | 270 | 5 |
-| 2025-02-11 | 269 | 5 |
 
 ## Citation Trends
 
