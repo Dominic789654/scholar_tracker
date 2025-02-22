@@ -6,14 +6,12 @@
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 268 |
+| Total Citations | 287 |
 | H-index | 5 |
 | Total Papers | 14 |
-| Recent Citation Growth | -12 |
+| Recent Citation Growth | +19 |
 
 ### Today's Changes
-- Total Citations Increase: +-12
+- Total Citations Increase: +19
 - Papers with new citations:
-  - Active prompting with chain-of-thought for large language models: +1 citations
-  - Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models: +2 citations
-  - Plum: Prompt learning using metaheuristic: +2 citations
+  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +19 citations
