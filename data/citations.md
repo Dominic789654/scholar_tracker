@@ -1,32 +1,34 @@
 # Citation Statistics
 
-Last updated: 2025-02-22
+Last updated: 2025-02-23
 
 ## Overall Statistics
-- Total Citations: 287
+- Total Citations: 291
 - H-index: 5
 
 ## Today's Citation Changes 
 
-Total increase: +19 citations
+Total increase: +4 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 14 | 33 | +19 |
+| Active prompting with chain-of-thought for large language models | 194 | 196 | +2 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 33 | 34 | +1 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 1 | 2 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 194 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 33 | 2024 |
+| Active prompting with chain-of-thought for large language models | 196 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 34 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 26 | 2024 |
 | Plum: Prompt learning using metaheuristic | 13 | 2023 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 7 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 5 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 3 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 3 | 2024 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 1 | 2024 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 2 | 2024 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 1 | 2024 |
 | 3D Question Answering for City Scene Understanding | 1 | 2024 |
 | Mediator: Memory-efficient LLM Merging with Less Parameter Conflicts and Uncertainty Based Routing | 0 | 2025 |
@@ -37,6 +39,7 @@ Total increase: +19 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-02-23 | 291 | 5 |
 | 2025-02-22 | 287 | 5 |
 | 2025-02-22 | 268 | 5 |
 | 2025-02-21 | 280 | 5 |
@@ -46,7 +49,6 @@ Total increase: +19 citations
 | 2025-02-17 | 278 | 5 |
 | 2025-02-16 | 276 | 5 |
 | 2025-02-15 | 276 | 5 |
-| 2025-02-14 | 276 | 5 |
 
 ## Citation Trends
 
