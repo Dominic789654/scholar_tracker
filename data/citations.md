@@ -1,20 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-02-23
+Last updated: 2025-02-24
 
 ## Overall Statistics
 - Total Citations: 291
 - H-index: 5
-
-## Today's Citation Changes 
-
-Total increase: +4 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 194 | 196 | +2 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 33 | 34 | +1 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 1 | 2 | +1 |
 
 ## Paper Citations
 
@@ -39,6 +29,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-02-24 | 291 | 5 |
 | 2025-02-23 | 291 | 5 |
 | 2025-02-22 | 287 | 5 |
 | 2025-02-22 | 268 | 5 |
@@ -48,7 +39,6 @@ Total increase: +4 citations
 | 2025-02-18 | 280 | 5 |
 | 2025-02-17 | 278 | 5 |
 | 2025-02-16 | 276 | 5 |
-| 2025-02-15 | 276 | 5 |
 
 ## Citation Trends
 
