@@ -1,19 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-02-25
+Last updated: 2025-02-26
 
 ## Overall Statistics
 - Total Citations: 295
 - H-index: 5
-
-## Today's Citation Changes 
-
-Total increase: +4 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 196 | 197 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 26 | 29 | +3 |
 
 ## Paper Citations
 
@@ -38,6 +29,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-02-26 | 295 | 5 |
 | 2025-02-25 | 295 | 5 |
 | 2025-02-24 | 291 | 5 |
 | 2025-02-23 | 291 | 5 |
@@ -47,7 +39,6 @@ Total increase: +4 citations
 | 2025-02-20 | 280 | 5 |
 | 2025-02-19 | 280 | 5 |
 | 2025-02-18 | 280 | 5 |
-| 2025-02-17 | 278 | 5 |
 
 ## Citation Trends
 
