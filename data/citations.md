@@ -1,30 +1,31 @@
 # Citation Statistics
 
-Last updated: 2025-02-27
+Last updated: 2025-02-28
 
 ## Overall Statistics
-- Total Citations: 296
+- Total Citations: 299
 - H-index: 5
 
 ## Today's Citation Changes 
 
-Total increase: +1 citations
+Total increase: +3 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 29 | 30 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 34 | 36 | +2 |
+| LongGenBench: Long-context Generation Benchmark | 3 | 4 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 197 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 34 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 36 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 30 | 2024 |
 | Plum: Prompt learning using metaheuristic | 13 | 2023 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 7 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 5 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 3 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 4 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 3 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 2 | 2024 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 1 | 2024 |
@@ -37,6 +38,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-02-28 | 299 | 5 |
 | 2025-02-27 | 296 | 5 |
 | 2025-02-26 | 295 | 5 |
 | 2025-02-25 | 295 | 5 |
@@ -46,7 +48,6 @@ Total increase: +1 citations
 | 2025-02-22 | 268 | 5 |
 | 2025-02-21 | 280 | 5 |
 | 2025-02-20 | 280 | 5 |
-| 2025-02-19 | 280 | 5 |
 
 ## Citation Trends
 
