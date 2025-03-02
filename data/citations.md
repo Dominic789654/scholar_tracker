@@ -1,18 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-03-01
+Last updated: 2025-03-02
 
 ## Overall Statistics
 - Total Citations: 300
 - H-index: 5
-
-## Today's Citation Changes 
-
-Total increase: +1 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 2 | 3 | +1 |
 
 ## Paper Citations
 
@@ -37,6 +29,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-03-02 | 300 | 5 |
 | 2025-03-01 | 300 | 5 |
 | 2025-02-28 | 299 | 5 |
 | 2025-02-27 | 296 | 5 |
@@ -46,7 +39,6 @@ Total increase: +1 citations
 | 2025-02-23 | 291 | 5 |
 | 2025-02-22 | 287 | 5 |
 | 2025-02-22 | 268 | 5 |
-| 2025-02-21 | 280 | 5 |
 
 ## Citation Trends
 
