@@ -1,9 +1,9 @@
 # Citation Statistics
 
-Last updated: 2025-03-07
+Last updated: 2025-03-08
 
 ## Overall Statistics
-- Total Citations: 309
+- Total Citations: 310
 - H-index: 5
 
 ## Today's Citation Changes 
@@ -12,13 +12,13 @@ Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 39 | 40 | +1 |
+| Active prompting with chain-of-thought for large language models | 199 | 200 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 199 | 2023 |
+| Active prompting with chain-of-thought for large language models | 200 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 40 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 32 | 2024 |
 | Plum: Prompt learning using metaheuristic | 13 | 2023 |
@@ -30,6 +30,7 @@ Total increase: +1 citations
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 1 | 2024 |
 | 3D Question Answering for City Scene Understanding | 1 | 2024 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 0 | 2025 |
+| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 0 | 2025 |
 | Mediator: Memory-efficient LLM Merging with Less Parameter Conflicts and Uncertainty Based Routing | 0 | 2025 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 0 | 2025 |
 | ChunkKV: Semantic-Preserving KV Cache Compression for Efficient Long-Context LLM Inference | 0 | 2025 |
@@ -38,6 +39,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-03-08 | 310 | 5 |
 | 2025-03-07 | 309 | 5 |
 | 2025-03-06 | 308 | 5 |
 | 2025-03-05 | 308 | 5 |
@@ -47,7 +49,6 @@ Total increase: +1 citations
 | 2025-03-01 | 300 | 5 |
 | 2025-02-28 | 299 | 5 |
 | 2025-02-27 | 296 | 5 |
-| 2025-02-26 | 295 | 5 |
 
 ## Citation Trends
 
