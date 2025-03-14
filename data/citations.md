@@ -1,21 +1,18 @@
 # Citation Statistics
 
-Last updated: 2025-03-13
+Last updated: 2025-03-14
 
 ## Overall Statistics
-- Total Citations: 322
+- Total Citations: 323
 - H-index: 7
 
 ## Today's Citation Changes 
 
-Total increase: +5 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 202 | 203 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 33 | 35 | +2 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 6 | 7 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 6 | 7 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 4 | 5 | +1 |
 
 ## Paper Citations
 
@@ -28,7 +25,7 @@ Total increase: +5 citations
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 7 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 7 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 7 | 2023 |
-| LongGenBench: Long-context Generation Benchmark | 4 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 5 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 3 | 2024 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 1 | 2024 |
 | 3D Question Answering for City Scene Understanding | 1 | 2024 |
@@ -42,6 +39,7 @@ Total increase: +5 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-03-14 | 323 | 7 |
 | 2025-03-13 | 322 | 7 |
 | 2025-03-12 | 317 | 6 |
 | 2025-03-10 | 310 | 5 |
@@ -51,7 +49,6 @@ Total increase: +5 citations
 | 2025-03-06 | 308 | 5 |
 | 2025-03-05 | 308 | 5 |
 | 2025-03-04 | 304 | 5 |
-| 2025-03-03 | 303 | 5 |
 
 ## Citation Trends
 
