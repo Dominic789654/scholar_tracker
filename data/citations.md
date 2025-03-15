@@ -1,18 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-03-14
+Last updated: 2025-03-15
 
 ## Overall Statistics
 - Total Citations: 323
 - H-index: 7
-
-## Today's Citation Changes 
-
-Total increase: +1 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| LongGenBench: Long-context Generation Benchmark | 4 | 5 | +1 |
 
 ## Paper Citations
 
@@ -39,6 +31,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-03-15 | 323 | 7 |
 | 2025-03-14 | 323 | 7 |
 | 2025-03-13 | 322 | 7 |
 | 2025-03-12 | 317 | 6 |
@@ -48,7 +41,6 @@ Total increase: +1 citations
 | 2025-03-07 | 309 | 5 |
 | 2025-03-06 | 308 | 5 |
 | 2025-03-05 | 308 | 5 |
-| 2025-03-04 | 304 | 5 |
 
 ## Citation Trends
 

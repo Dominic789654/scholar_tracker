@@ -8620,5 +8620,92 @@
         "year": "2025"
       }
     ]
+  },
+  {
+    "date": "2025-03-15",
+    "total_citations": 323,
+    "h_index": 7,
+    "papers": [
+      {
+        "title": "Active prompting with chain-of-thought for large language models",
+        "citations": 203,
+        "year": "2023"
+      },
+      {
+        "title": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+        "citations": 41,
+        "year": "2024"
+      },
+      {
+        "title": "Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models",
+        "citations": 35,
+        "year": "2024"
+      },
+      {
+        "title": "Plum: Prompt learning using metaheuristic",
+        "citations": 13,
+        "year": "2023"
+      },
+      {
+        "title": "ParZC: Parametric Zero-Cost Proxies for Efficient NAS",
+        "citations": 7,
+        "year": "2024"
+      },
+      {
+        "title": "Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models",
+        "citations": 7,
+        "year": "2024"
+      },
+      {
+        "title": "Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models",
+        "citations": 7,
+        "year": "2023"
+      },
+      {
+        "title": "LongGenBench: Long-context Generation Benchmark",
+        "citations": 5,
+        "year": "2024"
+      },
+      {
+        "title": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+        "citations": 3,
+        "year": "2024"
+      },
+      {
+        "title": "LPZero: Language Model Zero-cost Proxy Search from Zero",
+        "citations": 1,
+        "year": "2024"
+      },
+      {
+        "title": "3D Question Answering for City Scene Understanding",
+        "citations": 1,
+        "year": "2024"
+      },
+      {
+        "title": "The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve?",
+        "citations": 0,
+        "year": "2025"
+      },
+      {
+        "title": "EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models",
+        "citations": 0,
+        "year": "2025"
+      },
+      {
+        "title": "Mediator: Memory-efficient LLM Merging with Less Parameter Conflicts and Uncertainty Based Routing",
+        "citations": 0,
+        "year": "2025"
+      },
+      {
+        "title": "Can LLMs Maintain Fundamental Abilities under KV Cache Compression?",
+        "citations": 0,
+        "year": "2025"
+      },
+      {
+        "title": "ChunkKV: Semantic-Preserving KV Cache Compression for Efficient Long-Context LLM Inference",
+        "citations": 0,
+        "year": "2025"
+      }
+    ]
   }
 ]
