@@ -1,20 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-03-21
+Last updated: 2025-03-22
 
 ## Overall Statistics
 - Total Citations: 328
 - H-index: 7
-
-## Today's Citation Changes 
-
-Total increase: +4 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 203 | 205 | +2 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 35 | 36 | +1 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 0 | 1 | +1 |
 
 ## Paper Citations
 
@@ -41,6 +31,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-03-22 | 328 | 7 |
 | 2025-03-21 | 328 | 7 |
 | 2025-03-20 | 324 | 7 |
 | 2025-03-19 | 325 | 7 |
@@ -50,7 +41,6 @@ Total increase: +4 citations
 | 2025-03-15 | 323 | 7 |
 | 2025-03-14 | 323 | 7 |
 | 2025-03-13 | 322 | 7 |
-| 2025-03-12 | 317 | 6 |
 
 ## Citation Trends
 
