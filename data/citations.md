@@ -1,10 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-03-22
+Last updated: 2025-03-23
 
 ## Overall Statistics
-- Total Citations: 328
-- H-index: 7
+- Total Citations: 327
+- H-index: 6
 
 ## Paper Citations
 
@@ -15,8 +15,8 @@ Last updated: 2025-03-22
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 36 | 2024 |
 | Plum: Prompt learning using metaheuristic | 13 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 7 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 7 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 7 | 2023 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 6 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 5 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 3 | 2024 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 1 | 2025 |
@@ -31,6 +31,7 @@ Last updated: 2025-03-22
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-03-23 | 327 | 6 |
 | 2025-03-22 | 328 | 7 |
 | 2025-03-21 | 328 | 7 |
 | 2025-03-20 | 324 | 7 |
@@ -40,7 +41,6 @@ Last updated: 2025-03-22
 | 2025-03-16 | 323 | 7 |
 | 2025-03-15 | 323 | 7 |
 | 2025-03-14 | 323 | 7 |
-| 2025-03-13 | 322 | 7 |
 
 ## Citation Trends
 
