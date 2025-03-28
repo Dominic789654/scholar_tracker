@@ -1,10 +1,20 @@
 # Citation Statistics
 
-Last updated: 2025-03-27
+Last updated: 2025-03-28
 
 ## Overall Statistics
-- Total Citations: 328
+- Total Citations: 331
 - H-index: 7
+
+## Today's Citation Changes 
+
+Total increase: +3 citations
+
+| Paper | Previous | New | Increase |
+| ----- | --------- | --- | -------- |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 7 | 8 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 5 | 6 | +1 |
+| LPZero: Language Model Zero-cost Proxy Search from Zero | 1 | 2 | +1 |
 
 ## Paper Citations
 
@@ -14,13 +24,13 @@ Last updated: 2025-03-27
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 42 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 36 | 2024 |
 | Plum: Prompt learning using metaheuristic | 13 | 2023 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 8 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 7 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 7 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 7 | 2023 |
-| LongGenBench: Long-context Generation Benchmark | 5 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 6 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 3 | 2024 |
+| LPZero: Language Model Zero-cost Proxy Search from Zero | 2 | 2024 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 1 | 2025 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 1 | 2024 |
 | 3D Question Answering for City Scene Understanding | 1 | 2024 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 0 | 2025 |
 | Mediator: Memory-efficient LLM Merging with Less Parameter Conflicts and Uncertainty Based Routing | 0 | 2025 |
@@ -31,6 +41,7 @@ Last updated: 2025-03-27
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-03-28 | 331 | 7 |
 | 2025-03-27 | 328 | 7 |
 | 2025-03-26 | 328 | 7 |
 | 2025-03-25 | 328 | 7 |
@@ -40,7 +51,6 @@ Last updated: 2025-03-27
 | 2025-03-21 | 328 | 7 |
 | 2025-03-20 | 324 | 7 |
 | 2025-03-19 | 325 | 7 |
-| 2025-03-18 | 323 | 7 |
 
 ## Citation Trends
 
