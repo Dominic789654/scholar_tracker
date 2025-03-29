@@ -1,20 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-03-28
+Last updated: 2025-03-29
 
 ## Overall Statistics
 - Total Citations: 331
 - H-index: 7
-
-## Today's Citation Changes 
-
-Total increase: +3 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 7 | 8 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 5 | 6 | +1 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 1 | 2 | +1 |
 
 ## Paper Citations
 
@@ -41,6 +31,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-03-29 | 331 | 7 |
 | 2025-03-28 | 331 | 7 |
 | 2025-03-27 | 328 | 7 |
 | 2025-03-26 | 328 | 7 |
@@ -50,7 +41,6 @@ Total increase: +3 citations
 | 2025-03-22 | 328 | 7 |
 | 2025-03-21 | 328 | 7 |
 | 2025-03-20 | 324 | 7 |
-| 2025-03-19 | 325 | 7 |
 
 ## Citation Trends
 
