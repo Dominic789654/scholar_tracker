@@ -1,20 +1,29 @@
 # Citation Statistics
 
-Last updated: 2025-04-03
+Last updated: 2025-04-04
 
 ## Overall Statistics
-- Total Citations: 334
+- Total Citations: 336
 - H-index: 7
+
+## Today's Citation Changes 
+
+Total increase: +2 citations
+
+| Paper | Previous | New | Increase |
+| ----- | --------- | --- | -------- |
+| Active prompting with chain-of-thought for large language models | 207 | 208 | +1 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 8 | 9 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 207 | 2023 |
+| Active prompting with chain-of-thought for large language models | 208 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 42 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 37 | 2024 |
 | Plum: Prompt learning using metaheuristic | 13 | 2023 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 8 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 9 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 7 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 7 | 2023 |
 | LongGenBench: Long-context Generation Benchmark | 6 | 2024 |
@@ -31,6 +40,7 @@ Last updated: 2025-04-03
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-04-04 | 336 | 7 |
 | 2025-04-03 | 334 | 7 |
 | 2025-04-02 | 334 | 7 |
 | 2025-04-01 | 334 | 7 |
@@ -40,7 +50,6 @@ Last updated: 2025-04-03
 | 2025-03-28 | 331 | 7 |
 | 2025-03-27 | 328 | 7 |
 | 2025-03-26 | 328 | 7 |
-| 2025-03-25 | 328 | 7 |
 
 ## Citation Trends
 
