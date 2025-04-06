@@ -1,21 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-04-05
+Last updated: 2025-04-06
 
 ## Overall Statistics
 - Total Citations: 343
 - H-index: 7
-
-## Today's Citation Changes 
-
-Total increase: +7 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 208 | 211 | +3 |
-| ChunkKV: Semantic-Preserving KV Cache Compression for Efficient Long-Context LLM Inference | 0 | 2 | +2 |
-| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 0 | 1 | +1 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 0 | 1 | +1 |
 
 ## Paper Citations
 
@@ -42,6 +31,7 @@ Total increase: +7 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-04-06 | 343 | 7 |
 | 2025-04-05 | 343 | 7 |
 | 2025-04-04 | 336 | 7 |
 | 2025-04-03 | 334 | 7 |
@@ -51,7 +41,6 @@ Total increase: +7 citations
 | 2025-03-30 | 332 | 7 |
 | 2025-03-29 | 331 | 7 |
 | 2025-03-28 | 331 | 7 |
-| 2025-03-27 | 328 | 7 |
 
 ## Citation Trends
 
