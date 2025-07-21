@@ -1,0 +1,41 @@
+2025-07-21 16:19:29,648 - INFO - ScholarTracker initialized for author: Xiang Liu HKUST
+2025-07-21 16:19:29,648 - INFO - Starting history update...
+2025-07-21 16:19:29,648 - INFO - Searching for author: 'Xiang Liu HKUST'
+2025-07-21 16:19:29,648 - INFO - Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Xiang%20Liu%20HKUST
+2025-07-21 16:19:31,194 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Xiang%20Liu%20HKUST "HTTP/1.1 302 Found"
+2025-07-21 16:19:31,268 - INFO - HTTP Request: GET https://accounts.google.com/Login?hl=en&continue=https://scholar.google.com/citations%3Fhl%3Den%26view_op%3Dsearch_authors%26mauthors%3DXiang%2520Liu%2520HKUST&service=citations "HTTP/1.1 302 Found"
+2025-07-21 16:19:31,310 - INFO - HTTP Request: GET https://accounts.google.com/InteractiveLogin?continue=https://scholar.google.com/citations?hl%3Den%26view_op%3Dsearch_authors%26mauthors%3DXiang%2520Liu%2520HKUST&hl=en&service=citations&ifkv=AdBytiO2BeJKxiZ7H4bX5nkKtGrAt6f2XHeowFVhoG7MWV9rUzpi-mPmt9-x24dU-tEiOGShuLo3JQ "HTTP/1.1 302 Moved Temporarily"
+2025-07-21 16:19:31,369 - INFO - HTTP Request: GET https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fscholar.google.com%2Fcitations%3Fhl%3Den%26view_op%3Dsearch_authors%26mauthors%3DXiang%2520Liu%2520HKUST&hl=en&ifkv=AdBytiOsCJd_XGO-2pIV0qsa0bs4bz9d4CkjJnBme0OasqBWAyfX2ly3ppZSz9MvwBe0-H_AeJOM1Q&service=citations&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S554974532%3A1753129171311624 "HTTP/1.1 200 OK"
+2025-07-21 16:19:31,446 - INFO - Found 0 authors
+2025-07-21 16:19:31,449 - INFO - No more author pages
+2025-07-21 16:19:31,449 - ERROR - Author 'Xiang Liu HKUST' not found on Google Scholar.
+2025-07-21 16:19:31,449 - WARNING - Aborting history update because fetching stats failed.
+2025-07-21 16:19:49,003 - INFO - ScholarTracker initialized for author: Xiang Liu HKUST(GZ)
+2025-07-21 16:19:49,003 - INFO - Starting history update...
+2025-07-21 16:19:49,003 - INFO - Searching for author: 'Xiang Liu HKUST(GZ)'
+2025-07-21 16:19:49,003 - INFO - Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Xiang%20Liu%20HKUST%28GZ%29
+2025-07-21 16:19:50,486 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Xiang%20Liu%20HKUST%28GZ%29 "HTTP/1.1 302 Found"
+2025-07-21 16:19:50,551 - INFO - HTTP Request: GET https://accounts.google.com/Login?hl=en&continue=https://scholar.google.com/citations%3Fhl%3Den%26view_op%3Dsearch_authors%26mauthors%3DXiang%2520Liu%2520HKUST%2528GZ%2529&service=citations "HTTP/1.1 302 Found"
+2025-07-21 16:19:50,590 - INFO - HTTP Request: GET https://accounts.google.com/InteractiveLogin?continue=https://scholar.google.com/citations?hl%3Den%26view_op%3Dsearch_authors%26mauthors%3DXiang%2520Liu%2520HKUST%2528GZ%2529&hl=en&service=citations&ifkv=AdBytiMkmhPazP3MYpe_-i7-5EJ8MSOMzhnQCktZM1QnrtGzMtyB53x-YT1Go0mw9KM8IvgJuo3JMQ "HTTP/1.1 302 Moved Temporarily"
+2025-07-21 16:19:50,655 - INFO - HTTP Request: GET https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fscholar.google.com%2Fcitations%3Fhl%3Den%26view_op%3Dsearch_authors%26mauthors%3DXiang%2520Liu%2520HKUST%2528GZ%2529&hl=en&ifkv=AdBytiN3gwuEKam2qnT6Nkxwa66oXebd5HaDA5HQf4oEi_NS_BHGAWN2Cs4G8_BxLYuHdUtegL0RqQ&service=citations&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1395708445%3A1753129190593350 "HTTP/1.1 200 OK"
+2025-07-21 16:19:50,726 - INFO - Found 0 authors
+2025-07-21 16:19:50,728 - INFO - No more author pages
+2025-07-21 16:19:50,729 - ERROR - Author 'Xiang Liu HKUST(GZ)' not found on Google Scholar.
+2025-07-21 16:19:50,729 - WARNING - Aborting history update because fetching stats failed.
+2025-07-21 16:22:09,598 - INFO - ScholarTracker initialized for author_query: 'None', author_id: 'VtK5lwUAAAAJ'
+2025-07-21 16:22:09,598 - INFO - Starting history update...
+2025-07-21 16:22:09,598 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ'
+2025-07-21 16:22:09,598 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2025-07-21 16:22:11,733 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 200 OK"
+2025-07-21 16:22:11,804 - INFO - Getting https://scholar.google.com/citations?hl=en&tzom=300&user=VtK5lwUAAAAJ&view_op=list_mandates&pagesize=100
+2025-07-21 16:22:13,650 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&tzom=300&user=VtK5lwUAAAAJ&view_op=list_mandates&pagesize=100 "HTTP/1.1 200 OK"
+2025-07-21 16:22:13,707 - INFO - Found author: Xiang Liu
+2025-07-21 16:22:13,707 - INFO - Successfully collected stats for 24 papers.
+2025-07-21 16:22:13,707 - INFO - Loading existing history from data/citation_history.json
+2025-07-21 16:22:13,710 - INFO - Comparing with previous stats to find citation changes.
+2025-07-21 16:22:13,710 - INFO - Calculating citation changes...
+2025-07-21 16:22:13,710 - INFO - Found 17 papers with new citations.
+2025-07-21 16:22:13,710 - INFO - Changes found, updating daily changes file.
+2025-07-21 16:22:13,711 - INFO - Saved daily changes to data/daily_changes.json
+2025-07-21 16:22:13,711 - INFO - Saving updated history to data/citation_history.json
+2025-07-21 16:22:13,723 - INFO - History update complete.

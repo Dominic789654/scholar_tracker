@@ -3,8 +3,8 @@ from src.markdown_writer import MarkdownWriter
 from src.chart_generator import ChartGenerator
 
 def main():
-    # Initialize tracker
-    tracker = ScholarTracker("Xiang Liu HKUST")
+    # Initialize tracker with author ID
+    tracker = ScholarTracker(author_id="VtK5lwUAAAAJ")
     
     # Update citation history
     if tracker.update_history():
@@ -36,6 +36,8 @@ def main():
             print("Failed to generate some reports")
     else:
         print("Failed to update citation history")
-
+        # print the error
+        # print(tracker.error)
+        
 if __name__ == "__main__":
     main() 
