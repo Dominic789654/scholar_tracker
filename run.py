@@ -6,16 +6,6 @@ from scholarly import scholarly, ProxyGenerator
 
 def main():
     # Configure ScraperAPI proxy if API key is available
-    scraper_api_key = os.getenv("SCRAPER_API_KEY")
-    if scraper_api_key:
-        print("ScraperAPI key found, setting up proxy...")
-        pg = ProxyGenerator()
-        success = pg.ScraperAPI(scraper_api_key)
-        if success:
-            scholarly.use_proxy(pg)
-            print("Successfully configured ScraperAPI proxy.")
-        else:
-            print("Failed to configure ScraperAPI proxy. Continuing without proxy.")
 
     # Initialize tracker with author ID
     tracker = ScholarTracker(author_id="VtK5lwUAAAAJ")
