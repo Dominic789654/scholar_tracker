@@ -1,8 +1,21 @@
 from src.scholar_tracker import ScholarTracker
 from src.markdown_writer import MarkdownWriter
 from src.chart_generator import ChartGenerator
+import os
+from scholarly import scholarly
 
 def main():
+    # Configure ScraperAPI proxy if API key is available
+    scraper_api_key = os.getenv("SCRAPER_API_KEY")
+    if scraper_api_key:
+        print("Using ScraperAPI proxy")
+        scholarly.use_proxy(
+            scraper_api_key=scraper_api_key,
+            # It's recommended to set your own ScraperAPI account's proxy URL
+            # to avoid potential rate limits on the default shared proxy
+            # proxy_url="http://proxy.example.com:8000" 
+        )
+
     # Initialize tracker with author ID
     tracker = ScholarTracker(author_id="VtK5lwUAAAAJ")
     
