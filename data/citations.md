@@ -1,34 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-07-21
+Last updated: 2025-07-22
 
 ## Overall Statistics
 - Total Citations: 504
 - H-index: 8
-
-## Today's Citation Changes 
-
-Total increase: +137 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 219 | 255 | +36 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 46 | 76 | +30 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 41 | 55 | +14 |
-| LongGenBench: Long-context Generation Benchmark | 7 | 21 | +14 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 10 | 17 | +7 |
-| Plum: Prompt learning using metaheuristic | 15 | 17 | +2 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 8 | 13 | +5 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 7 | 11 | +4 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 3 | 7 | +4 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 1 | 5 | +4 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 2 | 5 | +3 |
-| 3D Question Answering for City Scene Understanding | 1 | 5 | +4 |
-| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 1 | 4 | +3 |
-| Chunkkv: Semantic-preserving kv cache compression for efficient long-context llm inference | 0 | 4 | +4 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 0 | 3 | +3 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 0 | 2 | +2 |
-| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 0 | 1 | +1 |
 
 ## Paper Citations
 
@@ -63,6 +39,7 @@ Total increase: +137 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-07-22 | 504 | 8 |
 | 2025-07-21 | 504 | 8 |
 | 2025-05-05 | 367 | 7 |
 | 2025-04-23 | 357 | 7 |
@@ -72,7 +49,6 @@ Total increase: +137 citations
 | 2025-04-08 | 343 | 7 |
 | 2025-04-07 | 343 | 7 |
 | 2025-04-06 | 343 | 7 |
-| 2025-04-05 | 343 | 7 |
 
 ## Citation Trends
 
