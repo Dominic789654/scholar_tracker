@@ -1,17 +1,25 @@
 # Citation Statistics
 
-Last updated: 2025-07-22
+Last updated: 2025-07-23
 
 ## Overall Statistics
-- Total Citations: 504
+- Total Citations: 505
 - H-index: 8
+
+## Today's Citation Changes 
+
+Total increase: +1 citations
+
+| Paper | Previous | New | Increase |
+| ----- | --------- | --- | -------- |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 76 | 77 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 255 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 76 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 77 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 55 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 21 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 17 | 2024 |
@@ -29,6 +37,7 @@ Last updated: 2025-07-22
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 2 | 2024 |
 | Perovskite-llm: Knowledge-enhanced large language models for perovskite solar cell research | 1 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 1 | 2025 |
+| City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 0 | 2025 |
 | AnTKV: Anchor Token-Aware Sub-Bit Vector Quantization for KV Cache in Large Language Models | 0 | 2025 |
 | SSR: Speculative Parallel Scaling Reasoning in Test-time | 0 | 2025 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 0 | 2025 |
@@ -39,6 +48,7 @@ Last updated: 2025-07-22
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-07-23 | 505 | 8 |
 | 2025-07-22 | 504 | 8 |
 | 2025-07-21 | 504 | 8 |
 | 2025-05-05 | 367 | 7 |
@@ -48,7 +58,6 @@ Last updated: 2025-07-22
 | 2025-04-09 | 343 | 7 |
 | 2025-04-08 | 343 | 7 |
 | 2025-04-07 | 343 | 7 |
-| 2025-04-06 | 343 | 7 |
 
 ## Citation Trends
 
