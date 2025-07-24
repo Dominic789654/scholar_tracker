@@ -1,18 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-07-23
+Last updated: 2025-07-24
 
 ## Overall Statistics
 - Total Citations: 505
 - H-index: 8
-
-## Today's Citation Changes 
-
-Total increase: +1 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 76 | 77 | +1 |
 
 ## Paper Citations
 
@@ -48,6 +40,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-07-24 | 505 | 8 |
 | 2025-07-23 | 505 | 8 |
 | 2025-07-22 | 504 | 8 |
 | 2025-07-21 | 504 | 8 |
@@ -57,7 +50,6 @@ Total increase: +1 citations
 | 2025-04-10 | 343 | 7 |
 | 2025-04-09 | 343 | 7 |
 | 2025-04-08 | 343 | 7 |
-| 2025-04-07 | 343 | 7 |
 
 ## Citation Trends
 
