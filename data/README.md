@@ -1,24 +1,22 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2025-07-26*
+*Last Updated: 2025-07-25*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 513 |
-| H-index | 8 |
+| Total Citations | 524 |
+| H-index | 9 |
 | Total Papers | 24 |
-| Recent Citation Growth | +8 |
+| Recent Citation Growth | +11 |
 
 ### Today's Changes
-- Total Citations Increase: +8
+- Total Citations Increase: +11
 - Papers with new citations:
-  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +1 citations
+  - Active prompting with chain-of-thought for large language models: +3 citations
+  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +2 citations
+  - LongGenBench: Long-context Generation Benchmark: +1 citations
   - Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models: +1 citations
-  - ParZC: Parametric Zero-Cost Proxies for Efficient NAS: +1 citations
-  - Can LLMs Maintain Fundamental Abilities under KV Cache Compression?: +1 citations
-  - The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve?: +1 citations
-  - Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression: +1 citations
-  - Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing: +1 citations
-  - OracleKV: Oracle Guidance for Question-Independent KV Cache Compression: +1 citations
+  - Should We Really Edit Language Models? On the Evaluation of Edited Language Models: +3 citations
+  - Chunkkv: Semantic-preserving kv cache compression for efficient long-context llm inference: +1 citations
