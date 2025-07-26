@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2025-07-24
+Last updated: 2025-07-26
 
 ## Overall Statistics
 - Total Citations: 513
@@ -49,13 +49,13 @@ Total increase: +8 citations
 | SSR: Speculative Parallel Scaling Reasoning in Test-time | 0 | 2025 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 0 | 2025 |
 | CAFES: A Collaborative Multi-Agent Framework for Multi-Granular Multimodal Essay Scoring | 0 | 2025 |
-| OracleKV: Oracle Guidance for Question-Independent KV Cache Eviction | 0 | N/A |
 
 ## Citation History
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
-| 2025-07-24 | 513 | 8 |
+| 2025-07-26 | 513 | 8 |
+| 2025-07-24 | 505 | 8 |
 | 2025-07-23 | 505 | 8 |
 | 2025-07-22 | 504 | 8 |
 | 2025-07-21 | 504 | 8 |
@@ -64,7 +64,6 @@ Total increase: +8 citations
 | 2025-04-11 | 343 | 7 |
 | 2025-04-10 | 343 | 7 |
 | 2025-04-09 | 343 | 7 |
-| 2025-04-08 | 343 | 7 |
 
 ## Citation Trends
 
