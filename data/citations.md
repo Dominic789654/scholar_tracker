@@ -1,32 +1,29 @@
 # Citation Statistics
 
-Last updated: 2025-07-25
+Last updated: 2025-07-28
 
 ## Overall Statistics
-- Total Citations: 524
+- Total Citations: 527
 - H-index: 9
 
 ## Today's Citation Changes 
 
-Total increase: +11 citations
+Total increase: +3 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 255 | 258 | +3 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 78 | 80 | +2 |
-| LongGenBench: Long-context Generation Benchmark | 21 | 22 | +1 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 14 | 15 | +1 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 7 | 10 | +3 |
-| Chunkkv: Semantic-preserving kv cache compression for efficient long-context llm inference | 4 | 5 | +1 |
+| Active prompting with chain-of-thought for large language models | 258 | 259 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 80 | 81 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 22 | 23 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 258 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 80 | 2024 |
+| Active prompting with chain-of-thought for large language models | 259 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 81 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 55 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 22 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 23 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 17 | 2024 |
 | Plum: Prompt learning using metaheuristic | 17 | 2023 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 15 | 2023 |
@@ -52,6 +49,7 @@ Total increase: +11 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-07-28 | 527 | 9 |
 | 2025-07-25 | 524 | 9 |
 | 2025-07-26 | 513 | 8 |
 | 2025-07-24 | 505 | 8 |
@@ -61,7 +59,6 @@ Total increase: +11 citations
 | 2025-05-05 | 367 | 7 |
 | 2025-04-23 | 357 | 7 |
 | 2025-04-11 | 343 | 7 |
-| 2025-04-10 | 343 | 7 |
 
 ## Citation Trends
 
