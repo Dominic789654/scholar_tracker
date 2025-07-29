@@ -1,20 +1,19 @@
 # Citation Statistics
 
-Last updated: 2025-07-28
+Last updated: 2025-07-29
 
 ## Overall Statistics
-- Total Citations: 527
+- Total Citations: 529
 - H-index: 9
 
 ## Today's Citation Changes 
 
-Total increase: +3 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 258 | 259 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 80 | 81 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 22 | 23 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 23 | 24 | +1 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 15 | 16 | +1 |
 
 ## Paper Citations
 
@@ -23,10 +22,10 @@ Total increase: +3 citations
 | Active prompting with chain-of-thought for large language models | 259 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 81 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 55 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 23 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 24 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 17 | 2024 |
 | Plum: Prompt learning using metaheuristic | 17 | 2023 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 15 | 2023 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 16 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 12 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 10 | 2024 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 6 | 2025 |
@@ -49,6 +48,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-07-29 | 529 | 9 |
 | 2025-07-28 | 527 | 9 |
 | 2025-07-25 | 524 | 9 |
 | 2025-07-26 | 513 | 8 |
@@ -58,7 +58,6 @@ Total increase: +3 citations
 | 2025-07-21 | 504 | 8 |
 | 2025-05-05 | 367 | 7 |
 | 2025-04-23 | 357 | 7 |
-| 2025-04-11 | 343 | 7 |
 
 ## Citation Trends
 
