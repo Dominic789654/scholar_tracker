@@ -1,9 +1,9 @@
 # Citation Statistics
 
-Last updated: 2025-07-29
+Last updated: 2025-08-02
 
 ## Overall Statistics
-- Total Citations: 529
+- Total Citations: 531
 - H-index: 9
 
 ## Today's Citation Changes 
@@ -12,8 +12,8 @@ Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| LongGenBench: Long-context Generation Benchmark | 23 | 24 | +1 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 15 | 16 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 55 | 56 | +1 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 17 | 18 | +1 |
 
 ## Paper Citations
 
@@ -21,9 +21,9 @@ Total increase: +2 citations
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 259 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 81 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 55 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 56 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 24 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 17 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 18 | 2024 |
 | Plum: Prompt learning using metaheuristic | 17 | 2023 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 16 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 12 | 2024 |
@@ -48,6 +48,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-08-02 | 531 | 9 |
 | 2025-07-29 | 529 | 9 |
 | 2025-07-28 | 527 | 9 |
 | 2025-07-25 | 524 | 9 |
@@ -57,7 +58,6 @@ Total increase: +2 citations
 | 2025-07-22 | 504 | 8 |
 | 2025-07-21 | 504 | 8 |
 | 2025-05-05 | 367 | 7 |
-| 2025-04-23 | 357 | 7 |
 
 ## Citation Trends
 
