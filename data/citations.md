@@ -1,31 +1,32 @@
 # Citation Statistics
 
-Last updated: 2025-08-02
+Last updated: 2025-08-09
 
 ## Overall Statistics
-- Total Citations: 531
+- Total Citations: 537
 - H-index: 9
 
 ## Today's Citation Changes 
 
-Total increase: +2 citations
+Total increase: +6 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 55 | 56 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 17 | 18 | +1 |
+| Active prompting with chain-of-thought for large language models | 259 | 262 | +3 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 81 | 82 | +1 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 16 | 18 | +2 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 259 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 81 | 2024 |
+| Active prompting with chain-of-thought for large language models | 262 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 82 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 56 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 24 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 18 | 2024 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 18 | 2023 |
 | Plum: Prompt learning using metaheuristic | 17 | 2023 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 16 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 12 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 10 | 2024 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 6 | 2025 |
@@ -48,6 +49,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-08-09 | 537 | 9 |
 | 2025-08-02 | 531 | 9 |
 | 2025-07-29 | 529 | 9 |
 | 2025-07-28 | 527 | 9 |
@@ -57,7 +59,6 @@ Total increase: +2 citations
 | 2025-07-23 | 505 | 8 |
 | 2025-07-22 | 504 | 8 |
 | 2025-07-21 | 504 | 8 |
-| 2025-05-05 | 367 | 7 |
 
 ## Citation Trends
 
