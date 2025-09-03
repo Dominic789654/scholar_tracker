@@ -1,21 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-08-31
+Last updated: 2025-09-03
 
 ## Overall Statistics
 - Total Citations: 581
 - H-index: 9
-
-## Today's Citation Changes 
-
-Total increase: +4 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 278 | 279 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 24 | 25 | +1 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 5 | 6 | +1 |
-| 3D Question Answering for City Scene Understanding | 5 | 6 | +1 |
 
 ## Paper Citations
 
@@ -50,6 +39,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-09-03 | 581 | 9 |
 | 2025-08-31 | 581 | 9 |
 | 2025-08-28 | 577 | 9 |
 | 2025-08-21 | 566 | 9 |
@@ -59,7 +49,6 @@ Total increase: +4 citations
 | 2025-07-28 | 527 | 9 |
 | 2025-07-25 | 524 | 9 |
 | 2025-07-26 | 513 | 8 |
-| 2025-07-24 | 505 | 8 |
 
 ## Citation Trends
 
