@@ -1,20 +1,30 @@
 # Citation Statistics
 
-Last updated: 2025-09-04
+Last updated: 2025-09-09
 
 ## Overall Statistics
-- Total Citations: 581
+- Total Citations: 584
 - H-index: 9
+
+## Today's Citation Changes 
+
+Total increase: +3 citations
+
+| Paper | Previous | New | Increase |
+| ----- | --------- | --- | -------- |
+| Active prompting with chain-of-thought for large language models | 279 | 281 | +2 |
+| LongGenBench: Long-context Generation Benchmark | 25 | 26 | +1 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 0 | 1 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 279 | 2023 |
+| Active prompting with chain-of-thought for large language models | 281 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 86 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 57 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 29 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 25 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 26 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 20 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 18 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 14 | 2024 |
@@ -28,7 +38,7 @@ Last updated: 2025-09-04
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 3 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 2 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 2 | 2024 |
-| Perovskite-llm: Knowledge-enhanced large language models for perovskite solar cell research | 1 | 2025 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 1 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 0 | 2025 |
 | AnTKV: Anchor Token-Aware Sub-Bit Vector Quantization for KV Cache in Large Language Models | 0 | 2025 |
 | SSR: Speculative Parallel Scaling Reasoning in Test-time | 0 | 2025 |
@@ -39,6 +49,7 @@ Last updated: 2025-09-04
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-09-09 | 584 | 9 |
 | 2025-09-04 | 581 | 9 |
 | 2025-09-03 | 581 | 9 |
 | 2025-08-31 | 581 | 9 |
@@ -48,7 +59,6 @@ Last updated: 2025-09-04
 | 2025-08-02 | 531 | 9 |
 | 2025-07-29 | 529 | 9 |
 | 2025-07-28 | 527 | 9 |
-| 2025-07-25 | 524 | 9 |
 
 ## Citation Trends
 
