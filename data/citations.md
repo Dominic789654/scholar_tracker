@@ -1,30 +1,31 @@
 # Citation Statistics
 
-Last updated: 2025-09-09
+Last updated: 2025-09-15
 
 ## Overall Statistics
-- Total Citations: 584
+- Total Citations: 591
 - H-index: 9
 
 ## Today's Citation Changes 
 
-Total increase: +3 citations
+Total increase: +7 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 279 | 281 | +2 |
-| LongGenBench: Long-context Generation Benchmark | 25 | 26 | +1 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 0 | 1 | +1 |
+| Active prompting with chain-of-thought for large language models | 281 | 284 | +3 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 86 | 87 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 57 | 58 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 26 | 28 | +2 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 281 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 86 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 57 | 2024 |
+| Active prompting with chain-of-thought for large language models | 284 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 87 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 58 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 29 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 26 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 28 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 20 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 18 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 14 | 2024 |
@@ -49,6 +50,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-09-15 | 591 | 9 |
 | 2025-09-09 | 584 | 9 |
 | 2025-09-04 | 581 | 9 |
 | 2025-09-03 | 581 | 9 |
@@ -58,7 +60,6 @@ Total increase: +3 citations
 | 2025-08-09 | 537 | 9 |
 | 2025-08-02 | 531 | 9 |
 | 2025-07-29 | 529 | 9 |
-| 2025-07-28 | 527 | 9 |
 
 ## Citation Trends
 
