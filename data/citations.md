@@ -1,28 +1,26 @@
 # Citation Statistics
 
-Last updated: 2025-09-15
+Last updated: 2025-09-18
 
 ## Overall Statistics
-- Total Citations: 591
+- Total Citations: 593
 - H-index: 9
 
 ## Today's Citation Changes 
 
-Total increase: +7 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 281 | 284 | +3 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 86 | 87 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 57 | 58 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 26 | 28 | +2 |
+| Active prompting with chain-of-thought for large language models | 284 | 285 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 87 | 88 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 284 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 87 | 2024 |
+| Active prompting with chain-of-thought for large language models | 285 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 88 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 58 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 29 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 28 | 2024 |
@@ -50,6 +48,7 @@ Total increase: +7 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-09-18 | 593 | 9 |
 | 2025-09-15 | 591 | 9 |
 | 2025-09-09 | 584 | 9 |
 | 2025-09-04 | 581 | 9 |
@@ -59,7 +58,6 @@ Total increase: +7 citations
 | 2025-08-21 | 566 | 9 |
 | 2025-08-09 | 537 | 9 |
 | 2025-08-02 | 531 | 9 |
-| 2025-07-29 | 529 | 9 |
 
 ## Citation Trends
 
