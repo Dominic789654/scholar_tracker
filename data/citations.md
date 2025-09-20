@@ -1,9 +1,9 @@
 # Citation Statistics
 
-Last updated: 2025-09-18
+Last updated: 2025-09-20
 
 ## Overall Statistics
-- Total Citations: 593
+- Total Citations: 595
 - H-index: 9
 
 ## Today's Citation Changes 
@@ -12,8 +12,8 @@ Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 284 | 285 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 87 | 88 | +1 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 20 | 21 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 5 | 6 | +1 |
 
 ## Paper Citations
 
@@ -24,16 +24,16 @@ Total increase: +2 citations
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 58 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 29 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 28 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 20 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 21 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 18 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 14 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 10 | 2024 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 7 | 2025 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 6 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 6 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 6 | 2025 |
 | 3D Question Answering for City Scene Understanding | 6 | 2024 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 5 | 2025 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 5 | 2025 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 3 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 2 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 2 | 2024 |
@@ -48,6 +48,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-09-20 | 595 | 9 |
 | 2025-09-18 | 593 | 9 |
 | 2025-09-15 | 591 | 9 |
 | 2025-09-09 | 584 | 9 |
@@ -57,7 +58,6 @@ Total increase: +2 citations
 | 2025-08-28 | 577 | 9 |
 | 2025-08-21 | 566 | 9 |
 | 2025-08-09 | 537 | 9 |
-| 2025-08-02 | 531 | 9 |
 
 ## Citation Trends
 
