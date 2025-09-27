@@ -1,32 +1,34 @@
 # Citation Statistics
 
-Last updated: 2025-09-22
+Last updated: 2025-09-27
 
 ## Overall Statistics
-- Total Citations: 598
+- Total Citations: 608
 - H-index: 9
 
 ## Today's Citation Changes 
 
-Total increase: +3 citations
+Total increase: +10 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 285 | 287 | +2 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 3 | 4 | +1 |
+| Active prompting with chain-of-thought for large language models | 287 | 291 | +4 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 88 | 91 | +3 |
+| Plum: Prompt Learning Using Metaheuristics | 29 | 31 | +2 |
+| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 14 | 15 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 287 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 88 | 2024 |
+| Active prompting with chain-of-thought for large language models | 291 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 91 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 58 | 2024 |
-| Plum: Prompt Learning Using Metaheuristics | 29 | 2024 |
+| Plum: Prompt Learning Using Metaheuristics | 31 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 28 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 21 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 18 | 2023 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 14 | 2024 |
+| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 15 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 10 | 2024 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 7 | 2025 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 6 | 2025 |
@@ -48,6 +50,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-09-27 | 608 | 9 |
 | 2025-09-22 | 598 | 9 |
 | 2025-09-20 | 595 | 9 |
 | 2025-09-18 | 593 | 9 |
@@ -57,7 +60,6 @@ Total increase: +3 citations
 | 2025-09-03 | 581 | 9 |
 | 2025-08-31 | 581 | 9 |
 | 2025-08-28 | 577 | 9 |
-| 2025-08-21 | 566 | 9 |
 
 ## Citation Trends
 
