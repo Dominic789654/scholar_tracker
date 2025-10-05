@@ -5051,3 +5051,20 @@ Traceback (most recent call last):
     raise MaxTriesExceededException("Cannot Fetch from Google Scholar.")
 scholarly._proxy_generator.MaxTriesExceededException: Cannot Fetch from Google Scholar.
 2025-10-04 01:45:43,592 - WARNING - Aborting history update because fetching stats failed.
+2025-10-05 01:31:58,907 - INFO - ScholarTracker initialized for author_query: 'None', author_id: 'VtK5lwUAAAAJ'
+2025-10-05 01:31:58,907 - INFO - Starting history update...
+2025-10-05 01:31:58,907 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ'
+2025-10-05 01:31:58,907 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2025-10-05 01:32:00,864 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 200 OK"
+2025-10-05 01:32:00,921 - INFO - Getting https://scholar.google.com/citations?hl=en&tzom=300&user=VtK5lwUAAAAJ&view_op=list_mandates&pagesize=100
+2025-10-05 01:32:02,515 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&tzom=300&user=VtK5lwUAAAAJ&view_op=list_mandates&pagesize=100 "HTTP/1.1 200 OK"
+2025-10-05 01:32:02,525 - INFO - Found author: Xiang Liu
+2025-10-05 01:32:02,525 - INFO - Successfully collected stats for 24 papers.
+2025-10-05 01:32:02,525 - INFO - Loading existing history from data/citation_history.json
+2025-10-05 01:32:02,528 - INFO - Comparing with previous stats to find citation changes.
+2025-10-05 01:32:02,528 - INFO - Calculating citation changes...
+2025-10-05 01:32:02,529 - INFO - Found 5 papers with new citations.
+2025-10-05 01:32:02,529 - INFO - Changes found, updating daily changes file.
+2025-10-05 01:32:02,529 - INFO - Saved daily changes to data/daily_changes.json
+2025-10-05 01:32:02,529 - INFO - Saving updated history to data/citation_history.json
+2025-10-05 01:32:02,541 - INFO - History update complete.

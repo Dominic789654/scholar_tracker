@@ -1,21 +1,33 @@
 # Citation Statistics
 
-Last updated: 2025-09-29
+Last updated: 2025-10-05
 
 ## Overall Statistics
-- Total Citations: 607
+- Total Citations: 618
 - H-index: 9
+
+## Today's Citation Changes 
+
+Total increase: +11 citations
+
+| Paper | Previous | New | Increase |
+| ----- | --------- | --- | -------- |
+| Active prompting with chain-of-thought for large language models | 291 | 295 | +4 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 90 | 93 | +3 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 58 | 59 | +1 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 21 | 23 | +2 |
+| CAFES: A Collaborative Multi-Agent Framework for Multi-Granular Multimodal Essay Scoring | 0 | 1 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 291 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 90 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 58 | 2024 |
+| Active prompting with chain-of-thought for large language models | 295 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 93 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 59 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 31 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 28 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 21 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 23 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 18 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 15 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 10 | 2024 |
@@ -28,17 +40,18 @@ Last updated: 2025-09-29
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 4 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 2 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 2 | 2024 |
+| CAFES: A Collaborative Multi-Agent Framework for Multi-Granular Multimodal Essay Scoring | 1 | 2025 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 1 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 0 | 2025 |
 | AnTKV: Anchor Token-Aware Sub-Bit Vector Quantization for KV Cache in Large Language Models | 0 | 2025 |
 | SSR: Speculative Parallel Scaling Reasoning in Test-time | 0 | 2025 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 0 | 2025 |
-| CAFES: A Collaborative Multi-Agent Framework for Multi-Granular Multimodal Essay Scoring | 0 | 2025 |
 
 ## Citation History
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-10-05 | 618 | 9 |
 | 2025-09-29 | 607 | 9 |
 | 2025-09-28 | 607 | 9 |
 | 2025-09-27 | 608 | 9 |
@@ -48,7 +61,6 @@ Last updated: 2025-09-29
 | 2025-09-15 | 591 | 9 |
 | 2025-09-09 | 584 | 9 |
 | 2025-09-04 | 581 | 9 |
-| 2025-09-03 | 581 | 9 |
 
 ## Citation Trends
 
