@@ -1,22 +1,10 @@
 # Citation Statistics
 
-Last updated: 2025-10-05
+Last updated: 2025-10-06
 
 ## Overall Statistics
 - Total Citations: 618
 - H-index: 9
-
-## Today's Citation Changes 
-
-Total increase: +11 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 291 | 295 | +4 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 90 | 93 | +3 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 58 | 59 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 21 | 23 | +2 |
-| CAFES: A Collaborative Multi-Agent Framework for Multi-Granular Multimodal Essay Scoring | 0 | 1 | +1 |
 
 ## Paper Citations
 
@@ -51,6 +39,7 @@ Total increase: +11 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-10-06 | 618 | 9 |
 | 2025-10-05 | 618 | 9 |
 | 2025-09-29 | 607 | 9 |
 | 2025-09-28 | 607 | 9 |
@@ -60,7 +49,6 @@ Total increase: +11 citations
 | 2025-09-18 | 593 | 9 |
 | 2025-09-15 | 591 | 9 |
 | 2025-09-09 | 584 | 9 |
-| 2025-09-04 | 581 | 9 |
 
 ## Citation Trends
 
