@@ -1,16 +1,25 @@
 # Citation Statistics
 
-Last updated: 2025-10-06
+Last updated: 2025-10-09
 
 ## Overall Statistics
-- Total Citations: 618
+- Total Citations: 620
 - H-index: 9
+
+## Today's Citation Changes 
+
+Total increase: +2 citations
+
+| Paper | Previous | New | Increase |
+| ----- | --------- | --- | -------- |
+| Active prompting with chain-of-thought for large language models | 295 | 296 | +1 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 1 | 2 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 295 | 2023 |
+| Active prompting with chain-of-thought for large language models | 296 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 93 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 59 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 31 | 2024 |
@@ -26,10 +35,10 @@ Last updated: 2025-10-06
 | 3D Question Answering for City Scene Understanding | 6 | 2024 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 5 | 2025 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 4 | 2025 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 2 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 2 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 2 | 2024 |
 | CAFES: A Collaborative Multi-Agent Framework for Multi-Granular Multimodal Essay Scoring | 1 | 2025 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 1 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 0 | 2025 |
 | AnTKV: Anchor Token-Aware Sub-Bit Vector Quantization for KV Cache in Large Language Models | 0 | 2025 |
 | SSR: Speculative Parallel Scaling Reasoning in Test-time | 0 | 2025 |
@@ -39,6 +48,7 @@ Last updated: 2025-10-06
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-10-09 | 620 | 9 |
 | 2025-10-06 | 618 | 9 |
 | 2025-10-05 | 618 | 9 |
 | 2025-09-29 | 607 | 9 |
@@ -48,7 +58,6 @@ Last updated: 2025-10-06
 | 2025-09-20 | 595 | 9 |
 | 2025-09-18 | 593 | 9 |
 | 2025-09-15 | 591 | 9 |
-| 2025-09-09 | 584 | 9 |
 
 ## Citation Trends
 
