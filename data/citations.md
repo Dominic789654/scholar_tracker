@@ -1,30 +1,27 @@
 # Citation Statistics
 
-Last updated: 2025-10-10
+Last updated: 2025-10-14
 
 ## Overall Statistics
-- Total Citations: 626
+- Total Citations: 629
 - H-index: 9
 
 ## Today's Citation Changes 
 
-Total increase: +6 citations
+Total increase: +3 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 296 | 298 | +2 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 93 | 94 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 28 | 29 | +1 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 6 | 7 | +1 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 2 | 3 | +1 |
+| Active prompting with chain-of-thought for large language models | 298 | 300 | +2 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 59 | 60 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 298 | 2023 |
+| Active prompting with chain-of-thought for large language models | 300 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 94 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 59 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 60 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 31 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 29 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 23 | 2024 |
@@ -51,6 +48,7 @@ Total increase: +6 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-10-14 | 629 | 9 |
 | 2025-10-10 | 626 | 9 |
 | 2025-10-09 | 620 | 9 |
 | 2025-10-06 | 618 | 9 |
@@ -60,7 +58,6 @@ Total increase: +6 citations
 | 2025-09-27 | 608 | 9 |
 | 2025-09-22 | 598 | 9 |
 | 2025-09-20 | 595 | 9 |
-| 2025-09-18 | 593 | 9 |
 
 ## Citation Trends
 
