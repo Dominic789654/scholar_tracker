@@ -1,25 +1,29 @@
 # Citation Statistics
 
-Last updated: 2025-10-20
+Last updated: 2025-10-22
 
 ## Overall Statistics
-- Total Citations: 637
+- Total Citations: 642
 - H-index: 9
 
 ## Today's Citation Changes 
 
-Total increase: +4 citations
+Total increase: +5 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 300 | 304 | +4 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 96 | 97 | +1 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 6 | 7 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 6 | 7 | +1 |
+| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 4 | 5 | +1 |
+| LPZero: Language Model Zero-cost Proxy Search from Zero | 3 | 4 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 304 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 96 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 97 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 62 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 31 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 29 | 2024 |
@@ -27,14 +31,14 @@ Total increase: +4 citations
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 18 | 2023 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 15 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 10 | 2024 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 7 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 7 | 2025 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 7 | 2025 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 6 | 2025 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 6 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 7 | 2025 |
 | 3D Question Answering for City Scene Understanding | 6 | 2024 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 5 | 2025 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 4 | 2025 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 3 | 2024 |
+| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 5 | 2025 |
+| LPZero: Language Model Zero-cost Proxy Search from Zero | 4 | 2024 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 2 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 2 | 2025 |
 | CAFES: A Collaborative Multi-Agent Framework for Multi-Granular Multimodal Essay Scoring | 1 | 2025 |
@@ -47,6 +51,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-10-22 | 642 | 9 |
 | 2025-10-20 | 637 | 9 |
 | 2025-10-19 | 633 | 9 |
 | 2025-10-18 | 633 | 9 |
@@ -56,7 +61,6 @@ Total increase: +4 citations
 | 2025-10-10 | 626 | 9 |
 | 2025-10-09 | 620 | 9 |
 | 2025-10-06 | 618 | 9 |
-| 2025-10-05 | 618 | 9 |
 
 ## Citation Trends
 
