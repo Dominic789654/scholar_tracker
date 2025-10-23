@@ -1,29 +1,25 @@
 # Citation Statistics
 
-Last updated: 2025-10-22
+Last updated: 2025-10-23
 
 ## Overall Statistics
-- Total Citations: 642
+- Total Citations: 643
 - H-index: 9
 
 ## Today's Citation Changes 
 
-Total increase: +5 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 96 | 97 | +1 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 6 | 7 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 6 | 7 | +1 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 4 | 5 | +1 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 3 | 4 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 97 | 98 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 304 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 97 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 98 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 62 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 31 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 29 | 2024 |
@@ -51,6 +47,7 @@ Total increase: +5 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-10-23 | 643 | 9 |
 | 2025-10-22 | 642 | 9 |
 | 2025-10-20 | 637 | 9 |
 | 2025-10-19 | 633 | 9 |
@@ -60,7 +57,6 @@ Total increase: +5 citations
 | 2025-10-14 | 629 | 9 |
 | 2025-10-10 | 626 | 9 |
 | 2025-10-09 | 620 | 9 |
-| 2025-10-06 | 618 | 9 |
 
 ## Citation Trends
 
