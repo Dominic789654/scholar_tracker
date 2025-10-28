@@ -1,30 +1,26 @@
 # Citation Statistics
 
-Last updated: 2025-10-27
+Last updated: 2025-10-28
 
 ## Overall Statistics
-- Total Citations: 670
+- Total Citations: 674
 - H-index: 9
 
 ## Today's Citation Changes 
 
-Total increase: +6 citations
+Total increase: +4 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 305 | 306 | +1 |
-| Plum: Prompt Learning Using Metaheuristics | 33 | 34 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 29 | 30 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 27 | 28 | +1 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 7 | 8 | +1 |
-| SSR: Speculative Parallel Scaling Reasoning in Test-time | 0 | 1 | +1 |
+| Active prompting with chain-of-thought for large language models | 306 | 309 | +3 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 106 | 107 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 306 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 106 | 2024 |
+| Active prompting with chain-of-thought for large language models | 309 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 107 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 66 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 34 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 30 | 2024 |
@@ -44,6 +40,7 @@ Total increase: +6 citations
 | SSR: Speculative Parallel Scaling Reasoning in Test-time | 1 | 2025 |
 | CAFES: A Collaborative Multi-Agent Framework for Multi-Granular Multimodal Essay Scoring | 1 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 1 | 2025 |
+| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 0 | 2025 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 0 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 0 | 2025 |
 | AnTKV: Anchor Token-Aware Sub-Bit Vector Quantization for KV Cache in Large Language Models | 0 | 2025 |
@@ -53,6 +50,7 @@ Total increase: +6 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-10-28 | 674 | 9 |
 | 2025-10-27 | 670 | 9 |
 | 2025-10-25 | 664 | 9 |
 | 2025-10-23 | 643 | 9 |
@@ -62,7 +60,6 @@ Total increase: +6 citations
 | 2025-10-18 | 633 | 9 |
 | 2025-10-16 | 629 | 9 |
 | 2025-10-15 | 630 | 9 |
-| 2025-10-14 | 629 | 9 |
 
 ## Citation Trends
 

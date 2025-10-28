@@ -1,22 +1,18 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2025-10-27*
+*Last Updated: 2025-10-28*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 670 |
+| Total Citations | 674 |
 | H-index | 9 |
-| Total Papers | 25 |
-| Recent Citation Growth | +6 |
+| Total Papers | 26 |
+| Recent Citation Growth | +4 |
 
 ### Today's Changes
-- Total Citations Increase: +6
+- Total Citations Increase: +4
 - Papers with new citations:
-  - Active prompting with chain-of-thought for large language models: +1 citations
-  - Plum: Prompt Learning Using Metaheuristics: +1 citations
-  - LongGenBench: Long-context Generation Benchmark: +1 citations
-  - Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models: +1 citations
-  - EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models: +1 citations
-  - SSR: Speculative Parallel Scaling Reasoning in Test-time: +1 citations
+  - Active prompting with chain-of-thought for large language models: +3 citations
+  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +1 citations
