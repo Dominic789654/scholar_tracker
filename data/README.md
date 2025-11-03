@@ -1,20 +1,20 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2025-11-01*
+*Last Updated: 2025-11-03*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 679 |
+| Total Citations | 683 |
 | H-index | 9 |
-| Total Papers | 26 |
-| Recent Citation Growth | +5 |
+| Total Papers | 27 |
+| Recent Citation Growth | +4 |
 
 ### Today's Changes
-- Total Citations Increase: +5
+- Total Citations Increase: +4
 - Papers with new citations:
-  - Active prompting with chain-of-thought for large language models: +2 citations
-  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +1 citations
-  - Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models: +1 citations
-  - Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models: +1 citations
+  - Can LLMs Maintain Fundamental Abilities under KV Cache Compression?: +1 citations
+  - The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve?: +1 citations
+  - Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing: +1 citations
+  - OracleKV: Oracle Guidance for Question-Independent KV Cache Compression: +1 citations
