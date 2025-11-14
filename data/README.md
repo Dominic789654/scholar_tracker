@@ -1,21 +1,18 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2025-11-13*
+*Last Updated: 2025-11-14*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 714 |
+| Total Citations | 716 |
 | H-index | 10 |
 | Total Papers | 28 |
-| Recent Citation Growth | +7 |
+| Recent Citation Growth | +2 |
 
 ### Today's Changes
-- Total Citations Increase: +7
+- Total Citations Increase: +2
 - Papers with new citations:
-  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +4 citations
-  - LongGenBench: Long-context Generation Benchmark: +1 citations
-  - Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models: +1 citations
-  - ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference: +1 citations
-  - 3D Question Answering for City Scene Understanding: +1 citations
+  - Active prompting with chain-of-thought for large language models: +1 citations
+  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +1 citations

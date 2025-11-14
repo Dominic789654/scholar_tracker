@@ -1,29 +1,26 @@
 # Citation Statistics
 
-Last updated: 2025-11-13
+Last updated: 2025-11-14
 
 ## Overall Statistics
-- Total Citations: 714
+- Total Citations: 716
 - H-index: 10
 
 ## Today's Citation Changes 
 
-Total increase: +7 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 112 | 116 | +4 |
-| LongGenBench: Long-context Generation Benchmark | 32 | 33 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 32 | 33 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 9 | 10 | +1 |
-| 3D Question Answering for City Scene Understanding | 6 | 7 | +1 |
+| Active prompting with chain-of-thought for large language models | 317 | 318 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 116 | 117 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 317 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 116 | 2024 |
+| Active prompting with chain-of-thought for large language models | 318 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 117 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 69 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 34 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 33 | 2024 |
@@ -55,6 +52,7 @@ Total increase: +7 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-11-14 | 716 | 10 |
 | 2025-11-13 | 714 | 10 |
 | 2025-11-07 | 707 | 9 |
 | 2025-11-05 | 695 | 9 |
@@ -64,7 +62,6 @@ Total increase: +7 citations
 | 2025-10-27 | 670 | 9 |
 | 2025-10-25 | 664 | 9 |
 | 2025-10-23 | 643 | 9 |
-| 2025-10-22 | 642 | 9 |
 
 ## Citation Trends
 
