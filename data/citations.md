@@ -1,36 +1,28 @@
 # Citation Statistics
 
-Last updated: 2025-11-29
+Last updated: 2025-12-04
 
 ## Overall Statistics
-- Total Citations: 738
+- Total Citations: 742
 - H-index: 10
 
 ## Today's Citation Changes 
 
-Total increase: +17 citations
+Total increase: +4 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 321 | 326 | +5 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 119 | 121 | +2 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 69 | 71 | +2 |
-| LongGenBench: Long-context Generation Benchmark | 33 | 34 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 33 | 34 | +1 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 20 | 21 | +1 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 8 | 9 | +1 |
-| 3D Question Answering for City Scene Understanding | 7 | 9 | +2 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 5 | 6 | +1 |
-| City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 0 | 1 | +1 |
+| Active prompting with chain-of-thought for large language models | 326 | 328 | +2 |
+| LongGenBench: Long-context Generation Benchmark | 34 | 36 | +2 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 326 | 2023 |
+| Active prompting with chain-of-thought for large language models | 328 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 121 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 71 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 34 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 36 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 34 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 34 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 21 | 2024 |
@@ -60,6 +52,7 @@ Total increase: +17 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-12-04 | 742 | 10 |
 | 2025-11-29 | 738 | 10 |
 | 2025-11-21 | 721 | 10 |
 | 2025-11-14 | 716 | 10 |
@@ -69,7 +62,6 @@ Total increase: +17 citations
 | 2025-11-03 | 683 | 9 |
 | 2025-11-01 | 679 | 9 |
 | 2025-10-28 | 674 | 9 |
-| 2025-10-27 | 670 | 9 |
 
 ## Citation Trends
 
