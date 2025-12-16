@@ -1,29 +1,25 @@
 # Citation Statistics
 
-Last updated: 2025-12-12
+Last updated: 2025-12-16
 
 ## Overall Statistics
-- Total Citations: 755
-- H-index: 10
+- Total Citations: 757
+- H-index: 11
 
 ## Today's Citation Changes 
 
-Total increase: +13 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 328 | 333 | +5 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 121 | 125 | +4 |
-| Plum: Prompt Learning Using Metaheuristics | 34 | 35 | +1 |
-| 3D Question Answering for City Scene Understanding | 9 | 11 | +2 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 4 | 5 | +1 |
-| Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 0 | 1 | +1 |
+| Active prompting with chain-of-thought for large language models | 333 | 334 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 10 | 11 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 333 | 2023 |
+| Active prompting with chain-of-thought for large language models | 334 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 125 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 71 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 35 | 2024 |
@@ -32,8 +28,8 @@ Total increase: +13 citations
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 21 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 19 | 2023 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 12 | 2024 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 11 | 2025 |
 | 3D Question Answering for City Scene Understanding | 11 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 10 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 9 | 2025 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 9 | 2025 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 6 | 2025 |
@@ -56,6 +52,7 @@ Total increase: +13 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-12-16 | 757 | 11 |
 | 2025-12-12 | 755 | 10 |
 | 2025-12-04 | 742 | 10 |
 | 2025-11-29 | 738 | 10 |
@@ -65,7 +62,6 @@ Total increase: +13 citations
 | 2025-11-07 | 707 | 9 |
 | 2025-11-05 | 695 | 9 |
 | 2025-11-03 | 683 | 9 |
-| 2025-11-01 | 679 | 9 |
 
 ## Citation Trends
 
