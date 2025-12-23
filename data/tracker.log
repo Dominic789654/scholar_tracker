@@ -9964,3 +9964,94 @@ Traceback (most recent call last):
     raise MaxTriesExceededException("Cannot Fetch from Google Scholar.")
 scholarly._proxy_generator.MaxTriesExceededException: Cannot Fetch from Google Scholar.
 2025-12-22 01:49:13,706 - WARNING - Aborting history update because fetching stats failed.
+2025-12-23 01:32:51,834 - INFO - ScholarTracker initialized for author_query: 'None', author_id: 'VtK5lwUAAAAJ'
+2025-12-23 01:32:51,834 - INFO - Starting history update...
+2025-12-23 01:32:51,834 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ'
+2025-12-23 01:32:51,834 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2025-12-23 01:32:53,986 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 403 Forbidden"
+2025-12-23 01:32:53,986 - INFO - Got an access denied error (403).
+2025-12-23 01:32:53,986 - INFO - No other connections possible.
+2025-12-23 01:32:53,986 - INFO - Retrying immediately with another session.
+2025-12-23 01:32:55,243 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2025-12-23 01:32:55,243 - INFO - Retrying with a new session.
+2025-12-23 01:32:57,593 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 403 Forbidden"
+2025-12-23 01:32:57,593 - INFO - Got an access denied error (403).
+2025-12-23 01:32:57,594 - INFO - No other connections possible.
+2025-12-23 01:32:57,594 - INFO - Will retry after 108.24 seconds (with another session).
+2025-12-23 01:34:46,979 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2025-12-23 01:34:46,979 - INFO - Retrying with a new session.
+2025-12-23 01:34:48,648 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 403 Forbidden"
+2025-12-23 01:34:48,649 - INFO - Got an access denied error (403).
+2025-12-23 01:34:48,649 - INFO - No other connections possible.
+2025-12-23 01:34:48,649 - INFO - Will retry after 60.98 seconds (with another session).
+2025-12-23 01:35:50,796 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2025-12-23 01:35:50,796 - INFO - Retrying with a new session.
+2025-12-23 01:35:53,280 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 403 Forbidden"
+2025-12-23 01:35:53,280 - INFO - Got an access denied error (403).
+2025-12-23 01:35:53,280 - INFO - No other connections possible.
+2025-12-23 01:35:53,280 - INFO - Will retry after 112.87 seconds (with another session).
+2025-12-23 01:37:47,389 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2025-12-23 01:37:47,389 - INFO - Retrying with a new session.
+2025-12-23 01:37:48,786 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 403 Forbidden"
+2025-12-23 01:37:48,786 - INFO - Got an access denied error (403).
+2025-12-23 01:37:48,786 - INFO - No other connections possible.
+2025-12-23 01:37:48,786 - INFO - Will retry after 74.23 seconds (with another session).
+2025-12-23 01:39:04,294 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2025-12-23 01:39:04,294 - INFO - Retrying with a new session.
+2025-12-23 01:39:04,345 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2025-12-23 01:39:06,618 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 403 Forbidden"
+2025-12-23 01:39:06,619 - INFO - Got an access denied error (403).
+2025-12-23 01:39:06,619 - INFO - No other connections possible.
+2025-12-23 01:39:06,619 - INFO - Will retry after 82.34 seconds (with another session).
+2025-12-23 01:40:30,561 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2025-12-23 01:40:30,561 - INFO - Retrying with a new session.
+2025-12-23 01:40:32,539 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 403 Forbidden"
+2025-12-23 01:40:32,539 - INFO - Got an access denied error (403).
+2025-12-23 01:40:32,539 - INFO - No other connections possible.
+2025-12-23 01:40:32,539 - INFO - Will retry after 113.57 seconds (with another session).
+2025-12-23 01:42:27,376 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2025-12-23 01:42:27,377 - INFO - Retrying with a new session.
+2025-12-23 01:42:29,710 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 403 Forbidden"
+2025-12-23 01:42:29,710 - INFO - Got an access denied error (403).
+2025-12-23 01:42:29,710 - INFO - No other connections possible.
+2025-12-23 01:42:29,710 - INFO - Will retry after 77.23 seconds (with another session).
+2025-12-23 01:43:48,268 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2025-12-23 01:43:48,269 - INFO - Retrying with a new session.
+2025-12-23 01:43:50,227 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 403 Forbidden"
+2025-12-23 01:43:50,227 - INFO - Got an access denied error (403).
+2025-12-23 01:43:50,227 - INFO - No other connections possible.
+2025-12-23 01:43:50,227 - INFO - Will retry after 74.28 seconds (with another session).
+2025-12-23 01:45:06,144 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2025-12-23 01:45:06,144 - INFO - Retrying with a new session.
+2025-12-23 01:45:08,620 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 403 Forbidden"
+2025-12-23 01:45:08,620 - INFO - Got an access denied error (403).
+2025-12-23 01:45:08,620 - INFO - No other connections possible.
+2025-12-23 01:45:08,620 - INFO - Will retry after 83.96 seconds (with another session).
+2025-12-23 01:46:34,130 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2025-12-23 01:46:34,130 - INFO - Retrying with a new session.
+2025-12-23 01:46:34,181 - ERROR - Error fetching scholar data: Cannot Fetch from Google Scholar.
+Traceback (most recent call last):
+  File "/home/runner/work/scholar_tracker/scholar_tracker/src/scholar_tracker.py", line 30, in get_author_stats
+    author = scholarly.search_author_id(self.author_id, filled=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_scholarly.py", line 349, in search_author_id
+    return self.__nav.search_author_id(id, filled, sortby, publication_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_navigator.py", line 314, in search_author_id
+    res = author_parser.fill(res, sortby=sortby, publication_limit=publication_limit)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/author_parser.py", line 462, in fill
+    raise(e)
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/author_parser.py", line 441, in fill
+    soup = self.nav._get_soup(url)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_navigator.py", line 239, in _get_soup
+    html = self._get_page('https://scholar.google.com{0}'.format(url))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_navigator.py", line 188, in _get_page
+    return self._get_page(pagerequest, True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_navigator.py", line 190, in _get_page
+    raise MaxTriesExceededException("Cannot Fetch from Google Scholar.")
+scholarly._proxy_generator.MaxTriesExceededException: Cannot Fetch from Google Scholar.
+2025-12-23 01:46:34,182 - WARNING - Aborting history update because fetching stats failed.
