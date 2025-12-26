@@ -1,32 +1,30 @@
 # Citation Statistics
 
-Last updated: 2025-12-21
+Last updated: 2025-12-26
 
 ## Overall Statistics
-- Total Citations: 767
+- Total Citations: 771
 - H-index: 11
 
 ## Today's Citation Changes 
 
-Total increase: +10 citations
+Total increase: +4 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 334 | 337 | +3 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 125 | 128 | +3 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 9 | 11 | +2 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 5 | 7 | +2 |
+| Active prompting with chain-of-thought for large language models | 337 | 339 | +2 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 34 | 36 | +2 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 337 | 2023 |
+| Active prompting with chain-of-thought for large language models | 339 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 128 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 71 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 36 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 35 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 35 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 34 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 21 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 19 | 2023 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 12 | 2024 |
@@ -54,6 +52,7 @@ Total increase: +10 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2025-12-26 | 771 | 11 |
 | 2025-12-21 | 767 | 11 |
 | 2025-12-16 | 757 | 11 |
 | 2025-12-12 | 755 | 10 |
@@ -63,7 +62,6 @@ Total increase: +10 citations
 | 2025-11-14 | 716 | 10 |
 | 2025-11-13 | 714 | 10 |
 | 2025-11-07 | 707 | 9 |
-| 2025-11-05 | 695 | 9 |
 
 ## Citation Trends
 
