@@ -1,31 +1,33 @@
 # Citation Statistics
 
-Last updated: 2025-12-26
+Last updated: 2026-01-07
 
 ## Overall Statistics
-- Total Citations: 771
+- Total Citations: 777
 - H-index: 11
 
 ## Today's Citation Changes 
 
-Total increase: +4 citations
+Total increase: +6 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 337 | 339 | +2 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 34 | 36 | +2 |
+| Active prompting with chain-of-thought for large language models | 339 | 341 | +2 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 128 | 129 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 71 | 73 | +2 |
+| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 21 | 22 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 339 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 128 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 71 | 2024 |
+| Active prompting with chain-of-thought for large language models | 341 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 129 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 73 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 36 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 35 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 35 | 2024 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 21 | 2024 |
+| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 22 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 19 | 2023 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 12 | 2024 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 11 | 2025 |
@@ -52,6 +54,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-01-07 | 777 | 11 |
 | 2025-12-26 | 771 | 11 |
 | 2025-12-21 | 767 | 11 |
 | 2025-12-16 | 757 | 11 |
@@ -61,7 +64,6 @@ Total increase: +4 citations
 | 2025-11-21 | 721 | 10 |
 | 2025-11-14 | 716 | 10 |
 | 2025-11-13 | 714 | 10 |
-| 2025-11-07 | 707 | 9 |
 
 ## Citation Trends
 
