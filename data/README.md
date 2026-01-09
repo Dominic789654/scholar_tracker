@@ -1,20 +1,17 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-01-07*
+*Last Updated: 2026-01-09*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 777 |
+| Total Citations | 778 |
 | H-index | 11 |
 | Total Papers | 28 |
-| Recent Citation Growth | +6 |
+| Recent Citation Growth | +1 |
 
 ### Today's Changes
-- Total Citations Increase: +6
+- Total Citations Increase: +1
 - Papers with new citations:
-  - Active prompting with chain-of-thought for large language models: +2 citations
-  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +1 citations
-  - Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models: +2 citations
-  - ParZC: Parametric Zero-Cost Proxies for Efficient NAS: +1 citations
+  - SSR: Speculative Parallel Scaling Reasoning in Test-time: +1 citations

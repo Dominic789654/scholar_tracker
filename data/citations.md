@@ -1,21 +1,18 @@
 # Citation Statistics
 
-Last updated: 2026-01-07
+Last updated: 2026-01-09
 
 ## Overall Statistics
-- Total Citations: 777
+- Total Citations: 778
 - H-index: 11
 
 ## Today's Citation Changes 
 
-Total increase: +6 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 339 | 341 | +2 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 128 | 129 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 71 | 73 | +2 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 21 | 22 | +1 |
+| SSR: Speculative Parallel Scaling Reasoning in Test-time | 1 | 2 | +1 |
 
 ## Paper Citations
 
@@ -38,11 +35,11 @@ Total increase: +6 citations
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 6 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 6 | 2025 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 6 | 2025 |
+| SSR: Speculative Parallel Scaling Reasoning in Test-time | 2 | 2025 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 2 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 2 | 2025 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 1 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 1 | 2025 |
-| SSR: Speculative Parallel Scaling Reasoning in Test-time | 1 | 2025 |
 | CAFES: A Collaborative Multi-Agent Framework for Multi-Granular Multimodal Essay Scoring | 1 | 2025 |
 | Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval | 0 | 2025 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 0 | 2025 |
@@ -54,6 +51,7 @@ Total increase: +6 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-01-09 | 778 | 11 |
 | 2026-01-07 | 777 | 11 |
 | 2025-12-26 | 771 | 11 |
 | 2025-12-21 | 767 | 11 |
@@ -63,7 +61,6 @@ Total increase: +6 citations
 | 2025-11-29 | 738 | 10 |
 | 2025-11-21 | 721 | 10 |
 | 2025-11-14 | 716 | 10 |
-| 2025-11-13 | 714 | 10 |
 
 ## Citation Trends
 
