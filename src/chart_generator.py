@@ -1,4 +1,6 @@
 import json
+import logging
+from logging.handlers import RotatingFileHandler
 import plotly.graph_objects as go
 import plotly.subplots as sp
 import pandas as pd
@@ -8,17 +10,17 @@ class ChartGenerator:
     def __init__(self, data_file, output_dir):
         self.data_file = data_file
         self.output_dir = output_dir
-        
+
     def load_data(self):
         """Load citation history data"""
         with open(self.data_file, 'r') as f:
             history = json.load(f)
         return history
-        
+
     def generate_charts(self):
         """Generate all charts"""
         history = self.load_data()
-        
+
         # Convert to pandas DataFrame for easier handling
         df = pd.DataFrame([
             {
@@ -27,13 +29,13 @@ class ChartGenerator:
                 'h_index': entry['h_index']
             } for entry in history
         ])
-        
+
         # Sort by date
         df = df.sort_values('date')
-        
+
         # Create figure with secondary y-axis
         fig = sp.make_subplots(specs=[[{"secondary_y": True}]])
-        
+
         # Add total citations line
         fig.add_trace(
             go.Scatter(
@@ -44,7 +46,7 @@ class ChartGenerator:
             ),
             secondary_y=False
         )
-        
+
         # Add h-index line
         fig.add_trace(
             go.Scatter(
@@ -55,7 +57,7 @@ class ChartGenerator:
             ),
             secondary_y=True
         )
-        
+
         # Update layout
         fig.update_layout(
             title="Citation Metrics Over Time",
@@ -65,18 +67,21 @@ class ChartGenerator:
             hovermode='x unified',
             template='plotly_white'
         )
-        
-        # Save as HTML (interactive)
-        fig.write_html(f"{self.output_dir}/citation_trends.html")
-        
+
+        # Save as HTML (interactive) - use CDN to reduce file size from 3.5MB to ~50KB
+        fig.write_html(
+            f"{self.output_dir}/citation_trends.html",
+            include_plotlyjs='cdn'
+        )
+
         # Save as PNG (static)
         fig.write_image(f"{self.output_dir}/citation_trends.png")
-        
+
         # Generate individual paper trends
         self.generate_paper_trends(history)
-        
+
     def generate_paper_trends(self, history):
-        """Generate trends for individual papers"""
+        """Generate trends for individual papers - only top 10 by citation count"""
         # Create DataFrame for paper citations
         paper_data = []
         for entry in history:
@@ -87,15 +92,22 @@ class ChartGenerator:
                     'title': paper['title'],
                     'citations': paper['citations']
                 })
-        
+
         df = pd.DataFrame(paper_data)
-        
+
+        # Get top 10 papers by current citation count
+        latest_citations = df.groupby('title')['citations'].last().sort_values(ascending=False)
+        top_papers = latest_citations.head(10).index.tolist()
+
+        # Filter to only top 10 papers
+        df = df[df['title'].isin(top_papers)]
+
         # Create figure
         fig = go.Figure()
-        
-        # Add line for each paper
-        for title in df['title'].unique():
-            paper_df = df[df['title'] == title]
+
+        # Add line for each paper (only top 10)
+        for title in top_papers:
+            paper_df = df[df['title'] == title].sort_values('date')
             fig.add_trace(
                 go.Scatter(
                     x=paper_df['date'],
@@ -104,23 +116,29 @@ class ChartGenerator:
                     mode='lines+markers'
                 )
             )
-        
+
         # Update layout
         fig.update_layout(
-            title="Individual Paper Citations Over Time",
+            title=f"Top 10 Papers by Citation Count",
             xaxis_title="Date",
             yaxis_title="Citations",
             hovermode='x unified',
             template='plotly_white',
             showlegend=True,
             legend=dict(
+                orientation="v",
                 yanchor="top",
-                y=-0.2,
+                y=0.99,
                 xanchor="left",
-                x=0
-            )
+                x=1.02,
+                bgcolor='rgba(255,255,255,0.8)'
+            ),
+            margin=dict(r=150)
         )
-        
-        # Save charts
-        fig.write_html(f"{self.output_dir}/paper_trends.html")
-        fig.write_image(f"{self.output_dir}/paper_trends.png") 
+
+        # Save charts - use CDN to reduce file size
+        fig.write_html(
+            f"{self.output_dir}/paper_trends.html",
+            include_plotlyjs='cdn'
+        )
+        fig.write_image(f"{self.output_dir}/paper_trends.png")
