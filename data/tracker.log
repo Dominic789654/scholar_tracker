@@ -1869,3 +1869,37 @@ Traceback (most recent call last):
     raise MaxTriesExceededException("Cannot Fetch from Google Scholar.")
 scholarly._proxy_generator.MaxTriesExceededException: Cannot Fetch from Google Scholar.
 2026-01-23 02:13:15,191 - WARNING - Aborting history update because fetching stats failed.
+2026-01-24 01:33:12,372 - INFO - ScholarTracker initialized for author_query: 'None', author_id: 'VtK5lwUAAAAJ'
+2026-01-24 01:33:12,372 - INFO - Starting history update...
+2026-01-24 01:33:12,373 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/3)
+2026-01-24 01:33:12,373 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2026-01-24 01:33:14,560 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 200 OK"
+2026-01-24 01:33:14,576 - ERROR - Error fetching scholar data (attempt 1/3): 'NoneType' object has no attribute 'get'
+2026-01-24 01:33:14,577 - INFO - Retrying in 5 seconds...
+2026-01-24 01:33:19,577 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 2/3)
+2026-01-24 01:33:19,577 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2026-01-24 01:33:21,508 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 200 OK"
+2026-01-24 01:33:21,525 - ERROR - Error fetching scholar data (attempt 2/3): 'NoneType' object has no attribute 'get'
+2026-01-24 01:33:21,525 - INFO - Retrying in 10 seconds...
+2026-01-24 01:33:31,525 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 3/3)
+2026-01-24 01:33:31,526 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2026-01-24 01:33:33,406 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 200 OK"
+2026-01-24 01:33:33,425 - ERROR - Error fetching scholar data (attempt 3/3): 'NoneType' object has no attribute 'get'
+2026-01-24 01:33:33,425 - ERROR - Failed after 3 attempts
+Traceback (most recent call last):
+  File "/home/runner/work/scholar_tracker/scholar_tracker/src/scholar_tracker.py", line 127, in get_author_stats
+    author = scholarly.search_author_id(self.author_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_scholarly.py", line 349, in search_author_id
+    return self.__nav.search_author_id(id, filled, sortby, publication_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_navigator.py", line 316, in search_author_id
+    res = author_parser.fill(res, sections=['basics'], sortby=sortby, publication_limit=publication_limit)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/author_parser.py", line 462, in fill
+    raise(e)
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/author_parser.py", line 444, in fill
+    scholar_id = re.findall(_CITATIONAUTHRE, soup.find("link", rel="canonical").get('href', ""))[0]
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2026-01-24 01:33:33,426 - WARNING - Aborting history update because fetching stats failed.
