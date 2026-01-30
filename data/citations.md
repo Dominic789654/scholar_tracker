@@ -1,56 +1,53 @@
 # Citation Statistics
 
-Last updated: 2026-01-25
+Last updated: 2026-01-30
 
 ## Overall Statistics
-- Total Citations: 810
+- Total Citations: 830
 - H-index: 0
 
 ## Today's Citation Changes 
 
-Total increase: +21 citations
+Total increase: +20 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 347 | 352 | +5 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 130 | 131 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 73 | 75 | +2 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 37 | 40 | +3 |
-| LongGenBench: Long-context Generation Benchmark | 36 | 37 | +1 |
-| Plum: Prompt Learning Using Metaheuristics | 36 | 37 | +1 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 22 | 23 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 11 | 13 | +2 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 12 | 13 | +1 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 9 | 10 | +1 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 6 | 7 | +1 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 6 | 7 | +1 |
-| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 2 | 3 | +1 |
+| Active prompting with chain-of-thought for large language models | 352 | 357 | +5 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 131 | 134 | +3 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 75 | 77 | +2 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 40 | 42 | +2 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 19 | 20 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 13 | 15 | +2 |
+| 3D Question Answering for City Scene Understanding | 11 | 12 | +1 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 7 | 9 | +2 |
+| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 7 | 8 | +1 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 2 | 3 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 352 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 131 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 75 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 40 | 2024 |
+| Active prompting with chain-of-thought for large language models | 357 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 134 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 77 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 42 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 37 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 37 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 23 | 2024 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 19 | 2023 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 13 | 2025 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 20 | 2023 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 15 | 2025 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 13 | 2024 |
+| 3D Question Answering for City Scene Understanding | 12 | 2024 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 11 | 2025 |
-| 3D Question Answering for City Scene Understanding | 11 | 2024 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 10 | 2025 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 7 | 2025 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 7 | 2025 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 9 | 2025 |
+| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 8 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 7 | 2024 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 6 | 2025 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 3 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 3 | 2025 |
 | SSR: Speculative Parallel Scaling Reasoning in Test-time | 2 | 2025 |
 | CAFES: A Collaborative Multi-Agent Framework for Multi-Granular Multimodal Essay Scoring | 2 | 2025 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 2 | 2025 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 1 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 1 | 2025 |
 | Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval | 0 | 2025 |
@@ -63,6 +60,7 @@ Total increase: +21 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-01-30 | 830 | 0 |
 | 2026-01-25 | 810 | 0 |
 | 2026-01-19 | 789 | 0 |
 | 2026-01-09 | 778 | 11 |
@@ -72,7 +70,6 @@ Total increase: +21 citations
 | 2025-12-16 | 757 | 11 |
 | 2025-12-12 | 755 | 10 |
 | 2025-12-04 | 742 | 10 |
-| 2025-11-29 | 738 | 10 |
 
 ## Citation Trends
 
