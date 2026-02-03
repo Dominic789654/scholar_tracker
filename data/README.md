@@ -1,12 +1,12 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-01-31*
+*Last Updated: 2026-02-03*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 833 |
+| Total Citations | 836 |
 | H-index | 0 |
 | Total Papers | 28 |
 | Recent Citation Growth | +3 |
@@ -14,6 +14,6 @@
 ### Today's Changes
 - Total Citations Increase: +3
 - Papers with new citations:
-  - ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference: +1 citations
-  - Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research: +1 citations
-  - OracleKV: Oracle Guidance for Question-Independent KV Cache Compression: +1 citations
+  - Active prompting with chain-of-thought for large language models: +2 citations
+  - 3D Question Answering for City Scene Understanding: +1 citations
+  - Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval: +1 citations
