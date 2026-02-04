@@ -128,7 +128,7 @@ class ScholarTracker:
                     if author:
                         # Then try to fill with publications
                         try:
-                            author = scholarly.fill(author, sections=['basics', 'publications'])
+                            author = scholarly.fill(author, sections=['basics', 'indices', 'publications'])
                         except Exception as fill_error:
                             logging.warning(f"Could not fill author details, using basic info: {fill_error}")
                             # If fill fails, try to get data manually from the author page
@@ -138,7 +138,7 @@ class ScholarTracker:
                     search_query = scholarly.search_author(self.author_query)
                     author = next(search_query)
                     try:
-                        author = scholarly.fill(author, sections=['basics', 'publications'])
+                        author = scholarly.fill(author, sections=['basics', 'indices', 'publications'])
                     except Exception as fill_error:
                         logging.warning(f"Could not fill author details: {fill_error}")
                         return None
