@@ -1,30 +1,10 @@
 # Citation Statistics
 
-Last updated: 2026-02-14
+Last updated: 2026-02-15
 
 ## Overall Statistics
 - Total Citations: 862
 - H-index: 12
-
-## Today's Citation Changes 
-
-Total increase: +26 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 359 | 363 | +4 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 134 | 137 | +3 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 77 | 82 | +5 |
-| LongGenBench: Long-context Generation Benchmark | 37 | 39 | +2 |
-| Plum: Prompt Learning Using Metaheuristics | 37 | 38 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 16 | 17 | +1 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 10 | 12 | +2 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 8 | 11 | +3 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 8 | 9 | +1 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 7 | 8 | +1 |
-| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 0 | 1 | +1 |
-| AnTKV: Anchor Token-Aware Sub-Bit Vector Quantization for KV Cache in Large Language Models | 0 | 1 | +1 |
-| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 0 | 1 | +1 |
 
 ## Paper Citations
 
@@ -65,6 +45,7 @@ Total increase: +26 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-02-15 | 862 | 12 |
 | 2026-02-14 | 862 | 12 |
 | 2026-02-03 | 836 | 0 |
 | 2026-01-31 | 833 | 0 |
@@ -74,7 +55,6 @@ Total increase: +26 citations
 | 2026-01-09 | 778 | 11 |
 | 2026-01-07 | 777 | 11 |
 | 2025-12-26 | 771 | 11 |
-| 2025-12-21 | 767 | 11 |
 
 ## Citation Trends
 
