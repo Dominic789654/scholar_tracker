@@ -1,39 +1,28 @@
 # Citation Statistics
 
-Last updated: 2026-02-16
+Last updated: 2026-02-17
 
 ## Overall Statistics
-- Total Citations: 886
+- Total Citations: 891
 - H-index: 12
+- i10-index: 15
 
 ## Today's Citation Changes 
 
-Total increase: +24 citations
+Total increase: +5 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 137 | 140 | +3 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 82 | 83 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 42 | 44 | +2 |
-| LongGenBench: Long-context Generation Benchmark | 39 | 43 | +4 |
-| Plum: Prompt Learning Using Metaheuristics | 38 | 42 | +4 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 17 | 20 | +3 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 12 | 13 | +1 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 11 | 12 | +1 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 9 | 10 | +1 |
-| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 6 | 9 | +3 |
-| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 4 | 6 | +2 |
-| Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 0 | 3 | +3 |
-| Ssr: Speculative parallel scaling reasoning in test-time | 0 | 2 | +2 |
-| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 1 | 2 | +1 |
-| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 0 | 2 | +2 |
+| Active prompting with chain-of-thought for large language models | 360 | 363 | +3 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 140 | 141 | +1 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 4 | 5 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 360 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 140 | 2024 |
+| Active prompting with chain-of-thought for large language models | 363 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 141 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 83 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 44 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 43 | 2024 |
@@ -50,7 +39,7 @@ Total increase: +24 citations
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 9 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 6 | 2025 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 4 | 2025 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 5 | 2025 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 3 | 2025 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 2 | 2025 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 2 | 2025 |
@@ -67,6 +56,7 @@ Total increase: +24 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-02-17 | 891 | 12 |
 | 2026-02-16 | 886 | 12 |
 | 2026-02-15 | 862 | 12 |
 | 2026-02-14 | 862 | 12 |
@@ -76,7 +66,6 @@ Total increase: +24 citations
 | 2026-01-25 | 810 | 0 |
 | 2026-01-19 | 789 | 0 |
 | 2026-01-09 | 778 | 11 |
-| 2026-01-07 | 777 | 11 |
 
 ## Citation Trends
 
