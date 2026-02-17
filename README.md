@@ -1,5 +1,7 @@
 # Scholar Citation Tracker
 
+[![Update Citations](https://github.com/xiangliu1223/scholar_tracker/actions/workflows/update_citations.yml/badge.svg)](https://github.com/xiangliu1223/scholar_tracker/actions/workflows/update_citations.yml)
+
 A Python-based tool that automatically tracks and records citation statistics from Google Scholar. It generates daily reports of citation counts, h-index, and individual paper statistics in a clean markdown format.
 
 ## Features
@@ -43,13 +45,21 @@ A Python-based tool that automatically tracks and records citation statistics fr
     4.  Your Scholar ID is the string of characters after `user=`. In the example above, it's `VtK5lwUAAAAJ`.
 
     **Update the configuration:**
-    - Open the `run.py` file.
-    - Find the line `tracker = ScholarTracker(author_id="YOUR_ID_HERE")`.
-    - Replace `"YOUR_ID_HERE"` with your actual Google Scholar ID.
+    - Open the `config.json` file.
+    - Replace `"YOUR_SCHOLAR_ID_HERE"` with your actual Google Scholar ID:
+    ```json
+    {
+      "author_id": "VtK5lwUAAAAJ",
+      "author_query": null
+    }
+    ```
 
     Alternatively, you can track by name, but this is less reliable:
-    ```python
-    # tracker = ScholarTracker(author_query="Your Name Institution")
+    ```json
+    {
+      "author_id": null,
+      "author_query": "Your Name Institution"
+    }
     ```
 
 ### Local Usage
@@ -92,6 +102,7 @@ scholar_tracker/
 │   ├── scholar_tracker.py    # Core tracking functionality
 │   ├── markdown_writer.py    # Markdown report generator
 │   └── chart_generator.py    # Chart generation logic
+├── config.json               # Configuration file
 ├── requirements.txt
 ├── run.py                    # Main execution script
 └── README.md

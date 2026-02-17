@@ -26,7 +26,8 @@ class ChartGenerator:
             {
                 'date': datetime.strptime(entry['date'], '%Y-%m-%d'),
                 'total_citations': entry['total_citations'],
-                'h_index': entry['h_index']
+                'h_index': entry['h_index'],
+                'i10_index': entry.get('i10_index', 0)
             } for entry in history
         ])
 
@@ -35,6 +36,17 @@ class ChartGenerator:
 
         # Create figure with secondary y-axis
         fig = sp.make_subplots(specs=[[{"secondary_y": True}]])
+
+        # Add i10-index line (on secondary y-axis with h-index)
+        fig.add_trace(
+            go.Scatter(
+                x=df['date'],
+                y=df['i10_index'],
+                name="i10-index",
+                line=dict(color='green', width=2, dash='dot')
+            ),
+            secondary_y=True
+        )
 
         # Add total citations line
         fig.add_trace(
@@ -63,7 +75,7 @@ class ChartGenerator:
             title="Citation Metrics Over Time",
             xaxis_title="Date",
             yaxis_title="Total Citations",
-            yaxis2_title="H-index",
+            yaxis2_title="H-index / i10-index",
             hovermode='x unified',
             template='plotly_white'
         )

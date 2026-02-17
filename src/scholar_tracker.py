@@ -69,6 +69,7 @@ class ScholarTracker:
             stats_table = soup.find('table', id='gsc_rsb_st')
             citations = 0
             hindex = 0
+            i10index = 0
             if stats_table:
                 rows = stats_table.find_all('tr')
                 if len(rows) >= 2:
@@ -79,6 +80,10 @@ class ScholarTracker:
                     cols = rows[2].find_all('td')
                     if len(cols) >= 2:
                         hindex = int(cols[1].text.strip())
+                if len(rows) >= 4:
+                    cols = rows[3].find_all('td')
+                    if len(cols) >= 2:
+                        i10index = int(cols[1].text.strip())
             
             # Extract publications
             publications = []
@@ -106,6 +111,7 @@ class ScholarTracker:
                 'name': name,
                 'citedby': citations,
                 'hindex': hindex,
+                'i10index': i10index,
                 'publications': publications
             }
             
@@ -157,6 +163,7 @@ class ScholarTracker:
                     "date": today,
                     "total_citations": author.get('citedby', 0),
                     "h_index": author.get('hindex', 0),
+                    "i10_index": author.get('i10index', 0),
                     "papers": []
                 }
                 
@@ -236,6 +243,11 @@ class ScholarTracker:
                 history = json.load(f)
         else:
             logging.info("No history file found. A new one will be created.")
+
+        # Check if we already have an entry for today
+        if history and history[-1]["date"] == stats["date"]:
+            logging.info(f"Already have data for {stats['date']}. Skipping duplicate entry.")
+            return True
 
         # Get previous day's stats
         previous_stats = history[-1] if history else None

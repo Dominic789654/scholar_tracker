@@ -59,11 +59,11 @@ Google Scholar → scholar_tracker.py (fetch & parse) → citation_history.json
 ```
 
 ### Data Files (in ./data/)
-- `citation_history.json` - Historical data (date, paper titles, citations, total)
+- `citation_history.json` - Historical data (date, paper titles, citations, h-index, i10-index)
 - `daily_changes.json` - Track papers with new citations each day
 - `citations.md` - Full markdown summary
 - `README.md` - Quick statistics overview
-- `citation_trends.png/html` - Citation and H-index trends over time
+- `citation_trends.png/html` - Citation, H-index, and i10-index trends over time
 - `paper_trends.png/html` - Top 10 papers by citation count
 - `tracker.log` - Execution logs (rotating, max 1MB per file)
 
@@ -78,7 +78,8 @@ Google Scholar → scholar_tracker.py (fetch & parse) → citation_history.json
 
 ## Configuration
 
-- Set author ID in `run.py` (currently: `VtK5lwUAAAAJ`)
+- Set author ID in `config.json` (currently: `VtK5lwUAAAAJ`)
+- Supports both `author_id` (recommended) and `author_query` (fallback)
 - The workflow pushes to `origin/main` branch
 
 ## Notes

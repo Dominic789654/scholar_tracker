@@ -28,7 +28,8 @@ class MarkdownWriter:
                 f"\nLast updated: {latest['date']}",
                 f"\n## Overall Statistics",
                 f"- Total Citations: {latest['total_citations']}",
-                f"- H-index: {latest['h_index']}"
+                f"- H-index: {latest['h_index']}",
+                f"- i10-index: {latest.get('i10_index', 'N/A')}"
             ]
             
             # Add today's citation changes if available
@@ -49,7 +50,8 @@ class MarkdownWriter:
                                 f"| {paper['title']} | {paper['previous_citations']} | {paper['new_citations']} | +{paper['increase']} |"
                             )
             
-            # Add paper stats
+            # Add paper stats (sorted by citations descending)
+            sorted_papers = sorted(latest['papers'], key=lambda x: x['citations'], reverse=True)
             content.extend([
                 "\n## Paper Citations",
                 "\n| Paper | Citations | Year |",
@@ -57,7 +59,7 @@ class MarkdownWriter:
             ])
             
             # Add paper stats
-            for paper in latest['papers']:
+            for paper in sorted_papers:
                 content.append(
                     f"| {paper['title']} | {paper['citations']} | {paper['year']} |"
                 )
@@ -122,6 +124,7 @@ class MarkdownWriter:
                 "| ------ | ----- |",
                 f"| Total Citations | {latest['total_citations']} |",
                 f"| H-index | {latest['h_index']} |",
+                f"| i10-index | {latest.get('i10_index', 'N/A')} |",
                 f"| Total Papers | {total_papers} |",
                 f"| Recent Citation Growth | {'+' if citation_growth > 0 else ''}{citation_growth} |"
             ]
