@@ -1,3 +1,5 @@
+"""Chart generator for citation trend visualization."""
+
 import json
 import logging
 from logging.handlers import RotatingFileHandler
@@ -5,22 +7,92 @@ import plotly.graph_objects as go
 import plotly.subplots as sp
 import pandas as pd
 from datetime import datetime
+from typing import List, Dict, Any
+import os
+import hashlib
+
 
 class ChartGenerator:
-    def __init__(self, data_file, output_dir):
+    """Generate visualization charts for citation trends."""
+
+    def __init__(self, data_file: str, output_dir: str):
         self.data_file = data_file
         self.output_dir = output_dir
+        self.cache_file = os.path.join(output_dir, ".chart_cache.json")
 
-    def load_data(self):
-        """Load citation history data"""
+    def load_data(self) -> List[Dict[str, Any]]:
+        """Load citation history data."""
         with open(self.data_file, 'r') as f:
             history = json.load(f)
         return history
 
-    def generate_charts(self):
-        """Generate all charts"""
+    def _get_data_hash(self, history: List[Dict[str, Any]]) -> str:
+        """Generate hash of data for cache validation."""
+        # Use last 5 entries for hash (most recent changes matter most)
+        recent_data = history[-5:] if len(history) > 5 else history
+        data_str = json.dumps(recent_data, sort_keys=True)
+        return hashlib.md5(data_str.encode()).hexdigest()
+
+    def _load_cache(self) -> Dict[str, Any]:
+        """Load cache from file."""
+        if os.path.exists(self.cache_file):
+            with open(self.cache_file, 'r') as f:
+                return json.load(f)
+        return {}
+
+    def _save_cache(self, cache: Dict[str, Any]) -> None:
+        """Save cache to file."""
+        with open(self.cache_file, 'w') as f:
+            json.dump(cache, f, indent=2)
+
+    def _needs_regeneration(self, history: List[Dict[str, Any]], chart_type: str) -> bool:
+        """Check if chart needs regeneration based on data changes."""
+        if not os.path.exists(self.cache_file):
+            return True
+
+        cache = self._load_cache()
+        current_hash = self._get_data_hash(history)
+        cached_hash = cache.get(f"{chart_type}_hash")
+
+        # Also check if output files exist
+        png_file = os.path.exists(f"{self.output_dir}/{chart_type}.png")
+        html_file = os.path.exists(f"{self.output_dir}/{chart_type}.html")
+
+        if not png_file or not html_file:
+            return True
+
+        return cached_hash != current_hash
+
+    def generate_charts(self, force: bool = False) -> None:
+        """Generate all charts."""
         history = self.load_data()
 
+        # Check if regeneration is needed
+        if not force and not self._needs_regeneration(history, "citation_trends"):
+            logging.info("Citation trends chart up-to-date, skipping regeneration")
+        else:
+            logging.info("Generating citation trends chart")
+            self._generate_citation_trends(history)
+            # Update cache
+            cache = self._load_cache()
+            cache["citation_trends_hash"] = self._get_data_hash(history)
+            cache["citation_trends_date"] = datetime.now().isoformat()
+            self._save_cache(cache)
+
+        # Generate individual paper trends
+        if not force and not self._needs_regeneration(history, "paper_trends"):
+            logging.info("Paper trends chart up-to-date, skipping regeneration")
+        else:
+            logging.info("Generating paper trends chart")
+            self.generate_paper_trends(history)
+            # Update cache
+            cache = self._load_cache()
+            cache["paper_trends_hash"] = self._get_data_hash(history)
+            cache["paper_trends_date"] = datetime.now().isoformat()
+            self._save_cache(cache)
+
+    def _generate_citation_trends(self, history: List[Dict[str, Any]]) -> None:
+        """Generate citation trends chart."""
         # Convert to pandas DataFrame for easier handling
         df = pd.DataFrame([
             {
@@ -89,11 +161,8 @@ class ChartGenerator:
         # Save as PNG (static)
         fig.write_image(f"{self.output_dir}/citation_trends.png")
 
-        # Generate individual paper trends
-        self.generate_paper_trends(history)
-
-    def generate_paper_trends(self, history):
-        """Generate trends for individual papers - only top 10 by citation count"""
+    def generate_paper_trends(self, history: List[Dict[str, Any]]) -> None:
+        """Generate trends for individual papers - only top 10 by citation count."""
         # Create DataFrame for paper citations
         paper_data = []
         for entry in history:

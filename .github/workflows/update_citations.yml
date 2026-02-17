@@ -2,20 +2,33 @@ name: Update Citations
 
 on:
   schedule:
-    - cron: '0 1 * * *'  # Runs at 00:00 UTC every day
+    - cron: '0 1 * * *'  # Runs at 01:00 UTC every day
   workflow_dispatch:  # Allows manual trigger
+
+# Prevent concurrent runs of the same workflow
+concurrency:
+  group: citations-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHON_VERSION: '3.11'
 
 jobs:
   update-citations:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
 
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.11'
+        python-version: ${{ env.PYTHON_VERSION }}
+        cache: 'pip'
 
     - name: Cache pip dependencies
       uses: actions/cache@v4
@@ -30,14 +43,50 @@ jobs:
         python -m pip install --upgrade pip
         pip install --prefer-binary -r requirements.txt
 
+    - name: Run tests (optional)
+      run: |
+        pip install pytest
+        python -m pytest tests/ -v --tb=short || true
+      continue-on-error: true
+
     - name: Run citation tracker
       env:
         SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
       run: python run.py
 
+    - name: Check for changes
+      id: git-check
+      run: |
+        git status --porcelain
+        if git status --porcelain | grep -q '^ M\|^A'; then
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+        else
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+        fi
+
     - name: Commit and push if changed
+      if: steps.git-check.outputs.has_changes == 'true'
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "GitHub Action"
         git add data/
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update citation statistics" && git push origin main)
+        git commit -m "Update citation statistics [$(date +%Y-%m-%d)]"
+        git push origin main
+      env:
+        GIT_AUTHOR_NAME: GitHub Action
+        GIT_COMMITTER_NAME: GitHub Action
+
+    - name: Upload artifacts
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: citation-data
+        path: data/
+        retention-days: 7
+
+    - name: Notify on failure
+      if: failure()
+      run: |
+        echo "::error::Citation update failed. Check the logs for details."
+        echo "Failed at: $(date)"
+        echo "Run URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

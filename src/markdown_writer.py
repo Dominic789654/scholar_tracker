@@ -1,16 +1,22 @@
+"""Markdown writer for generating citation reports."""
+
 from datetime import datetime
 import json
 import os
+from typing import List, Dict, Any, Optional
+
 
 class MarkdownWriter:
-    def __init__(self, data_file, output_file):
+    """Generate markdown reports from citation history."""
+
+    def __init__(self, data_file: str, output_file: str):
         self.data_file = data_file
         self.output_file = output_file
         self.data_dir = os.path.dirname(output_file)
         self.daily_changes_file = os.path.join(self.data_dir, "daily_changes.json")
-        
-    def generate_markdown(self):
-        """Generate markdown report from citation history"""
+
+    def generate_markdown(self) -> bool:
+        """Generate markdown report from citation history."""
         try:
             # Load citation history
             with open(self.data_file, 'r') as f:
@@ -96,8 +102,8 @@ class MarkdownWriter:
             print(f"Error generating markdown: {e}")
             return False 
     
-    def generate_data_readme(self):
-        """Generate README.md for the data directory"""
+    def generate_data_readme(self) -> bool:
+        """Generate README.md for the data directory."""
         try:
             with open(self.data_file, 'r') as f:
                 history = json.load(f)

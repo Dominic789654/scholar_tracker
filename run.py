@@ -4,46 +4,10 @@ import logging
 from src.scholar_tracker import ScholarTracker
 from src.markdown_writer import MarkdownWriter
 from src.chart_generator import ChartGenerator
+from src.utils import Config, Colors
 
 # Load configuration
-def load_config():
-    """Load configuration from config.json"""
-    config_path = "config.json"
-    default_config = {
-        "author_id": "YOUR_SCHOLAR_ID_HERE",
-        "author_query": None,
-        "max_retries": 3,
-        "retry_delay": 5
-    }
-    
-    if os.path.exists(config_path):
-        with open(config_path, 'r') as f:
-            config = json.load(f)
-            # Merge with defaults
-            for key, value in default_config.items():
-                if key not in config:
-                    config[key] = value
-            return config
-    else:
-        # Create default config file
-        with open(config_path, 'w') as f:
-            json.dump(default_config, f, indent=2)
-        print(f"Created default config file: {config_path}")
-        print("Please update it with your Google Scholar ID")
-        return default_config
-
-CONFIG = load_config()
-
-# ANSI color codes for terminal output
-class Colors:
-    HEADER = '\033[95m'
-    BLUE = '\033[94m'
-    CYAN = '\033[96m'
-    GREEN = '\033[92m'
-    YELLOW = '\033[93m'
-    RED = '\033[91m'
-    END = '\033[0m'
-    BOLD = '\033[1m'
+CONFIG = Config.from_file()
 
 def print_summary():
     """Print a colored summary of today's changes."""
@@ -127,19 +91,17 @@ def print_readme():
     print()
 
 def main():
-    # Note: The ScholarTracker now has built-in fallback to manual HTML parsing
-    # when the scholarly library fails, so no need for complex proxy setup
-
     # Check if config is properly set
-    if CONFIG.get("author_id") == "YOUR_SCHOLAR_ID_HERE" or not CONFIG.get("author_id"):
+    if not CONFIG.is_valid():
         print("Error: Please set your Google Scholar ID in config.json")
         print("Find your ID at: https://scholar.google.com/citations?user=YOUR_ID")
         return
 
     # Initialize tracker with configuration
     tracker = ScholarTracker(
-        author_id=CONFIG.get("author_id"),
-        author_query=CONFIG.get("author_query")
+        author_id=CONFIG.author_id,
+        author_query=CONFIG.author_query,
+        scraper_api_key=CONFIG.scraper_api_key
     )
 
     # Update citation history

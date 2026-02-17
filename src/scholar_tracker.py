@@ -1,3 +1,5 @@
+"""Scholar Tracker - Core tracking functionality for Google Scholar citations."""
+
 import logging
 from logging.handlers import RotatingFileHandler
 from scholarly import scholarly
@@ -7,7 +9,19 @@ import os
 import time
 import requests
 from bs4 import BeautifulSoup
-import re
+import random
+from typing import Optional, List, Dict, Any
+
+from .utils import USER_AGENTS, AuthorStats, PaperStats, DailyChanges, CitationChange
+from .exceptions import (
+    ScholarTrackerError,
+    ConfigurationError,
+    DataFetchError,
+    DataValidationError,
+    RateLimitError,
+    AuthorNotFoundError,
+    ScraperAPIError,
+)
 
 # Configure logging with rotation (max 1MB per file, keep 3 backups)
 logger = logging.getLogger('scholar_tracker')
@@ -37,26 +51,117 @@ if not logger.handlers:
 # Set as global logger
 logging.basicConfig(level=logging.INFO, handlers=logger.handlers)
 
+
 class ScholarTracker:
-    def __init__(self, author_query=None, author_id=None):
+    """Tracker for Google Scholar citations."""
+
+    def __init__(
+        self,
+        author_query: Optional[str] = None,
+        author_id: Optional[str] = None,
+        scraper_api_key: Optional[str] = None
+    ):
         if not author_query and not author_id:
             raise ValueError("Either author_query or author_id must be provided.")
         self.author_query = author_query
         self.author_id = author_id
+        self.scraper_api_key = scraper_api_key or os.environ.get('SCRAPER_API_KEY')
         self.data_file = "data/citation_history.json"
         self.daily_changes_file = "data/daily_changes.json"
         logging.info(f"ScholarTracker initialized for author_query: '{self.author_query}', author_id: '{self.author_id}'")
-    
-    def _manual_fetch_author_data(self, author_id):
-        """Manually fetch author data from Google Scholar when scholarly fails"""
+        if self.scraper_api_key:
+            logging.info("ScraperAPI is configured for proxy support")
+
+    def _get_scraper_api_url(self, url: str) -> Optional[str]:
+        """Get ScraperAPI proxy URL if API key is available."""
+        if not self.scraper_api_key:
+            return None
+        return f"http://scraperapi:{self.scraper_api_key}@proxy-server.scraperapi.com:8001"
+
+    def _make_request(self, url: str, use_scraper_api: bool = False) -> requests.Response:
+        """Make HTTP request with optional ScraperAPI proxy."""
+        headers = {
+            'User-Agent': random.choice(USER_AGENTS),
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+        }
+
+        if use_scraper_api and self.scraper_api_key:
+            # Use ScraperAPI proxy
+            proxies = {
+                'http': self._get_scraper_api_url(url),
+                'https': self._get_scraper_api_url(url),
+            }
+            # ScraperAPI handles headers internally, but we can pass custom headers
+            response = requests.get(
+                'http://api.scraperapi.com',
+                params={
+                    'api_key': self.scraper_api_key,
+                    'url': url,
+                    'render': 'false'
+                },
+                timeout=60
+            )
+        else:
+            response = requests.get(url, headers=headers, timeout=30)
+
+        return response
+
+    def _manual_fetch_author_data(self, author_id: str) -> Optional[Dict[str, Any]]:
+        """Manually fetch author data from Google Scholar when scholarly fails."""
         try:
             url = f"https://scholar.google.com/citations?hl=en&user={author_id}&pagesize=100&view_op=list_works&sortby=pubdate"
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
-            }
             logging.info(f"Manually fetching data from: {url}")
-            
-            response = requests.get(url, headers=headers, timeout=30)
+            response = None
+
+            # Try ScraperAPI first if available
+            if self.scraper_api_key:
+                logging.info("Attempting fetch via ScraperAPI...")
+                try:
+                    response = self._make_request(url, use_scraper_api=True)
+                    if response.status_code == 200 and 'scholar.google.com' in response.url:
+                        logging.info("ScraperAPI fetch successful")
+                    elif response.status_code == 403:
+                        raise ScraperAPIError("ScraperAPI returned 403 Forbidden", status_code=403)
+                    else:
+                        logging.warning(f"ScraperAPI returned status {response.status_code}, falling back to direct request")
+                        raise ScraperAPIError(f"ScraperAPI returned status {response.status_code}", status_code=response.status_code)
+                except ScraperAPIError:
+                    raise
+                except Exception as e:
+                    logging.warning(f"ScraperAPI failed: {e}, trying direct request...")
+                    response = None
+
+            # Fallback to direct request
+            if response is None:
+                logging.info("Attempting direct fetch...")
+                headers = {
+                    'User-Agent': random.choice(USER_AGENTS),
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                }
+                response = requests.get(url, headers=headers, timeout=30)
+
+            # Handle response errors
+            if response.status_code == 403:
+                raise DataFetchError(
+                    f"Access denied by Google Scholar (403). Try using ScraperAPI.",
+                    status_code=403,
+                    retryable=True
+                )
+            elif response.status_code == 404:
+                raise AuthorNotFoundError(author_id=author_id)
+            elif response.status_code == 429:
+                raise RateLimitError("Rate limited by Google Scholar")
+            elif response.status_code >= 500:
+                raise DataFetchError(
+                    f"Server error from Google Scholar ({response.status_code})",
+                    status_code=response.status_code,
+                    retryable=True
+                )
+
             response.raise_for_status()
             
             soup = BeautifulSoup(response.text, 'html.parser')
@@ -122,8 +227,14 @@ class ScholarTracker:
             logging.error(f"Manual fetch failed: {e}")
             return None
         
-    def get_author_stats(self, max_retries=3, retry_delay=5):
-        """Retrieve author statistics from Google Scholar with retry logic"""
+    def get_author_stats(
+        self,
+        max_retries: int = 3,
+        retry_delay: int = 5
+    ) -> Optional[Dict[str, Any]]:
+        """Retrieve author statistics from Google Scholar with retry logic."""
+        last_error = None
+
         for attempt in range(max_retries):
             try:
                 author = None
@@ -136,7 +247,7 @@ class ScholarTracker:
                         try:
                             author = scholarly.fill(author, sections=['basics', 'indices', 'publications'])
                         except Exception as fill_error:
-                            logging.warning(f"Could not fill author details, using basic info: {fill_error}")
+                            logging.warning(f"Could not fill author details, using manual fetch: {fill_error}")
                             # If fill fails, try to get data manually from the author page
                             author = self._manual_fetch_author_data(self.author_id)
                 else:
@@ -147,17 +258,17 @@ class ScholarTracker:
                         author = scholarly.fill(author, sections=['basics', 'indices', 'publications'])
                     except Exception as fill_error:
                         logging.warning(f"Could not fill author details: {fill_error}")
-                        return None
-                
+                        raise AuthorNotFoundError(author_query=self.author_query)
+
                 if not author:
                     logging.error(f"Could not find author with ID '{self.author_id}' or query '{self.author_query}'.")
-                    return None
+                    raise AuthorNotFoundError(author_id=self.author_id, author_query=self.author_query)
 
                 logging.info(f"Found author: {author.get('name', 'Unknown')}")
-                
+
                 # Get current date
                 today = datetime.now().strftime("%Y-%m-%d")
-                
+
                 # Collect stats
                 stats = {
                     "date": today,
@@ -166,7 +277,7 @@ class ScholarTracker:
                     "i10_index": author.get('i10index', 0),
                     "papers": []
                 }
-                
+
                 # Collect individual paper stats
                 for pub in author.get('publications', []):
                     # The 'bib' key may not exist for all publications, so we use .get()
@@ -179,23 +290,53 @@ class ScholarTracker:
                     stats["papers"].append(paper)
                     
                 logging.info(f"Successfully collected stats for {len(stats['papers'])} papers.")
+
+                # Validate the collected stats
+                if not self._validate_stats(stats, previous_stats=None):
+                    logging.error("Stats validation failed, returning None")
+                    raise DataValidationError("Stats validation failed")
+
                 return stats
-                
-            except StopIteration:
-                logging.error(f"Author with query '{self.author_query}' not found on Google Scholar.")
-                return None
-            except Exception as e:
-                logging.error(f"Error fetching scholar data (attempt {attempt + 1}/{max_retries}): {e}")
+
+            except AuthorNotFoundError as e:
+                logging.error(f"Author not found: {e.message}")
+                return None  # Don't retry for author not found
+            except RateLimitError as e:
+                logging.warning(f"Rate limited: {e.message}")
+                last_error = e
                 if attempt < max_retries - 1:
-                    wait_time = retry_delay * (2 ** attempt)  # Exponential backoff
+                    wait_time = retry_delay * (2 ** (attempt + 2))  # Longer wait for rate limits
+                    logging.info(f"Retrying in {wait_time} seconds...")
+                    time.sleep(wait_time)
+            except DataFetchError as e:
+                logging.error(f"Data fetch error (attempt {attempt + 1}/{max_retries}): {e.message}")
+                last_error = e
+                if e.retryable and attempt < max_retries - 1:
+                    wait_time = retry_delay * (2 ** attempt)
+                    logging.info(f"Retrying in {wait_time} seconds...")
+                    time.sleep(wait_time)
+                elif not e.retryable:
+                    return None  # Don't retry non-retryable errors
+            except Exception as e:
+                logging.error(f"Unexpected error (attempt {attempt + 1}/{max_retries}): {e}")
+                last_error = e
+                if attempt < max_retries - 1:
+                    wait_time = retry_delay * (2 ** attempt)
                     logging.info(f"Retrying in {wait_time} seconds...")
                     time.sleep(wait_time)
                 else:
                     logging.error(f"Failed after {max_retries} attempts", exc_info=True)
                     return None
+
+        logging.error(f"All retry attempts failed. Last error: {last_error}")
+        return None
     
-    def get_citation_changes(self, current_stats, previous_stats):
-        """Compare current and previous stats to find citation changes"""
+    def get_citation_changes(
+        self,
+        current_stats: Dict[str, Any],
+        previous_stats: Dict[str, Any]
+    ) -> Optional[Dict[str, Any]]:
+        """Compare current and previous stats to find citation changes."""
         if not previous_stats or not current_stats:
             return None
 
@@ -226,15 +367,73 @@ class ScholarTracker:
             logging.info("No new citations found for any papers.")
 
         return changes
+
+    def _validate_stats(
+        self,
+        stats: Dict[str, Any],
+        previous_stats: Optional[Dict[str, Any]] = None
+    ) -> bool:
+        """
+        Validate collected stats to prevent saving invalid data.
+        
+        Checks:
+        - h_index should not be 0 if total_citations > 0 (unless first entry)
+        - total_citations should be non-negative
+        - h_index should be non-negative
+        - i10_index should be non-negative
+        - papers list should not be empty
+        """
+        logging.info("Validating collected stats...")
+        
+        # Basic non-negative checks
+        if stats["total_citations"] < 0:
+            logging.error(f"Invalid total_citations: {stats['total_citations']}")
+            return False
             
-    def update_history(self):
-        """Update citation history with new data"""
+        if stats["h_index"] < 0:
+            logging.error(f"Invalid h_index: {stats['h_index']}")
+            return False
+            
+        if stats.get("i10_index", 0) < 0:
+            logging.error(f"Invalid i10_index: {stats['i10_index']}")
+            return False
+        
+        # Check for empty papers list
+        if not stats["papers"]:
+            logging.error("No papers found in stats")
+            return False
+        
+        # Check h_index consistency - if we have citations but h_index is 0, something is wrong
+        # Skip this check if it's the first entry (no previous stats to compare)
+        if stats["total_citations"] > 100 and stats["h_index"] == 0:
+            logging.error(f"Inconsistent stats: {stats['total_citations']} citations but h_index=0")
+            return False
+        
+        # Compare with previous stats if available
+        if previous_stats:
+            # Citations should generally not decrease
+            if stats["total_citations"] < previous_stats["total_citations"] - 5:
+                # Allow small variance due to Google Scholar corrections, but flag large drops
+                logging.warning(
+                    f"Unusual citation drop: {previous_stats['total_citations']} -> {stats['total_citations']}"
+                )
+            
+            # h_index should not decrease significantly
+            if previous_stats["h_index"] > 0 and stats["h_index"] == 0:
+                logging.error(f"h_index dropped from {previous_stats['h_index']} to 0 - likely parsing error")
+                return False
+        
+        logging.info("Stats validation passed")
+        return True
+
+    def update_history(self) -> bool:
+        """Update citation history with new data."""
         logging.info("Starting history update...")
         stats = self.get_author_stats()
         if not stats:
             logging.warning("Aborting history update because fetching stats failed.")
             return False
-            
+
         # Load existing history
         history = []
         if os.path.exists(self.data_file):
@@ -251,7 +450,12 @@ class ScholarTracker:
 
         # Get previous day's stats
         previous_stats = history[-1] if history else None
-        
+
+        # Validate stats against previous data
+        if not self._validate_stats(stats, previous_stats):
+            logging.error("Stats validation failed, aborting update")
+            return False
+
         # Calculate citation changes
         if previous_stats:
             logging.info("Comparing with previous stats to find citation changes.")
