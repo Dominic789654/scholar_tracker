@@ -1,21 +1,11 @@
 # Citation Statistics
 
-Last updated: 2026-02-17
+Last updated: 2026-02-18
 
 ## Overall Statistics
 - Total Citations: 891
 - H-index: 12
 - i10-index: 15
-
-## Today's Citation Changes 
-
-Total increase: +5 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 360 | 363 | +3 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 140 | 141 | +1 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 4 | 5 | +1 |
 
 ## Paper Citations
 
@@ -56,6 +46,7 @@ Total increase: +5 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-02-18 | 891 | 12 |
 | 2026-02-17 | 891 | 12 |
 | 2026-02-16 | 886 | 12 |
 | 2026-02-15 | 862 | 12 |
@@ -65,7 +56,6 @@ Total increase: +5 citations
 | 2026-01-30 | 830 | 0 |
 | 2026-01-25 | 810 | 0 |
 | 2026-01-19 | 789 | 0 |
-| 2026-01-09 | 778 | 11 |
 
 ## Citation Trends
 
