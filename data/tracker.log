@@ -5906,3 +5906,210 @@ scholarly._proxy_generator.MaxTriesExceededException: Cannot Fetch from Google S
 2026-02-18 01:35:26,500 - INFO - Exiting Kaleido/Choreo
 2026-02-18 01:35:26,504 - INFO - TemporaryDirectory.cleanup() worked.
 2026-02-18 01:35:26,504 - INFO - shutil.rmtree worked.
+2026-02-19 01:35:13,586 - INFO - ScholarTracker initialized for author_query: 'None', author_id: 'VtK5lwUAAAAJ'
+2026-02-19 01:35:13,586 - INFO - ScraperAPI is configured for proxy support
+2026-02-19 01:35:13,586 - INFO - Starting history update...
+2026-02-19 01:35:13,587 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/3)
+2026-02-19 01:35:13,587 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2026-02-19 01:35:15,401 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:35:15,501 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGNLR2cwGIi44dU_5sNopPBdgyjEqQ_axMqQzb2h0jc622jEPliy51CxYnupIiVibdTlmY_2sMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:35:15,502 - INFO - Got a captcha request.
+2026-02-19 01:35:27,855 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:35:27,858 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:35:27,858 - INFO - Retrying with a new session.
+2026-02-19 01:35:31,195 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:35:31,235 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGOLR2cwGIi68ndEEFlHkuvngzxrMCd5yssmww-U2Cgi3c97sWHTc0DaCWoHpsIEXHwtSI1lwMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:35:31,235 - INFO - Got a captcha request.
+2026-02-19 01:35:34,282 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:35:34,285 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:35:34,285 - INFO - Retrying with a new session.
+2026-02-19 01:35:37,064 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:35:37,098 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGOjR2cwGIi4l0kDM5BEriQUPHJN2btFV3U2qTb3ZQomhhrcD15qGerN8ZFIcf3HXC5PKzboAMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:35:37,098 - INFO - Got a captcha request.
+2026-02-19 01:35:40,173 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:35:40,180 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:35:40,180 - INFO - Retrying with a new session.
+2026-02-19 01:35:43,152 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:35:43,190 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGO7R2cwGIi65AVDfognk2biOi79tLC-XmSzH2bbF1Ys6SRrpcm-WMwwBkWtIUvYrc8Wie-I1MgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:35:43,190 - INFO - Got a captcha request.
+2026-02-19 01:35:46,082 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:35:46,086 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:35:46,086 - INFO - Retrying with a new session.
+2026-02-19 01:35:48,822 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:35:48,851 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGPTR2cwGIi4EP3uDvK2Wk1qTYqTMwX0zyqz8vOvM2PVDwQRZmc1BvK3kdeQ-pYdRjjr-miOrMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:35:48,852 - INFO - Got a captcha request.
+2026-02-19 01:35:51,784 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:35:51,790 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:35:51,790 - INFO - Retrying with a new session.
+2026-02-19 01:35:52,561 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2026-02-19 01:35:54,526 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:35:54,563 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGPrR2cwGIi5rh0H_ej9RfG5RVODsosuh_MvuKJJuWM0B1X1DP8wfDJP8lLNPFSjmIndq3HbGMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:35:54,563 - INFO - Got a captcha request.
+2026-02-19 01:35:57,509 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:35:57,512 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:35:57,512 - INFO - Retrying with a new session.
+2026-02-19 01:36:00,114 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:36:00,146 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGP_R2cwGIi5Xgi0I53hZDTuEx_1ms8R_4CLg1K-t4MCSmgnRPytjpmhW0E9CWw3b70fuIsD-MgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:36:00,146 - INFO - Got a captcha request.
+2026-02-19 01:36:03,104 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:36:03,108 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:36:03,108 - INFO - Retrying with a new session.
+2026-02-19 01:36:05,302 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:36:05,334 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGITS2cwGIi50AEAPcmlWKxwrY6MJHs5FApH5_zDZvTx1mDuX47-rUK6lcLADZdZlerC5AOhJMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:36:05,335 - INFO - Got a captcha request.
+2026-02-19 01:36:08,196 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:36:08,200 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:36:08,200 - INFO - Retrying with a new session.
+2026-02-19 01:36:10,547 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:36:10,598 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGIrS2cwGIi4YsAjJdRDbB6tW-rcjfKmuldujMTHP8X7Twqvw4c45odM2HhE12eYE-SNY2g6tMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:36:10,599 - INFO - Got a captcha request.
+2026-02-19 01:36:13,572 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:36:13,575 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:36:13,575 - INFO - Retrying with a new session.
+2026-02-19 01:36:15,666 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:36:15,695 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGI_S2cwGIi4sJi3qODkDanppWRPYvPXgW6IKPyIUYezCJ3rQlihB1T_m9lwZRTuzgFU5-5MEMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:36:15,696 - INFO - Got a captcha request.
+2026-02-19 01:36:18,677 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:36:18,681 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:36:18,681 - INFO - Retrying with a new session.
+2026-02-19 01:36:19,447 - ERROR - Unexpected error (attempt 1/3): Cannot Fetch from Google Scholar.
+2026-02-19 01:36:19,448 - INFO - Retrying in 5 seconds...
+2026-02-19 01:36:24,448 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 2/3)
+2026-02-19 01:36:24,448 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2026-02-19 01:36:25,903 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2026-02-19 01:36:25,903 - INFO - Retrying with a new session.
+2026-02-19 01:36:28,167 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:36:28,194 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGJvS2cwGIi4LrKnQapPIxuZimgjASTZ6tV1dQdRJ6k-Wn-NbmY73yQXx_OJFZMPxCYPwghUPMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:36:28,195 - INFO - Got a captcha request.
+2026-02-19 01:36:31,134 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:36:31,139 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:36:31,139 - INFO - Retrying with a new session.
+2026-02-19 01:36:34,440 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:36:34,474 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGKHS2cwGIi4tBLLcOcPQV-FyM1KuF-jKMhvCh5GYrntqUtGZe7DZPBNZeFik5dOsr87n5DlbMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:36:34,475 - INFO - Got a captcha request.
+2026-02-19 01:36:37,484 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:36:37,489 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:36:37,489 - INFO - Retrying with a new session.
+2026-02-19 01:36:40,628 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:36:40,656 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGKjS2cwGIi5jlQh4QxLAzihYv2axPX-yjipSBpz1YjTvywPu1B7I6l_UEFOOjQ_OOskU-rAGMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:36:40,657 - INFO - Got a captcha request.
+2026-02-19 01:36:43,724 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:36:43,728 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:36:43,728 - INFO - Retrying with a new session.
+2026-02-19 01:36:46,807 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:36:46,841 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGK7S2cwGIi5IY-hHR85ABm4MlOaAMiUcnU5FQ91c_hR4BiIl9OydspDV3yw282D9za0ElQjsMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:36:46,841 - INFO - Got a captcha request.
+2026-02-19 01:36:49,753 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:36:49,756 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:36:49,756 - INFO - Retrying with a new session.
+2026-02-19 01:36:50,526 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2026-02-19 01:36:52,039 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2026-02-19 01:36:52,040 - INFO - Retrying with a new session.
+2026-02-19 01:36:53,457 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:36:53,488 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGLXS2cwGIi4cCchdT0qdEMiv_pnw77eMBRqDpTRzbzaA2d4WgEPBHwnAAekDPoyH3wtO-6hpMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:36:53,488 - INFO - Got a captcha request.
+2026-02-19 01:36:56,352 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:36:56,355 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:36:56,355 - INFO - Retrying with a new session.
+2026-02-19 01:36:59,061 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:36:59,088 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGLrS2cwGIi42osAaa32U5iQ0_CoDUMqzKPOcOrAJShsio8t5zy2BsXaCo-tZZZImpF3hAMD9MgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:36:59,088 - INFO - Got a captcha request.
+2026-02-19 01:37:02,088 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:37:02,093 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:37:02,093 - INFO - Retrying with a new session.
+2026-02-19 01:37:05,086 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:37:05,118 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGMDS2cwGIi4RXnpRYBBd4HysP7x4Cam3GeUz4oKgbYlmvvlr_n_TDKQP_JIvyysvIbokL-OpMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:37:05,118 - INFO - Got a captcha request.
+2026-02-19 01:37:08,032 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:37:08,036 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:37:08,036 - INFO - Retrying with a new session.
+2026-02-19 01:37:10,708 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:37:10,750 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGMbS2cwGIi68Vq8Ybd6L8TGBoso5nyHuzN8sJlJO1afoSOFgfhMT8_0f2VH0TcrXi0SLJbidMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:37:10,751 - INFO - Got a captcha request.
+2026-02-19 01:37:13,668 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:37:13,672 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:37:13,672 - INFO - Retrying with a new session.
+2026-02-19 01:37:14,450 - ERROR - Unexpected error (attempt 2/3): Cannot Fetch from Google Scholar.
+2026-02-19 01:37:14,452 - INFO - Retrying in 10 seconds...
+2026-02-19 01:37:24,452 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 3/3)
+2026-02-19 01:37:24,453 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2026-02-19 01:37:26,123 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2026-02-19 01:37:26,123 - INFO - Retrying with a new session.
+2026-02-19 01:37:28,589 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:37:28,630 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGNjS2cwGIi67HpPJPLH8r7hjThsOyEGXvWnnF6WACrWXu_VI068wdrSQFt53yaJyRxxFbI_FMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:37:28,630 - INFO - Got a captcha request.
+2026-02-19 01:37:31,636 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:37:31,639 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:37:31,639 - INFO - Retrying with a new session.
+2026-02-19 01:37:34,824 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:37:34,851 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGN7S2cwGIi7FgwOoCVTpTGug9YKutSa0wrOznZE-fjD0hXc36pvzVhNVi435wTME7EUpjQtUMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:37:34,852 - INFO - Got a captcha request.
+2026-02-19 01:37:37,926 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:37:37,930 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:37:37,930 - INFO - Retrying with a new session.
+2026-02-19 01:37:41,077 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:37:41,107 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGOTS2cwGIi7Ku5U2Ui-RP65zLR5uwHosGup_lNrMuX48gTv9m_OpIES3FscTZVB2W9dHLDOkMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:37:41,107 - INFO - Got a captcha request.
+2026-02-19 01:37:44,086 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:37:44,089 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:37:44,089 - INFO - Retrying with a new session.
+2026-02-19 01:37:46,520 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:37:46,559 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGOrS2cwGIi7ldknmNh06XlgjkxoCluzlmcKhGd1DZOb-ufBu_IXjW4LcNT1WZPCIqFIpzq-xMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:37:46,560 - INFO - Got a captcha request.
+2026-02-19 01:37:49,434 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:37:49,438 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:37:49,438 - INFO - Retrying with a new session.
+2026-02-19 01:37:50,201 - INFO - Getting https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100
+2026-02-19 01:37:51,640 - INFO - Exception RuntimeError while fetching page: ('Cannot send a request, as the client has been closed.',)
+2026-02-19 01:37:51,640 - INFO - Retrying with a new session.
+2026-02-19 01:37:54,069 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:37:54,099 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGPHS2cwGIi4P5--0stK-0L4yYLsJqN-PhYGetFjKUeg_rKA_fgYiWFRw1550IbjOU7UFL5Y_MgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:37:54,099 - INFO - Got a captcha request.
+2026-02-19 01:37:56,935 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:37:56,939 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:37:56,939 - INFO - Retrying with a new session.
+2026-02-19 01:38:00,069 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:38:00,097 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGPfS2cwGIi7txB2DZQ9JGh6NQX7k9E2oMl6H54MpV3KuP9pUq66VkRH3B9beLvrGK1t9KNG8MgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:38:00,097 - INFO - Got a captcha request.
+2026-02-19 01:38:03,140 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:38:03,143 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:38:03,143 - INFO - Retrying with a new session.
+2026-02-19 01:38:06,034 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:38:06,078 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGP3S2cwGIi45NsELsyLQPwm0oGOT8lJuNh7STWyIF4-iiCNpOuP9YrjoEgn380Gl3Gz8uDixMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:38:06,079 - INFO - Got a captcha request.
+2026-02-19 01:38:08,960 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:38:08,964 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:38:08,964 - INFO - Retrying with a new session.
+2026-02-19 01:38:11,241 - INFO - HTTP Request: GET https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100 "HTTP/1.1 302 Found"
+2026-02-19 01:38:11,275 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100&hl=en&q=EgRA7IeBGILT2cwGIi6chh7IJt2LP05u8cBgy_hgpt45TnwpzFBw5ywxNth3RxEyY24r6PbtxMqaB2ziMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 01:38:11,275 - INFO - Got a captcha request.
+2026-02-19 01:38:14,165 - INFO - Solved captcha in less than 10 seconds.
+2026-02-19 01:38:14,168 - INFO - Exception TypeError while fetching page: ("Cookies.set() got an unexpected keyword argument 'secure'",)
+2026-02-19 01:38:14,168 - INFO - Retrying with a new session.
+2026-02-19 01:38:14,939 - ERROR - Unexpected error (attempt 3/3): Cannot Fetch from Google Scholar.
+2026-02-19 01:38:14,940 - ERROR - Failed after 3 attempts
+Traceback (most recent call last):
+  File "/home/runner/work/scholar_tracker/scholar_tracker/src/scholar_tracker.py", line 244, in get_author_stats
+    author = scholarly.search_author_id(self.author_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_scholarly.py", line 349, in search_author_id
+    return self.__nav.search_author_id(id, filled, sortby, publication_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_navigator.py", line 316, in search_author_id
+    res = author_parser.fill(res, sections=['basics'], sortby=sortby, publication_limit=publication_limit)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/author_parser.py", line 462, in fill
+    raise(e)
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/author_parser.py", line 441, in fill
+    soup = self.nav._get_soup(url)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_navigator.py", line 239, in _get_soup
+    html = self._get_page('https://scholar.google.com{0}'.format(url))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_navigator.py", line 188, in _get_page
+    return self._get_page(pagerequest, True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/scholarly/_navigator.py", line 190, in _get_page
+    raise MaxTriesExceededException("Cannot Fetch from Google Scholar.")
+scholarly._proxy_generator.MaxTriesExceededException: Cannot Fetch from Google Scholar.
+2026-02-19 01:38:14,942 - WARNING - Aborting history update because fetching stats failed.
