@@ -1,25 +1,38 @@
 # Citation Statistics
 
-Last updated: 2026-02-18
+Last updated: 2026-02-21
 
 ## Overall Statistics
-- Total Citations: 891
+- Total Citations: 898
 - H-index: 12
 - i10-index: 15
+
+## Today's Citation Changes 
+
+Total increase: +7 citations
+
+| Paper | Previous | New | Increase |
+| ----- | --------- | --- | -------- |
+| Active prompting with chain-of-thought for large language models | 363 | 364 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 141 | 142 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 83 | 84 | +1 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 44 | 46 | +2 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 20 | 21 | +1 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 5 | 6 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 363 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 141 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 83 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 44 | 2024 |
+| Active prompting with chain-of-thought for large language models | 364 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 142 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 84 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 46 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 43 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 42 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 22 | 2024 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 21 | 2023 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 20 | 2025 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 20 | 2023 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 13 | 2025 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 13 | 2024 |
 | 3D Question Answering for City Scene Understanding | 13 | 2024 |
@@ -28,8 +41,8 @@ Last updated: 2026-02-18
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 10 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 9 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 6 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 6 | 2025 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 5 | 2025 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 3 | 2025 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 2 | 2025 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 2 | 2025 |
@@ -46,6 +59,7 @@ Last updated: 2026-02-18
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-02-21 | 898 | 12 |
 | 2026-02-18 | 891 | 12 |
 | 2026-02-17 | 891 | 12 |
 | 2026-02-16 | 886 | 12 |
@@ -55,7 +69,6 @@ Last updated: 2026-02-18
 | 2026-01-31 | 833 | 0 |
 | 2026-01-30 | 830 | 0 |
 | 2026-01-25 | 810 | 0 |
-| 2026-01-19 | 789 | 0 |
 
 ## Citation Trends
 
