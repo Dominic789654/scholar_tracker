@@ -12,6 +12,13 @@ from bs4 import BeautifulSoup
 import random
 from typing import Optional, List, Dict, Any
 
+try:
+    from fp.fp import FreeProxy
+    FREE_PROXY_AVAILABLE = True
+except ImportError:
+    FREE_PROXY_AVAILABLE = False
+    logging.warning("free-proxy not installed, falling back to direct requests")
+
 from .utils import USER_AGENTS, AuthorStats, PaperStats, DailyChanges, CitationChange
 from .exceptions import (
     ScholarTrackerError,
@@ -59,18 +66,35 @@ class ScholarTracker:
         self,
         author_query: Optional[str] = None,
         author_id: Optional[str] = None,
-        scraper_api_key: Optional[str] = None
+        scraper_api_key: Optional[str] = None,
+        use_free_proxy: bool = True
     ):
         if not author_query and not author_id:
             raise ValueError("Either author_query or author_id must be provided.")
         self.author_query = author_query
         self.author_id = author_id
         self.scraper_api_key = scraper_api_key or os.environ.get('SCRAPER_API_KEY')
+        self.use_free_proxy = use_free_proxy
         self.data_file = "data/citation_history.json"
         self.daily_changes_file = "data/daily_changes.json"
         logging.info(f"ScholarTracker initialized for author_query: '{self.author_query}', author_id: '{self.author_id}'")
         if self.scraper_api_key:
             logging.info("ScraperAPI is configured for proxy support")
+        if self.use_free_proxy and FREE_PROXY_AVAILABLE:
+            logging.info("Free proxy support enabled")
+
+    def _get_free_proxy(self) -> Optional[str]:
+        """Get a free proxy using free-proxy library."""
+        if not FREE_PROXY_AVAILABLE:
+            return None
+        try:
+            proxy = FreeProxy(timeout=1, rand=True).get()
+            if proxy:
+                logging.info(f"Got free proxy: {proxy}")
+                return proxy
+        except Exception as e:
+            logging.warning(f"Failed to get free proxy: {e}")
+        return None
 
     def _get_scraper_api_url(self, url: str) -> Optional[str]:
         """Get ScraperAPI proxy URL if API key is available."""
@@ -78,8 +102,8 @@ class ScholarTracker:
             return None
         return f"http://scraperapi:{self.scraper_api_key}@proxy-server.scraperapi.com:8001"
 
-    def _make_request(self, url: str, use_scraper_api: bool = False) -> requests.Response:
-        """Make HTTP request with optional ScraperAPI proxy."""
+    def _make_request(self, url: str, use_scraper_api: bool = False, use_free_proxy: bool = True) -> requests.Response:
+        """Make HTTP request - try direct first, then free proxy if fails."""
         headers = {
             'User-Agent': random.choice(USER_AGENTS),
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -90,12 +114,11 @@ class ScholarTracker:
         }
 
         if use_scraper_api and self.scraper_api_key:
-            # Use ScraperAPI proxy
+            # Use ScraperAPI proxy if configured
             proxies = {
                 'http': self._get_scraper_api_url(url),
                 'https': self._get_scraper_api_url(url),
             }
-            # ScraperAPI handles headers internally, but we can pass custom headers
             response = requests.get(
                 'http://api.scraperapi.com',
                 params={
@@ -106,7 +129,34 @@ class ScholarTracker:
                 timeout=60
             )
         else:
-            response = requests.get(url, headers=headers, timeout=30)
+            # Strategy: try direct first, then free proxy if fails
+            try:
+                # First try direct request
+                logging.info("Trying direct request first...")
+                response = requests.get(url, headers=headers, timeout=30)
+                response.raise_for_status()
+                return response
+            except Exception as direct_error:
+                logging.warning(f"Direct request failed: {direct_error}")
+
+                # If free proxy is enabled, try that
+                if self.use_free_proxy and use_free_proxy and FREE_PROXY_AVAILABLE:
+                    free_proxy = self._get_free_proxy()
+                    if free_proxy:
+                        try:
+                            logging.info(f"Trying with free proxy: {free_proxy}")
+                            proxies = {
+                                'http': free_proxy,
+                                'https': free_proxy,
+                            }
+                            response = requests.get(url, headers=headers, proxies=proxies, timeout=30)
+                            response.raise_for_status()
+                            return response
+                        except Exception as proxy_error:
+                            logging.warning(f"Free proxy also failed: {proxy_error}")
+
+                # If all else fails, re-raise the original direct error
+                raise direct_error
 
         return response
 
@@ -135,14 +185,10 @@ class ScholarTracker:
                     logging.warning(f"ScraperAPI failed: {e}, trying direct request...")
                     response = None
 
-            # Fallback to direct request
+            # Fallback to direct request (now handled by _make_request with automatic fallback)
             if response is None:
-                logging.info("Attempting direct fetch...")
-                headers = {
-                    'User-Agent': random.choice(USER_AGENTS),
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                }
-                response = requests.get(url, headers=headers, timeout=30)
+                logging.info("Attempting fetch with automatic fallback (direct -> free proxy)...")
+                response = self._make_request(url, use_scraper_api=False, use_free_proxy=True)
 
             # Handle response errors
             if response.status_code == 403:

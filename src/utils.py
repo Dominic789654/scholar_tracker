@@ -24,6 +24,7 @@ class Config:
     max_retries: int = 3
     retry_delay: int = 5
     scraper_api_key: Optional[str] = None
+    use_free_proxy: bool = True
 
     @classmethod
     def from_file(cls, config_path: str = "config.json") -> 'Config':
@@ -32,7 +33,8 @@ class Config:
             "author_id": "YOUR_SCHOLAR_ID_HERE",
             "author_query": None,
             "max_retries": 3,
-            "retry_delay": 5
+            "retry_delay": 5,
+            "use_free_proxy": True
         }
 
         if os.path.exists(config_path):

@@ -1,6 +1,7 @@
 {
   "author_id": "VtK5lwUAAAAJ",
   "author_query": null,
-  "max_retries": 3,
-  "retry_delay": 5
+  "max_retries": 5,
+  "retry_delay": 10,
+  "use_free_proxy": true
 }

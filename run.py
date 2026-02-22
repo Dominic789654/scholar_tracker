@@ -101,7 +101,8 @@ def main():
     tracker = ScholarTracker(
         author_id=CONFIG.author_id,
         author_query=CONFIG.author_query,
-        scraper_api_key=CONFIG.scraper_api_key
+        scraper_api_key=CONFIG.scraper_api_key,
+        use_free_proxy=CONFIG.use_free_proxy
     )
 
     # Update citation history
