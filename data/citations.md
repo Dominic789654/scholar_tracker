@@ -1,24 +1,19 @@
 # Citation Statistics
 
-Last updated: 2026-02-21
+Last updated: 2026-02-23
 
 ## Overall Statistics
-- Total Citations: 898
+- Total Citations: 899
 - H-index: 12
 - i10-index: 15
 
 ## Today's Citation Changes 
 
-Total increase: +7 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 363 | 364 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 141 | 142 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 83 | 84 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 44 | 46 | +2 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 20 | 21 | +1 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 5 | 6 | +1 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 46 | 47 | +1 |
 
 ## Paper Citations
 
@@ -27,7 +22,7 @@ Total increase: +7 citations
 | Active prompting with chain-of-thought for large language models | 364 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 142 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 84 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 46 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 47 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 43 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 42 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 22 | 2024 |
@@ -59,6 +54,7 @@ Total increase: +7 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-02-23 | 899 | 12 |
 | 2026-02-21 | 898 | 12 |
 | 2026-02-18 | 891 | 12 |
 | 2026-02-17 | 891 | 12 |
@@ -68,7 +64,6 @@ Total increase: +7 citations
 | 2026-02-03 | 836 | 0 |
 | 2026-01-31 | 833 | 0 |
 | 2026-01-30 | 830 | 0 |
-| 2026-01-25 | 810 | 0 |
 
 ## Citation Trends
 
