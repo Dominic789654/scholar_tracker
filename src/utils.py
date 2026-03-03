@@ -53,7 +53,9 @@ class Config:
                 json.dump(default_config, f, indent=2)
             print(f"Created default config file: {config_path}")
             print("Please update it with your Google Scholar ID")
-            return cls()
+            config = default_config.copy()
+            config["scraper_api_key"] = os.environ.get("SCRAPER_API_KEY")
+            return cls(**config)
 
     def is_valid(self) -> bool:
         """Check if configuration is valid."""

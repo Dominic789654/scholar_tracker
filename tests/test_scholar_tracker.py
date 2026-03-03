@@ -6,6 +6,7 @@ import os
 import tempfile
 from unittest.mock import patch, MagicMock
 from src.scholar_tracker import ScholarTracker
+from src.exceptions import DataFetchError
 
 
 class TestScholarTrackerInit:
@@ -195,3 +196,79 @@ class TestCitationChanges:
         assert tracker.get_citation_changes(None, None) is None
         assert tracker.get_citation_changes({}, None) is None
         assert tracker.get_citation_changes(None, {}) is None
+
+
+class TestScraperAPIFlow:
+    """Tests for ScraperAPI/manual fetch flow."""
+
+    def test_get_author_stats_prefers_manual_fetch_when_scraper_api_configured(self):
+        """Manual fetch should be used first when ScraperAPI is configured."""
+        tracker = ScholarTracker(author_id="test_id", scraper_api_key="test_key")
+        manual_author = {
+            "name": "Test Author",
+            "citedby": 123,
+            "hindex": 10,
+            "i10index": 8,
+            "publications": [{"bib": {"title": "Paper 1", "pub_year": "2024"}, "num_citations": 30}]
+        }
+
+        with patch.object(tracker, "_manual_fetch_author_data", return_value=manual_author) as mock_manual, \
+                patch("src.scholar_tracker.scholarly.search_author_id") as mock_search:
+            stats = tracker.get_author_stats(max_retries=1, retry_delay=0)
+
+        assert stats is not None
+        assert stats["total_citations"] == 123
+        assert stats["h_index"] == 10
+        assert len(stats["papers"]) == 1
+        mock_manual.assert_called_once_with("test_id")
+        mock_search.assert_not_called()
+
+    def test_get_author_stats_handles_manual_fetch_failures_with_retries(self):
+        """Manual fetch failures should trigger bounded retries, then return None."""
+        tracker = ScholarTracker(author_id="test_id", scraper_api_key="test_key")
+
+        with patch.object(
+            tracker,
+            "_manual_fetch_author_data",
+            side_effect=DataFetchError("manual fetch failed", retryable=True)
+        ) as mock_manual, patch("src.scholar_tracker.time.sleep"):
+            stats = tracker.get_author_stats(max_retries=2, retry_delay=0)
+
+        assert stats is None
+        assert mock_manual.call_count == 2
+
+    def test_manual_fetch_accepts_successful_scraperapi_response(self):
+        """ScraperAPI success should not depend on response.url containing scholar domain."""
+        tracker = ScholarTracker(author_id="test_id", scraper_api_key="test_key")
+        html = """
+        <html>
+          <div id="gsc_prf_in">Test Author</div>
+          <table id="gsc_rsb_st">
+            <tr><td>Metric</td><td>All</td></tr>
+            <tr><td>Total citations</td><td>100</td></tr>
+            <tr><td>h-index</td><td>12</td></tr>
+            <tr><td>i10-index</td><td>5</td></tr>
+          </table>
+          <tr class="gsc_a_tr">
+            <a class="gsc_a_at">Paper A</a>
+            <span class="gsc_a_h gsc_a_hc gs_ibl">2024</span>
+            <a class="gsc_a_ac gs_ibl">10</a>
+          </tr>
+        </html>
+        """
+
+        response = MagicMock()
+        response.status_code = 200
+        response.url = "http://api.scraperapi.com/?url=https://scholar.google.com"
+        response.text = html
+        response.raise_for_status.return_value = None
+
+        with patch.object(tracker, "_make_request", return_value=response):
+            author = tracker._manual_fetch_author_data("test_id")
+
+        assert author is not None
+        assert author["name"] == "Test Author"
+        assert author["citedby"] == 100
+        assert author["hindex"] == 12
+        assert author["i10index"] == 5
+        assert len(author["publications"]) == 1
