@@ -172,15 +172,16 @@ class ScholarTracker:
                 logging.info("Attempting fetch via ScraperAPI...")
                 try:
                     response = self._make_request(url, use_scraper_api=True)
-                    if response.status_code == 200 and 'scholar.google.com' in response.url:
+                    if response.status_code == 200:
                         logging.info("ScraperAPI fetch successful")
                     elif response.status_code == 403:
                         raise ScraperAPIError("ScraperAPI returned 403 Forbidden", status_code=403)
                     else:
                         logging.warning(f"ScraperAPI returned status {response.status_code}, falling back to direct request")
                         raise ScraperAPIError(f"ScraperAPI returned status {response.status_code}", status_code=response.status_code)
-                except ScraperAPIError:
-                    raise
+                except ScraperAPIError as e:
+                    logging.warning(f"ScraperAPI failed: {e}, trying direct request...")
+                    response = None
                 except Exception as e:
                     logging.warning(f"ScraperAPI failed: {e}, trying direct request...")
                     response = None
@@ -269,9 +270,11 @@ class ScholarTracker:
             logging.info(f"Successfully manually fetched data for {name}: {citations} citations, {len(publications)} papers")
             return author_data
             
+        except (AuthorNotFoundError, RateLimitError, DataFetchError):
+            raise
         except Exception as e:
             logging.error(f"Manual fetch failed: {e}")
-            return None
+            raise DataFetchError(f"Manual fetch failed: {e}", retryable=True)
         
     def get_author_stats(
         self,
@@ -286,16 +289,20 @@ class ScholarTracker:
                 author = None
                 if self.author_id:
                     logging.info(f"Searching for author by ID: '{self.author_id}' (attempt {attempt + 1}/{max_retries})")
-                    # First get basic author info without filling
-                    author = scholarly.search_author_id(self.author_id)
-                    if author:
-                        # Then try to fill with publications
-                        try:
-                            author = scholarly.fill(author, sections=['basics', 'indices', 'publications'])
-                        except Exception as fill_error:
-                            logging.warning(f"Could not fill author details, using manual fetch: {fill_error}")
-                            # If fill fails, try to get data manually from the author page
-                            author = self._manual_fetch_author_data(self.author_id)
+                    if self.scraper_api_key:
+                        logging.info("ScraperAPI key detected, using manual fetch path first")
+                        author = self._manual_fetch_author_data(self.author_id)
+                    else:
+                        # First get basic author info without filling
+                        author = scholarly.search_author_id(self.author_id)
+                        if author:
+                            # Then try to fill with publications
+                            try:
+                                author = scholarly.fill(author, sections=['basics', 'indices', 'publications'])
+                            except Exception as fill_error:
+                                logging.warning(f"Could not fill author details, using manual fetch: {fill_error}")
+                                # If fill fails, try to get data manually from the author page
+                                author = self._manual_fetch_author_data(self.author_id)
                 else:
                     logging.info(f"Searching for author by name: '{self.author_query}' (attempt {attempt + 1}/{max_retries})")
                     search_query = scholarly.search_author(self.author_query)
