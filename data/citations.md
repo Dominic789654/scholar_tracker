@@ -1,34 +1,33 @@
 # Citation Statistics
 
-Last updated: 2026-03-04
+Last updated: 2026-03-05
 
 ## Overall Statistics
-- Total Citations: 934
+- Total Citations: 936
 - H-index: 13
 - i10-index: 15
 
 ## Today's Citation Changes 
 
-Total increase: +3 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| 3D Question Answering for City Scene Understanding | 14 | 15 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 151 | 152 | +1 |
-| Active prompting with chain-of-thought for large language models | 372 | 373 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 21 | 22 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 152 | 153 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 373 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 152 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 153 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 90 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 48 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 44 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 43 | 2024 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 22 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 22 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 21 | 2025 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 21 | 2023 |
 | 3D Question Answering for City Scene Understanding | 15 | 2024 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 13 | 2025 |
@@ -57,6 +56,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-03-05 | 936 | 13 |
 | 2026-03-04 | 934 | 13 |
 | 2026-03-03 | 931 | 13 |
 | 2026-03-01 | 930 | 13 |
@@ -66,7 +66,6 @@ Total increase: +3 citations
 | 2026-02-18 | 891 | 12 |
 | 2026-02-17 | 891 | 12 |
 | 2026-02-16 | 886 | 12 |
-| 2026-02-15 | 862 | 12 |
 
 ## Citation Trends
 
