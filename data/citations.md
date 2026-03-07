@@ -1,20 +1,19 @@
 # Citation Statistics
 
-Last updated: 2026-03-05
+Last updated: 2026-03-07
 
 ## Overall Statistics
-- Total Citations: 936
+- Total Citations: 937
 - H-index: 13
 - i10-index: 15
 
 ## Today's Citation Changes 
 
-Total increase: +2 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 21 | 22 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 152 | 153 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 43 | 44 | +1 |
 
 ## Paper Citations
 
@@ -24,8 +23,8 @@ Total increase: +2 citations
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 153 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 90 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 48 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 44 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 44 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 43 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 22 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 22 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 21 | 2023 |
@@ -56,6 +55,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-03-07 | 937 | 13 |
 | 2026-03-05 | 936 | 13 |
 | 2026-03-04 | 934 | 13 |
 | 2026-03-03 | 931 | 13 |
@@ -65,7 +65,6 @@ Total increase: +2 citations
 | 2026-02-21 | 898 | 12 |
 | 2026-02-18 | 891 | 12 |
 | 2026-02-17 | 891 | 12 |
-| 2026-02-16 | 886 | 12 |
 
 ## Citation Trends
 
