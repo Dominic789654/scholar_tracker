@@ -7236,3 +7236,101 @@ src.exceptions.DataValidationError: Stats validation failed
 2026-03-08 01:34:48,703 - INFO - Exiting Kaleido/Choreo
 2026-03-08 01:34:48,705 - INFO - TemporaryDirectory.cleanup() worked.
 2026-03-08 01:34:48,705 - INFO - shutil.rmtree worked.
+2026-03-09 01:35:20,646 - INFO - ScholarTracker initialized for author_query: 'None', author_id: 'VtK5lwUAAAAJ'
+2026-03-09 01:35:20,647 - INFO - ScraperAPI is configured for proxy support
+2026-03-09 01:35:20,647 - INFO - Free proxy support enabled
+2026-03-09 01:35:20,647 - INFO - Starting history update...
+2026-03-09 01:35:20,647 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/3)
+2026-03-09 01:35:20,647 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-03-09 01:35:20,647 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-03-09 01:35:20,647 - INFO - Attempting fetch via ScraperAPI...
+2026-03-09 01:35:20,787 - WARNING - ScraperAPI returned status 401, falling back to direct request
+2026-03-09 01:35:20,787 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-03-09 01:35:20,788 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-03-09 01:35:20,788 - INFO - Trying direct request first...
+2026-03-09 01:35:21,237 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-03-09 01:35:23,015 - INFO - Got free proxy: http://61.72.221.194:3128
+2026-03-09 01:35:23,016 - INFO - Trying with free proxy: http://61.72.221.194:3128
+2026-03-09 01:35:28,217 - INFO - Successfully manually fetched data for Xiang Liu: 947 citations, 32 papers
+2026-03-09 01:35:28,218 - INFO - Found author: Xiang Liu
+2026-03-09 01:35:28,219 - INFO - Successfully collected stats for 32 papers.
+2026-03-09 01:35:28,219 - INFO - Validating collected stats...
+2026-03-09 01:35:28,219 - INFO - Stats validation passed
+2026-03-09 01:35:28,219 - INFO - Loading existing history from data/citation_history.json
+2026-03-09 01:35:28,223 - INFO - Validating collected stats...
+2026-03-09 01:35:28,223 - INFO - Stats validation passed
+2026-03-09 01:35:28,223 - INFO - Comparing with previous stats to find citation changes.
+2026-03-09 01:35:28,223 - INFO - Calculating citation changes...
+2026-03-09 01:35:28,223 - INFO - Found 3 papers with new citations.
+2026-03-09 01:35:28,223 - INFO - Changes found, updating daily changes file.
+2026-03-09 01:35:28,223 - INFO - Saved daily changes to data/daily_changes.json
+2026-03-09 01:35:28,224 - INFO - Saving updated history to data/citation_history.json
+2026-03-09 01:35:28,242 - INFO - History update complete.
+2026-03-09 01:35:28,245 - INFO - Generating citation trends chart
+2026-03-09 01:35:28,466 - INFO - Chromium init'ed with kwargs {}
+2026-03-09 01:35:28,468 - INFO - Found chromium path: /usr/bin/google-chrome
+2026-03-09 01:35:28,468 - INFO - Temp directory created: /tmp/tmpzijwup5r.
+2026-03-09 01:35:28,469 - INFO - Opening browser.
+2026-03-09 01:35:28,469 - INFO - Temp directory created: /tmp/tmpaui3q786.
+2026-03-09 01:35:28,483 - INFO - ldd failed. e: Command '['ldd', '/usr/bin/google-chrome']' returned non-zero exit status 1., stderr: None
+2026-03-09 01:35:28,483 - INFO - Temporary directory at: /tmp/tmpaui3q786
+2026-03-09 01:35:34,835 - INFO - Conforming 1 to file:///tmp/tmpzijwup5r/index.html
+2026-03-09 01:35:34,835 - INFO - Waiting on all navigates
+2026-03-09 01:35:36,910 - INFO - All navigates done, putting them all in queue.
+2026-03-09 01:35:36,911 - INFO - Getting tab from queue (has 1)
+2026-03-09 01:35:36,911 - INFO - Got DBC7
+2026-03-09 01:35:36,912 - INFO - Processing Citation_Metrics_Over_Time.png
+2026-03-09 01:35:36,912 - INFO - Sending big command for Citation_Metrics_Over_Time.png.
+2026-03-09 01:35:37,132 - INFO - Sent big command for Citation_Metrics_Over_Time.png.
+2026-03-09 01:35:37,133 - INFO - Reloading tab DBC7 before return.
+2026-03-09 01:35:37,225 - INFO - Putting tab DBC7 back (queue size: 0).
+2026-03-09 01:35:37,225 - INFO - Waiting for all cleanups to finish.
+2026-03-09 01:35:37,225 - INFO - Exiting Kaleido
+2026-03-09 01:35:37,225 - INFO - Closing browser.
+2026-03-09 01:35:37,237 - INFO - Closing browser.
+2026-03-09 01:35:37,238 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-09 01:35:37,238 - INFO - shutil.rmtree worked.
+2026-03-09 01:35:37,238 - INFO - Cancelling tasks.
+2026-03-09 01:35:37,238 - INFO - Exiting Kaleido/Choreo
+2026-03-09 01:35:37,359 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-09 01:35:37,359 - INFO - shutil.rmtree worked.
+2026-03-09 01:35:37,359 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-09 01:35:37,360 - INFO - shutil.rmtree worked.
+2026-03-09 01:35:37,360 - INFO - Cancelling tasks.
+2026-03-09 01:35:37,360 - INFO - Exiting Kaleido/Choreo
+2026-03-09 01:35:37,361 - INFO - Generating paper trends chart
+2026-03-09 01:35:37,362 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-09 01:35:37,362 - INFO - shutil.rmtree worked.
+2026-03-09 01:35:37,418 - INFO - Chromium init'ed with kwargs {}
+2026-03-09 01:35:37,419 - INFO - Found chromium path: /usr/bin/google-chrome
+2026-03-09 01:35:37,419 - INFO - Temp directory created: /tmp/tmpz622d2pd.
+2026-03-09 01:35:37,419 - INFO - Opening browser.
+2026-03-09 01:35:37,420 - INFO - Temp directory created: /tmp/tmptqioqbgt.
+2026-03-09 01:35:37,426 - INFO - ldd failed. e: Command '['ldd', '/usr/bin/google-chrome']' returned non-zero exit status 1., stderr: None
+2026-03-09 01:35:37,426 - INFO - Temporary directory at: /tmp/tmptqioqbgt
+2026-03-09 01:35:37,666 - INFO - Conforming 1 to file:///tmp/tmpz622d2pd/index.html
+2026-03-09 01:35:37,666 - INFO - Waiting on all navigates
+2026-03-09 01:35:38,762 - INFO - All navigates done, putting them all in queue.
+2026-03-09 01:35:38,764 - INFO - Getting tab from queue (has 1)
+2026-03-09 01:35:38,764 - INFO - Got 65A6
+2026-03-09 01:35:38,764 - INFO - Processing Top_10_Papers_by_Citation_Count.png
+2026-03-09 01:35:38,764 - INFO - Sending big command for Top_10_Papers_by_Citation_Count.png.
+2026-03-09 01:35:39,096 - INFO - Sent big command for Top_10_Papers_by_Citation_Count.png.
+2026-03-09 01:35:39,097 - INFO - Reloading tab 65A6 before return.
+2026-03-09 01:35:39,182 - INFO - Putting tab 65A6 back (queue size: 0).
+2026-03-09 01:35:39,182 - INFO - Waiting for all cleanups to finish.
+2026-03-09 01:35:39,182 - INFO - Exiting Kaleido
+2026-03-09 01:35:39,182 - INFO - Closing browser.
+2026-03-09 01:35:39,185 - INFO - Closing browser.
+2026-03-09 01:35:39,185 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-09 01:35:39,185 - INFO - shutil.rmtree worked.
+2026-03-09 01:35:39,185 - INFO - Cancelling tasks.
+2026-03-09 01:35:39,185 - INFO - Exiting Kaleido/Choreo
+2026-03-09 01:35:39,305 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-09 01:35:39,305 - INFO - shutil.rmtree worked.
+2026-03-09 01:35:39,305 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-09 01:35:39,306 - INFO - shutil.rmtree worked.
+2026-03-09 01:35:39,306 - INFO - Cancelling tasks.
+2026-03-09 01:35:39,306 - INFO - Exiting Kaleido/Choreo
+2026-03-09 01:35:39,309 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-09 01:35:39,309 - INFO - shutil.rmtree worked.

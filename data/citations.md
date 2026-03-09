@@ -1,26 +1,21 @@
 # Citation Statistics
 
-Last updated: 2026-03-08
+Last updated: 2026-03-09
 
 ## Overall Statistics
-- Total Citations: 945
+- Total Citations: 947
 - H-index: 13
 - i10-index: 15
 
 ## Today's Citation Changes 
 
-Total increase: +8 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 22 | 23 | +1 |
-| Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 3 | 4 | +1 |
-| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 2 | 3 | +1 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 13 | 14 | +1 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 13 | 14 | +1 |
-| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 6 | 7 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 48 | 49 | +1 |
-| Active prompting with chain-of-thought for large language models | 373 | 374 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 23 | 24 | +1 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 6 | 7 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 44 | 45 | +1 |
 
 ## Paper Citations
 
@@ -30,21 +25,21 @@ Total increase: +8 citations
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 153 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 90 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 49 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 44 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 45 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 44 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 23 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 24 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 22 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 21 | 2023 |
-| 3D Question Answering for City Scene Understanding | 15 | 2024 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 14 | 2025 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 14 | 2025 |
+| 3D Question Answering for City Scene Understanding | 14 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 13 | 2024 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 12 | 2025 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 10 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 9 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 7 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 7 | 2025 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 6 | 2025 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 4 | 2025 |
 | Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 4 | 2025 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 3 | 2025 |
@@ -63,6 +58,7 @@ Total increase: +8 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-03-09 | 947 | 13 |
 | 2026-03-08 | 945 | 13 |
 | 2026-03-07 | 937 | 13 |
 | 2026-03-05 | 936 | 13 |
@@ -72,7 +68,6 @@ Total increase: +8 citations
 | 2026-02-25 | 908 | 12 |
 | 2026-02-23 | 899 | 12 |
 | 2026-02-21 | 898 | 12 |
-| 2026-02-18 | 891 | 12 |
 
 ## Citation Trends
 
