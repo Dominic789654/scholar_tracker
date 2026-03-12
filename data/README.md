@@ -1,12 +1,12 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-03-09*
+*Last Updated: 2026-03-12*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 947 |
+| Total Citations | 949 |
 | H-index | 13 |
 | i10-index | 15 |
 | Total Papers | 32 |
@@ -15,6 +15,5 @@
 ### Today's Changes
 - Total Citations Increase: +2
 - Papers with new citations:
-  - ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference: +1 citations
-  - Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research: +1 citations
-  - LongGenBench: Long-context Generation Benchmark: +1 citations
+  - DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference: +1 citations
+  - Should We Really Edit Language Models? On the Evaluation of Edited Language Models: +1 citations

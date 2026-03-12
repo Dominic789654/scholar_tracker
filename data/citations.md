@@ -1,9 +1,9 @@
 # Citation Statistics
 
-Last updated: 2026-03-09
+Last updated: 2026-03-12
 
 ## Overall Statistics
-- Total Citations: 947
+- Total Citations: 949
 - H-index: 13
 - i10-index: 15
 
@@ -13,9 +13,8 @@ Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 23 | 24 | +1 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 6 | 7 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 44 | 45 | +1 |
+| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 1 | 2 | +1 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 13 | 14 | +1 |
 
 ## Paper Citations
 
@@ -32,8 +31,8 @@ Total increase: +2 citations
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 21 | 2023 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 14 | 2025 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 14 | 2025 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 14 | 2024 |
 | 3D Question Answering for City Scene Understanding | 14 | 2024 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 13 | 2024 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 12 | 2025 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 10 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 9 | 2025 |
@@ -43,8 +42,8 @@ Total increase: +2 citations
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 4 | 2025 |
 | Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 4 | 2025 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 3 | 2025 |
+| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 2 | 2026 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 2 | 2025 |
-| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 1 | 2026 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 1 | 2026 |
 | Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval | 1 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 1 | 2025 |
@@ -58,6 +57,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-03-12 | 949 | 13 |
 | 2026-03-09 | 947 | 13 |
 | 2026-03-08 | 945 | 13 |
 | 2026-03-07 | 937 | 13 |
@@ -67,7 +67,6 @@ Total increase: +2 citations
 | 2026-03-01 | 930 | 13 |
 | 2026-02-25 | 908 | 12 |
 | 2026-02-23 | 899 | 12 |
-| 2026-02-21 | 898 | 12 |
 
 ## Citation Trends
 
