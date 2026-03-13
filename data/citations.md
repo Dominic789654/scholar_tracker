@@ -1,27 +1,28 @@
 # Citation Statistics
 
-Last updated: 2026-03-12
+Last updated: 2026-03-13
 
 ## Overall Statistics
-- Total Citations: 949
+- Total Citations: 952
 - H-index: 13
 - i10-index: 15
 
 ## Today's Citation Changes 
 
-Total increase: +2 citations
+Total increase: +3 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 1 | 2 | +1 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 13 | 14 | +1 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 10 | 11 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 153 | 154 | +1 |
+| Active prompting with chain-of-thought for large language models | 374 | 375 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 374 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 153 | 2024 |
+| Active prompting with chain-of-thought for large language models | 375 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 154 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 90 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 49 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 45 | 2024 |
@@ -34,7 +35,7 @@ Total increase: +2 citations
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 14 | 2024 |
 | 3D Question Answering for City Scene Understanding | 14 | 2024 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 12 | 2025 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 10 | 2025 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 11 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 9 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 7 | 2025 |
@@ -57,6 +58,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-03-13 | 952 | 13 |
 | 2026-03-12 | 949 | 13 |
 | 2026-03-09 | 947 | 13 |
 | 2026-03-08 | 945 | 13 |
@@ -66,7 +68,6 @@ Total increase: +2 citations
 | 2026-03-03 | 931 | 13 |
 | 2026-03-01 | 930 | 13 |
 | 2026-02-25 | 908 | 12 |
-| 2026-02-23 | 899 | 12 |
 
 ## Citation Trends
 
