@@ -1,21 +1,11 @@
 # Citation Statistics
 
-Last updated: 2026-03-13
+Last updated: 2026-03-14
 
 ## Overall Statistics
 - Total Citations: 952
 - H-index: 13
 - i10-index: 15
-
-## Today's Citation Changes 
-
-Total increase: +3 citations
-
-| Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 10 | 11 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 153 | 154 | +1 |
-| Active prompting with chain-of-thought for large language models | 374 | 375 | +1 |
 
 ## Paper Citations
 
@@ -58,6 +48,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-03-14 | 952 | 13 |
 | 2026-03-13 | 952 | 13 |
 | 2026-03-12 | 949 | 13 |
 | 2026-03-09 | 947 | 13 |
@@ -67,7 +58,6 @@ Total increase: +3 citations
 | 2026-03-04 | 934 | 13 |
 | 2026-03-03 | 931 | 13 |
 | 2026-03-01 | 930 | 13 |
-| 2026-02-25 | 908 | 12 |
 
 ## Citation Trends
 
