@@ -1,31 +1,44 @@
 # Citation Statistics
 
-Last updated: 2026-03-14
+Last updated: 2026-03-16
 
 ## Overall Statistics
-- Total Citations: 952
+- Total Citations: 959
 - H-index: 13
 - i10-index: 15
+
+## Today's Citation Changes 
+
+Total increase: +7 citations
+
+| Paper | Previous | New | Increase |
+| ----- | --------- | --- | -------- |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 24 | 25 | +1 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 11 | 12 | +1 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 14 | 15 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 90 | 91 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 154 | 155 | +1 |
+| Active prompting with chain-of-thought for large language models | 375 | 377 | +2 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 375 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 154 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 90 | 2024 |
+| Active prompting with chain-of-thought for large language models | 377 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 155 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 91 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 49 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 45 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 44 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 24 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 25 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 22 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 21 | 2023 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 15 | 2024 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 14 | 2025 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 14 | 2025 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 14 | 2024 |
 | 3D Question Answering for City Scene Understanding | 14 | 2024 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 12 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 12 | 2025 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 11 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 9 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 7 | 2025 |
@@ -48,6 +61,7 @@ Last updated: 2026-03-14
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-03-16 | 959 | 13 |
 | 2026-03-14 | 952 | 13 |
 | 2026-03-13 | 952 | 13 |
 | 2026-03-12 | 949 | 13 |
@@ -57,7 +71,6 @@ Last updated: 2026-03-14
 | 2026-03-05 | 936 | 13 |
 | 2026-03-04 | 934 | 13 |
 | 2026-03-03 | 931 | 13 |
-| 2026-03-01 | 930 | 13 |
 
 ## Citation Trends
 

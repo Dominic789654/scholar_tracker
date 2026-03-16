@@ -7792,3 +7792,116 @@ src.exceptions.DataValidationError: Stats validation failed
 2026-03-15 01:36:09,396 - ERROR - Data fetch error (attempt 3/3): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
 2026-03-15 01:36:09,398 - ERROR - All retry attempts failed. Last error: Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
 2026-03-15 01:36:09,398 - WARNING - Aborting history update because fetching stats failed.
+2026-03-16 01:35:53,087 - INFO - ScholarTracker initialized for author_query: 'None', author_id: 'VtK5lwUAAAAJ'
+2026-03-16 01:35:53,087 - INFO - ScraperAPI is configured for proxy support
+2026-03-16 01:35:53,087 - INFO - Free proxy support enabled
+2026-03-16 01:35:53,087 - INFO - Starting history update...
+2026-03-16 01:35:53,087 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/3)
+2026-03-16 01:35:53,087 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-03-16 01:35:53,087 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-03-16 01:35:53,088 - INFO - Attempting fetch via ScraperAPI...
+2026-03-16 01:35:53,258 - WARNING - ScraperAPI returned status 401, falling back to direct request
+2026-03-16 01:35:53,258 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-03-16 01:35:53,258 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-03-16 01:35:53,258 - INFO - Trying direct request first...
+2026-03-16 01:35:53,683 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-03-16 01:36:15,444 - INFO - Got free proxy: http://16.51.152.217:324
+2026-03-16 01:36:15,444 - INFO - Trying with free proxy: http://16.51.152.217:324
+2026-03-16 01:36:16,062 - WARNING - Free proxy also failed: HTTPSConnectionPool(host='scholar.google.com', port=443): Max retries exceeded with url: /citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+2026-03-16 01:36:16,062 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-03-16 01:36:16,062 - ERROR - Data fetch error (attempt 1/3): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-03-16 01:36:16,062 - INFO - Retrying in 5 seconds...
+2026-03-16 01:36:21,062 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 2/3)
+2026-03-16 01:36:21,063 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-03-16 01:36:21,063 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-03-16 01:36:21,063 - INFO - Attempting fetch via ScraperAPI...
+2026-03-16 01:36:21,189 - WARNING - ScraperAPI returned status 401, falling back to direct request
+2026-03-16 01:36:21,189 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-03-16 01:36:21,189 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-03-16 01:36:21,189 - INFO - Trying direct request first...
+2026-03-16 01:36:21,617 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-03-16 01:36:28,963 - INFO - Got free proxy: http://137.220.151.110:6005
+2026-03-16 01:36:28,963 - INFO - Trying with free proxy: http://137.220.151.110:6005
+2026-03-16 01:36:33,659 - INFO - Successfully manually fetched data for Xiang Liu: 959 citations, 32 papers
+2026-03-16 01:36:33,660 - INFO - Found author: Xiang Liu
+2026-03-16 01:36:33,661 - INFO - Successfully collected stats for 32 papers.
+2026-03-16 01:36:33,661 - INFO - Validating collected stats...
+2026-03-16 01:36:33,661 - INFO - Stats validation passed
+2026-03-16 01:36:33,661 - INFO - Loading existing history from data/citation_history.json
+2026-03-16 01:36:33,664 - INFO - Validating collected stats...
+2026-03-16 01:36:33,665 - INFO - Stats validation passed
+2026-03-16 01:36:33,665 - INFO - Comparing with previous stats to find citation changes.
+2026-03-16 01:36:33,665 - INFO - Calculating citation changes...
+2026-03-16 01:36:33,665 - INFO - Found 6 papers with new citations.
+2026-03-16 01:36:33,665 - INFO - Changes found, updating daily changes file.
+2026-03-16 01:36:33,665 - INFO - Saved daily changes to data/daily_changes.json
+2026-03-16 01:36:33,665 - INFO - Saving updated history to data/citation_history.json
+2026-03-16 01:36:33,684 - INFO - History update complete.
+2026-03-16 01:36:33,688 - INFO - Generating citation trends chart
+2026-03-16 01:36:33,924 - INFO - Chromium init'ed with kwargs {}
+2026-03-16 01:36:33,926 - INFO - Found chromium path: /usr/bin/google-chrome
+2026-03-16 01:36:33,927 - INFO - Temp directory created: /tmp/tmpii5eu6cu.
+2026-03-16 01:36:33,927 - INFO - Opening browser.
+2026-03-16 01:36:33,927 - INFO - Temp directory created: /tmp/tmpbxchggg0.
+2026-03-16 01:36:33,944 - INFO - ldd failed. e: Command '['ldd', '/usr/bin/google-chrome']' returned non-zero exit status 1., stderr: None
+2026-03-16 01:36:33,944 - INFO - Temporary directory at: /tmp/tmpbxchggg0
+2026-03-16 01:36:40,351 - INFO - Conforming 1 to file:///tmp/tmpii5eu6cu/index.html
+2026-03-16 01:36:40,351 - INFO - Waiting on all navigates
+2026-03-16 01:36:42,376 - INFO - All navigates done, putting them all in queue.
+2026-03-16 01:36:42,377 - INFO - Getting tab from queue (has 1)
+2026-03-16 01:36:42,377 - INFO - Got 4023
+2026-03-16 01:36:42,377 - INFO - Processing Citation_Metrics_Over_Time.png
+2026-03-16 01:36:42,377 - INFO - Sending big command for Citation_Metrics_Over_Time.png.
+2026-03-16 01:36:42,597 - INFO - Sent big command for Citation_Metrics_Over_Time.png.
+2026-03-16 01:36:42,598 - INFO - Reloading tab 4023 before return.
+2026-03-16 01:36:42,685 - INFO - Putting tab 4023 back (queue size: 0).
+2026-03-16 01:36:42,685 - INFO - Waiting for all cleanups to finish.
+2026-03-16 01:36:42,685 - INFO - Exiting Kaleido
+2026-03-16 01:36:42,685 - INFO - Closing browser.
+2026-03-16 01:36:42,697 - INFO - Closing browser.
+2026-03-16 01:36:42,698 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-16 01:36:42,698 - INFO - shutil.rmtree worked.
+2026-03-16 01:36:42,698 - INFO - Cancelling tasks.
+2026-03-16 01:36:42,698 - INFO - Exiting Kaleido/Choreo
+2026-03-16 01:36:42,868 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-16 01:36:42,868 - INFO - shutil.rmtree worked.
+2026-03-16 01:36:42,868 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-16 01:36:42,868 - INFO - shutil.rmtree worked.
+2026-03-16 01:36:42,868 - INFO - Cancelling tasks.
+2026-03-16 01:36:42,868 - INFO - Exiting Kaleido/Choreo
+2026-03-16 01:36:42,870 - INFO - Generating paper trends chart
+2026-03-16 01:36:42,903 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-16 01:36:42,903 - INFO - shutil.rmtree worked.
+2026-03-16 01:36:42,929 - INFO - Chromium init'ed with kwargs {}
+2026-03-16 01:36:42,930 - INFO - Found chromium path: /usr/bin/google-chrome
+2026-03-16 01:36:42,930 - INFO - Temp directory created: /tmp/tmpdrqr5uay.
+2026-03-16 01:36:42,930 - INFO - Opening browser.
+2026-03-16 01:36:42,931 - INFO - Temp directory created: /tmp/tmphgnsdfr_.
+2026-03-16 01:36:42,936 - INFO - ldd failed. e: Command '['ldd', '/usr/bin/google-chrome']' returned non-zero exit status 1., stderr: None
+2026-03-16 01:36:42,937 - INFO - Temporary directory at: /tmp/tmphgnsdfr_
+2026-03-16 01:36:43,171 - INFO - Conforming 1 to file:///tmp/tmpdrqr5uay/index.html
+2026-03-16 01:36:43,171 - INFO - Waiting on all navigates
+2026-03-16 01:36:44,237 - INFO - All navigates done, putting them all in queue.
+2026-03-16 01:36:44,238 - INFO - Getting tab from queue (has 1)
+2026-03-16 01:36:44,238 - INFO - Got 78E6
+2026-03-16 01:36:44,238 - INFO - Processing Top_10_Papers_by_Citation_Count.png
+2026-03-16 01:36:44,238 - INFO - Sending big command for Top_10_Papers_by_Citation_Count.png.
+2026-03-16 01:36:44,569 - INFO - Sent big command for Top_10_Papers_by_Citation_Count.png.
+2026-03-16 01:36:44,570 - INFO - Reloading tab 78E6 before return.
+2026-03-16 01:36:44,655 - INFO - Putting tab 78E6 back (queue size: 0).
+2026-03-16 01:36:44,655 - INFO - Waiting for all cleanups to finish.
+2026-03-16 01:36:44,656 - INFO - Exiting Kaleido
+2026-03-16 01:36:44,656 - INFO - Closing browser.
+2026-03-16 01:36:44,657 - INFO - Closing browser.
+2026-03-16 01:36:44,658 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-16 01:36:44,658 - INFO - shutil.rmtree worked.
+2026-03-16 01:36:44,658 - INFO - Cancelling tasks.
+2026-03-16 01:36:44,658 - INFO - Exiting Kaleido/Choreo
+2026-03-16 01:36:44,728 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-16 01:36:44,728 - INFO - shutil.rmtree worked.
+2026-03-16 01:36:44,728 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-16 01:36:44,728 - INFO - shutil.rmtree worked.
+2026-03-16 01:36:44,728 - INFO - Cancelling tasks.
+2026-03-16 01:36:44,729 - INFO - Exiting Kaleido/Choreo
+2026-03-16 01:36:44,735 - INFO - TemporaryDirectory.cleanup() worked.
+2026-03-16 01:36:44,735 - INFO - shutil.rmtree worked.
