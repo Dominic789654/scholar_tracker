@@ -1,33 +1,28 @@
 # Citation Statistics
 
-Last updated: 2026-03-23
+Last updated: 2026-03-25
 
 ## Overall Statistics
-- Total Citations: 987
+- Total Citations: 990
 - H-index: 14
 - i10-index: 16
 
 ## Today's Citation Changes 
 
-Total increase: +14 citations
+Total increase: +3 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 12 | 13 | +1 |
-| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 9 | 10 | +1 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 15 | 16 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 45 | 47 | +2 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 93 | 96 | +3 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 22 | 24 | +2 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 49 | 52 | +3 |
-| Active prompting with chain-of-thought for large language models | 382 | 383 | +1 |
+| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 5 | 6 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 155 | 156 | +1 |
+| Active prompting with chain-of-thought for large language models | 383 | 384 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 383 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 155 | 2024 |
+| Active prompting with chain-of-thought for large language models | 384 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 156 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 96 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 52 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 47 | 2024 |
@@ -45,7 +40,7 @@ Total increase: +14 citations
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 7 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 7 | 2025 |
-| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 5 | 2025 |
+| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 6 | 2025 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 4 | 2025 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 3 | 2026 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 3 | 2025 |
@@ -63,6 +58,7 @@ Total increase: +14 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-03-25 | 990 | 14 |
 | 2026-03-23 | 987 | 14 |
 | 2026-03-22 | 973 | 14 |
 | 2026-03-20 | 971 | 14 |
@@ -72,7 +68,6 @@ Total increase: +14 citations
 | 2026-03-12 | 949 | 13 |
 | 2026-03-09 | 947 | 13 |
 | 2026-03-08 | 945 | 13 |
-| 2026-03-07 | 937 | 13 |
 
 ## Citation Trends
 
