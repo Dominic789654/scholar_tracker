@@ -1,24 +1,27 @@
 """Utility functions and classes for Scholar Tracker."""
 
-import os
 import json
+import os
 from dataclasses import dataclass, field
-from typing import Optional, List, Dict, Any
+from typing import Any, Dict, List, Optional
 
+
+DEFAULT_SCHOLAR_ID_PLACEHOLDER = "YOUR_SCHOLAR_ID_HERE"
 
 # User-Agent rotation to avoid detection
 USER_AGENTS = [
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
-    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
 ]
 
 
 @dataclass
 class Config:
     """Configuration for Scholar Tracker."""
+
     author_id: Optional[str] = None
     author_query: Optional[str] = None
     max_retries: int = 3
@@ -27,39 +30,35 @@ class Config:
     use_free_proxy: bool = True
 
     @classmethod
-    def from_file(cls, config_path: str = "config.json") -> 'Config':
+    def from_file(cls, config_path: str = "config.json") -> "Config":
         """Load configuration from JSON file."""
         default_config = {
-            "author_id": "YOUR_SCHOLAR_ID_HERE",
+            "author_id": DEFAULT_SCHOLAR_ID_PLACEHOLDER,
             "author_query": None,
             "max_retries": 3,
             "retry_delay": 5,
-            "use_free_proxy": True
+            "use_free_proxy": True,
         }
 
         if os.path.exists(config_path):
-            with open(config_path, 'r') as f:
+            with open(config_path, "r") as f:
                 config = json.load(f)
-                # Merge with defaults
-                for key, value in default_config.items():
-                    if key not in config:
-                        config[key] = value
-                # Add scraper_api_key from environment
-                config["scraper_api_key"] = os.environ.get("SCRAPER_API_KEY")
-                return cls(**config)
         else:
-            # Create default config file
-            with open(config_path, 'w') as f:
+            with open(config_path, "w") as f:
                 json.dump(default_config, f, indent=2)
             print(f"Created default config file: {config_path}")
             print("Please update it with your Google Scholar ID")
             config = default_config.copy()
-            config["scraper_api_key"] = os.environ.get("SCRAPER_API_KEY")
-            return cls(**config)
+
+        for key, value in default_config.items():
+            config.setdefault(key, value)
+
+        config["scraper_api_key"] = os.environ.get("SCRAPER_API_KEY")
+        return cls(**config)
 
     def is_valid(self) -> bool:
         """Check if configuration is valid."""
-        if self.author_id == "YOUR_SCHOLAR_ID_HERE":
+        if self.author_id == DEFAULT_SCHOLAR_ID_PLACEHOLDER:
             return False
         return bool(self.author_id or self.author_query)
 
@@ -67,6 +66,7 @@ class Config:
 @dataclass
 class PaperStats:
     """Statistics for a single paper."""
+
     title: str
     citations: int
     year: str
@@ -75,6 +75,7 @@ class PaperStats:
 @dataclass
 class AuthorStats:
     """Statistics for an author at a specific date."""
+
     date: str
     total_citations: int
     h_index: int
@@ -91,11 +92,11 @@ class AuthorStats:
             "papers": [
                 {"title": p.title, "citations": p.citations, "year": p.year}
                 for p in self.papers
-            ]
+            ],
         }
 
     @classmethod
-    def from_dict(cls, data: Dict[str, Any]) -> 'AuthorStats':
+    def from_dict(cls, data: Dict[str, Any]) -> "AuthorStats":
         """Create from dictionary."""
         return cls(
             date=data["date"],
@@ -105,13 +106,14 @@ class AuthorStats:
             papers=[
                 PaperStats(title=p["title"], citations=p["citations"], year=p["year"])
                 for p in data.get("papers", [])
-            ]
+            ],
         )
 
 
 @dataclass
 class CitationChange:
     """Citation changes for a single paper."""
+
     title: str
     previous_citations: int
     new_citations: int
@@ -121,6 +123,7 @@ class CitationChange:
 @dataclass
 class DailyChanges:
     """Daily citation changes."""
+
     date: str
     total_citations_increase: int
     papers_with_changes: List[CitationChange] = field(default_factory=list)
@@ -135,20 +138,21 @@ class DailyChanges:
                     "title": c.title,
                     "previous_citations": c.previous_citations,
                     "new_citations": c.new_citations,
-                    "increase": c.increase
+                    "increase": c.increase,
                 }
                 for c in self.papers_with_changes
-            ]
+            ],
         }
 
 
 class Colors:
     """ANSI color codes for terminal output."""
-    HEADER = '\033[95m'
-    BLUE = '\033[94m'
-    CYAN = '\033[96m'
-    GREEN = '\033[92m'
-    YELLOW = '\033[93m'
-    RED = '\033[91m'
-    END = '\033[0m'
-    BOLD = '\033[1m'
+
+    HEADER = "\033[95m"
+    BLUE = "\033[94m"
+    CYAN = "\033[96m"
+    GREEN = "\033[92m"
+    YELLOW = "\033[93m"
+    RED = "\033[91m"
+    END = "\033[0m"
+    BOLD = "\033[1m"

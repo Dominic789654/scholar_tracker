@@ -1,6 +1,5 @@
 import os
 import json
-import logging
 from src.scholar_tracker import ScholarTracker
 from src.markdown_writer import MarkdownWriter
 from src.chart_generator import ChartGenerator
@@ -102,7 +101,9 @@ def main():
         author_id=CONFIG.author_id,
         author_query=CONFIG.author_query,
         scraper_api_key=CONFIG.scraper_api_key,
-        use_free_proxy=CONFIG.use_free_proxy
+        use_free_proxy=CONFIG.use_free_proxy,
+        max_retries=CONFIG.max_retries,
+        retry_delay=CONFIG.retry_delay,
     )
 
     # Update citation history

@@ -1,10 +1,15 @@
 """Unit tests for Scholar Tracker utilities."""
 
-import pytest
 import json
-import os
-import tempfile
-from src.utils import Config, AuthorStats, PaperStats, DailyChanges, CitationChange
+
+from src.utils import (
+    DEFAULT_SCHOLAR_ID_PLACEHOLDER,
+    AuthorStats,
+    CitationChange,
+    Config,
+    DailyChanges,
+    PaperStats,
+)
 
 
 class TestConfig:
@@ -24,7 +29,7 @@ class TestConfig:
             author_id="test_id",
             author_query="Test Author",
             max_retries=5,
-            retry_delay=10
+            retry_delay=10,
         )
         assert config.author_id == "test_id"
         assert config.author_query == "Test Author"
@@ -43,7 +48,7 @@ class TestConfig:
 
     def test_config_invalid_default(self):
         """Test config validation with default placeholder."""
-        config = Config(author_id="YOUR_SCHOLAR_ID_HERE")
+        config = Config(author_id=DEFAULT_SCHOLAR_ID_PLACEHOLDER)
         assert config.is_valid() is False
 
     def test_config_invalid_empty(self):
@@ -56,23 +61,23 @@ class TestConfig:
         config_file = tmp_path / "config.json"
         config_data = {
             "author_id": "test_id",
-            "max_retries": 5
+            "max_retries": 5,
         }
         config_file.write_text(json.dumps(config_data))
 
         config = Config.from_file(str(config_file))
         assert config.author_id == "test_id"
         assert config.max_retries == 5
-        assert config.retry_delay == 5  # default value
+        assert config.retry_delay == 5
 
     def test_config_from_nonexistent_file(self, tmp_path, monkeypatch):
-        """Test loading config from nonexistent file creates default."""
+        """Test loading config from nonexistent file creates default config in memory too."""
         config_file = tmp_path / "new_config.json"
         monkeypatch.chdir(tmp_path)
 
         config = Config.from_file(str(config_file))
         assert config_file.exists()
-        assert config.author_id == "YOUR_SCHOLAR_ID_HERE"
+        assert config.author_id == DEFAULT_SCHOLAR_ID_PLACEHOLDER
 
 
 class TestAuthorStats:
@@ -87,8 +92,8 @@ class TestAuthorStats:
             i10_index=5,
             papers=[
                 PaperStats(title="Paper 1", citations=50, year="2023"),
-                PaperStats(title="Paper 2", citations=30, year="2022")
-            ]
+                PaperStats(title="Paper 2", citations=30, year="2022"),
+            ],
         )
         assert stats.date == "2024-01-01"
         assert stats.total_citations == 100
@@ -102,7 +107,7 @@ class TestAuthorStats:
             total_citations=100,
             h_index=10,
             i10_index=5,
-            papers=[PaperStats(title="Paper 1", citations=50, year="2023")]
+            papers=[PaperStats(title="Paper 1", citations=50, year="2023")],
         )
         result = stats.to_dict()
         assert result["date"] == "2024-01-01"
@@ -117,9 +122,7 @@ class TestAuthorStats:
             "total_citations": 100,
             "h_index": 10,
             "i10_index": 5,
-            "papers": [
-                {"title": "Paper 1", "citations": 50, "year": "2023"}
-            ]
+            "papers": [{"title": "Paper 1", "citations": 50, "year": "2023"}],
         }
         stats = AuthorStats.from_dict(data)
         assert stats.date == "2024-01-01"
@@ -136,9 +139,19 @@ class TestDailyChanges:
             date="2024-01-01",
             total_citations_increase=10,
             papers_with_changes=[
-                CitationChange(title="Paper 1", previous_citations=50, new_citations=55, increase=5),
-                CitationChange(title="Paper 2", previous_citations=30, new_citations=35, increase=5)
-            ]
+                CitationChange(
+                    title="Paper 1",
+                    previous_citations=50,
+                    new_citations=55,
+                    increase=5,
+                ),
+                CitationChange(
+                    title="Paper 2",
+                    previous_citations=30,
+                    new_citations=35,
+                    increase=5,
+                ),
+            ],
         )
         assert changes.date == "2024-01-01"
         assert changes.total_citations_increase == 10
@@ -150,8 +163,13 @@ class TestDailyChanges:
             date="2024-01-01",
             total_citations_increase=10,
             papers_with_changes=[
-                CitationChange(title="Paper 1", previous_citations=50, new_citations=55, increase=5)
-            ]
+                CitationChange(
+                    title="Paper 1",
+                    previous_citations=50,
+                    new_citations=55,
+                    increase=5,
+                )
+            ],
         )
         result = changes.to_dict()
         assert result["date"] == "2024-01-01"
