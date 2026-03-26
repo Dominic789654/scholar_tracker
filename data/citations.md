@@ -1,9 +1,9 @@
 # Citation Statistics
 
-Last updated: 2026-03-25
+Last updated: 2026-03-26
 
 ## Overall Statistics
-- Total Citations: 990
+- Total Citations: 993
 - H-index: 14
 - i10-index: 16
 
@@ -13,9 +13,8 @@ Total increase: +3 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 5 | 6 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 155 | 156 | +1 |
-| Active prompting with chain-of-thought for large language models | 383 | 384 | +1 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 13 | 14 | +1 |
+| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 15 | 17 | +2 |
 
 ## Paper Citations
 
@@ -30,12 +29,12 @@ Total increase: +3 citations
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 26 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 24 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 21 | 2023 |
+| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 17 | 2025 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 16 | 2024 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 15 | 2025 |
 | 3D Question Answering for City Scene Understanding | 15 | 2024 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 14 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 14 | 2025 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 14 | 2025 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 13 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 10 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 7 | 2025 |
@@ -53,11 +52,13 @@ Total increase: +3 citations
 | From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM | 0 | 2026 |
 | SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching | 0 | 2026 |
 | An Improved Autoregressive Evaluation Paradigm for Large Language Models | 0 | 2025 |
+| AnTKV: Anchor Token-Aware Ultra-Low-Bit Vector Quantization for KV Cache in Large Language Models | 0 |  |
 
 ## Citation History
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-03-26 | 993 | 14 |
 | 2026-03-25 | 990 | 14 |
 | 2026-03-23 | 987 | 14 |
 | 2026-03-22 | 973 | 14 |
@@ -67,7 +68,6 @@ Total increase: +3 citations
 | 2026-03-13 | 952 | 13 |
 | 2026-03-12 | 949 | 13 |
 | 2026-03-09 | 947 | 13 |
-| 2026-03-08 | 945 | 13 |
 
 ## Citation Trends
 
