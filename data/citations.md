@@ -9,11 +9,10 @@ Last updated: 2026-03-26
 
 ## Today's Citation Changes 
 
-Total increase: +3 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | --------- | --- | -------- |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 13 | 14 | +1 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 15 | 17 | +2 |
 
 ## Paper Citations
@@ -52,22 +51,22 @@ Total increase: +3 citations
 | From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM | 0 | 2026 |
 | SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching | 0 | 2026 |
 | An Improved Autoregressive Evaluation Paradigm for Large Language Models | 0 | 2025 |
-| AnTKV: Anchor Token-Aware Ultra-Low-Bit Vector Quantization for KV Cache in Large Language Models | 0 |  |
+| AnTKV: Anchor Token-Aware Ultra-Low-Bit Vector Quantization for KV Cache in Large Language Models | 0 | N/A |
 
 ## Citation History
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
 | 2026-03-26 | 993 | 14 |
-| 2026-03-25 | 990 | 14 |
-| 2026-03-23 | 987 | 14 |
-| 2026-03-22 | 973 | 14 |
+| 2026-03-25 | 991 | 14 |
+| 2026-03-24 | 990 | 14 |
+| 2026-03-22 | 987 | 14 |
+| 2026-03-21 | 973 | 14 |
 | 2026-03-20 | 971 | 14 |
+| 2026-03-18 | 966 | 13 |
+| 2026-03-17 | 964 | 13 |
 | 2026-03-16 | 959 | 13 |
-| 2026-03-14 | 952 | 13 |
-| 2026-03-13 | 952 | 13 |
-| 2026-03-12 | 949 | 13 |
-| 2026-03-09 | 947 | 13 |
+| 2026-03-15 | 956 | 13 |
 
 ## Citation Trends
 
