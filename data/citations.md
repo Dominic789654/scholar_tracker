@@ -1,26 +1,26 @@
 # Citation Statistics
 
-Last updated: 2026-03-26
+Last updated: 2026-03-28
 
 ## Overall Statistics
-- Total Citations: 993
+- Total Citations: 994
 - H-index: 14
 - i10-index: 16
 
-## Today's Citation Changes 
+## Today's Citation Changes
 
-Total increase: +2 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
-| ----- | --------- | --- | -------- |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 15 | 17 | +2 |
+| ----- | -------- | --- | -------- |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 156 | 157 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 384 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 156 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 157 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 96 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 52 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 47 | 2024 |
@@ -57,6 +57,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-03-28 | 994 | 14 |
 | 2026-03-26 | 993 | 14 |
 | 2026-03-25 | 991 | 14 |
 | 2026-03-24 | 990 | 14 |
@@ -66,7 +67,6 @@ Total increase: +2 citations
 | 2026-03-18 | 966 | 13 |
 | 2026-03-17 | 964 | 13 |
 | 2026-03-16 | 959 | 13 |
-| 2026-03-15 | 956 | 13 |
 
 ## Citation Trends
 

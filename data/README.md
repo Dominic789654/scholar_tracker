@@ -1,18 +1,18 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-03-26*
+*Last Updated: 2026-03-28*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 993 |
+| Total Citations | 994 |
 | H-index | 14 |
 | i10-index | 16 |
 | Total Papers | 33 |
-| Recent Citation Growth | +2 |
+| Recent Citation Growth | +1 |
 
 ### Today's Changes
-- Total Citations Increase: +2
+- Total Citations Increase: +1
 - Papers with new citations:
-  - Can LLMs Maintain Fundamental Abilities under KV Cache Compression?: +2 citations
+  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +1 citations
