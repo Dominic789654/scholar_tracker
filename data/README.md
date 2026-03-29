@@ -1,12 +1,12 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-03-28*
+*Last Updated: 2026-03-29*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 994 |
+| Total Citations | 995 |
 | H-index | 14 |
 | i10-index | 16 |
 | Total Papers | 33 |
@@ -15,4 +15,4 @@
 ### Today's Changes
 - Total Citations Increase: +1
 - Papers with new citations:
-  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +1 citations
+  - Active prompting with chain-of-thought for large language models: +1 citations
