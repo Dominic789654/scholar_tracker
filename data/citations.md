@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-03-29
+Last updated: 2026-03-30
 
 ## Overall Statistics
 - Total Citations: 995
@@ -9,11 +9,9 @@ Last updated: 2026-03-29
 
 ## Today's Citation Changes
 
-Total increase: +1 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 384 | 385 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -51,12 +49,12 @@ Total increase: +1 citations
 | From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM | 0 | 2026 |
 | SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching | 0 | 2026 |
 | An Improved Autoregressive Evaluation Paradigm for Large Language Models | 0 | 2025 |
-| AnTKV: Anchor Token-Aware Ultra-Low-Bit Vector Quantization for KV Cache in Large Language Models | 0 | N/A |
 
 ## Citation History
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-03-30 | 995 | 14 |
 | 2026-03-29 | 995 | 14 |
 | 2026-03-28 | 994 | 14 |
 | 2026-03-26 | 993 | 14 |
@@ -66,7 +64,6 @@ Total increase: +1 citations
 | 2026-03-21 | 973 | 14 |
 | 2026-03-20 | 971 | 14 |
 | 2026-03-18 | 966 | 13 |
-| 2026-03-17 | 964 | 13 |
 
 ## Citation Trends
 
