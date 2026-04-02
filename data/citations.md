@@ -1,27 +1,25 @@
 # Citation Statistics
 
-Last updated: 2026-04-01
+Last updated: 2026-04-02
 
 ## Overall Statistics
-- Total Citations: 999
+- Total Citations: 1000
 - H-index: 14
 - i10-index: 16
 
 ## Today's Citation Changes
 
-Total increase: +4 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 385 | 387 | +2 |
-| 3D Question Answering for City Scene Understanding | 15 | 16 | +1 |
-| City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 1 | 2 | +1 |
+| Active prompting with chain-of-thought for large language models | 387 | 388 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 387 | 2023 |
+| Active prompting with chain-of-thought for large language models | 388 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 157 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 96 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 52 | 2024 |
@@ -58,6 +56,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-04-02 | 1000 | 14 |
 | 2026-04-01 | 999 | 14 |
 | 2026-03-30 | 995 | 14 |
 | 2026-03-29 | 995 | 14 |
@@ -67,7 +66,6 @@ Total increase: +4 citations
 | 2026-03-24 | 990 | 14 |
 | 2026-03-22 | 987 | 14 |
 | 2026-03-21 | 973 | 14 |
-| 2026-03-20 | 971 | 14 |
 
 ## Citation Trends
 

@@ -1,20 +1,18 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-04-01*
+*Last Updated: 2026-04-02*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 999 |
+| Total Citations | 1000 |
 | H-index | 14 |
 | i10-index | 16 |
 | Total Papers | 32 |
-| Recent Citation Growth | +4 |
+| Recent Citation Growth | +1 |
 
 ### Today's Changes
-- Total Citations Increase: +4
+- Total Citations Increase: +1
 - Papers with new citations:
-  - Active prompting with chain-of-thought for large language models: +2 citations
-  - 3D Question Answering for City Scene Understanding: +1 citations
-  - City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning: +1 citations
+  - Active prompting with chain-of-thought for large language models: +1 citations
