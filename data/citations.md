@@ -1,28 +1,27 @@
 # Citation Statistics
 
-Last updated: 2026-04-05
+Last updated: 2026-04-10
 
 ## Overall Statistics
-- Total Citations: 1009
+- Total Citations: 1011
 - H-index: 14
 - i10-index: 16
 
 ## Today's Citation Changes
 
-Total increase: +4 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 388 | 390 | +2 |
-| 3D Question Answering for City Scene Understanding | 16 | 17 | +1 |
-| Plum: Prompt Learning Using Metaheuristics | 44 | 45 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 157 | 158 | +1 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 7 | 8 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 390 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 157 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 158 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 96 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 53 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 47 | 2024 |
@@ -37,8 +36,8 @@ Total increase: +4 citations
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 14 | 2025 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 14 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 11 | 2025 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 8 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 7 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 7 | 2025 |
 | Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 6 | 2025 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 4 | 2026 |
@@ -58,6 +57,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-04-10 | 1011 | 14 |
 | 2026-04-05 | 1009 | 14 |
 | 2026-04-04 | 1005 | 14 |
 | 2026-04-03 | 1000 | 14 |
@@ -67,7 +67,6 @@ Total increase: +4 citations
 | 2026-03-29 | 995 | 14 |
 | 2026-03-28 | 994 | 14 |
 | 2026-03-26 | 993 | 14 |
-| 2026-03-25 | 991 | 14 |
 
 ## Citation Trends
 
