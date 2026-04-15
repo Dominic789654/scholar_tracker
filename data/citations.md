@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-04-14
+Last updated: 2026-04-15
 
 ## Overall Statistics
 - Total Citations: 1019
@@ -9,15 +9,9 @@ Last updated: 2026-04-14
 
 ## Today's Citation Changes
 
-Total increase: +8 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 390 | 393 | +3 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 158 | 160 | +2 |
-| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 4 | 5 | +1 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 21 | 22 | +1 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 8 | 9 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -60,6 +54,7 @@ Total increase: +8 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-04-15 | 1019 | 14 |
 | 2026-04-14 | 1019 | 14 |
 | 2026-04-10 | 1011 | 14 |
 | 2026-04-05 | 1009 | 14 |
@@ -69,7 +64,6 @@ Total increase: +8 citations
 | 2026-04-01 | 999 | 14 |
 | 2026-03-30 | 995 | 14 |
 | 2026-03-29 | 995 | 14 |
-| 2026-03-28 | 994 | 14 |
 
 ## Citation Trends
 
