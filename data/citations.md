@@ -1,34 +1,38 @@
 # Citation Statistics
 
-Last updated: 2026-04-15
+Last updated: 2026-04-17
 
 ## Overall Statistics
-- Total Citations: 1019
+- Total Citations: 1021
 - H-index: 14
 - i10-index: 16
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +2 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 27 | 28 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 160 | 161 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 96 | 97 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 393 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 160 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 96 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 161 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 97 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 53 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 47 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 45 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 27 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 28 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 24 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 22 | 2023 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 17 | 2025 |
-| 3D Question Answering for City Scene Understanding | 17 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 16 | 2024 |
+| 3D Question Answering for City Scene Understanding | 16 | 2024 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 15 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 14 | 2025 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 14 | 2025 |
@@ -54,6 +58,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-04-17 | 1021 | 14 |
 | 2026-04-15 | 1019 | 14 |
 | 2026-04-14 | 1019 | 14 |
 | 2026-04-10 | 1011 | 14 |
@@ -63,7 +68,6 @@ No paper-level citation changes recorded today.
 | 2026-04-02 | 1000 | 14 |
 | 2026-04-01 | 999 | 14 |
 | 2026-03-30 | 995 | 14 |
-| 2026-03-29 | 995 | 14 |
 
 ## Citation Trends
 
