@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-04-17
+Last updated: 2026-04-18
 
 ## Overall Statistics
 - Total Citations: 1021
@@ -9,13 +9,9 @@ Last updated: 2026-04-17
 
 ## Today's Citation Changes
 
-Total increase: +2 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 27 | 28 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 160 | 161 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 96 | 97 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -58,6 +54,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-04-18 | 1021 | 14 |
 | 2026-04-17 | 1021 | 14 |
 | 2026-04-15 | 1019 | 14 |
 | 2026-04-14 | 1019 | 14 |
@@ -67,7 +64,6 @@ Total increase: +2 citations
 | 2026-04-03 | 1000 | 14 |
 | 2026-04-02 | 1000 | 14 |
 | 2026-04-01 | 999 | 14 |
-| 2026-03-30 | 995 | 14 |
 
 ## Citation Trends
 
