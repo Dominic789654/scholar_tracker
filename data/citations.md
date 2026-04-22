@@ -1,30 +1,24 @@
 # Citation Statistics
 
-Last updated: 2026-04-21
+Last updated: 2026-04-22
 
 ## Overall Statistics
-- Total Citations: 1029
+- Total Citations: 1028
 - H-index: 14
 - i10-index: 16
 
 ## Today's Citation Changes
 
-Total increase: +8 citations
+Total increase: -1 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 393 | 397 | +4 |
-| 3D Question Answering for City Scene Understanding | 16 | 17 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 28 | 29 | +1 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 22 | 23 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 161 | 162 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 397 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 162 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 161 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 97 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 53 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 47 | 2024 |
@@ -60,6 +54,7 @@ Total increase: +8 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-04-22 | 1028 | 14 |
 | 2026-04-21 | 1029 | 14 |
 | 2026-04-18 | 1021 | 14 |
 | 2026-04-17 | 1021 | 14 |
@@ -69,7 +64,6 @@ Total increase: +8 citations
 | 2026-04-05 | 1009 | 14 |
 | 2026-04-04 | 1005 | 14 |
 | 2026-04-03 | 1000 | 14 |
-| 2026-04-02 | 1000 | 14 |
 
 ## Citation Trends
 
