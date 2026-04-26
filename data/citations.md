@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-04-25
+Last updated: 2026-04-26
 
 ## Overall Statistics
 - Total Citations: 1041
@@ -9,18 +9,9 @@ Last updated: 2026-04-25
 
 ## Today's Citation Changes
 
-Total increase: +12 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 397 | 401 | +4 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 162 | 164 | +2 |
-| 3D Question Answering for City Scene Understanding | 17 | 18 | +1 |
-| City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 2 | 3 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 53 | 54 | +1 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 14 | 15 | +1 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 9 | 10 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 97 | 98 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -63,6 +54,7 @@ Total increase: +12 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-04-26 | 1041 | 14 |
 | 2026-04-25 | 1041 | 14 |
 | 2026-04-24 | 1029 | 14 |
 | 2026-04-23 | 1028 | 14 |
@@ -72,7 +64,6 @@ Total increase: +12 citations
 | 2026-04-17 | 1021 | 14 |
 | 2026-04-15 | 1019 | 14 |
 | 2026-04-14 | 1019 | 14 |
-| 2026-04-10 | 1011 | 14 |
 
 ## Citation Trends
 
