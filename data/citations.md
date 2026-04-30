@@ -1,29 +1,38 @@
 # Citation Statistics
 
-Last updated: 2026-04-26
+Last updated: 2026-04-30
 
 ## Overall Statistics
-- Total Citations: 1041
+- Total Citations: 1062
 - H-index: 14
 - i10-index: 17
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +21 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 54 | 60 | +6 |
+| Active prompting with chain-of-thought for large language models | 401 | 405 | +4 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 164 | 168 | +4 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 98 | 101 | +3 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 29 | 30 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 47 | 48 | +1 |
+| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 7 | 8 | +1 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 10 | 11 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 401 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 164 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 98 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 54 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 47 | 2024 |
+| Active prompting with chain-of-thought for large language models | 405 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 168 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 48 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 45 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 29 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 30 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 24 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 23 | 2023 |
 | 3D Question Answering for City Scene Understanding | 18 | 2024 |
@@ -33,9 +42,9 @@ No paper-level citation changes recorded today.
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 15 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 14 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 11 | 2025 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 10 | 2025 |
+| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 11 | 2025 |
+| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 8 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
-| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 7 | 2025 |
 | Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 6 | 2025 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 5 | 2026 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 4 | 2025 |
@@ -54,6 +63,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-04-30 | 1062 | 14 |
 | 2026-04-26 | 1041 | 14 |
 | 2026-04-25 | 1041 | 14 |
 | 2026-04-24 | 1029 | 14 |
@@ -63,7 +73,6 @@ No paper-level citation changes recorded today.
 | 2026-04-18 | 1021 | 14 |
 | 2026-04-17 | 1021 | 14 |
 | 2026-04-15 | 1019 | 14 |
-| 2026-04-14 | 1019 | 14 |
 
 ## Citation Trends
 
