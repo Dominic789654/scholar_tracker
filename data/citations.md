@@ -1,26 +1,19 @@
 # Citation Statistics
 
-Last updated: 2026-04-30
+Last updated: 2026-05-01
 
 ## Overall Statistics
-- Total Citations: 1062
+- Total Citations: 1063
 - H-index: 14
 - i10-index: 17
 
 ## Today's Citation Changes
 
-Total increase: +21 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 54 | 60 | +6 |
-| Active prompting with chain-of-thought for large language models | 401 | 405 | +4 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 164 | 168 | +4 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 98 | 101 | +3 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 29 | 30 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 47 | 48 | +1 |
-| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 7 | 8 | +1 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 10 | 11 | +1 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 15 | 16 | +1 |
 
 ## Paper Citations
 
@@ -37,8 +30,8 @@ Total increase: +21 citations
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 23 | 2023 |
 | 3D Question Answering for City Scene Understanding | 18 | 2024 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 17 | 2025 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 16 | 2025 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 16 | 2024 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 15 | 2025 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 15 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 14 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 11 | 2025 |
@@ -63,6 +56,7 @@ Total increase: +21 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-01 | 1063 | 14 |
 | 2026-04-30 | 1062 | 14 |
 | 2026-04-26 | 1041 | 14 |
 | 2026-04-25 | 1041 | 14 |
@@ -72,7 +66,6 @@ Total increase: +21 citations
 | 2026-04-21 | 1029 | 14 |
 | 2026-04-18 | 1021 | 14 |
 | 2026-04-17 | 1021 | 14 |
-| 2026-04-15 | 1019 | 14 |
 
 ## Citation Trends
 
