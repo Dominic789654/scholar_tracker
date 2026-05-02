@@ -1,26 +1,27 @@
 # Citation Statistics
 
-Last updated: 2026-05-01
+Last updated: 2026-05-02
 
 ## Overall Statistics
-- Total Citations: 1063
+- Total Citations: 1065
 - H-index: 14
 - i10-index: 17
 
 ## Today's Citation Changes
 
-Total increase: +1 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 15 | 16 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 168 | 170 | +2 |
+| Active prompting with chain-of-thought for large language models | 405 | 406 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 405 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 168 | 2024 |
+| Active prompting with chain-of-thought for large language models | 406 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 170 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 48 | 2024 |
@@ -28,8 +29,8 @@ Total increase: +1 citations
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 30 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 24 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 23 | 2023 |
-| 3D Question Answering for City Scene Understanding | 18 | 2024 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 17 | 2025 |
+| 3D Question Answering for City Scene Understanding | 17 | 2024 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 16 | 2025 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 16 | 2024 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 15 | 2025 |
@@ -51,11 +52,13 @@ Total increase: +1 citations
 | From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM | 0 | 2026 |
 | SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching | 0 | 2026 |
 | An Improved Autoregressive Evaluation Paradigm for Large Language Models | 0 | 2025 |
+| Is Privacy Always Prioritized over Learning? Probing LLMs' Value Priority Belief under External Perturbations | 0 | N/A |
 
 ## Citation History
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-02 | 1065 | 14 |
 | 2026-05-01 | 1063 | 14 |
 | 2026-04-30 | 1062 | 14 |
 | 2026-04-26 | 1041 | 14 |
@@ -65,7 +68,6 @@ Total increase: +1 citations
 | 2026-04-22 | 1028 | 14 |
 | 2026-04-21 | 1029 | 14 |
 | 2026-04-18 | 1021 | 14 |
-| 2026-04-17 | 1021 | 14 |
 
 ## Citation Trends
 

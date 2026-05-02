@@ -1,18 +1,19 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-05-01*
+*Last Updated: 2026-05-02*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 1063 |
+| Total Citations | 1065 |
 | H-index | 14 |
 | i10-index | 17 |
-| Total Papers | 32 |
-| Recent Citation Growth | +1 |
+| Total Papers | 33 |
+| Recent Citation Growth | +2 |
 
 ### Today's Changes
-- Total Citations Increase: +1
+- Total Citations Increase: +2
 - Papers with new citations:
-  - Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression: +1 citations
+  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +2 citations
+  - Active prompting with chain-of-thought for large language models: +1 citations
