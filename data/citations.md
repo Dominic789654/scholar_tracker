@@ -1,17 +1,19 @@
 # Citation Statistics
 
-Last updated: 2026-05-03
+Last updated: 2026-05-04
 
 ## Overall Statistics
-- Total Citations: 1065
+- Total Citations: 1067
 - H-index: 14
 - i10-index: 17
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +2 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| LongGenBench: Long-context Generation Benchmark | 48 | 50 | +2 |
 
 ## Paper Citations
 
@@ -21,7 +23,7 @@ No paper-level citation changes recorded today.
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 170 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 48 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 50 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 45 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 30 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 24 | 2024 |
@@ -55,6 +57,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-04 | 1067 | 14 |
 | 2026-05-03 | 1065 | 14 |
 | 2026-05-02 | 1065 | 14 |
 | 2026-05-01 | 1063 | 14 |
@@ -64,7 +67,6 @@ No paper-level citation changes recorded today.
 | 2026-04-24 | 1029 | 14 |
 | 2026-04-23 | 1028 | 14 |
 | 2026-04-22 | 1028 | 14 |
-| 2026-04-21 | 1029 | 14 |
 
 ## Citation Trends
 
