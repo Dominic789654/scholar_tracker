@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-05-04
+Last updated: 2026-05-05
 
 ## Overall Statistics
 - Total Citations: 1067
@@ -9,11 +9,9 @@ Last updated: 2026-05-04
 
 ## Today's Citation Changes
 
-Total increase: +2 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| LongGenBench: Long-context Generation Benchmark | 48 | 50 | +2 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -57,6 +55,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-05 | 1067 | 14 |
 | 2026-05-04 | 1067 | 14 |
 | 2026-05-03 | 1065 | 14 |
 | 2026-05-02 | 1065 | 14 |
@@ -66,7 +65,6 @@ Total increase: +2 citations
 | 2026-04-25 | 1041 | 14 |
 | 2026-04-24 | 1029 | 14 |
 | 2026-04-23 | 1028 | 14 |
-| 2026-04-22 | 1028 | 14 |
 
 ## Citation Trends
 
