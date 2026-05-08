@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-05-06
+Last updated: 2026-05-08
 
 ## Overall Statistics
 - Total Citations: 1071
@@ -9,13 +9,9 @@ Last updated: 2026-05-06
 
 ## Today's Citation Changes
 
-Total increase: +4 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 170 | 172 | +2 |
-| 3D Question Answering for City Scene Understanding | 17 | 18 | +1 |
-| Active prompting with chain-of-thought for large language models | 406 | 407 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -59,6 +55,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-08 | 1071 | 14 |
 | 2026-05-06 | 1071 | 14 |
 | 2026-05-05 | 1067 | 14 |
 | 2026-05-04 | 1067 | 14 |
@@ -68,7 +65,6 @@ Total increase: +4 citations
 | 2026-04-30 | 1062 | 14 |
 | 2026-04-26 | 1041 | 14 |
 | 2026-04-25 | 1041 | 14 |
-| 2026-04-24 | 1029 | 14 |
 
 ## Citation Trends
 
