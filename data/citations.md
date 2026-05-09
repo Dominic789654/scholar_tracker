@@ -1,24 +1,27 @@
 # Citation Statistics
 
-Last updated: 2026-05-08
+Last updated: 2026-05-09
 
 ## Overall Statistics
-- Total Citations: 1071
+- Total Citations: 1073
 - H-index: 14
 - i10-index: 17
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +2 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval | 1 | 2 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 172 | 173 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 407 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 172 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 173 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 50 | 2024 |
@@ -41,9 +44,9 @@ No paper-level citation changes recorded today.
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 4 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 3 | 2025 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 3 | 2025 |
+| Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval | 2 | 2025 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 2 | 2025 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 1 | 2026 |
-| Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval | 1 | 2025 |
 | LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 0 | 2026 |
 | Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 0 | 2026 |
 | From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM | 0 | 2026 |
@@ -55,6 +58,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-09 | 1073 | 14 |
 | 2026-05-08 | 1071 | 14 |
 | 2026-05-06 | 1071 | 14 |
 | 2026-05-05 | 1067 | 14 |
@@ -64,7 +68,6 @@ No paper-level citation changes recorded today.
 | 2026-05-01 | 1063 | 14 |
 | 2026-04-30 | 1062 | 14 |
 | 2026-04-26 | 1041 | 14 |
-| 2026-04-25 | 1041 | 14 |
 
 ## Citation Trends
 
