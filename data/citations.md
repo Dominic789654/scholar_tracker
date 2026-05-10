@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-05-09
+Last updated: 2026-05-10
 
 ## Overall Statistics
 - Total Citations: 1073
@@ -9,12 +9,9 @@ Last updated: 2026-05-09
 
 ## Today's Citation Changes
 
-Total increase: +2 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval | 1 | 2 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 172 | 173 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -58,6 +55,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-10 | 1073 | 14 |
 | 2026-05-09 | 1073 | 14 |
 | 2026-05-08 | 1071 | 14 |
 | 2026-05-06 | 1071 | 14 |
@@ -67,7 +65,6 @@ Total increase: +2 citations
 | 2026-05-02 | 1065 | 14 |
 | 2026-05-01 | 1063 | 14 |
 | 2026-04-30 | 1062 | 14 |
-| 2026-04-26 | 1041 | 14 |
 
 ## Citation Trends
 
