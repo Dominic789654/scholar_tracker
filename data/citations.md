@@ -1,29 +1,33 @@
 # Citation Statistics
 
-Last updated: 2026-05-10
+Last updated: 2026-05-11
 
 ## Overall Statistics
-- Total Citations: 1073
+- Total Citations: 1076
 - H-index: 14
 - i10-index: 17
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +3 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| Active prompting with chain-of-thought for large language models | 407 | 408 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 30 | 31 | +1 |
+| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 11 | 12 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 407 | 2023 |
+| Active prompting with chain-of-thought for large language models | 408 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 173 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 50 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 45 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 30 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 31 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 24 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 23 | 2023 |
 | 3D Question Answering for City Scene Understanding | 18 | 2024 |
@@ -32,7 +36,7 @@ No paper-level citation changes recorded today.
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 16 | 2024 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 15 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 14 | 2025 |
-| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 11 | 2025 |
+| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 12 | 2025 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 11 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 8 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
@@ -55,6 +59,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-11 | 1076 | 14 |
 | 2026-05-10 | 1073 | 14 |
 | 2026-05-09 | 1073 | 14 |
 | 2026-05-08 | 1071 | 14 |
@@ -64,7 +69,6 @@ No paper-level citation changes recorded today.
 | 2026-05-03 | 1065 | 14 |
 | 2026-05-02 | 1065 | 14 |
 | 2026-05-01 | 1063 | 14 |
-| 2026-04-30 | 1062 | 14 |
 
 ## Citation Trends
 
