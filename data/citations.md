@@ -1,9 +1,9 @@
 # Citation Statistics
 
-Last updated: 2026-05-11
+Last updated: 2026-05-12
 
 ## Overall Statistics
-- Total Citations: 1076
+- Total Citations: 1079
 - H-index: 14
 - i10-index: 17
 
@@ -13,21 +13,21 @@ Total increase: +3 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 407 | 408 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 30 | 31 | +1 |
-| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 11 | 12 | +1 |
+| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 6 | 7 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 31 | 32 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 173 | 174 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 408 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 173 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 174 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 50 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 45 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 31 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 32 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 24 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 23 | 2023 |
 | 3D Question Answering for City Scene Understanding | 18 | 2024 |
@@ -40,7 +40,7 @@ Total increase: +3 citations
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 11 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 8 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
-| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 6 | 2025 |
+| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 7 | 2025 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 5 | 2026 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 4 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 3 | 2025 |
@@ -59,6 +59,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-12 | 1079 | 14 |
 | 2026-05-11 | 1076 | 14 |
 | 2026-05-10 | 1073 | 14 |
 | 2026-05-09 | 1073 | 14 |
@@ -68,7 +69,6 @@ Total increase: +3 citations
 | 2026-05-04 | 1067 | 14 |
 | 2026-05-03 | 1065 | 14 |
 | 2026-05-02 | 1065 | 14 |
-| 2026-05-01 | 1063 | 14 |
 
 ## Citation Trends
 
