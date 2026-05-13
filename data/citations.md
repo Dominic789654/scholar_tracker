@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-05-12
+Last updated: 2026-05-13
 
 ## Overall Statistics
 - Total Citations: 1079
@@ -9,13 +9,9 @@ Last updated: 2026-05-12
 
 ## Today's Citation Changes
 
-Total increase: +3 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 6 | 7 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 31 | 32 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 173 | 174 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -48,6 +44,7 @@ Total increase: +3 citations
 | Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval | 2 | 2025 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 2 | 2025 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 1 | 2026 |
+| MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 0 | 2026 |
 | LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 0 | 2026 |
 | Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 0 | 2026 |
 | From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM | 0 | 2026 |
@@ -59,6 +56,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-13 | 1079 | 14 |
 | 2026-05-12 | 1079 | 14 |
 | 2026-05-11 | 1076 | 14 |
 | 2026-05-10 | 1073 | 14 |
@@ -68,7 +66,6 @@ Total increase: +3 citations
 | 2026-05-05 | 1067 | 14 |
 | 2026-05-04 | 1067 | 14 |
 | 2026-05-03 | 1065 | 14 |
-| 2026-05-02 | 1065 | 14 |
 
 ## Citation Trends
 
