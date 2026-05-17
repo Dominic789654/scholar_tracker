@@ -1,59 +1,68 @@
 # Citation Statistics
 
-Last updated: 2026-05-15
+Last updated: 2026-05-17
 
 ## Overall Statistics
-- Total Citations: 1088
-- H-index: 14
+- Total Citations: 1099
+- H-index: 15
 - i10-index: 17
 
 ## Today's Citation Changes
 
-Total increase: +6 citations
+Total increase: +11 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 410 | 412 | +2 |
-| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 5 | 7 | +2 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 17 | 18 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 50 | 51 | +1 |
+| Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 4 | 5 | +1 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 16 | 17 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 32 | 33 | +1 |
+| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 14 | 15 | +1 |
+| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 3 | 4 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 175 | 176 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 51 | 52 | +1 |
+| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 8 | 9 | +1 |
+| Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 1 | 2 | +1 |
+| SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching | 0 | 1 | +1 |
+| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 12 | 13 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 412 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 175 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 176 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 51 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 52 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 45 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 32 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 33 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 24 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 23 | 2023 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 18 | 2025 |
 | 3D Question Answering for City Scene Understanding | 18 | 2024 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 16 | 2025 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 17 | 2025 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 16 | 2024 |
+| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 15 | 2025 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 15 | 2025 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 14 | 2025 |
-| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 12 | 2025 |
+| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 13 | 2025 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 11 | 2025 |
-| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 8 | 2025 |
+| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 9 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 7 | 2026 |
 | Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 7 | 2025 |
-| Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 4 | 2025 |
+| Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 5 | 2025 |
+| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 4 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 3 | 2025 |
-| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 3 | 2025 |
+| Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 2 | 2026 |
 | Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval | 2 | 2025 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 2 | 2025 |
-| Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 1 | 2026 |
+| SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching | 1 | 2026 |
+| Position: LLM Inference Should Be Evaluated as Energy-to-Token Production | 0 | 2026 |
+| -mem: Efficient Online Memory for Large Language Models | 0 | 2026 |
 | MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 0 | 2026 |
 | LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 0 | 2026 |
 | Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 0 | 2026 |
 | From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM | 0 | 2026 |
-| SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching | 0 | 2026 |
 | An Improved Autoregressive Evaluation Paradigm for Large Language Models | 0 | 2025 |
 | Is Privacy Always Prioritized over Learning? Probing LLMs' Value Priority Belief under External Perturbations | 0 | N/A |
 
@@ -61,6 +70,7 @@ Total increase: +6 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-17 | 1099 | 15 |
 | 2026-05-15 | 1088 | 14 |
 | 2026-05-14 | 1082 | 14 |
 | 2026-05-13 | 1079 | 14 |
@@ -70,7 +80,6 @@ Total increase: +6 citations
 | 2026-05-09 | 1073 | 14 |
 | 2026-05-08 | 1071 | 14 |
 | 2026-05-06 | 1071 | 14 |
-| 2026-05-05 | 1067 | 14 |
 
 ## Citation Trends
 
