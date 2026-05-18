@@ -1,43 +1,35 @@
 # Citation Statistics
 
-Last updated: 2026-05-17
+Last updated: 2026-05-18
 
 ## Overall Statistics
-- Total Citations: 1099
+- Total Citations: 1106
 - H-index: 15
 - i10-index: 17
 
 ## Today's Citation Changes
 
-Total increase: +11 citations
+Total increase: +7 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 4 | 5 | +1 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 16 | 17 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 32 | 33 | +1 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 14 | 15 | +1 |
-| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 3 | 4 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 175 | 176 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 51 | 52 | +1 |
-| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 8 | 9 | +1 |
-| Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 1 | 2 | +1 |
-| SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching | 0 | 1 | +1 |
-| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 12 | 13 | +1 |
+| Active prompting with chain-of-thought for large language models | 412 | 416 | +4 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 176 | 178 | +2 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 23 | 24 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 412 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 176 | 2024 |
+| Active prompting with chain-of-thought for large language models | 416 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 178 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 52 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 45 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 33 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 24 | 2024 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 23 | 2023 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 24 | 2023 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 18 | 2025 |
 | 3D Question Answering for City Scene Understanding | 18 | 2024 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 17 | 2025 |
@@ -57,6 +49,7 @@ Total increase: +11 citations
 | Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval | 2 | 2025 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 2 | 2025 |
 | SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching | 1 | 2026 |
+| MinT: Managed Infrastructure for Training and Serving Millions of LLMs | 0 | 2026 |
 | Position: LLM Inference Should Be Evaluated as Energy-to-Token Production | 0 | 2026 |
 | -mem: Efficient Online Memory for Large Language Models | 0 | 2026 |
 | MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 0 | 2026 |
@@ -70,6 +63,7 @@ Total increase: +11 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-18 | 1106 | 15 |
 | 2026-05-17 | 1099 | 15 |
 | 2026-05-15 | 1088 | 14 |
 | 2026-05-14 | 1082 | 14 |
@@ -79,7 +73,6 @@ Total increase: +11 citations
 | 2026-05-10 | 1073 | 14 |
 | 2026-05-09 | 1073 | 14 |
 | 2026-05-08 | 1071 | 14 |
-| 2026-05-06 | 1071 | 14 |
 
 ## Citation Trends
 
