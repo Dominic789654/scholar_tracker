@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-05-18
+Last updated: 2026-05-19
 
 ## Overall Statistics
 - Total Citations: 1106
@@ -9,13 +9,9 @@ Last updated: 2026-05-18
 
 ## Today's Citation Changes
 
-Total increase: +7 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 412 | 416 | +4 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 176 | 178 | +2 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 23 | 24 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -63,6 +59,7 @@ Total increase: +7 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-19 | 1106 | 15 |
 | 2026-05-18 | 1106 | 15 |
 | 2026-05-17 | 1099 | 15 |
 | 2026-05-15 | 1088 | 14 |
@@ -72,7 +69,6 @@ Total increase: +7 citations
 | 2026-05-11 | 1076 | 14 |
 | 2026-05-10 | 1073 | 14 |
 | 2026-05-09 | 1073 | 14 |
-| 2026-05-08 | 1071 | 14 |
 
 ## Citation Trends
 
