@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-05-20
+Last updated: 2026-05-21
 
 ## Overall Statistics
 - Total Citations: 1106
@@ -59,6 +59,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-21 | 1106 | 15 |
 | 2026-05-20 | 1106 | 15 |
 | 2026-05-19 | 1106 | 15 |
 | 2026-05-18 | 1106 | 15 |
@@ -68,7 +69,6 @@ No paper-level citation changes recorded today.
 | 2026-05-13 | 1079 | 14 |
 | 2026-05-12 | 1079 | 14 |
 | 2026-05-11 | 1076 | 14 |
-| 2026-05-10 | 1073 | 14 |
 
 ## Citation Trends
 

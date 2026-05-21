@@ -1,7 +1,7 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-05-20*
+*Last Updated: 2026-05-21*
 
 ### Quick Summary
 | Metric | Value |
