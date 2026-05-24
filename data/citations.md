@@ -1,35 +1,31 @@
 # Citation Statistics
 
-Last updated: 2026-05-23
+Last updated: 2026-05-24
 
 ## Overall Statistics
-- Total Citations: 1111
+- Total Citations: 1113
 - H-index: 15
 - i10-index: 17
 
 ## Today's Citation Changes
 
-Total increase: +5 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| LongGenBench: Long-context Generation Benchmark | 52 | 54 | +2 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 17 | 18 | +1 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 18 | 19 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 33 | 34 | +1 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 24 | 25 | +1 |
-| Plum: Prompt Learning Using Metaheuristics | 45 | 46 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 178 | 179 | +1 |
+| Plum: Prompt Learning Using Metaheuristics | 46 | 47 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 415 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 178 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 179 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 54 | 2024 |
-| Plum: Prompt Learning Using Metaheuristics | 46 | 2024 |
+| Plum: Prompt Learning Using Metaheuristics | 47 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 34 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 25 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 24 | 2023 |
@@ -66,6 +62,7 @@ Total increase: +5 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-24 | 1113 | 15 |
 | 2026-05-23 | 1111 | 15 |
 | 2026-05-21 | 1106 | 15 |
 | 2026-05-20 | 1106 | 15 |
@@ -75,7 +72,6 @@ Total increase: +5 citations
 | 2026-05-15 | 1088 | 14 |
 | 2026-05-14 | 1082 | 14 |
 | 2026-05-13 | 1079 | 14 |
-| 2026-05-12 | 1079 | 14 |
 
 ## Citation Trends
 
