@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-05-25
+Last updated: 2026-05-26
 
 ## Overall Statistics
 - Total Citations: 1118
@@ -9,14 +9,9 @@ Last updated: 2026-05-25
 
 ## Today's Citation Changes
 
-Total increase: +5 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 415 | 417 | +2 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 179 | 180 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 54 | 55 | +1 |
-| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 9 | 10 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -64,6 +59,7 @@ Total increase: +5 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-26 | 1118 | 15 |
 | 2026-05-25 | 1118 | 15 |
 | 2026-05-24 | 1113 | 15 |
 | 2026-05-23 | 1111 | 15 |
@@ -73,7 +69,6 @@ Total increase: +5 citations
 | 2026-05-18 | 1106 | 15 |
 | 2026-05-17 | 1099 | 15 |
 | 2026-05-15 | 1088 | 14 |
-| 2026-05-14 | 1082 | 14 |
 
 ## Citation Trends
 
