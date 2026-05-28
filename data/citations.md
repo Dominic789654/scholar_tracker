@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-05-27
+Last updated: 2026-05-28
 
 ## Overall Statistics
 - Total Citations: 1121
@@ -9,13 +9,9 @@ Last updated: 2026-05-27
 
 ## Today's Citation Changes
 
-Total increase: +3 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 417 | 418 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 34 | 35 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 55 | 56 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -63,6 +59,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-28 | 1121 | 15 |
 | 2026-05-27 | 1121 | 15 |
 | 2026-05-26 | 1118 | 15 |
 | 2026-05-25 | 1118 | 15 |
@@ -72,7 +69,6 @@ Total increase: +3 citations
 | 2026-05-20 | 1106 | 15 |
 | 2026-05-19 | 1106 | 15 |
 | 2026-05-18 | 1106 | 15 |
-| 2026-05-17 | 1099 | 15 |
 
 ## Citation Trends
 
