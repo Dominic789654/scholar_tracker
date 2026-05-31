@@ -1,41 +1,45 @@
 # Citation Statistics
 
-Last updated: 2026-05-29
+Last updated: 2026-05-31
 
 ## Overall Statistics
-- Total Citations: 1125
+- Total Citations: 1132
 - H-index: 15
 - i10-index: 18
 
 ## Today's Citation Changes
 
-Total increase: +4 citations
+Total increase: +7 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 418 | 420 | +2 |
-| 3D Question Answering for City Scene Understanding | 17 | 18 | +1 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 18 | 19 | +1 |
+| 3D Question Answering for City Scene Understanding | 18 | 19 | +1 |
+| Active prompting with chain-of-thought for large language models | 420 | 421 | +1 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 24 | 25 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 180 | 181 | +1 |
+| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 15 | 16 | +1 |
+| Plum: Prompt Learning Using Metaheuristics | 47 | 48 | +1 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 16 | 17 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 420 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 180 | 2024 |
+| Active prompting with chain-of-thought for large language models | 421 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 181 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 56 | 2024 |
-| Plum: Prompt Learning Using Metaheuristics | 47 | 2024 |
+| Plum: Prompt Learning Using Metaheuristics | 48 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 35 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 25 | 2024 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 24 | 2023 |
+| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 25 | 2023 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 19 | 2025 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 19 | 2025 |
-| 3D Question Answering for City Scene Understanding | 18 | 2024 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 16 | 2024 |
+| 3D Question Answering for City Scene Understanding | 19 | 2024 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 17 | 2024 |
+| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 16 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 15 | 2025 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 15 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 13 | 2025 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 11 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 10 | 2025 |
@@ -63,6 +67,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-05-31 | 1132 | 15 |
 | 2026-05-29 | 1125 | 15 |
 | 2026-05-28 | 1121 | 15 |
 | 2026-05-27 | 1121 | 15 |
@@ -72,7 +77,6 @@ Total increase: +4 citations
 | 2026-05-23 | 1111 | 15 |
 | 2026-05-21 | 1106 | 15 |
 | 2026-05-20 | 1106 | 15 |
-| 2026-05-19 | 1106 | 15 |
 
 ## Citation Trends
 
