@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-06-02
+Last updated: 2026-06-03
 
 ## Overall Statistics
 - Total Citations: 1145
@@ -9,16 +9,9 @@ Last updated: 2026-06-02
 
 ## Today's Citation Changes
 
-Total increase: +6 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| -mem: Efficient Online Memory for Large Language Models | 0 | 1 | +1 |
-| Active prompting with chain-of-thought for large language models | 422 | 423 | +1 |
-| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 5 | 6 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 181 | 182 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 56 | 57 | +1 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 26 | 27 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -67,6 +60,7 @@ Total increase: +6 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-06-03 | 1145 | 15 |
 | 2026-06-02 | 1145 | 15 |
 | 2026-06-01 | 1139 | 15 |
 | 2026-05-31 | 1132 | 15 |
@@ -76,7 +70,6 @@ Total increase: +6 citations
 | 2026-05-26 | 1118 | 15 |
 | 2026-05-25 | 1118 | 15 |
 | 2026-05-24 | 1113 | 15 |
-| 2026-05-23 | 1111 | 15 |
 
 ## Citation Trends
 
