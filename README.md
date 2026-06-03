@@ -73,7 +73,7 @@ The script will:
 1.  Fetch your latest Google Scholar statistics using the configured ID.
 2.  Update the citation history in `data/citation_history.json`.
 3.  Generate an updated markdown report in `data/citations.md`.
-4.  Create trend charts in the `data/` directory.
+4.  Create trend charts and a dashboard in the `data/` directory.
 
 ### Automated Tracking with GitHub Actions
 
@@ -83,7 +83,7 @@ This project can be automated to run daily using GitHub Actions.
 2.  **Enable GitHub Actions in your fork:**
     - Go to your repository's "Settings" > "Actions" > "General".
     - Under "Workflow permissions," select "Read and write permissions."
-3.  The tracker will automatically run daily at 00:00 UTC. You can change the schedule in `.github/workflows/update_citations.yml`.
+3.  The tracker will automatically run daily at 01:00 UTC. You can change the schedule in `.github/workflows/update_citations.yml`.
 
 ## Project Structure
 
@@ -95,6 +95,7 @@ scholar_tracker/
 ├── data/
 │   ├── citation_history.json # Historical citation data
 │   ├── citations.md          # Generated markdown report
+│   ├── dashboard.html        # Interactive citation dashboard
 │   ├── citation_trends.png   # Trend chart for citations
 │   ├── paper_trends.png      # Trend chart for top papers
 │   └── tracker.log           # Log file for debugging

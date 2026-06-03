@@ -124,6 +124,8 @@ class MarkdownWriter:
             content.extend(
                 [
                     "\n## Citation Trends",
+                    "\n### Interactive Dashboard",
+                    "[Open citation dashboard](dashboard.html)",
                     "\n### Overall Trends",
                     "![Citation Trends](citation_trends.png)",
                     "\n### Individual Paper Trends",
@@ -187,6 +189,13 @@ class MarkdownWriter:
                         )
                 else:
                     content.append("- Papers with new citations: none")
+
+            content.extend(
+                [
+                    "\n### Interactive Dashboard",
+                    "- [Open citation dashboard](dashboard.html)",
+                ]
+            )
 
             readme_path = os.path.join(self.data_dir, "README.md")
             with open(readme_path, "w") as f:

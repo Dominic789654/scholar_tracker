@@ -3,6 +3,7 @@ import json
 from src.scholar_tracker import ScholarTracker
 from src.markdown_writer import MarkdownWriter
 from src.chart_generator import ChartGenerator
+from src.dashboard_generator import DashboardGenerator
 from src.utils import Config, Colors
 
 # Load configuration
@@ -117,6 +118,14 @@ def main():
         )
         chart_gen.generate_charts()
         print("Successfully generated charts")
+
+        # Generate interactive dashboard
+        dashboard_gen = DashboardGenerator(
+            history_file="data/citation_history.json",
+            output_file="data/dashboard.html",
+        )
+        dashboard_gen.generate_dashboard()
+        print("Successfully generated dashboard")
 
         # Initialize markdown writer
         writer = MarkdownWriter(
