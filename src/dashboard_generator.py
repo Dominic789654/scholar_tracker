@@ -246,17 +246,19 @@ class DashboardGenerator:
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
   <style>
     :root {{
-      --ink: #17201d;
-      --muted: #66736e;
-      --line: #d8ded8;
-      --surface: #ffffff;
-      --wash: #f4f7f4;
-      --field: #e8eee9;
-      --green: #237b4b;
-      --blue: #285f91;
-      --gold: #ba7a1d;
-      --red: #b54a3d;
-      --shadow: 0 20px 60px rgba(26, 42, 34, 0.10);
+      --ink: #eef8f1;
+      --muted: #99a99f;
+      --line: rgba(133, 167, 144, 0.24);
+      --surface: rgba(13, 23, 20, 0.78);
+      --surface-strong: rgba(20, 34, 30, 0.92);
+      --wash: #07100d;
+      --field: rgba(222, 240, 228, 0.08);
+      --green: #75e39e;
+      --blue: #83b7ff;
+      --gold: #f2c76b;
+      --red: #ff806e;
+      --shadow: 0 28px 80px rgba(0, 0, 0, 0.38);
+      --glow: 0 0 32px rgba(117, 227, 158, 0.18);
     }}
 
     * {{
@@ -268,18 +270,40 @@ class DashboardGenerator:
       min-width: 320px;
       color: var(--ink);
       background:
-        linear-gradient(90deg, rgba(23, 32, 29, 0.035) 1px, transparent 1px),
-        linear-gradient(180deg, rgba(23, 32, 29, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(137, 201, 158, 0.055) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(137, 201, 158, 0.045) 1px, transparent 1px),
+        linear-gradient(135deg, rgba(117, 227, 158, 0.10), transparent 34%),
+        linear-gradient(315deg, rgba(131, 183, 255, 0.10), transparent 36%),
         var(--wash);
       background-size: 28px 28px;
       font-family: "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
       letter-spacing: 0;
     }}
 
+    body::before {{
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        repeating-linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.030) 0,
+          rgba(255, 255, 255, 0.030) 1px,
+          transparent 1px,
+          transparent 16px
+        ),
+        linear-gradient(115deg, transparent 0%, rgba(117, 227, 158, 0.07) 42%, transparent 64%);
+      opacity: 0.8;
+      animation: driftGrid 18s linear infinite;
+      pointer-events: none;
+    }}
+
     main {{
       width: min(1480px, calc(100% - 40px));
       margin: 0 auto;
       padding: 32px 0 48px;
+      position: relative;
     }}
 
     .topbar {{
@@ -289,6 +313,7 @@ class DashboardGenerator:
       align-items: end;
       padding: 18px 0 22px;
       border-bottom: 1px solid var(--line);
+      animation: riseIn 720ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
     }}
 
     .eyebrow {{
@@ -297,6 +322,7 @@ class DashboardGenerator:
       font-size: 13px;
       font-weight: 700;
       text-transform: uppercase;
+      letter-spacing: 0.12em;
     }}
 
     h1 {{
@@ -305,12 +331,37 @@ class DashboardGenerator:
       font-size: 42px;
       line-height: 1.05;
       font-weight: 700;
+      text-shadow: 0 0 28px rgba(117, 227, 158, 0.16);
     }}
 
     .updated {{
       color: var(--muted);
       font-size: 14px;
       text-align: right;
+    }}
+
+    .runtime-pill {{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      padding: 6px 10px;
+      color: var(--ink);
+      background: rgba(117, 227, 158, 0.12);
+      border: 1px solid rgba(117, 227, 158, 0.26);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }}
+
+    .runtime-pill::before {{
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 14px var(--green);
+      animation: pulseDot 1.8s ease-in-out infinite;
     }}
 
     .summary-grid {{
@@ -323,10 +374,34 @@ class DashboardGenerator:
     .metric {{
       min-height: 112px;
       padding: 16px;
-      background: var(--surface);
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.050), rgba(255, 255, 255, 0.018)),
+        var(--surface);
       border: 1px solid var(--line);
       border-radius: 8px;
-      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      animation: riseIn 680ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+      animation-delay: var(--delay, 0ms);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }}
+
+    .metric::after {{
+      content: "";
+      position: absolute;
+      inset: auto 14px 12px 14px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--green), transparent);
+      opacity: 0.45;
+      transform: translateX(-42%);
+      animation: dataSweep 3.2s ease-in-out infinite;
+    }}
+
+    .metric:hover {{
+      transform: translateY(-3px);
+      border-color: rgba(117, 227, 158, 0.45);
+      box-shadow: var(--shadow), var(--glow);
     }}
 
     .metric strong {{
@@ -336,6 +411,7 @@ class DashboardGenerator:
       font-size: 12px;
       font-weight: 700;
       text-transform: uppercase;
+      letter-spacing: 0.08em;
     }}
 
     .metric span {{
@@ -344,6 +420,7 @@ class DashboardGenerator:
       font-size: 32px;
       line-height: 1;
       font-weight: 700;
+      font-variant-numeric: tabular-nums;
     }}
 
     .metric small {{
@@ -355,9 +432,11 @@ class DashboardGenerator:
 
     .metric.primary {{
       color: white;
-      background: linear-gradient(135deg, #17201d 0%, #285f47 100%);
+      background:
+        linear-gradient(135deg, rgba(117, 227, 158, 0.24) 0%, rgba(131, 183, 255, 0.11) 55%, rgba(242, 199, 107, 0.16) 100%),
+        #0d1915;
       border-color: transparent;
-      box-shadow: var(--shadow);
+      box-shadow: var(--shadow), var(--glow);
     }}
 
     .metric.primary strong,
@@ -372,6 +451,7 @@ class DashboardGenerator:
       gap: 12px;
       align-items: center;
       margin: 22px 0 12px;
+      animation: riseIn 720ms cubic-bezier(0.2, 0.8, 0.2, 1) 160ms both;
     }}
 
     .segments {{
@@ -381,6 +461,7 @@ class DashboardGenerator:
       background: var(--field);
       border: 1px solid var(--line);
       border-radius: 8px;
+      backdrop-filter: blur(18px);
     }}
 
     button {{
@@ -394,11 +475,18 @@ class DashboardGenerator:
       font-size: 13px;
       font-weight: 700;
       cursor: pointer;
+      transition: color 160ms ease, background 160ms ease, transform 160ms ease;
+    }}
+
+    button:hover {{
+      color: var(--ink);
+      transform: translateY(-1px);
     }}
 
     button.active {{
-      color: white;
-      background: var(--ink);
+      color: #06100c;
+      background: linear-gradient(135deg, var(--green), var(--gold));
+      box-shadow: 0 0 18px rgba(117, 227, 158, 0.22);
     }}
 
     .search {{
@@ -410,6 +498,13 @@ class DashboardGenerator:
       border: 1px solid var(--line);
       border-radius: 8px;
       font: inherit;
+      outline: none;
+      transition: border-color 160ms ease, box-shadow 160ms ease;
+    }}
+
+    .search:focus {{
+      border-color: rgba(117, 227, 158, 0.55);
+      box-shadow: 0 0 0 3px rgba(117, 227, 158, 0.10);
     }}
 
     .dashboard-grid {{
@@ -421,10 +516,24 @@ class DashboardGenerator:
     .panel {{
       min-width: 0;
       padding: 18px;
-      background: rgba(255, 255, 255, 0.92);
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.050), rgba(255, 255, 255, 0.015)),
+        var(--surface);
       border: 1px solid var(--line);
       border-radius: 8px;
-      box-shadow: 0 12px 30px rgba(26, 42, 34, 0.06);
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 255, 255, 0.07);
+      animation: riseIn 760ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+      animation-delay: var(--delay, 0ms);
+    }}
+
+    .panel::before {{
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-top: 1px solid rgba(117, 227, 158, 0.24);
+      pointer-events: none;
     }}
 
     .panel h2 {{
@@ -432,11 +541,13 @@ class DashboardGenerator:
       font-size: 15px;
       line-height: 1.2;
       text-transform: uppercase;
+      letter-spacing: 0.08em;
     }}
 
     .plot {{
       width: 100%;
       height: 390px;
+      animation: fadeScale 800ms ease both;
     }}
 
     .plot.compact {{
@@ -463,6 +574,14 @@ class DashboardGenerator:
       align-items: center;
       padding: 10px 0;
       border-bottom: 1px solid var(--line);
+      animation: slideIn 420ms ease both;
+      animation-delay: var(--delay, 0ms);
+      transition: padding-left 160ms ease, border-color 160ms ease;
+    }}
+
+    .paper-row:hover {{
+      padding-left: 8px;
+      border-color: rgba(117, 227, 158, 0.36);
     }}
 
     .paper-title {{
@@ -484,6 +603,7 @@ class DashboardGenerator:
       font-size: 22px;
       font-weight: 700;
       white-space: nowrap;
+      text-shadow: 0 0 18px rgba(131, 183, 255, 0.22);
     }}
 
     .changes {{
@@ -493,9 +613,11 @@ class DashboardGenerator:
 
     .change-day {{
       padding: 12px;
-      background: #fbfcfb;
+      background: rgba(255, 255, 255, 0.035);
       border: 1px solid var(--line);
       border-radius: 8px;
+      animation: slideIn 420ms ease both;
+      animation-delay: var(--delay, 0ms);
     }}
 
     .change-head {{
@@ -530,10 +652,85 @@ class DashboardGenerator:
     .empty {{
       padding: 18px;
       color: var(--muted);
-      background: #fbfcfb;
+      background: rgba(255, 255, 255, 0.035);
       border: 1px dashed var(--line);
       border-radius: 8px;
       font-size: 13px;
+    }}
+
+    @keyframes riseIn {{
+      from {{
+        opacity: 0;
+        transform: translateY(18px);
+      }}
+      to {{
+        opacity: 1;
+        transform: translateY(0);
+      }}
+    }}
+
+    @keyframes slideIn {{
+      from {{
+        opacity: 0;
+        transform: translateX(-12px);
+      }}
+      to {{
+        opacity: 1;
+        transform: translateX(0);
+      }}
+    }}
+
+    @keyframes fadeScale {{
+      from {{
+        opacity: 0;
+        transform: scale(0.985);
+      }}
+      to {{
+        opacity: 1;
+        transform: scale(1);
+      }}
+    }}
+
+    @keyframes dataSweep {{
+      0%, 100% {{
+        transform: translateX(-46%);
+        opacity: 0.25;
+      }}
+      50% {{
+        transform: translateX(46%);
+        opacity: 0.70;
+      }}
+    }}
+
+    @keyframes driftGrid {{
+      from {{
+        background-position: 0 0, 0 0;
+      }}
+      to {{
+        background-position: 0 256px, 0 0;
+      }}
+    }}
+
+    @keyframes pulseDot {{
+      0%, 100% {{
+        transform: scale(0.78);
+        opacity: 0.55;
+      }}
+      50% {{
+        transform: scale(1.18);
+        opacity: 1;
+      }}
+    }}
+
+    @media (prefers-reduced-motion: reduce) {{
+      *,
+      *::before,
+      *::after {{
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 1ms !important;
+      }}
     }}
 
     @media (max-width: 1100px) {{
@@ -594,49 +791,8 @@ class DashboardGenerator:
       <div class="updated">Last updated<br><strong>{latest_date}</strong></div>
     </header>
 
-    <section class="summary-grid" aria-label="Citation summary">
-      <div class="metric primary">
-        <strong>Total citations</strong>
-        <span>{total_citations}</span>
-        <small>{last_30_growth} in the last 30 days</small>
-      </div>
-      <div class="metric">
-        <strong>H-index</strong>
-        <span>{h_index}</span>
-        <small>Current Scholar index</small>
-      </div>
-      <div class="metric">
-        <strong>i10-index</strong>
-        <span>{i10_index}</span>
-        <small>Current Scholar index</small>
-      </div>
-      <div class="metric">
-        <strong>Papers</strong>
-        <span>{total_papers}</span>
-        <small>Tracked publications</small>
-      </div>
-      <div class="metric">
-        <strong>Samples</strong>
-        <span>{summary['samples']}</span>
-        <small>{escape(summary['first_date'])} to {latest_date}</small>
-      </div>
-      <div class="metric">
-        <strong>Daily pace</strong>
-        <span>{summary['citations_per_day']:.1f}</span>
-        <small>Average citation growth</small>
-      </div>
-    </section>
-
-    <div class="control-row">
-      <div class="segments" role="group" aria-label="Time range">
-        <button type="button" data-range="all" class="active">All</button>
-        <button type="button" data-range="365">1Y</button>
-        <button type="button" data-range="180">180D</button>
-        <button type="button" data-range="90">90D</button>
-        <button type="button" data-range="30">30D</button>
-      </div>
-      <input class="search" id="paperSearch" type="search" placeholder="Filter papers">
-    </div>
+    <section id="summaryGrid" class="summary-grid" aria-label="Citation summary"></section>
+    <div id="controlRow" class="control-row"></div>
 
     <section class="dashboard-grid">
       <div class="stack">
@@ -680,23 +836,140 @@ class DashboardGenerator:
     </section>
   </main>
 
-  <script>
+  <script type="module">
+    import {{ bind, wire }} from "https://cdn.jsdelivr.net/npm/hyperhtml/+esm";
+
     window.DASHBOARD_DATA = {data_json};
     const DASHBOARD_DATA = window.DASHBOARD_DATA;
-    const palette = ["#237b4b", "#285f91", "#ba7a1d", "#b54a3d", "#5956a5", "#10827a", "#8a5a24", "#5f6f2a"];
+    const html = bind;
+    const view = wire;
+    const palette = ["#75e39e", "#83b7ff", "#f2c76b", "#ff806e", "#b8a2ff", "#71ded2", "#d99f69", "#b7d66d"];
+    const ranges = [
+      {{ label: "All", value: "all" }},
+      {{ label: "1Y", value: "365" }},
+      {{ label: "180D", value: "180" }},
+      {{ label: "90D", value: "90" }},
+      {{ label: "30D", value: "30" }},
+    ];
     let selectedRange = "all";
+    let searchQuery = "";
 
     const layoutBase = {{
       paper_bgcolor: "rgba(255,255,255,0)",
       plot_bgcolor: "rgba(255,255,255,0)",
-      font: {{ family: "Avenir Next, Helvetica Neue, Segoe UI, sans-serif", color: "#17201d", size: 12 }},
+      font: {{ family: "Avenir Next, Helvetica Neue, Segoe UI, sans-serif", color: "#dcebe1", size: 12 }},
       margin: {{ l: 48, r: 18, t: 8, b: 42 }},
       hovermode: "x unified",
-      xaxis: {{ gridcolor: "#e6ebe6", zeroline: false }},
-      yaxis: {{ gridcolor: "#e6ebe6", zeroline: false }},
-      legend: {{ orientation: "h", y: 1.12, x: 0, font: {{ size: 11 }} }}
+      xaxis: {{ gridcolor: "rgba(215,238,222,0.10)", zeroline: false, tickfont: {{ color: "#99a99f" }} }},
+      yaxis: {{ gridcolor: "rgba(215,238,222,0.10)", zeroline: false, tickfont: {{ color: "#99a99f" }} }},
+      legend: {{ orientation: "h", y: 1.12, x: 0, font: {{ size: 11, color: "#dcebe1" }} }}
     }};
     const plotConfig = {{ displayModeBar: false, responsive: true }};
+
+    function formatNumber(value, digits = 0) {{
+      return Number(value).toLocaleString(undefined, {{
+        maximumFractionDigits: digits,
+        minimumFractionDigits: digits,
+      }});
+    }}
+
+    function signedNumber(value) {{
+      const number = Number(value || 0);
+      return `${{number >= 0 ? "+" : ""}}${{number.toLocaleString()}}`;
+    }}
+
+    function metricCards() {{
+      const summary = DASHBOARD_DATA.summary;
+      return [
+        {{
+          label: "Total citations",
+          value: formatNumber(summary.total_citations),
+          raw: summary.total_citations,
+          detail: `${{signedNumber(summary.last_30_growth)}} in the last 30 days`,
+          primary: true,
+        }},
+        {{ label: "H-index", value: summary.h_index, raw: summary.h_index, detail: "Current Scholar index" }},
+        {{ label: "i10-index", value: summary.i10_index, raw: summary.i10_index, detail: "Current Scholar index" }},
+        {{ label: "Papers", value: summary.total_papers, raw: summary.total_papers, detail: "Tracked publications" }},
+        {{
+          label: "Samples",
+          value: summary.samples,
+          raw: summary.samples,
+          detail: `${{summary.first_date}} to ${{summary.latest_date}}`,
+        }},
+        {{
+          label: "Daily pace",
+          value: formatNumber(summary.citations_per_day, 1),
+          raw: summary.citations_per_day,
+          digits: 1,
+          detail: "Average citation growth",
+        }},
+      ];
+    }}
+
+    function renderSummary() {{
+      html(document.getElementById("summaryGrid"))`
+        ${{metricCards().map((metric, index) => view(metric)`
+          <div class=${{metric.primary ? "metric primary" : "metric"}} style=${{`--delay: ${{index * 70}}ms`}}>
+            <strong>${{metric.label}}</strong>
+            <span class="metric-value" data-value=${{metric.raw}} data-digits=${{metric.digits || 0}}>${{metric.value}}</span>
+            <small>${{metric.detail}}</small>
+          </div>
+        `)}}
+      `;
+    }}
+
+    function animateMetricValues() {{
+      document.querySelectorAll(".metric-value").forEach((node) => {{
+        const target = Number(node.dataset.value || 0);
+        const digits = Number(node.dataset.digits || 0);
+        const startedAt = performance.now();
+        const duration = 820 + Math.min(target, 900) * 0.18;
+
+        function tick(now) {{
+          const progress = Math.min((now - startedAt) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          node.textContent = formatNumber(target * eased, digits);
+          if (progress < 1) {{
+            requestAnimationFrame(tick);
+          }} else {{
+            node.textContent = formatNumber(target, digits);
+          }}
+        }}
+
+        requestAnimationFrame(tick);
+      }});
+    }}
+
+    function renderControls() {{
+      html(document.getElementById("controlRow"))`
+        <div class="segments" role="group" aria-label="Time range">
+          ${{ranges.map((range) => view(range)`
+            <button
+              type="button"
+              data-range=${{range.value}}
+              class=${{selectedRange === range.value ? "active" : ""}}
+              onclick=${{() => setRange(range.value)}}
+            >${{range.label}}</button>
+          `)}}
+        </div>
+        <input
+          class="search"
+          id="paperSearch"
+          type="search"
+          placeholder="Filter papers"
+          value=${{searchQuery}}
+          oninput=${{(event) => setSearch(event.target.value)}}
+        >
+      `;
+    }}
+
+    function renderRuntimeStatus() {{
+      html(document.querySelector(".updated"))`
+        Last updated<br><strong>${{DASHBOARD_DATA.summary.latest_date}}</strong>
+        <div class="runtime-pill">hyperHTML live view</div>
+      `;
+    }}
 
     function parseDate(item) {{
       return new Date(item.date + "T00:00:00");
@@ -719,9 +992,9 @@ class DashboardGenerator:
           type: "scatter",
           mode: "lines",
           name: "Citations",
-          line: {{ color: "#237b4b", width: 3 }},
+          line: {{ color: "#75e39e", width: 3, shape: "spline" }},
           fill: "tozeroy",
-          fillcolor: "rgba(35, 123, 75, 0.12)"
+          fillcolor: "rgba(117, 227, 158, 0.14)"
         }},
         {{
           x: series.map((item) => item.date),
@@ -730,7 +1003,7 @@ class DashboardGenerator:
           mode: "lines",
           name: "H-index",
           yaxis: "y2",
-          line: {{ color: "#285f91", width: 2 }}
+          line: {{ color: "#83b7ff", width: 2, shape: "hv" }}
         }},
         {{
           x: series.map((item) => item.date),
@@ -739,13 +1012,14 @@ class DashboardGenerator:
           mode: "lines",
           name: "i10-index",
           yaxis: "y2",
-          line: {{ color: "#ba7a1d", width: 2, dash: "dot" }}
+          line: {{ color: "#f2c76b", width: 2, dash: "dot", shape: "hv" }}
         }}
       ];
       Plotly.newPlot("citationTrend", traces, {{
         ...layoutBase,
+        transition: {{ duration: 420, easing: "cubic-in-out" }},
         yaxis: {{ ...layoutBase.yaxis, title: "Citations" }},
-        yaxis2: {{ title: "Index", overlaying: "y", side: "right", gridcolor: "rgba(0,0,0,0)" }}
+        yaxis2: {{ title: "Index", overlaying: "y", side: "right", gridcolor: "rgba(0,0,0,0)", tickfont: {{ color: "#99a99f" }} }}
       }}, plotConfig);
     }}
 
@@ -756,12 +1030,14 @@ class DashboardGenerator:
         y: series.map((item) => item.increase),
         type: "bar",
         marker: {{
-          color: series.map((item) => item.increase > 0 ? "#237b4b" : "#c8d1ca")
+          color: series.map((item) => item.increase > 0 ? "#75e39e" : "rgba(238,248,241,0.20)"),
+          line: {{ color: "rgba(255,255,255,0.18)", width: 1 }}
         }},
         name: "Daily increase"
       }}], {{
         ...layoutBase,
         margin: {{ l: 42, r: 16, t: 8, b: 42 }},
+        transition: {{ duration: 360, easing: "cubic-in-out" }},
         hovermode: "closest",
         showlegend: false
       }}, plotConfig);
@@ -776,12 +1052,13 @@ class DashboardGenerator:
           type: "scatter",
           mode: "lines",
           name: title,
-          line: {{ color: palette[index % palette.length], width: 2 }}
+          line: {{ color: palette[index % palette.length], width: 2, shape: "spline" }}
         }};
       }});
       Plotly.newPlot("paperTrajectories", traces, {{
         ...layoutBase,
         margin: {{ l: 42, r: 16, t: 8, b: 42 }},
+        transition: {{ duration: 360, easing: "cubic-in-out" }},
         legend: {{ orientation: "h", y: -0.22, x: 0, font: {{ size: 10 }} }}
       }}, plotConfig);
     }}
@@ -793,11 +1070,12 @@ class DashboardGenerator:
         y: papers.map((paper) => paper.title),
         type: "bar",
         orientation: "h",
-        marker: {{ color: papers.map((_, index) => palette[index % palette.length]) }},
+        marker: {{ color: papers.map((_, index) => palette[index % palette.length]), line: {{ color: "rgba(255,255,255,0.18)", width: 1 }} }},
         hovertemplate: "%{{y}}<br>%{{x}} citations<extra></extra>"
       }}], {{
         ...layoutBase,
         margin: {{ l: 190, r: 18, t: 8, b: 36 }},
+        transition: {{ duration: 360, easing: "cubic-in-out" }},
         showlegend: false,
         yaxis: {{ ...layoutBase.yaxis, tickfont: {{ size: 10 }} }}
       }}, plotConfig);
@@ -806,7 +1084,9 @@ class DashboardGenerator:
     function renderActivePapers() {{
       const papers = DASHBOARD_DATA.active_papers_30d.slice().reverse();
       if (papers.length === 0) {{
-        document.getElementById("activePapers").innerHTML = '<div class="empty">No paper-level citation changes recorded in the last 30 days.</div>';
+        html(document.getElementById("activePapers"))`
+          <div class="empty">No paper-level citation changes recorded in the last 30 days.</div>
+        `;
         return;
       }}
       Plotly.newPlot("activePapers", [{{
@@ -814,81 +1094,89 @@ class DashboardGenerator:
         y: papers.map((paper) => paper.title),
         type: "bar",
         orientation: "h",
-        marker: {{ color: "#285f91" }},
+        marker: {{ color: "#83b7ff", line: {{ color: "rgba(255,255,255,0.18)", width: 1 }} }},
         hovertemplate: "%{{y}}<br>+%{{x}} citations<extra></extra>"
       }}], {{
         ...layoutBase,
         margin: {{ l: 190, r: 18, t: 8, b: 36 }},
+        transition: {{ duration: 360, easing: "cubic-in-out" }},
         showlegend: false,
         yaxis: {{ ...layoutBase.yaxis, tickfont: {{ size: 10 }} }}
       }}, plotConfig);
     }}
 
     function renderPaperList() {{
-      const query = document.getElementById("paperSearch").value.trim().toLowerCase();
+      const query = searchQuery.trim().toLowerCase();
       const papers = DASHBOARD_DATA.top_papers.filter((paper) => paper.title.toLowerCase().includes(query));
       const list = document.getElementById("paperList");
       if (papers.length === 0) {{
-        list.innerHTML = '<div class="empty">No matching papers.</div>';
+        html(list)`<div class="empty">No matching papers.</div>`;
         return;
       }}
-      list.innerHTML = papers.map((paper, index) => `
+      html(list)`
+        ${{papers.map((paper, index) => view(paper)`
         <div class="paper-row">
           <div>
-            <div class="paper-title">${{index + 1}}. ${{escapeHtml(paper.title)}}</div>
-            <div class="paper-meta">${{escapeHtml(String(paper.year))}}</div>
+            <div class="paper-title">${{index + 1}}. ${{paper.title}}</div>
+            <div class="paper-meta">${{String(paper.year)}}</div>
           </div>
           <div class="paper-count">${{paper.citations.toLocaleString()}}</div>
         </div>
-      `).join("");
+      `)}}
+      `;
     }}
 
     function renderRecentChanges() {{
       const holder = document.getElementById("recentChanges");
       const changes = DASHBOARD_DATA.recent_changes;
       if (changes.length === 0) {{
-        holder.innerHTML = '<div class="empty">No daily change records yet.</div>';
+        html(holder)`<div class="empty">No daily change records yet.</div>`;
         return;
       }}
-      holder.innerHTML = changes.map((day) => {{
+      html(holder)`
+        ${{changes.map((day, index) => {{
         const papers = (day.papers_with_changes || []).slice(0, 5);
-        const paperRows = papers.length
-          ? papers.map((paper) => `
-              <div class="change-paper">
-                <span>${{escapeHtml(paper.title)}}</span>
-                <strong>+${{paper.increase}}</strong>
-              </div>
-            `).join("")
-          : '<div class="change-paper"><span>No paper-level changes</span><strong>0</strong></div>';
         const increase = day.total_citations_increase || 0;
-        return `
-          <div class="change-day">
+        return view(day)`
+          <div class="change-day" style=${{`--delay: ${{index * 45}}ms`}}>
             <div class="change-head">
-              <span>${{escapeHtml(day.date)}}</span>
+              <span>${{day.date}}</span>
               <span>${{increase >= 0 ? "+" : ""}}${{increase}}</span>
             </div>
-            ${{paperRows}}
+            ${{papers.length
+              ? papers.map((paper) => view(paper)`
+                <div class="change-paper">
+                  <span>${{paper.title}}</span>
+                  <strong>+${{paper.increase}}</strong>
+                </div>
+              `)
+              : view(day, "empty")`<div class="change-paper"><span>No paper-level changes</span><strong>0</strong></div>`}}
           </div>
         `;
-      }}).join("");
+      }})}}
+      `;
     }}
 
-    function escapeHtml(value) {{
-      return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
+    function setRange(range) {{
+      selectedRange = range;
+      renderControls();
+      renderCharts();
     }}
 
-    function renderAll() {{
+    function setSearch(value) {{
+      searchQuery = value;
+      renderControls();
+      renderPaperList();
+      const input = document.getElementById("paperSearch");
+      input.focus();
+      input.setSelectionRange(searchQuery.length, searchQuery.length);
+    }}
+
+    function renderCharts() {{
       if (!window.Plotly) {{
         document.querySelectorAll(".plot").forEach((node) => {{
-          node.innerHTML = '<div class="empty">Plotly CDN is unavailable. Summary metrics and paper lists are still visible.</div>';
+          html(node)`<div class="empty">Plotly CDN is unavailable. Summary metrics and paper lists are still visible.</div>`;
         }});
-        renderPaperList();
-        renderRecentChanges();
         return;
       }}
       renderCitationTrend();
@@ -896,19 +1184,18 @@ class DashboardGenerator:
       renderPaperTrajectories();
       renderPaperRanking();
       renderActivePapers();
+    }}
+
+    function renderAll() {{
+      renderRuntimeStatus();
+      renderSummary();
+      animateMetricValues();
+      renderControls();
+      renderCharts();
       renderPaperList();
       renderRecentChanges();
     }}
 
-    document.querySelectorAll("[data-range]").forEach((button) => {{
-      button.addEventListener("click", () => {{
-        selectedRange = button.dataset.range;
-        document.querySelectorAll("[data-range]").forEach((item) => item.classList.remove("active"));
-        button.classList.add("active");
-        renderAll();
-      }});
-    }});
-    document.getElementById("paperSearch").addEventListener("input", renderPaperList);
     renderAll();
   </script>
 </body>

@@ -7,17 +7,19 @@
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
   <style>
     :root {
-      --ink: #17201d;
-      --muted: #66736e;
-      --line: #d8ded8;
-      --surface: #ffffff;
-      --wash: #f4f7f4;
-      --field: #e8eee9;
-      --green: #237b4b;
-      --blue: #285f91;
-      --gold: #ba7a1d;
-      --red: #b54a3d;
-      --shadow: 0 20px 60px rgba(26, 42, 34, 0.10);
+      --ink: #eef8f1;
+      --muted: #99a99f;
+      --line: rgba(133, 167, 144, 0.24);
+      --surface: rgba(13, 23, 20, 0.78);
+      --surface-strong: rgba(20, 34, 30, 0.92);
+      --wash: #07100d;
+      --field: rgba(222, 240, 228, 0.08);
+      --green: #75e39e;
+      --blue: #83b7ff;
+      --gold: #f2c76b;
+      --red: #ff806e;
+      --shadow: 0 28px 80px rgba(0, 0, 0, 0.38);
+      --glow: 0 0 32px rgba(117, 227, 158, 0.18);
     }
 
     * {
@@ -29,18 +31,40 @@
       min-width: 320px;
       color: var(--ink);
       background:
-        linear-gradient(90deg, rgba(23, 32, 29, 0.035) 1px, transparent 1px),
-        linear-gradient(180deg, rgba(23, 32, 29, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(137, 201, 158, 0.055) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(137, 201, 158, 0.045) 1px, transparent 1px),
+        linear-gradient(135deg, rgba(117, 227, 158, 0.10), transparent 34%),
+        linear-gradient(315deg, rgba(131, 183, 255, 0.10), transparent 36%),
         var(--wash);
       background-size: 28px 28px;
       font-family: "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
       letter-spacing: 0;
     }
 
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        repeating-linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.030) 0,
+          rgba(255, 255, 255, 0.030) 1px,
+          transparent 1px,
+          transparent 16px
+        ),
+        linear-gradient(115deg, transparent 0%, rgba(117, 227, 158, 0.07) 42%, transparent 64%);
+      opacity: 0.8;
+      animation: driftGrid 18s linear infinite;
+      pointer-events: none;
+    }
+
     main {
       width: min(1480px, calc(100% - 40px));
       margin: 0 auto;
       padding: 32px 0 48px;
+      position: relative;
     }
 
     .topbar {
@@ -50,6 +74,7 @@
       align-items: end;
       padding: 18px 0 22px;
       border-bottom: 1px solid var(--line);
+      animation: riseIn 720ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
     }
 
     .eyebrow {
@@ -58,6 +83,7 @@
       font-size: 13px;
       font-weight: 700;
       text-transform: uppercase;
+      letter-spacing: 0.12em;
     }
 
     h1 {
@@ -66,12 +92,37 @@
       font-size: 42px;
       line-height: 1.05;
       font-weight: 700;
+      text-shadow: 0 0 28px rgba(117, 227, 158, 0.16);
     }
 
     .updated {
       color: var(--muted);
       font-size: 14px;
       text-align: right;
+    }
+
+    .runtime-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      padding: 6px 10px;
+      color: var(--ink);
+      background: rgba(117, 227, 158, 0.12);
+      border: 1px solid rgba(117, 227, 158, 0.26);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .runtime-pill::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 14px var(--green);
+      animation: pulseDot 1.8s ease-in-out infinite;
     }
 
     .summary-grid {
@@ -84,10 +135,34 @@
     .metric {
       min-height: 112px;
       padding: 16px;
-      background: var(--surface);
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.050), rgba(255, 255, 255, 0.018)),
+        var(--surface);
       border: 1px solid var(--line);
       border-radius: 8px;
-      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      animation: riseIn 680ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+      animation-delay: var(--delay, 0ms);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .metric::after {
+      content: "";
+      position: absolute;
+      inset: auto 14px 12px 14px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--green), transparent);
+      opacity: 0.45;
+      transform: translateX(-42%);
+      animation: dataSweep 3.2s ease-in-out infinite;
+    }
+
+    .metric:hover {
+      transform: translateY(-3px);
+      border-color: rgba(117, 227, 158, 0.45);
+      box-shadow: var(--shadow), var(--glow);
     }
 
     .metric strong {
@@ -97,6 +172,7 @@
       font-size: 12px;
       font-weight: 700;
       text-transform: uppercase;
+      letter-spacing: 0.08em;
     }
 
     .metric span {
@@ -105,6 +181,7 @@
       font-size: 32px;
       line-height: 1;
       font-weight: 700;
+      font-variant-numeric: tabular-nums;
     }
 
     .metric small {
@@ -116,9 +193,11 @@
 
     .metric.primary {
       color: white;
-      background: linear-gradient(135deg, #17201d 0%, #285f47 100%);
+      background:
+        linear-gradient(135deg, rgba(117, 227, 158, 0.24) 0%, rgba(131, 183, 255, 0.11) 55%, rgba(242, 199, 107, 0.16) 100%),
+        #0d1915;
       border-color: transparent;
-      box-shadow: var(--shadow);
+      box-shadow: var(--shadow), var(--glow);
     }
 
     .metric.primary strong,
@@ -133,6 +212,7 @@
       gap: 12px;
       align-items: center;
       margin: 22px 0 12px;
+      animation: riseIn 720ms cubic-bezier(0.2, 0.8, 0.2, 1) 160ms both;
     }
 
     .segments {
@@ -142,6 +222,7 @@
       background: var(--field);
       border: 1px solid var(--line);
       border-radius: 8px;
+      backdrop-filter: blur(18px);
     }
 
     button {
@@ -155,11 +236,18 @@
       font-size: 13px;
       font-weight: 700;
       cursor: pointer;
+      transition: color 160ms ease, background 160ms ease, transform 160ms ease;
+    }
+
+    button:hover {
+      color: var(--ink);
+      transform: translateY(-1px);
     }
 
     button.active {
-      color: white;
-      background: var(--ink);
+      color: #06100c;
+      background: linear-gradient(135deg, var(--green), var(--gold));
+      box-shadow: 0 0 18px rgba(117, 227, 158, 0.22);
     }
 
     .search {
@@ -171,6 +259,13 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       font: inherit;
+      outline: none;
+      transition: border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .search:focus {
+      border-color: rgba(117, 227, 158, 0.55);
+      box-shadow: 0 0 0 3px rgba(117, 227, 158, 0.10);
     }
 
     .dashboard-grid {
@@ -182,10 +277,24 @@
     .panel {
       min-width: 0;
       padding: 18px;
-      background: rgba(255, 255, 255, 0.92);
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.050), rgba(255, 255, 255, 0.015)),
+        var(--surface);
       border: 1px solid var(--line);
       border-radius: 8px;
-      box-shadow: 0 12px 30px rgba(26, 42, 34, 0.06);
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 255, 255, 0.07);
+      animation: riseIn 760ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+      animation-delay: var(--delay, 0ms);
+    }
+
+    .panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-top: 1px solid rgba(117, 227, 158, 0.24);
+      pointer-events: none;
     }
 
     .panel h2 {
@@ -193,11 +302,13 @@
       font-size: 15px;
       line-height: 1.2;
       text-transform: uppercase;
+      letter-spacing: 0.08em;
     }
 
     .plot {
       width: 100%;
       height: 390px;
+      animation: fadeScale 800ms ease both;
     }
 
     .plot.compact {
@@ -224,6 +335,14 @@
       align-items: center;
       padding: 10px 0;
       border-bottom: 1px solid var(--line);
+      animation: slideIn 420ms ease both;
+      animation-delay: var(--delay, 0ms);
+      transition: padding-left 160ms ease, border-color 160ms ease;
+    }
+
+    .paper-row:hover {
+      padding-left: 8px;
+      border-color: rgba(117, 227, 158, 0.36);
     }
 
     .paper-title {
@@ -245,6 +364,7 @@
       font-size: 22px;
       font-weight: 700;
       white-space: nowrap;
+      text-shadow: 0 0 18px rgba(131, 183, 255, 0.22);
     }
 
     .changes {
@@ -254,9 +374,11 @@
 
     .change-day {
       padding: 12px;
-      background: #fbfcfb;
+      background: rgba(255, 255, 255, 0.035);
       border: 1px solid var(--line);
       border-radius: 8px;
+      animation: slideIn 420ms ease both;
+      animation-delay: var(--delay, 0ms);
     }
 
     .change-head {
@@ -291,10 +413,85 @@
     .empty {
       padding: 18px;
       color: var(--muted);
-      background: #fbfcfb;
+      background: rgba(255, 255, 255, 0.035);
       border: 1px dashed var(--line);
       border-radius: 8px;
       font-size: 13px;
+    }
+
+    @keyframes riseIn {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeScale {
+      from {
+        opacity: 0;
+        transform: scale(0.985);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes dataSweep {
+      0%, 100% {
+        transform: translateX(-46%);
+        opacity: 0.25;
+      }
+      50% {
+        transform: translateX(46%);
+        opacity: 0.70;
+      }
+    }
+
+    @keyframes driftGrid {
+      from {
+        background-position: 0 0, 0 0;
+      }
+      to {
+        background-position: 0 256px, 0 0;
+      }
+    }
+
+    @keyframes pulseDot {
+      0%, 100% {
+        transform: scale(0.78);
+        opacity: 0.55;
+      }
+      50% {
+        transform: scale(1.18);
+        opacity: 1;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 1ms !important;
+      }
     }
 
     @media (max-width: 1100px) {
@@ -355,49 +552,8 @@
       <div class="updated">Last updated<br><strong>2026-06-03</strong></div>
     </header>
 
-    <section class="summary-grid" aria-label="Citation summary">
-      <div class="metric primary">
-        <strong>Total citations</strong>
-        <span>1,145</span>
-        <small>+78 in the last 30 days</small>
-      </div>
-      <div class="metric">
-        <strong>H-index</strong>
-        <span>15</span>
-        <small>Current Scholar index</small>
-      </div>
-      <div class="metric">
-        <strong>i10-index</strong>
-        <span>18</span>
-        <small>Current Scholar index</small>
-      </div>
-      <div class="metric">
-        <strong>Papers</strong>
-        <span>38</span>
-        <small>Tracked publications</small>
-      </div>
-      <div class="metric">
-        <strong>Samples</strong>
-        <span>287</span>
-        <small>2024-11-07 to 2026-06-03</small>
-      </div>
-      <div class="metric">
-        <strong>Daily pace</strong>
-        <span>1.6</span>
-        <small>Average citation growth</small>
-      </div>
-    </section>
-
-    <div class="control-row">
-      <div class="segments" role="group" aria-label="Time range">
-        <button type="button" data-range="all" class="active">All</button>
-        <button type="button" data-range="365">1Y</button>
-        <button type="button" data-range="180">180D</button>
-        <button type="button" data-range="90">90D</button>
-        <button type="button" data-range="30">30D</button>
-      </div>
-      <input class="search" id="paperSearch" type="search" placeholder="Filter papers">
-    </div>
+    <section id="summaryGrid" class="summary-grid" aria-label="Citation summary"></section>
+    <div id="controlRow" class="control-row"></div>
 
     <section class="dashboard-grid">
       <div class="stack">
@@ -441,23 +597,140 @@
     </section>
   </main>
 
-  <script>
+  <script type="module">
+    import { bind, wire } from "https://cdn.jsdelivr.net/npm/hyperhtml/+esm";
+
     window.DASHBOARD_DATA = {"summary": {"latest_date": "2026-06-03", "first_date": "2024-11-07", "samples": 287, "total_citations": 1145, "h_index": 15, "i10_index": 18, "total_papers": 38, "latest_growth": 0, "last_30_growth": 78, "all_time_growth": 944, "citations_per_day": 1.6474694589877836, "active_papers_30d": 10}, "citation_series": [{"date": "2024-11-07", "total_citations": 201, "h_index": 5, "i10_index": null}, {"date": "2024-11-08", "total_citations": 201, "h_index": 5, "i10_index": null}, {"date": "2024-11-09", "total_citations": 201, "h_index": 5, "i10_index": null}, {"date": "2024-11-10", "total_citations": 201, "h_index": 5, "i10_index": null}, {"date": "2024-11-11", "total_citations": 201, "h_index": 5, "i10_index": null}, {"date": "2024-11-12", "total_citations": 202, "h_index": 5, "i10_index": null}, {"date": "2024-11-13", "total_citations": 215, "h_index": 5, "i10_index": null}, {"date": "2024-11-14", "total_citations": 215, "h_index": 5, "i10_index": null}, {"date": "2024-11-15", "total_citations": 215, "h_index": 5, "i10_index": null}, {"date": "2024-11-16", "total_citations": 215, "h_index": 5, "i10_index": null}, {"date": "2024-11-17", "total_citations": 215, "h_index": 5, "i10_index": null}, {"date": "2024-11-18", "total_citations": 216, "h_index": 5, "i10_index": null}, {"date": "2024-11-19", "total_citations": 219, "h_index": 5, "i10_index": null}, {"date": "2024-11-20", "total_citations": 219, "h_index": 5, "i10_index": null}, {"date": "2024-11-21", "total_citations": 217, "h_index": 5, "i10_index": null}, {"date": "2024-11-22", "total_citations": 217, "h_index": 5, "i10_index": null}, {"date": "2024-11-23", "total_citations": 217, "h_index": 5, "i10_index": null}, {"date": "2024-11-24", "total_citations": 217, "h_index": 5, "i10_index": null}, {"date": "2024-11-25", "total_citations": 218, "h_index": 5, "i10_index": null}, {"date": "2024-11-26", "total_citations": 219, "h_index": 5, "i10_index": null}, {"date": "2024-11-27", "total_citations": 219, "h_index": 5, "i10_index": null}, {"date": "2024-11-28", "total_citations": 221, "h_index": 5, "i10_index": null}, {"date": "2024-11-29", "total_citations": 223, "h_index": 5, "i10_index": null}, {"date": "2024-11-30", "total_citations": 223, "h_index": 5, "i10_index": null}, {"date": "2024-12-01", "total_citations": 222, "h_index": 5, "i10_index": null}, {"date": "2024-12-02", "total_citations": 223, "h_index": 5, "i10_index": null}, {"date": "2024-12-03", "total_citations": 223, "h_index": 5, "i10_index": null}, {"date": "2024-12-04", "total_citations": 223, "h_index": 5, "i10_index": null}, {"date": "2024-12-05", "total_citations": 223, "h_index": 5, "i10_index": null}, {"date": "2024-12-06", "total_citations": 224, "h_index": 5, "i10_index": null}, {"date": "2024-12-07", "total_citations": 224, "h_index": 5, "i10_index": null}, {"date": "2024-12-08", "total_citations": 224, "h_index": 5, "i10_index": null}, {"date": "2024-12-09", "total_citations": 224, "h_index": 5, "i10_index": null}, {"date": "2024-12-10", "total_citations": 224, "h_index": 5, "i10_index": null}, {"date": "2024-12-11", "total_citations": 224, "h_index": 5, "i10_index": null}, {"date": "2024-12-12", "total_citations": 224, "h_index": 5, "i10_index": null}, {"date": "2024-12-13", "total_citations": 224, "h_index": 5, "i10_index": null}, {"date": "2024-12-14", "total_citations": 226, "h_index": 5, "i10_index": null}, {"date": "2024-12-15", "total_citations": 228, "h_index": 5, "i10_index": null}, {"date": "2024-12-16", "total_citations": 229, "h_index": 5, "i10_index": null}, {"date": "2024-12-17", "total_citations": 229, "h_index": 5, "i10_index": null}, {"date": "2024-12-18", "total_citations": 229, "h_index": 5, "i10_index": null}, {"date": "2024-12-19", "total_citations": 232, "h_index": 5, "i10_index": null}, {"date": "2024-12-20", "total_citations": 233, "h_index": 5, "i10_index": null}, {"date": "2024-12-21", "total_citations": 234, "h_index": 5, "i10_index": null}, {"date": "2024-12-22", "total_citations": 235, "h_index": 5, "i10_index": null}, {"date": "2024-12-23", "total_citations": 237, "h_index": 5, "i10_index": null}, {"date": "2024-12-24", "total_citations": 238, "h_index": 5, "i10_index": null}, {"date": "2024-12-25", "total_citations": 238, "h_index": 5, "i10_index": null}, {"date": "2024-12-26", "total_citations": 238, "h_index": 5, "i10_index": null}, {"date": "2024-12-27", "total_citations": 240, "h_index": 5, "i10_index": null}, {"date": "2024-12-28", "total_citations": 241, "h_index": 5, "i10_index": null}, {"date": "2024-12-29", "total_citations": 242, "h_index": 5, "i10_index": null}, {"date": "2024-12-30", "total_citations": 242, "h_index": 5, "i10_index": null}, {"date": "2024-12-31", "total_citations": 243, "h_index": 5, "i10_index": null}, {"date": "2025-01-01", "total_citations": 243, "h_index": 5, "i10_index": null}, {"date": "2025-01-02", "total_citations": 243, "h_index": 5, "i10_index": null}, {"date": "2025-01-03", "total_citations": 243, "h_index": 5, "i10_index": null}, {"date": "2025-01-04", "total_citations": 243, "h_index": 5, "i10_index": null}, {"date": "2025-01-05", "total_citations": 243, "h_index": 5, "i10_index": null}, {"date": "2025-01-06", "total_citations": 244, "h_index": 5, "i10_index": null}, {"date": "2025-01-07", "total_citations": 244, "h_index": 5, "i10_index": null}, {"date": "2025-01-08", "total_citations": 244, "h_index": 5, "i10_index": null}, {"date": "2025-01-09", "total_citations": 245, "h_index": 5, "i10_index": null}, {"date": "2025-01-10", "total_citations": 245, "h_index": 5, "i10_index": null}, {"date": "2025-01-11", "total_citations": 246, "h_index": 5, "i10_index": null}, {"date": "2025-01-12", "total_citations": 248, "h_index": 5, "i10_index": null}, {"date": "2025-01-13", "total_citations": 248, "h_index": 5, "i10_index": null}, {"date": "2025-01-14", "total_citations": 249, "h_index": 5, "i10_index": null}, {"date": "2025-01-15", "total_citations": 249, "h_index": 5, "i10_index": null}, {"date": "2025-01-16", "total_citations": 250, "h_index": 5, "i10_index": null}, {"date": "2025-01-17", "total_citations": 250, "h_index": 5, "i10_index": null}, {"date": "2025-01-18", "total_citations": 250, "h_index": 5, "i10_index": null}, {"date": "2025-01-19", "total_citations": 250, "h_index": 5, "i10_index": null}, {"date": "2025-01-20", "total_citations": 250, "h_index": 5, "i10_index": null}, {"date": "2025-01-21", "total_citations": 250, "h_index": 5, "i10_index": null}, {"date": "2025-01-22", "total_citations": 250, "h_index": 5, "i10_index": null}, {"date": "2025-01-23", "total_citations": 250, "h_index": 5, "i10_index": null}, {"date": "2025-01-24", "total_citations": 251, "h_index": 5, "i10_index": null}, {"date": "2025-01-25", "total_citations": 251, "h_index": 5, "i10_index": null}, {"date": "2025-01-26", "total_citations": 251, "h_index": 5, "i10_index": null}, {"date": "2025-01-27", "total_citations": 251, "h_index": 5, "i10_index": null}, {"date": "2025-01-28", "total_citations": 252, "h_index": 5, "i10_index": null}, {"date": "2025-01-29", "total_citations": 252, "h_index": 5, "i10_index": null}, {"date": "2025-02-02", "total_citations": 255, "h_index": 5, "i10_index": null}, {"date": "2025-02-03", "total_citations": 260, "h_index": 5, "i10_index": null}, {"date": "2025-02-04", "total_citations": 260, "h_index": 5, "i10_index": null}, {"date": "2025-02-05", "total_citations": 260, "h_index": 5, "i10_index": null}, {"date": "2025-02-06", "total_citations": 260, "h_index": 5, "i10_index": null}, {"date": "2025-02-07", "total_citations": 260, "h_index": 5, "i10_index": null}, {"date": "2025-02-08", "total_citations": 263, "h_index": 5, "i10_index": null}, {"date": "2025-02-09", "total_citations": 269, "h_index": 5, "i10_index": null}, {"date": "2025-02-10", "total_citations": 269, "h_index": 5, "i10_index": null}, {"date": "2025-02-11", "total_citations": 269, "h_index": 5, "i10_index": null}, {"date": "2025-02-12", "total_citations": 270, "h_index": 5, "i10_index": null}, {"date": "2025-02-13", "total_citations": 270, "h_index": 5, "i10_index": null}, {"date": "2025-02-14", "total_citations": 276, "h_index": 5, "i10_index": null}, {"date": "2025-02-15", "total_citations": 276, "h_index": 5, "i10_index": null}, {"date": "2025-02-16", "total_citations": 276, "h_index": 5, "i10_index": null}, {"date": "2025-02-17", "total_citations": 278, "h_index": 5, "i10_index": null}, {"date": "2025-02-18", "total_citations": 280, "h_index": 5, "i10_index": null}, {"date": "2025-02-19", "total_citations": 280, "h_index": 5, "i10_index": null}, {"date": "2025-02-20", "total_citations": 280, "h_index": 5, "i10_index": null}, {"date": "2025-02-21", "total_citations": 280, "h_index": 5, "i10_index": null}, {"date": "2025-02-22", "total_citations": 287, "h_index": 5, "i10_index": null}, {"date": "2025-02-23", "total_citations": 291, "h_index": 5, "i10_index": null}, {"date": "2025-02-24", "total_citations": 291, "h_index": 5, "i10_index": null}, {"date": "2025-02-25", "total_citations": 295, "h_index": 5, "i10_index": null}, {"date": "2025-02-26", "total_citations": 295, "h_index": 5, "i10_index": null}, {"date": "2025-02-27", "total_citations": 296, "h_index": 5, "i10_index": null}, {"date": "2025-02-28", "total_citations": 299, "h_index": 5, "i10_index": null}, {"date": "2025-03-01", "total_citations": 300, "h_index": 5, "i10_index": null}, {"date": "2025-03-02", "total_citations": 300, "h_index": 5, "i10_index": null}, {"date": "2025-03-03", "total_citations": 303, "h_index": 5, "i10_index": null}, {"date": "2025-03-04", "total_citations": 304, "h_index": 5, "i10_index": null}, {"date": "2025-03-05", "total_citations": 308, "h_index": 5, "i10_index": null}, {"date": "2025-03-06", "total_citations": 308, "h_index": 5, "i10_index": null}, {"date": "2025-03-07", "total_citations": 309, "h_index": 5, "i10_index": null}, {"date": "2025-03-08", "total_citations": 310, "h_index": 5, "i10_index": null}, {"date": "2025-03-09", "total_citations": 310, "h_index": 5, "i10_index": null}, {"date": "2025-03-10", "total_citations": 310, "h_index": 5, "i10_index": null}, {"date": "2025-03-12", "total_citations": 317, "h_index": 6, "i10_index": null}, {"date": "2025-03-13", "total_citations": 322, "h_index": 7, "i10_index": null}, {"date": "2025-03-14", "total_citations": 323, "h_index": 7, "i10_index": null}, {"date": "2025-03-15", "total_citations": 323, "h_index": 7, "i10_index": null}, {"date": "2025-03-16", "total_citations": 323, "h_index": 7, "i10_index": null}, {"date": "2025-03-17", "total_citations": 323, "h_index": 7, "i10_index": null}, {"date": "2025-03-18", "total_citations": 323, "h_index": 7, "i10_index": null}, {"date": "2025-03-19", "total_citations": 325, "h_index": 7, "i10_index": null}, {"date": "2025-03-20", "total_citations": 324, "h_index": 7, "i10_index": null}, {"date": "2025-03-21", "total_citations": 328, "h_index": 7, "i10_index": null}, {"date": "2025-03-22", "total_citations": 328, "h_index": 7, "i10_index": null}, {"date": "2025-03-23", "total_citations": 327, "h_index": 6, "i10_index": null}, {"date": "2025-03-24", "total_citations": 328, "h_index": 7, "i10_index": null}, {"date": "2025-03-25", "total_citations": 328, "h_index": 7, "i10_index": null}, {"date": "2025-03-26", "total_citations": 328, "h_index": 7, "i10_index": null}, {"date": "2025-03-27", "total_citations": 328, "h_index": 7, "i10_index": null}, {"date": "2025-03-28", "total_citations": 331, "h_index": 7, "i10_index": null}, {"date": "2025-03-29", "total_citations": 331, "h_index": 7, "i10_index": null}, {"date": "2025-03-30", "total_citations": 332, "h_index": 7, "i10_index": null}, {"date": "2025-03-31", "total_citations": 333, "h_index": 7, "i10_index": null}, {"date": "2025-04-01", "total_citations": 334, "h_index": 7, "i10_index": null}, {"date": "2025-04-02", "total_citations": 334, "h_index": 7, "i10_index": null}, {"date": "2025-04-03", "total_citations": 334, "h_index": 7, "i10_index": null}, {"date": "2025-04-04", "total_citations": 336, "h_index": 7, "i10_index": null}, {"date": "2025-04-05", "total_citations": 343, "h_index": 7, "i10_index": null}, {"date": "2025-04-06", "total_citations": 343, "h_index": 7, "i10_index": null}, {"date": "2025-04-07", "total_citations": 343, "h_index": 7, "i10_index": null}, {"date": "2025-04-08", "total_citations": 343, "h_index": 7, "i10_index": null}, {"date": "2025-04-09", "total_citations": 343, "h_index": 7, "i10_index": null}, {"date": "2025-04-10", "total_citations": 343, "h_index": 7, "i10_index": null}, {"date": "2025-04-11", "total_citations": 343, "h_index": 7, "i10_index": null}, {"date": "2025-04-23", "total_citations": 357, "h_index": 7, "i10_index": null}, {"date": "2025-05-05", "total_citations": 367, "h_index": 7, "i10_index": null}, {"date": "2025-07-21", "total_citations": 504, "h_index": 8, "i10_index": null}, {"date": "2025-07-22", "total_citations": 504, "h_index": 8, "i10_index": null}, {"date": "2025-07-23", "total_citations": 505, "h_index": 8, "i10_index": null}, {"date": "2025-07-24", "total_citations": 505, "h_index": 8, "i10_index": null}, {"date": "2025-07-25", "total_citations": 524, "h_index": 9, "i10_index": null}, {"date": "2025-07-26", "total_citations": 513, "h_index": 8, "i10_index": null}, {"date": "2025-07-28", "total_citations": 527, "h_index": 9, "i10_index": null}, {"date": "2025-07-29", "total_citations": 529, "h_index": 9, "i10_index": null}, {"date": "2025-08-02", "total_citations": 531, "h_index": 9, "i10_index": null}, {"date": "2025-08-09", "total_citations": 537, "h_index": 9, "i10_index": null}, {"date": "2025-08-21", "total_citations": 566, "h_index": 9, "i10_index": null}, {"date": "2025-08-28", "total_citations": 577, "h_index": 9, "i10_index": null}, {"date": "2025-08-31", "total_citations": 581, "h_index": 9, "i10_index": null}, {"date": "2025-09-03", "total_citations": 581, "h_index": 9, "i10_index": null}, {"date": "2025-09-04", "total_citations": 581, "h_index": 9, "i10_index": null}, {"date": "2025-09-09", "total_citations": 584, "h_index": 9, "i10_index": null}, {"date": "2025-09-15", "total_citations": 591, "h_index": 9, "i10_index": null}, {"date": "2025-09-18", "total_citations": 593, "h_index": 9, "i10_index": null}, {"date": "2025-09-20", "total_citations": 595, "h_index": 9, "i10_index": null}, {"date": "2025-09-22", "total_citations": 598, "h_index": 9, "i10_index": null}, {"date": "2025-09-27", "total_citations": 608, "h_index": 9, "i10_index": null}, {"date": "2025-09-28", "total_citations": 607, "h_index": 9, "i10_index": null}, {"date": "2025-09-29", "total_citations": 607, "h_index": 9, "i10_index": null}, {"date": "2025-10-05", "total_citations": 618, "h_index": 9, "i10_index": null}, {"date": "2025-10-06", "total_citations": 618, "h_index": 9, "i10_index": null}, {"date": "2025-10-09", "total_citations": 620, "h_index": 9, "i10_index": null}, {"date": "2025-10-10", "total_citations": 626, "h_index": 9, "i10_index": null}, {"date": "2025-10-14", "total_citations": 629, "h_index": 9, "i10_index": null}, {"date": "2025-10-15", "total_citations": 630, "h_index": 9, "i10_index": null}, {"date": "2025-10-16", "total_citations": 629, "h_index": 9, "i10_index": null}, {"date": "2025-10-18", "total_citations": 633, "h_index": 9, "i10_index": null}, {"date": "2025-10-19", "total_citations": 633, "h_index": 9, "i10_index": null}, {"date": "2025-10-20", "total_citations": 637, "h_index": 9, "i10_index": null}, {"date": "2025-10-22", "total_citations": 642, "h_index": 9, "i10_index": null}, {"date": "2025-10-23", "total_citations": 643, "h_index": 9, "i10_index": null}, {"date": "2025-10-25", "total_citations": 664, "h_index": 9, "i10_index": null}, {"date": "2025-10-27", "total_citations": 670, "h_index": 9, "i10_index": null}, {"date": "2025-10-28", "total_citations": 674, "h_index": 9, "i10_index": null}, {"date": "2025-11-01", "total_citations": 679, "h_index": 9, "i10_index": null}, {"date": "2025-11-03", "total_citations": 683, "h_index": 9, "i10_index": null}, {"date": "2025-11-05", "total_citations": 695, "h_index": 9, "i10_index": null}, {"date": "2025-11-07", "total_citations": 707, "h_index": 9, "i10_index": null}, {"date": "2025-11-13", "total_citations": 714, "h_index": 10, "i10_index": null}, {"date": "2025-11-14", "total_citations": 716, "h_index": 10, "i10_index": null}, {"date": "2025-11-21", "total_citations": 721, "h_index": 10, "i10_index": null}, {"date": "2025-11-29", "total_citations": 738, "h_index": 10, "i10_index": null}, {"date": "2025-12-04", "total_citations": 742, "h_index": 10, "i10_index": null}, {"date": "2025-12-12", "total_citations": 755, "h_index": 10, "i10_index": null}, {"date": "2025-12-16", "total_citations": 757, "h_index": 11, "i10_index": null}, {"date": "2025-12-21", "total_citations": 767, "h_index": 11, "i10_index": null}, {"date": "2025-12-26", "total_citations": 771, "h_index": 11, "i10_index": null}, {"date": "2026-01-07", "total_citations": 777, "h_index": 11, "i10_index": null}, {"date": "2026-01-09", "total_citations": 778, "h_index": 11, "i10_index": null}, {"date": "2026-01-19", "total_citations": 789, "h_index": null, "i10_index": null}, {"date": "2026-01-25", "total_citations": 810, "h_index": null, "i10_index": null}, {"date": "2026-01-30", "total_citations": 830, "h_index": null, "i10_index": null}, {"date": "2026-01-31", "total_citations": 833, "h_index": null, "i10_index": null}, {"date": "2026-02-03", "total_citations": 836, "h_index": null, "i10_index": null}, {"date": "2026-02-14", "total_citations": 862, "h_index": 12, "i10_index": null}, {"date": "2026-02-15", "total_citations": 862, "h_index": 12, "i10_index": null}, {"date": "2026-02-16", "total_citations": 886, "h_index": 12, "i10_index": null}, {"date": "2026-02-17", "total_citations": 891, "h_index": 12, "i10_index": 15}, {"date": "2026-02-18", "total_citations": 891, "h_index": 12, "i10_index": 15}, {"date": "2026-02-21", "total_citations": 898, "h_index": 12, "i10_index": 15}, {"date": "2026-02-24", "total_citations": 908, "h_index": 12, "i10_index": 15}, {"date": "2026-02-26", "total_citations": 915, "h_index": 13, "i10_index": 15}, {"date": "2026-02-27", "total_citations": 923, "h_index": 13, "i10_index": 15}, {"date": "2026-03-01", "total_citations": 930, "h_index": 13, "i10_index": 15}, {"date": "2026-03-02", "total_citations": 931, "h_index": 13, "i10_index": 15}, {"date": "2026-03-04", "total_citations": 934, "h_index": 13, "i10_index": 15}, {"date": "2026-03-05", "total_citations": 936, "h_index": 13, "i10_index": 15}, {"date": "2026-03-06", "total_citations": 937, "h_index": 13, "i10_index": 15}, {"date": "2026-03-07", "total_citations": 945, "h_index": 13, "i10_index": 15}, {"date": "2026-03-09", "total_citations": 947, "h_index": 13, "i10_index": 15}, {"date": "2026-03-12", "total_citations": 949, "h_index": 13, "i10_index": 15}, {"date": "2026-03-13", "total_citations": 952, "h_index": 13, "i10_index": 15}, {"date": "2026-03-14", "total_citations": 956, "h_index": 13, "i10_index": 15}, {"date": "2026-03-15", "total_citations": 956, "h_index": 13, "i10_index": 15}, {"date": "2026-03-16", "total_citations": 959, "h_index": 13, "i10_index": 15}, {"date": "2026-03-17", "total_citations": 964, "h_index": 13, "i10_index": 15}, {"date": "2026-03-18", "total_citations": 966, "h_index": 13, "i10_index": 15}, {"date": "2026-03-20", "total_citations": 971, "h_index": 14, "i10_index": 15}, {"date": "2026-03-21", "total_citations": 973, "h_index": 14, "i10_index": 15}, {"date": "2026-03-22", "total_citations": 987, "h_index": 14, "i10_index": 16}, {"date": "2026-03-24", "total_citations": 990, "h_index": 14, "i10_index": 16}, {"date": "2026-03-25", "total_citations": 991, "h_index": 14, "i10_index": 16}, {"date": "2026-03-26", "total_citations": 993, "h_index": 14, "i10_index": 16}, {"date": "2026-03-27", "total_citations": 994, "h_index": 14, "i10_index": 16}, {"date": "2026-03-28", "total_citations": 995, "h_index": 14, "i10_index": 16}, {"date": "2026-03-31", "total_citations": 999, "h_index": 14, "i10_index": 16}, {"date": "2026-04-02", "total_citations": 1000, "h_index": 14, "i10_index": 16}, {"date": "2026-04-03", "total_citations": 1005, "h_index": 14, "i10_index": 16}, {"date": "2026-04-05", "total_citations": 1009, "h_index": 14, "i10_index": 16}, {"date": "2026-04-07", "total_citations": 1010, "h_index": 14, "i10_index": 16}, {"date": "2026-04-10", "total_citations": 1011, "h_index": 14, "i10_index": 16}, {"date": "2026-04-12", "total_citations": 1012, "h_index": 14, "i10_index": 16}, {"date": "2026-04-14", "total_citations": 1019, "h_index": 14, "i10_index": 16}, {"date": "2026-04-15", "total_citations": 1019, "h_index": 14, "i10_index": 16}, {"date": "2026-04-16", "total_citations": 1019, "h_index": 14, "i10_index": 16}, {"date": "2026-04-17", "total_citations": 1021, "h_index": 14, "i10_index": 16}, {"date": "2026-04-19", "total_citations": 1025, "h_index": 14, "i10_index": 16}, {"date": "2026-04-20", "total_citations": 1025, "h_index": 14, "i10_index": 16}, {"date": "2026-04-21", "total_citations": 1029, "h_index": 14, "i10_index": 16}, {"date": "2026-04-25", "total_citations": 1041, "h_index": 14, "i10_index": 17}, {"date": "2026-04-26", "total_citations": 1055, "h_index": 14, "i10_index": 17}, {"date": "2026-04-28", "total_citations": 1059, "h_index": 14, "i10_index": 17}, {"date": "2026-04-29", "total_citations": 1062, "h_index": 14, "i10_index": 17}, {"date": "2026-05-01", "total_citations": 1063, "h_index": 14, "i10_index": 17}, {"date": "2026-05-02", "total_citations": 1065, "h_index": 14, "i10_index": 17}, {"date": "2026-05-03", "total_citations": 1067, "h_index": 14, "i10_index": 17}, {"date": "2026-05-04", "total_citations": 1067, "h_index": 14, "i10_index": 17}, {"date": "2026-05-05", "total_citations": 1071, "h_index": 14, "i10_index": 17}, {"date": "2026-05-06", "total_citations": 1071, "h_index": 14, "i10_index": 17}, {"date": "2026-05-09", "total_citations": 1073, "h_index": 14, "i10_index": 17}, {"date": "2026-05-10", "total_citations": 1076, "h_index": 14, "i10_index": 17}, {"date": "2026-05-12", "total_citations": 1079, "h_index": 14, "i10_index": 17}, {"date": "2026-05-13", "total_citations": 1082, "h_index": 14, "i10_index": 17}, {"date": "2026-05-14", "total_citations": 1082, "h_index": 14, "i10_index": 17}, {"date": "2026-05-15", "total_citations": 1088, "h_index": 14, "i10_index": 17}, {"date": "2026-05-16", "total_citations": 1099, "h_index": 15, "i10_index": 17}, {"date": "2026-05-17", "total_citations": 1099, "h_index": 15, "i10_index": 17}, {"date": "2026-05-18", "total_citations": 1106, "h_index": 15, "i10_index": 17}, {"date": "2026-05-19", "total_citations": 1106, "h_index": 15, "i10_index": 17}, {"date": "2026-05-20", "total_citations": 1106, "h_index": 15, "i10_index": 17}, {"date": "2026-05-22", "total_citations": 1111, "h_index": 15, "i10_index": 17}, {"date": "2026-05-24", "total_citations": 1113, "h_index": 15, "i10_index": 17}, {"date": "2026-05-25", "total_citations": 1118, "h_index": 15, "i10_index": 18}, {"date": "2026-05-26", "total_citations": 1121, "h_index": 15, "i10_index": 18}, {"date": "2026-05-28", "total_citations": 1125, "h_index": 15, "i10_index": 18}, {"date": "2026-05-30", "total_citations": 1132, "h_index": 15, "i10_index": 18}, {"date": "2026-05-31", "total_citations": 1139, "h_index": 15, "i10_index": 18}, {"date": "2026-06-01", "total_citations": 1145, "h_index": 15, "i10_index": 18}, {"date": "2026-06-03", "total_citations": 1145, "h_index": 15, "i10_index": 18}], "growth_series": [{"date": "2024-11-07", "increase": 0}, {"date": "2024-11-08", "increase": 0}, {"date": "2024-11-09", "increase": 0}, {"date": "2024-11-10", "increase": 0}, {"date": "2024-11-11", "increase": 0}, {"date": "2024-11-12", "increase": 1}, {"date": "2024-11-13", "increase": 13}, {"date": "2024-11-14", "increase": 0}, {"date": "2024-11-15", "increase": 0}, {"date": "2024-11-16", "increase": 0}, {"date": "2024-11-17", "increase": 0}, {"date": "2024-11-18", "increase": 1}, {"date": "2024-11-19", "increase": 3}, {"date": "2024-11-20", "increase": 0}, {"date": "2024-11-21", "increase": -2}, {"date": "2024-11-22", "increase": 0}, {"date": "2024-11-23", "increase": 0}, {"date": "2024-11-24", "increase": 0}, {"date": "2024-11-25", "increase": 1}, {"date": "2024-11-26", "increase": 1}, {"date": "2024-11-27", "increase": 0}, {"date": "2024-11-28", "increase": 2}, {"date": "2024-11-29", "increase": 2}, {"date": "2024-11-30", "increase": 0}, {"date": "2024-12-01", "increase": -1}, {"date": "2024-12-02", "increase": 1}, {"date": "2024-12-03", "increase": 0}, {"date": "2024-12-04", "increase": 0}, {"date": "2024-12-05", "increase": 0}, {"date": "2024-12-06", "increase": 1}, {"date": "2024-12-07", "increase": 0}, {"date": "2024-12-08", "increase": 0}, {"date": "2024-12-09", "increase": 0}, {"date": "2024-12-10", "increase": 0}, {"date": "2024-12-11", "increase": 0}, {"date": "2024-12-12", "increase": 0}, {"date": "2024-12-13", "increase": 0}, {"date": "2024-12-14", "increase": 2}, {"date": "2024-12-15", "increase": 2}, {"date": "2024-12-16", "increase": 1}, {"date": "2024-12-17", "increase": 0}, {"date": "2024-12-18", "increase": 0}, {"date": "2024-12-19", "increase": 3}, {"date": "2024-12-20", "increase": 1}, {"date": "2024-12-21", "increase": 1}, {"date": "2024-12-22", "increase": 1}, {"date": "2024-12-23", "increase": 2}, {"date": "2024-12-24", "increase": 1}, {"date": "2024-12-25", "increase": 0}, {"date": "2024-12-26", "increase": 0}, {"date": "2024-12-27", "increase": 2}, {"date": "2024-12-28", "increase": 1}, {"date": "2024-12-29", "increase": 1}, {"date": "2024-12-30", "increase": 0}, {"date": "2024-12-31", "increase": 1}, {"date": "2025-01-01", "increase": 0}, {"date": "2025-01-02", "increase": 0}, {"date": "2025-01-03", "increase": 0}, {"date": "2025-01-04", "increase": 0}, {"date": "2025-01-05", "increase": 0}, {"date": "2025-01-06", "increase": 1}, {"date": "2025-01-07", "increase": 0}, {"date": "2025-01-08", "increase": 0}, {"date": "2025-01-09", "increase": 1}, {"date": "2025-01-10", "increase": 0}, {"date": "2025-01-11", "increase": 1}, {"date": "2025-01-12", "increase": 2}, {"date": "2025-01-13", "increase": 0}, {"date": "2025-01-14", "increase": 1}, {"date": "2025-01-15", "increase": 0}, {"date": "2025-01-16", "increase": 1}, {"date": "2025-01-17", "increase": 0}, {"date": "2025-01-18", "increase": 0}, {"date": "2025-01-19", "increase": 0}, {"date": "2025-01-20", "increase": 0}, {"date": "2025-01-21", "increase": 0}, {"date": "2025-01-22", "increase": 0}, {"date": "2025-01-23", "increase": 0}, {"date": "2025-01-24", "increase": 1}, {"date": "2025-01-25", "increase": 0}, {"date": "2025-01-26", "increase": 0}, {"date": "2025-01-27", "increase": 0}, {"date": "2025-01-28", "increase": 1}, {"date": "2025-01-29", "increase": 0}, {"date": "2025-02-02", "increase": 3}, {"date": "2025-02-03", "increase": 5}, {"date": "2025-02-04", "increase": 0}, {"date": "2025-02-05", "increase": 0}, {"date": "2025-02-06", "increase": 0}, {"date": "2025-02-07", "increase": 0}, {"date": "2025-02-08", "increase": 3}, {"date": "2025-02-09", "increase": 6}, {"date": "2025-02-10", "increase": 0}, {"date": "2025-02-11", "increase": 0}, {"date": "2025-02-12", "increase": 1}, {"date": "2025-02-13", "increase": 0}, {"date": "2025-02-14", "increase": 6}, {"date": "2025-02-15", "increase": 0}, {"date": "2025-02-16", "increase": 0}, {"date": "2025-02-17", "increase": 2}, {"date": "2025-02-18", "increase": 2}, {"date": "2025-02-19", "increase": 0}, {"date": "2025-02-20", "increase": 0}, {"date": "2025-02-21", "increase": 0}, {"date": "2025-02-22", "increase": 7}, {"date": "2025-02-23", "increase": 4}, {"date": "2025-02-24", "increase": 0}, {"date": "2025-02-25", "increase": 4}, {"date": "2025-02-26", "increase": 0}, {"date": "2025-02-27", "increase": 1}, {"date": "2025-02-28", "increase": 3}, {"date": "2025-03-01", "increase": 1}, {"date": "2025-03-02", "increase": 0}, {"date": "2025-03-03", "increase": 3}, {"date": "2025-03-04", "increase": 1}, {"date": "2025-03-05", "increase": 4}, {"date": "2025-03-06", "increase": 0}, {"date": "2025-03-07", "increase": 1}, {"date": "2025-03-08", "increase": 1}, {"date": "2025-03-09", "increase": 0}, {"date": "2025-03-10", "increase": 0}, {"date": "2025-03-12", "increase": 7}, {"date": "2025-03-13", "increase": 5}, {"date": "2025-03-14", "increase": 1}, {"date": "2025-03-15", "increase": 0}, {"date": "2025-03-16", "increase": 0}, {"date": "2025-03-17", "increase": 0}, {"date": "2025-03-18", "increase": 0}, {"date": "2025-03-19", "increase": 2}, {"date": "2025-03-20", "increase": -1}, {"date": "2025-03-21", "increase": 4}, {"date": "2025-03-22", "increase": 0}, {"date": "2025-03-23", "increase": -1}, {"date": "2025-03-24", "increase": 1}, {"date": "2025-03-25", "increase": 0}, {"date": "2025-03-26", "increase": 0}, {"date": "2025-03-27", "increase": 0}, {"date": "2025-03-28", "increase": 3}, {"date": "2025-03-29", "increase": 0}, {"date": "2025-03-30", "increase": 1}, {"date": "2025-03-31", "increase": 1}, {"date": "2025-04-01", "increase": 1}, {"date": "2025-04-02", "increase": 0}, {"date": "2025-04-03", "increase": 0}, {"date": "2025-04-04", "increase": 2}, {"date": "2025-04-05", "increase": 7}, {"date": "2025-04-06", "increase": 0}, {"date": "2025-04-07", "increase": 0}, {"date": "2025-04-08", "increase": 0}, {"date": "2025-04-09", "increase": 0}, {"date": "2025-04-10", "increase": 0}, {"date": "2025-04-11", "increase": 0}, {"date": "2025-04-23", "increase": 14}, {"date": "2025-05-05", "increase": 10}, {"date": "2025-07-21", "increase": 137}, {"date": "2025-07-22", "increase": 0}, {"date": "2025-07-23", "increase": 1}, {"date": "2025-07-24", "increase": 8}, {"date": "2025-07-25", "increase": 11}, {"date": "2025-07-26", "increase": -11}, {"date": "2025-07-28", "increase": 2}, {"date": "2025-07-29", "increase": 2}, {"date": "2025-08-02", "increase": 2}, {"date": "2025-08-09", "increase": 6}, {"date": "2025-08-21", "increase": 6}, {"date": "2025-08-28", "increase": 11}, {"date": "2025-08-31", "increase": 1}, {"date": "2025-09-03", "increase": 0}, {"date": "2025-09-04", "increase": 0}, {"date": "2025-09-09", "increase": 3}, {"date": "2025-09-15", "increase": 2}, {"date": "2025-09-18", "increase": 1}, {"date": "2025-09-20", "increase": 1}, {"date": "2025-09-22", "increase": 2}, {"date": "2025-09-27", "increase": 10}, {"date": "2025-09-28", "increase": -1}, {"date": "2025-09-29", "increase": 0}, {"date": "2025-10-05", "increase": 1}, {"date": "2025-10-06", "increase": 0}, {"date": "2025-10-09", "increase": 6}, {"date": "2025-10-10", "increase": 2}, {"date": "2025-10-14", "increase": 1}, {"date": "2025-10-15", "increase": 1}, {"date": "2025-10-16", "increase": 2}, {"date": "2025-10-18", "increase": 4}, {"date": "2025-10-19", "increase": 4}, {"date": "2025-10-20", "increase": 4}, {"date": "2025-10-22", "increase": 1}, {"date": "2025-10-23", "increase": 18}, {"date": "2025-10-25", "increase": 21}, {"date": "2025-10-27", "increase": 4}, {"date": "2025-10-28", "increase": 4}, {"date": "2025-11-01", "increase": 5}, {"date": "2025-11-03", "increase": 4}, {"date": "2025-11-05", "increase": 3}, {"date": "2025-11-07", "increase": 6}, {"date": "2025-11-13", "increase": 2}, {"date": "2025-11-14", "increase": 1}, {"date": "2025-11-21", "increase": 3}, {"date": "2025-11-29", "increase": 2}, {"date": "2025-12-04", "increase": 2}, {"date": "2025-12-12", "increase": 13}, {"date": "2025-12-16", "increase": 1}, {"date": "2025-12-21", "increase": 2}, {"date": "2025-12-26", "increase": 2}, {"date": "2026-01-07", "increase": 6}, {"date": "2026-01-09", "increase": 1}, {"date": "2026-01-19", "increase": 1}, {"date": "2026-01-25", "increase": 8}, {"date": "2026-01-30", "increase": 3}, {"date": "2026-01-31", "increase": 3}, {"date": "2026-02-03", "increase": 1}, {"date": "2026-02-14", "increase": 26}, {"date": "2026-02-15", "increase": 0}, {"date": "2026-02-16", "increase": 24}, {"date": "2026-02-17", "increase": 5}, {"date": "2026-02-18", "increase": 5}, {"date": "2026-02-21", "increase": 7}, {"date": "2026-02-24", "increase": 10}, {"date": "2026-02-26", "increase": 7}, {"date": "2026-02-27", "increase": 8}, {"date": "2026-03-01", "increase": 7}, {"date": "2026-03-02", "increase": 1}, {"date": "2026-03-04", "increase": 3}, {"date": "2026-03-05", "increase": 2}, {"date": "2026-03-06", "increase": 1}, {"date": "2026-03-07", "increase": 8}, {"date": "2026-03-09", "increase": 2}, {"date": "2026-03-12", "increase": 2}, {"date": "2026-03-13", "increase": 3}, {"date": "2026-03-14", "increase": 4}, {"date": "2026-03-15", "increase": 0}, {"date": "2026-03-16", "increase": 3}, {"date": "2026-03-17", "increase": 5}, {"date": "2026-03-18", "increase": 2}, {"date": "2026-03-20", "increase": 5}, {"date": "2026-03-21", "increase": 2}, {"date": "2026-03-22", "increase": 14}, {"date": "2026-03-24", "increase": 3}, {"date": "2026-03-25", "increase": 1}, {"date": "2026-03-26", "increase": 2}, {"date": "2026-03-27", "increase": 1}, {"date": "2026-03-28", "increase": 1}, {"date": "2026-03-31", "increase": 4}, {"date": "2026-04-02", "increase": 1}, {"date": "2026-04-03", "increase": 5}, {"date": "2026-04-05", "increase": 4}, {"date": "2026-04-07", "increase": 1}, {"date": "2026-04-10", "increase": 1}, {"date": "2026-04-12", "increase": 1}, {"date": "2026-04-14", "increase": 7}, {"date": "2026-04-15", "increase": 0}, {"date": "2026-04-16", "increase": 0}, {"date": "2026-04-17", "increase": 2}, {"date": "2026-04-19", "increase": 4}, {"date": "2026-04-20", "increase": 0}, {"date": "2026-04-21", "increase": 4}, {"date": "2026-04-25", "increase": 12}, {"date": "2026-04-26", "increase": 14}, {"date": "2026-04-28", "increase": 4}, {"date": "2026-04-29", "increase": 3}, {"date": "2026-05-01", "increase": 1}, {"date": "2026-05-02", "increase": 2}, {"date": "2026-05-03", "increase": 2}, {"date": "2026-05-04", "increase": 0}, {"date": "2026-05-05", "increase": 4}, {"date": "2026-05-06", "increase": 0}, {"date": "2026-05-09", "increase": 2}, {"date": "2026-05-10", "increase": 3}, {"date": "2026-05-12", "increase": 3}, {"date": "2026-05-13", "increase": 3}, {"date": "2026-05-14", "increase": 0}, {"date": "2026-05-15", "increase": 6}, {"date": "2026-05-16", "increase": 11}, {"date": "2026-05-17", "increase": 0}, {"date": "2026-05-18", "increase": 7}, {"date": "2026-05-19", "increase": 0}, {"date": "2026-05-20", "increase": 0}, {"date": "2026-05-22", "increase": 5}, {"date": "2026-05-24", "increase": 2}, {"date": "2026-05-25", "increase": 5}, {"date": "2026-05-26", "increase": 3}, {"date": "2026-05-28", "increase": 4}, {"date": "2026-05-30", "increase": 7}, {"date": "2026-05-31", "increase": 7}, {"date": "2026-06-01", "increase": 6}, {"date": "2026-06-03", "increase": 0}], "top_papers": [{"title": "Active prompting with chain-of-thought for large language models", "citations": 423, "year": "2023"}, {"title": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning", "citations": 182, "year": "2024"}, {"title": "Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models", "citations": 101, "year": "2024"}, {"title": "Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models", "citations": 60, "year": "2024"}, {"title": "LongGenBench: Long-context Generation Benchmark", "citations": 57, "year": "2024"}, {"title": "Plum: Prompt Learning Using Metaheuristics", "citations": 48, "year": "2024"}, {"title": "ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference", "citations": 36, "year": "2025"}, {"title": "ParZC: Parametric Zero-Cost Proxies for Efficient NAS", "citations": 27, "year": "2024"}, {"title": "Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models", "citations": 25, "year": "2023"}, {"title": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression", "citations": 20, "year": "2025"}, {"title": "Can LLMs Maintain Fundamental Abilities under KV Cache Compression?", "citations": 19, "year": "2025"}, {"title": "3D Question Answering for City Scene Understanding", "citations": 19, "year": "2024"}, {"title": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models", "citations": 17, "year": "2024"}, {"title": "Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing", "citations": 16, "year": "2025"}, {"title": "EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models", "citations": 15, "year": "2025"}], "paper_trends": {"Active prompting with chain-of-thought for large language models": [{"date": "2024-11-07", "citations": 156}, {"date": "2024-11-08", "citations": 156}, {"date": "2024-11-09", "citations": 156}, {"date": "2024-11-10", "citations": 156}, {"date": "2024-11-11", "citations": 156}, {"date": "2024-11-12", "citations": 157}, {"date": "2024-11-13", "citations": 165}, {"date": "2024-11-14", "citations": 165}, {"date": "2024-11-15", "citations": 165}, {"date": "2024-11-16", "citations": 165}, {"date": "2024-11-17", "citations": 164}, {"date": "2024-11-18", "citations": 165}, {"date": "2024-11-19", "citations": 166}, {"date": "2024-11-20", "citations": 166}, {"date": "2024-11-21", "citations": 165}, {"date": "2024-11-22", "citations": 165}, {"date": "2024-11-23", "citations": 165}, {"date": "2024-11-24", "citations": 165}, {"date": "2024-11-25", "citations": 166}, {"date": "2024-11-26", "citations": 166}, {"date": "2024-11-27", "citations": 166}, {"date": "2024-11-28", "citations": 166}, {"date": "2024-11-29", "citations": 166}, {"date": "2024-11-30", "citations": 166}, {"date": "2024-12-01", "citations": 166}, {"date": "2024-12-02", "citations": 167}, {"date": "2024-12-03", "citations": 167}, {"date": "2024-12-04", "citations": 167}, {"date": "2024-12-05", "citations": 167}, {"date": "2024-12-06", "citations": 168}, {"date": "2024-12-07", "citations": 168}, {"date": "2024-12-08", "citations": 168}, {"date": "2024-12-09", "citations": 168}, {"date": "2024-12-10", "citations": 168}, {"date": "2024-12-11", "citations": 168}, {"date": "2024-12-12", "citations": 168}, {"date": "2024-12-13", "citations": 168}, {"date": "2024-12-14", "citations": 170}, {"date": "2024-12-15", "citations": 170}, {"date": "2024-12-16", "citations": 170}, {"date": "2024-12-17", "citations": 170}, {"date": "2024-12-18", "citations": 170}, {"date": "2024-12-19", "citations": 171}, {"date": "2024-12-20", "citations": 172}, {"date": "2024-12-21", "citations": 172}, {"date": "2024-12-22", "citations": 172}, {"date": "2024-12-23", "citations": 173}, {"date": "2024-12-24", "citations": 174}, {"date": "2024-12-25", "citations": 174}, {"date": "2024-12-26", "citations": 174}, {"date": "2024-12-27", "citations": 175}, {"date": "2024-12-28", "citations": 176}, {"date": "2024-12-29", "citations": 177}, {"date": "2024-12-30", "citations": 177}, {"date": "2024-12-31", "citations": 177}, {"date": "2025-01-01", "citations": 177}, {"date": "2025-01-02", "citations": 177}, {"date": "2025-01-03", "citations": 177}, {"date": "2025-01-04", "citations": 177}, {"date": "2025-01-05", "citations": 177}, {"date": "2025-01-06", "citations": 178}, {"date": "2025-01-07", "citations": 178}, {"date": "2025-01-08", "citations": 178}, {"date": "2025-01-09", "citations": 178}, {"date": "2025-01-10", "citations": 178}, {"date": "2025-01-11", "citations": 179}, {"date": "2025-01-12", "citations": 181}, {"date": "2025-01-13", "citations": 181}, {"date": "2025-01-14", "citations": 182}, {"date": "2025-01-15", "citations": 182}, {"date": "2025-01-16", "citations": 182}, {"date": "2025-01-17", "citations": 182}, {"date": "2025-01-18", "citations": 182}, {"date": "2025-01-19", "citations": 182}, {"date": "2025-01-20", "citations": 182}, {"date": "2025-01-21", "citations": 182}, {"date": "2025-01-22", "citations": 182}, {"date": "2025-01-23", "citations": 182}, {"date": "2025-01-24", "citations": 183}, {"date": "2025-01-25", "citations": 183}, {"date": "2025-01-26", "citations": 183}, {"date": "2025-01-27", "citations": 183}, {"date": "2025-01-28", "citations": 184}, {"date": "2025-01-29", "citations": 184}, {"date": "2025-02-02", "citations": 184}, {"date": "2025-02-03", "citations": 188}, {"date": "2025-02-04", "citations": 188}, {"date": "2025-02-05", "citations": 188}, {"date": "2025-02-06", "citations": 188}, {"date": "2025-02-07", "citations": 188}, {"date": "2025-02-08", "citations": 189}, {"date": "2025-02-09", "citations": 191}, {"date": "2025-02-10", "citations": 191}, {"date": "2025-02-11", "citations": 191}, {"date": "2025-02-12", "citations": 191}, {"date": "2025-02-13", "citations": 191}, {"date": "2025-02-14", "citations": 192}, {"date": "2025-02-15", "citations": 192}, {"date": "2025-02-16", "citations": 192}, {"date": "2025-02-17", "citations": 193}, {"date": "2025-02-18", "citations": 193}, {"date": "2025-02-19", "citations": 193}, {"date": "2025-02-20", "citations": 193}, {"date": "2025-02-21", "citations": 193}, {"date": "2025-02-22", "citations": 194}, {"date": "2025-02-23", "citations": 196}, {"date": "2025-02-24", "citations": 196}, {"date": "2025-02-25", "citations": 197}, {"date": "2025-02-26", "citations": 197}, {"date": "2025-02-27", "citations": 197}, {"date": "2025-02-28", "citations": 197}, {"date": "2025-03-01", "citations": 197}, {"date": "2025-03-02", "citations": 197}, {"date": "2025-03-03", "citations": 198}, {"date": "2025-03-04", "citations": 199}, {"date": "2025-03-05", "citations": 199}, {"date": "2025-03-06", "citations": 199}, {"date": "2025-03-07", "citations": 199}, {"date": "2025-03-08", "citations": 200}, {"date": "2025-03-09", "citations": 200}, {"date": "2025-03-10", "citations": 200}, {"date": "2025-03-12", "citations": 202}, {"date": "2025-03-13", "citations": 203}, {"date": "2025-03-14", "citations": 203}, {"date": "2025-03-15", "citations": 203}, {"date": "2025-03-16", "citations": 203}, {"date": "2025-03-17", "citations": 203}, {"date": "2025-03-18", "citations": 203}, {"date": "2025-03-19", "citations": 204}, {"date": "2025-03-20", "citations": 203}, {"date": "2025-03-21", "citations": 205}, {"date": "2025-03-22", "citations": 205}, {"date": "2025-03-23", "citations": 205}, {"date": "2025-03-24", "citations": 205}, {"date": "2025-03-25", "citations": 205}, {"date": "2025-03-26", "citations": 205}, {"date": "2025-03-27", "citations": 205}, {"date": "2025-03-28", "citations": 205}, {"date": "2025-03-29", "citations": 205}, {"date": "2025-03-30", "citations": 205}, {"date": "2025-03-31", "citations": 206}, {"date": "2025-04-01", "citations": 207}, {"date": "2025-04-02", "citations": 207}, {"date": "2025-04-03", "citations": 207}, {"date": "2025-04-04", "citations": 208}, {"date": "2025-04-05", "citations": 211}, {"date": "2025-04-06", "citations": 211}, {"date": "2025-04-07", "citations": 211}, {"date": "2025-04-08", "citations": 211}, {"date": "2025-04-09", "citations": 211}, {"date": "2025-04-10", "citations": 211}, {"date": "2025-04-11", "citations": 211}, {"date": "2025-04-23", "citations": 216}, {"date": "2025-05-05", "citations": 219}, {"date": "2025-07-21", "citations": 255}, {"date": "2025-07-22", "citations": 255}, {"date": "2025-07-23", "citations": 255}, {"date": "2025-07-24", "citations": 255}, {"date": "2025-07-25", "citations": 258}, {"date": "2025-07-26", "citations": 255}, {"date": "2025-07-28", "citations": 259}, {"date": "2025-07-29", "citations": 259}, {"date": "2025-08-02", "citations": 259}, {"date": "2025-08-09", "citations": 262}, {"date": "2025-08-21", "citations": 273}, {"date": "2025-08-28", "citations": 278}, {"date": "2025-08-31", "citations": 279}, {"date": "2025-09-03", "citations": 279}, {"date": "2025-09-04", "citations": 279}, {"date": "2025-09-09", "citations": 281}, {"date": "2025-09-15", "citations": 284}, {"date": "2025-09-18", "citations": 285}, {"date": "2025-09-20", "citations": 285}, {"date": "2025-09-22", "citations": 287}, {"date": "2025-09-27", "citations": 291}, {"date": "2025-09-28", "citations": 291}, {"date": "2025-09-29", "citations": 291}, {"date": "2025-10-05", "citations": 295}, {"date": "2025-10-06", "citations": 295}, {"date": "2025-10-09", "citations": 296}, {"date": "2025-10-10", "citations": 298}, {"date": "2025-10-14", "citations": 300}, {"date": "2025-10-15", "citations": 300}, {"date": "2025-10-16", "citations": 299}, {"date": "2025-10-18", "citations": 300}, {"date": "2025-10-19", "citations": 300}, {"date": "2025-10-20", "citations": 304}, {"date": "2025-10-22", "citations": 304}, {"date": "2025-10-23", "citations": 304}, {"date": "2025-10-25", "citations": 305}, {"date": "2025-10-27", "citations": 306}, {"date": "2025-10-28", "citations": 309}, {"date": "2025-11-01", "citations": 311}, {"date": "2025-11-03", "citations": 311}, {"date": "2025-11-05", "citations": 315}, {"date": "2025-11-07", "citations": 318}, {"date": "2025-11-13", "citations": 317}, {"date": "2025-11-14", "citations": 318}, {"date": "2025-11-21", "citations": 321}, {"date": "2025-11-29", "citations": 326}, {"date": "2025-12-04", "citations": 328}, {"date": "2025-12-12", "citations": 333}, {"date": "2025-12-16", "citations": 334}, {"date": "2025-12-21", "citations": 337}, {"date": "2025-12-26", "citations": 339}, {"date": "2026-01-07", "citations": 341}, {"date": "2026-01-09", "citations": 341}, {"date": "2026-01-19", "citations": 347}, {"date": "2026-01-25", "citations": 352}, {"date": "2026-01-30", "citations": 357}, {"date": "2026-01-31", "citations": 357}, {"date": "2026-02-03", "citations": 359}, {"date": "2026-02-14", "citations": 363}, {"date": "2026-02-15", "citations": 363}, {"date": "2026-02-16", "citations": 360}, {"date": "2026-02-17", "citations": 363}, {"date": "2026-02-18", "citations": 363}, {"date": "2026-02-21", "citations": 364}, {"date": "2026-02-24", "citations": 364}, {"date": "2026-02-26", "citations": 364}, {"date": "2026-02-27", "citations": 368}, {"date": "2026-03-01", "citations": 371}, {"date": "2026-03-02", "citations": 372}, {"date": "2026-03-04", "citations": 373}, {"date": "2026-03-05", "citations": 373}, {"date": "2026-03-06", "citations": 373}, {"date": "2026-03-07", "citations": 374}, {"date": "2026-03-09", "citations": 374}, {"date": "2026-03-12", "citations": 374}, {"date": "2026-03-13", "citations": 375}, {"date": "2026-03-14", "citations": 376}, {"date": "2026-03-15", "citations": 376}, {"date": "2026-03-16", "citations": 377}, {"date": "2026-03-17", "citations": 379}, {"date": "2026-03-18", "citations": 381}, {"date": "2026-03-20", "citations": 382}, {"date": "2026-03-21", "citations": 382}, {"date": "2026-03-22", "citations": 383}, {"date": "2026-03-24", "citations": 384}, {"date": "2026-03-25", "citations": 384}, {"date": "2026-03-26", "citations": 384}, {"date": "2026-03-27", "citations": 384}, {"date": "2026-03-28", "citations": 385}, {"date": "2026-03-31", "citations": 387}, {"date": "2026-04-02", "citations": 388}, {"date": "2026-04-03", "citations": 388}, {"date": "2026-04-05", "citations": 390}, {"date": "2026-04-07", "citations": 390}, {"date": "2026-04-10", "citations": 390}, {"date": "2026-04-12", "citations": 391}, {"date": "2026-04-14", "citations": 393}, {"date": "2026-04-15", "citations": 393}, {"date": "2026-04-16", "citations": 393}, {"date": "2026-04-17", "citations": 393}, {"date": "2026-04-19", "citations": 395}, {"date": "2026-04-20", "citations": 395}, {"date": "2026-04-21", "citations": 397}, {"date": "2026-04-25", "citations": 401}, {"date": "2026-04-26", "citations": 404}, {"date": "2026-04-28", "citations": 405}, {"date": "2026-04-29", "citations": 405}, {"date": "2026-05-01", "citations": 405}, {"date": "2026-05-02", "citations": 406}, {"date": "2026-05-03", "citations": 406}, {"date": "2026-05-04", "citations": 406}, {"date": "2026-05-05", "citations": 407}, {"date": "2026-05-06", "citations": 407}, {"date": "2026-05-09", "citations": 407}, {"date": "2026-05-10", "citations": 408}, {"date": "2026-05-12", "citations": 408}, {"date": "2026-05-13", "citations": 410}, {"date": "2026-05-14", "citations": 410}, {"date": "2026-05-15", "citations": 412}, {"date": "2026-05-16", "citations": 412}, {"date": "2026-05-17", "citations": 412}, {"date": "2026-05-18", "citations": 416}, {"date": "2026-05-19", "citations": 416}, {"date": "2026-05-20", "citations": 416}, {"date": "2026-05-22", "citations": 415}, {"date": "2026-05-24", "citations": 415}, {"date": "2026-05-25", "citations": 417}, {"date": "2026-05-26", "citations": 418}, {"date": "2026-05-28", "citations": 420}, {"date": "2026-05-30", "citations": 421}, {"date": "2026-05-31", "citations": 422}, {"date": "2026-06-01", "citations": 423}, {"date": "2026-06-03", "citations": 423}], "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning": [{"date": "2024-11-07", "citations": 14}, {"date": "2024-11-08", "citations": 14}, {"date": "2024-11-09", "citations": 14}, {"date": "2024-11-10", "citations": 14}, {"date": "2024-11-11", "citations": 14}, {"date": "2024-11-12", "citations": 14}, {"date": "2024-11-13", "citations": 16}, {"date": "2024-11-14", "citations": 16}, {"date": "2024-11-15", "citations": 16}, {"date": "2024-11-16", "citations": 16}, {"date": "2024-11-17", "citations": 17}, {"date": "2024-11-18", "citations": 16}, {"date": "2024-11-19", "citations": 17}, {"date": "2024-11-20", "citations": 17}, {"date": "2024-11-21", "citations": 17}, {"date": "2024-11-22", "citations": 17}, {"date": "2024-11-23", "citations": 17}, {"date": "2024-11-24", "citations": 17}, {"date": "2024-11-25", "citations": 17}, {"date": "2024-11-26", "citations": 17}, {"date": "2024-11-27", "citations": 17}, {"date": "2024-11-28", "citations": 17}, {"date": "2024-11-29", "citations": 18}, {"date": "2024-11-30", "citations": 18}, {"date": "2024-12-01", "citations": 18}, {"date": "2024-12-02", "citations": 18}, {"date": "2024-12-03", "citations": 18}, {"date": "2024-12-04", "citations": 18}, {"date": "2024-12-05", "citations": 18}, {"date": "2024-12-06", "citations": 18}, {"date": "2024-12-07", "citations": 18}, {"date": "2024-12-08", "citations": 18}, {"date": "2024-12-09", "citations": 18}, {"date": "2024-12-10", "citations": 18}, {"date": "2024-12-11", "citations": 18}, {"date": "2024-12-12", "citations": 18}, {"date": "2024-12-13", "citations": 18}, {"date": "2024-12-14", "citations": 18}, {"date": "2024-12-15", "citations": 19}, {"date": "2024-12-16", "citations": 20}, {"date": "2024-12-17", "citations": 20}, {"date": "2024-12-18", "citations": 20}, {"date": "2024-12-19", "citations": 21}, {"date": "2024-12-20", "citations": 21}, {"date": "2024-12-21", "citations": 22}, {"date": "2024-12-22", "citations": 22}, {"date": "2024-12-23", "citations": 22}, {"date": "2024-12-24", "citations": 22}, {"date": "2024-12-25", "citations": 22}, {"date": "2024-12-26", "citations": 22}, {"date": "2024-12-27", "citations": 23}, {"date": "2024-12-28", "citations": 23}, {"date": "2024-12-29", "citations": 23}, {"date": "2024-12-30", "citations": 23}, {"date": "2024-12-31", "citations": 23}, {"date": "2025-01-01", "citations": 23}, {"date": "2025-01-02", "citations": 23}, {"date": "2025-01-03", "citations": 23}, {"date": "2025-01-04", "citations": 23}, {"date": "2025-01-05", "citations": 23}, {"date": "2025-01-06", "citations": 23}, {"date": "2025-01-07", "citations": 23}, {"date": "2025-01-08", "citations": 23}, {"date": "2025-01-09", "citations": 23}, {"date": "2025-01-10", "citations": 23}, {"date": "2025-01-11", "citations": 23}, {"date": "2025-01-12", "citations": 23}, {"date": "2025-01-13", "citations": 23}, {"date": "2025-01-14", "citations": 23}, {"date": "2025-01-15", "citations": 23}, {"date": "2025-01-16", "citations": 23}, {"date": "2025-01-17", "citations": 23}, {"date": "2025-01-18", "citations": 23}, {"date": "2025-01-19", "citations": 23}, {"date": "2025-01-20", "citations": 23}, {"date": "2025-01-21", "citations": 23}, {"date": "2025-01-22", "citations": 23}, {"date": "2025-01-23", "citations": 23}, {"date": "2025-01-24", "citations": 23}, {"date": "2025-01-25", "citations": 23}, {"date": "2025-01-26", "citations": 23}, {"date": "2025-01-27", "citations": 23}, {"date": "2025-01-28", "citations": 23}, {"date": "2025-01-29", "citations": 23}, {"date": "2025-02-02", "citations": 24}, {"date": "2025-02-03", "citations": 24}, {"date": "2025-02-04", "citations": 24}, {"date": "2025-02-05", "citations": 24}, {"date": "2025-02-06", "citations": 24}, {"date": "2025-02-07", "citations": 24}, {"date": "2025-02-08", "citations": 25}, {"date": "2025-02-09", "citations": 26}, {"date": "2025-02-10", "citations": 26}, {"date": "2025-02-11", "citations": 26}, {"date": "2025-02-12", "citations": 27}, {"date": "2025-02-13", "citations": 27}, {"date": "2025-02-14", "citations": 28}, {"date": "2025-02-15", "citations": 28}, {"date": "2025-02-16", "citations": 28}, {"date": "2025-02-17", "citations": 29}, {"date": "2025-02-18", "citations": 31}, {"date": "2025-02-19", "citations": 31}, {"date": "2025-02-20", "citations": 31}, {"date": "2025-02-21", "citations": 31}, {"date": "2025-02-22", "citations": 33}, {"date": "2025-02-23", "citations": 34}, {"date": "2025-02-24", "citations": 34}, {"date": "2025-02-25", "citations": 34}, {"date": "2025-02-26", "citations": 34}, {"date": "2025-02-27", "citations": 34}, {"date": "2025-02-28", "citations": 36}, {"date": "2025-03-01", "citations": 36}, {"date": "2025-03-02", "citations": 36}, {"date": "2025-03-03", "citations": 37}, {"date": "2025-03-04", "citations": 37}, {"date": "2025-03-05", "citations": 39}, {"date": "2025-03-06", "citations": 39}, {"date": "2025-03-07", "citations": 40}, {"date": "2025-03-08", "citations": 40}, {"date": "2025-03-09", "citations": 40}, {"date": "2025-03-10", "citations": 40}, {"date": "2025-03-12", "citations": 41}, {"date": "2025-03-13", "citations": 41}, {"date": "2025-03-14", "citations": 41}, {"date": "2025-03-15", "citations": 41}, {"date": "2025-03-16", "citations": 41}, {"date": "2025-03-17", "citations": 41}, {"date": "2025-03-18", "citations": 41}, {"date": "2025-03-19", "citations": 42}, {"date": "2025-03-20", "citations": 42}, {"date": "2025-03-21", "citations": 42}, {"date": "2025-03-22", "citations": 42}, {"date": "2025-03-23", "citations": 42}, {"date": "2025-03-24", "citations": 42}, {"date": "2025-03-25", "citations": 42}, {"date": "2025-03-26", "citations": 42}, {"date": "2025-03-27", "citations": 42}, {"date": "2025-03-28", "citations": 42}, {"date": "2025-03-29", "citations": 42}, {"date": "2025-03-30", "citations": 42}, {"date": "2025-03-31", "citations": 42}, {"date": "2025-04-01", "citations": 42}, {"date": "2025-04-02", "citations": 42}, {"date": "2025-04-03", "citations": 42}, {"date": "2025-04-04", "citations": 42}, {"date": "2025-04-05", "citations": 42}, {"date": "2025-04-06", "citations": 42}, {"date": "2025-04-07", "citations": 42}, {"date": "2025-04-08", "citations": 42}, {"date": "2025-04-09", "citations": 42}, {"date": "2025-04-10", "citations": 42}, {"date": "2025-04-11", "citations": 42}, {"date": "2025-04-23", "citations": 45}, {"date": "2025-05-05", "citations": 46}, {"date": "2025-07-21", "citations": 76}, {"date": "2025-07-22", "citations": 76}, {"date": "2025-07-23", "citations": 77}, {"date": "2025-07-24", "citations": 77}, {"date": "2025-07-25", "citations": 80}, {"date": "2025-07-26", "citations": 78}, {"date": "2025-07-28", "citations": 81}, {"date": "2025-07-29", "citations": 81}, {"date": "2025-08-02", "citations": 81}, {"date": "2025-08-09", "citations": 82}, {"date": "2025-08-21", "citations": 84}, {"date": "2025-08-28", "citations": 86}, {"date": "2025-08-31", "citations": 86}, {"date": "2025-09-03", "citations": 86}, {"date": "2025-09-04", "citations": 86}, {"date": "2025-09-09", "citations": 86}, {"date": "2025-09-15", "citations": 87}, {"date": "2025-09-18", "citations": 88}, {"date": "2025-09-20", "citations": 88}, {"date": "2025-09-22", "citations": 88}, {"date": "2025-09-27", "citations": 91}, {"date": "2025-09-28", "citations": 90}, {"date": "2025-09-29", "citations": 90}, {"date": "2025-10-05", "citations": 93}, {"date": "2025-10-06", "citations": 93}, {"date": "2025-10-09", "citations": 93}, {"date": "2025-10-10", "citations": 94}, {"date": "2025-10-14", "citations": 94}, {"date": "2025-10-15", "citations": 95}, {"date": "2025-10-16", "citations": 95}, {"date": "2025-10-18", "citations": 96}, {"date": "2025-10-19", "citations": 96}, {"date": "2025-10-20", "citations": 96}, {"date": "2025-10-22", "citations": 97}, {"date": "2025-10-23", "citations": 98}, {"date": "2025-10-25", "citations": 106}, {"date": "2025-10-27", "citations": 106}, {"date": "2025-10-28", "citations": 107}, {"date": "2025-11-01", "citations": 108}, {"date": "2025-11-03", "citations": 108}, {"date": "2025-11-05", "citations": 109}, {"date": "2025-11-07", "citations": 112}, {"date": "2025-11-13", "citations": 116}, {"date": "2025-11-14", "citations": 117}, {"date": "2025-11-21", "citations": 119}, {"date": "2025-11-29", "citations": 121}, {"date": "2025-12-04", "citations": 121}, {"date": "2025-12-12", "citations": 125}, {"date": "2025-12-16", "citations": 125}, {"date": "2025-12-21", "citations": 128}, {"date": "2025-12-26", "citations": 128}, {"date": "2026-01-07", "citations": 129}, {"date": "2026-01-09", "citations": 129}, {"date": "2026-01-19", "citations": 130}, {"date": "2026-01-25", "citations": 131}, {"date": "2026-01-30", "citations": 134}, {"date": "2026-01-31", "citations": 134}, {"date": "2026-02-03", "citations": 134}, {"date": "2026-02-14", "citations": 137}, {"date": "2026-02-15", "citations": 137}, {"date": "2026-02-16", "citations": 140}, {"date": "2026-02-17", "citations": 141}, {"date": "2026-02-18", "citations": 141}, {"date": "2026-02-21", "citations": 142}, {"date": "2026-02-24", "citations": 147}, {"date": "2026-02-26", "citations": 149}, {"date": "2026-02-27", "citations": 150}, {"date": "2026-03-01", "citations": 151}, {"date": "2026-03-02", "citations": 151}, {"date": "2026-03-04", "citations": 152}, {"date": "2026-03-05", "citations": 153}, {"date": "2026-03-06", "citations": 153}, {"date": "2026-03-07", "citations": 153}, {"date": "2026-03-09", "citations": 153}, {"date": "2026-03-12", "citations": 153}, {"date": "2026-03-13", "citations": 154}, {"date": "2026-03-14", "citations": 155}, {"date": "2026-03-15", "citations": 155}, {"date": "2026-03-16", "citations": 155}, {"date": "2026-03-17", "citations": 155}, {"date": "2026-03-18", "citations": 155}, {"date": "2026-03-20", "citations": 155}, {"date": "2026-03-21", "citations": 155}, {"date": "2026-03-22", "citations": 155}, {"date": "2026-03-24", "citations": 156}, {"date": "2026-03-25", "citations": 156}, {"date": "2026-03-26", "citations": 156}, {"date": "2026-03-27", "citations": 157}, {"date": "2026-03-28", "citations": 157}, {"date": "2026-03-31", "citations": 157}, {"date": "2026-04-02", "citations": 157}, {"date": "2026-04-03", "citations": 157}, {"date": "2026-04-05", "citations": 157}, {"date": "2026-04-07", "citations": 157}, {"date": "2026-04-10", "citations": 158}, {"date": "2026-04-12", "citations": 158}, {"date": "2026-04-14", "citations": 160}, {"date": "2026-04-15", "citations": 160}, {"date": "2026-04-16", "citations": 161}, {"date": "2026-04-17", "citations": 161}, {"date": "2026-04-19", "citations": 161}, {"date": "2026-04-20", "citations": 161}, {"date": "2026-04-21", "citations": 162}, {"date": "2026-04-25", "citations": 164}, {"date": "2026-04-26", "citations": 168}, {"date": "2026-04-28", "citations": 168}, {"date": "2026-04-29", "citations": 168}, {"date": "2026-05-01", "citations": 168}, {"date": "2026-05-02", "citations": 170}, {"date": "2026-05-03", "citations": 170}, {"date": "2026-05-04", "citations": 170}, {"date": "2026-05-05", "citations": 172}, {"date": "2026-05-06", "citations": 172}, {"date": "2026-05-09", "citations": 173}, {"date": "2026-05-10", "citations": 173}, {"date": "2026-05-12", "citations": 174}, {"date": "2026-05-13", "citations": 175}, {"date": "2026-05-14", "citations": 175}, {"date": "2026-05-15", "citations": 175}, {"date": "2026-05-16", "citations": 176}, {"date": "2026-05-17", "citations": 176}, {"date": "2026-05-18", "citations": 178}, {"date": "2026-05-19", "citations": 178}, {"date": "2026-05-20", "citations": 178}, {"date": "2026-05-22", "citations": 178}, {"date": "2026-05-24", "citations": 179}, {"date": "2026-05-25", "citations": 180}, {"date": "2026-05-26", "citations": 180}, {"date": "2026-05-28", "citations": 180}, {"date": "2026-05-30", "citations": 181}, {"date": "2026-05-31", "citations": 181}, {"date": "2026-06-01", "citations": 182}, {"date": "2026-06-03", "citations": 182}], "Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models": [{"date": "2024-11-07", "citations": 11}, {"date": "2024-11-08", "citations": 11}, {"date": "2024-11-09", "citations": 11}, {"date": "2024-11-10", "citations": 11}, {"date": "2024-11-11", "citations": 11}, {"date": "2024-11-12", "citations": 11}, {"date": "2024-11-13", "citations": 13}, {"date": "2024-11-14", "citations": 13}, {"date": "2024-11-15", "citations": 13}, {"date": "2024-11-16", "citations": 13}, {"date": "2024-11-17", "citations": 13}, {"date": "2024-11-18", "citations": 14}, {"date": "2024-11-19", "citations": 14}, {"date": "2024-11-20", "citations": 14}, {"date": "2024-11-21", "citations": 14}, {"date": "2024-11-22", "citations": 14}, {"date": "2024-11-23", "citations": 14}, {"date": "2024-11-24", "citations": 14}, {"date": "2024-11-25", "citations": 14}, {"date": "2024-11-26", "citations": 14}, {"date": "2024-11-27", "citations": 14}, {"date": "2024-11-28", "citations": 15}, {"date": "2024-11-29", "citations": 15}, {"date": "2024-11-30", "citations": 15}, {"date": "2024-12-01", "citations": 15}, {"date": "2024-12-02", "citations": 15}, {"date": "2024-12-03", "citations": 15}, {"date": "2024-12-04", "citations": 15}, {"date": "2024-12-05", "citations": 15}, {"date": "2024-12-06", "citations": 15}, {"date": "2024-12-07", "citations": 15}, {"date": "2024-12-08", "citations": 15}, {"date": "2024-12-09", "citations": 15}, {"date": "2024-12-10", "citations": 15}, {"date": "2024-12-11", "citations": 15}, {"date": "2024-12-12", "citations": 15}, {"date": "2024-12-13", "citations": 15}, {"date": "2024-12-14", "citations": 15}, {"date": "2024-12-15", "citations": 15}, {"date": "2024-12-16", "citations": 15}, {"date": "2024-12-17", "citations": 15}, {"date": "2024-12-18", "citations": 15}, {"date": "2024-12-19", "citations": 16}, {"date": "2024-12-20", "citations": 16}, {"date": "2024-12-21", "citations": 16}, {"date": "2024-12-22", "citations": 16}, {"date": "2024-12-23", "citations": 17}, {"date": "2024-12-24", "citations": 17}, {"date": "2024-12-25", "citations": 17}, {"date": "2024-12-26", "citations": 17}, {"date": "2024-12-27", "citations": 17}, {"date": "2024-12-28", "citations": 17}, {"date": "2024-12-29", "citations": 17}, {"date": "2024-12-30", "citations": 17}, {"date": "2024-12-31", "citations": 17}, {"date": "2025-01-01", "citations": 17}, {"date": "2025-01-02", "citations": 17}, {"date": "2025-01-03", "citations": 17}, {"date": "2025-01-04", "citations": 17}, {"date": "2025-01-05", "citations": 17}, {"date": "2025-01-06", "citations": 17}, {"date": "2025-01-07", "citations": 17}, {"date": "2025-01-08", "citations": 17}, {"date": "2025-01-09", "citations": 17}, {"date": "2025-01-10", "citations": 17}, {"date": "2025-01-11", "citations": 17}, {"date": "2025-01-12", "citations": 17}, {"date": "2025-01-13", "citations": 17}, {"date": "2025-01-14", "citations": 17}, {"date": "2025-01-15", "citations": 17}, {"date": "2025-01-16", "citations": 17}, {"date": "2025-01-17", "citations": 17}, {"date": "2025-01-18", "citations": 17}, {"date": "2025-01-19", "citations": 17}, {"date": "2025-01-20", "citations": 17}, {"date": "2025-01-21", "citations": 17}, {"date": "2025-01-22", "citations": 17}, {"date": "2025-01-23", "citations": 17}, {"date": "2025-01-24", "citations": 17}, {"date": "2025-01-25", "citations": 17}, {"date": "2025-01-26", "citations": 17}, {"date": "2025-01-27", "citations": 17}, {"date": "2025-01-28", "citations": 17}, {"date": "2025-01-29", "citations": 17}, {"date": "2025-02-02", "citations": 19}, {"date": "2025-02-03", "citations": 19}, {"date": "2025-02-04", "citations": 19}, {"date": "2025-02-05", "citations": 19}, {"date": "2025-02-06", "citations": 19}, {"date": "2025-02-07", "citations": 19}, {"date": "2025-02-08", "citations": 20}, {"date": "2025-02-09", "citations": 21}, {"date": "2025-02-10", "citations": 21}, {"date": "2025-02-11", "citations": 21}, {"date": "2025-02-12", "citations": 21}, {"date": "2025-02-13", "citations": 21}, {"date": "2025-02-14", "citations": 24}, {"date": "2025-02-15", "citations": 24}, {"date": "2025-02-16", "citations": 24}, {"date": "2025-02-17", "citations": 24}, {"date": "2025-02-18", "citations": 24}, {"date": "2025-02-19", "citations": 24}, {"date": "2025-02-20", "citations": 24}, {"date": "2025-02-21", "citations": 24}, {"date": "2025-02-22", "citations": 26}, {"date": "2025-02-23", "citations": 26}, {"date": "2025-02-24", "citations": 26}, {"date": "2025-02-25", "citations": 29}, {"date": "2025-02-26", "citations": 29}, {"date": "2025-02-27", "citations": 30}, {"date": "2025-02-28", "citations": 30}, {"date": "2025-03-01", "citations": 30}, {"date": "2025-03-02", "citations": 30}, {"date": "2025-03-03", "citations": 31}, {"date": "2025-03-04", "citations": 31}, {"date": "2025-03-05", "citations": 32}, {"date": "2025-03-06", "citations": 32}, {"date": "2025-03-07", "citations": 32}, {"date": "2025-03-08", "citations": 32}, {"date": "2025-03-09", "citations": 32}, {"date": "2025-03-10", "citations": 32}, {"date": "2025-03-12", "citations": 33}, {"date": "2025-03-13", "citations": 35}, {"date": "2025-03-14", "citations": 35}, {"date": "2025-03-15", "citations": 35}, {"date": "2025-03-16", "citations": 35}, {"date": "2025-03-17", "citations": 35}, {"date": "2025-03-18", "citations": 35}, {"date": "2025-03-19", "citations": 35}, {"date": "2025-03-20", "citations": 35}, {"date": "2025-03-21", "citations": 36}, {"date": "2025-03-22", "citations": 36}, {"date": "2025-03-23", "citations": 36}, {"date": "2025-03-24", "citations": 36}, {"date": "2025-03-25", "citations": 36}, {"date": "2025-03-26", "citations": 36}, {"date": "2025-03-27", "citations": 36}, {"date": "2025-03-28", "citations": 36}, {"date": "2025-03-29", "citations": 36}, {"date": "2025-03-30", "citations": 37}, {"date": "2025-03-31", "citations": 37}, {"date": "2025-04-01", "citations": 37}, {"date": "2025-04-02", "citations": 37}, {"date": "2025-04-03", "citations": 37}, {"date": "2025-04-04", "citations": 37}, {"date": "2025-04-05", "citations": 37}, {"date": "2025-04-06", "citations": 37}, {"date": "2025-04-07", "citations": 37}, {"date": "2025-04-08", "citations": 37}, {"date": "2025-04-09", "citations": 37}, {"date": "2025-04-10", "citations": 37}, {"date": "2025-04-11", "citations": 37}, {"date": "2025-04-23", "citations": 41}, {"date": "2025-05-05", "citations": 41}, {"date": "2025-07-21", "citations": 55}, {"date": "2025-07-22", "citations": 55}, {"date": "2025-07-23", "citations": 55}, {"date": "2025-07-24", "citations": 55}, {"date": "2025-07-25", "citations": 55}, {"date": "2025-07-26", "citations": 55}, {"date": "2025-07-28", "citations": 55}, {"date": "2025-07-29", "citations": 55}, {"date": "2025-08-02", "citations": 56}, {"date": "2025-08-09", "citations": 56}, {"date": "2025-08-21", "citations": 56}, {"date": "2025-08-28", "citations": 57}, {"date": "2025-08-31", "citations": 57}, {"date": "2025-09-03", "citations": 57}, {"date": "2025-09-04", "citations": 57}, {"date": "2025-09-09", "citations": 57}, {"date": "2025-09-15", "citations": 58}, {"date": "2025-09-18", "citations": 58}, {"date": "2025-09-20", "citations": 58}, {"date": "2025-09-22", "citations": 58}, {"date": "2025-09-27", "citations": 58}, {"date": "2025-09-28", "citations": 58}, {"date": "2025-09-29", "citations": 58}, {"date": "2025-10-05", "citations": 59}, {"date": "2025-10-06", "citations": 59}, {"date": "2025-10-09", "citations": 59}, {"date": "2025-10-10", "citations": 59}, {"date": "2025-10-14", "citations": 60}, {"date": "2025-10-15", "citations": 60}, {"date": "2025-10-16", "citations": 60}, {"date": "2025-10-18", "citations": 62}, {"date": "2025-10-19", "citations": 62}, {"date": "2025-10-20", "citations": 62}, {"date": "2025-10-22", "citations": 62}, {"date": "2025-10-23", "citations": 62}, {"date": "2025-10-25", "citations": 66}, {"date": "2025-10-27", "citations": 66}, {"date": "2025-10-28", "citations": 66}, {"date": "2025-11-01", "citations": 67}, {"date": "2025-11-03", "citations": 67}, {"date": "2025-11-05", "citations": 68}, {"date": "2025-11-07", "citations": 69}, {"date": "2025-11-13", "citations": 69}, {"date": "2025-11-14", "citations": 69}, {"date": "2025-11-21", "citations": 69}, {"date": "2025-11-29", "citations": 71}, {"date": "2025-12-04", "citations": 71}, {"date": "2025-12-12", "citations": 71}, {"date": "2025-12-16", "citations": 71}, {"date": "2025-12-21", "citations": 71}, {"date": "2025-12-26", "citations": 71}, {"date": "2026-01-07", "citations": 73}, {"date": "2026-01-09", "citations": 73}, {"date": "2026-01-19", "citations": 73}, {"date": "2026-01-25", "citations": 75}, {"date": "2026-01-30", "citations": 77}, {"date": "2026-01-31", "citations": 77}, {"date": "2026-02-03", "citations": 77}, {"date": "2026-02-14", "citations": 82}, {"date": "2026-02-15", "citations": 82}, {"date": "2026-02-16", "citations": 83}, {"date": "2026-02-17", "citations": 83}, {"date": "2026-02-18", "citations": 83}, {"date": "2026-02-21", "citations": 84}, {"date": "2026-02-24", "citations": 87}, {"date": "2026-02-26", "citations": 88}, {"date": "2026-02-27", "citations": 89}, {"date": "2026-03-01", "citations": 90}, {"date": "2026-03-02", "citations": 90}, {"date": "2026-03-04", "citations": 90}, {"date": "2026-03-05", "citations": 90}, {"date": "2026-03-06", "citations": 90}, {"date": "2026-03-07", "citations": 90}, {"date": "2026-03-09", "citations": 90}, {"date": "2026-03-12", "citations": 90}, {"date": "2026-03-13", "citations": 90}, {"date": "2026-03-14", "citations": 91}, {"date": "2026-03-15", "citations": 91}, {"date": "2026-03-16", "citations": 91}, {"date": "2026-03-17", "citations": 92}, {"date": "2026-03-18", "citations": 92}, {"date": "2026-03-20", "citations": 93}, {"date": "2026-03-21", "citations": 93}, {"date": "2026-03-22", "citations": 96}, {"date": "2026-03-24", "citations": 96}, {"date": "2026-03-25", "citations": 96}, {"date": "2026-03-26", "citations": 96}, {"date": "2026-03-27", "citations": 96}, {"date": "2026-03-28", "citations": 96}, {"date": "2026-03-31", "citations": 96}, {"date": "2026-04-02", "citations": 96}, {"date": "2026-04-03", "citations": 96}, {"date": "2026-04-05", "citations": 96}, {"date": "2026-04-07", "citations": 96}, {"date": "2026-04-10", "citations": 96}, {"date": "2026-04-12", "citations": 96}, {"date": "2026-04-14", "citations": 96}, {"date": "2026-04-15", "citations": 96}, {"date": "2026-04-16", "citations": 96}, {"date": "2026-04-17", "citations": 97}, {"date": "2026-04-19", "citations": 97}, {"date": "2026-04-20", "citations": 97}, {"date": "2026-04-21", "citations": 97}, {"date": "2026-04-25", "citations": 98}, {"date": "2026-04-26", "citations": 100}, {"date": "2026-04-28", "citations": 100}, {"date": "2026-04-29", "citations": 101}, {"date": "2026-05-01", "citations": 101}, {"date": "2026-05-02", "citations": 101}, {"date": "2026-05-03", "citations": 101}, {"date": "2026-05-04", "citations": 101}, {"date": "2026-05-05", "citations": 101}, {"date": "2026-05-06", "citations": 101}, {"date": "2026-05-09", "citations": 101}, {"date": "2026-05-10", "citations": 101}, {"date": "2026-05-12", "citations": 101}, {"date": "2026-05-13", "citations": 101}, {"date": "2026-05-14", "citations": 101}, {"date": "2026-05-15", "citations": 101}, {"date": "2026-05-16", "citations": 101}, {"date": "2026-05-17", "citations": 101}, {"date": "2026-05-18", "citations": 101}, {"date": "2026-05-19", "citations": 101}, {"date": "2026-05-20", "citations": 101}, {"date": "2026-05-22", "citations": 101}, {"date": "2026-05-24", "citations": 101}, {"date": "2026-05-25", "citations": 101}, {"date": "2026-05-26", "citations": 101}, {"date": "2026-05-28", "citations": 101}, {"date": "2026-05-30", "citations": 101}, {"date": "2026-05-31", "citations": 101}, {"date": "2026-06-01", "citations": 101}, {"date": "2026-06-03", "citations": 101}], "Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models": [{"date": "2024-11-07", "citations": null}, {"date": "2024-11-08", "citations": null}, {"date": "2024-11-09", "citations": null}, {"date": "2024-11-10", "citations": null}, {"date": "2024-11-11", "citations": null}, {"date": "2024-11-12", "citations": null}, {"date": "2024-11-13", "citations": null}, {"date": "2024-11-14", "citations": null}, {"date": "2024-11-15", "citations": null}, {"date": "2024-11-16", "citations": null}, {"date": "2024-11-17", "citations": null}, {"date": "2024-11-18", "citations": null}, {"date": "2024-11-19", "citations": 1}, {"date": "2024-11-20", "citations": 1}, {"date": "2024-11-21", "citations": 1}, {"date": "2024-11-22", "citations": 1}, {"date": "2024-11-23", "citations": 1}, {"date": "2024-11-24", "citations": 1}, {"date": "2024-11-25", "citations": 1}, {"date": "2024-11-26", "citations": 1}, {"date": "2024-11-27", "citations": 1}, {"date": "2024-11-28", "citations": 1}, {"date": "2024-11-29", "citations": 1}, {"date": "2024-11-30", "citations": 1}, {"date": "2024-12-01", "citations": 1}, {"date": "2024-12-02", "citations": 1}, {"date": "2024-12-03", "citations": 1}, {"date": "2024-12-04", "citations": 1}, {"date": "2024-12-05", "citations": 1}, {"date": "2024-12-06", "citations": 1}, {"date": "2024-12-07", "citations": 1}, {"date": "2024-12-08", "citations": 1}, {"date": "2024-12-09", "citations": 1}, {"date": "2024-12-10", "citations": 1}, {"date": "2024-12-11", "citations": 1}, {"date": "2024-12-12", "citations": 1}, {"date": "2024-12-13", "citations": 1}, {"date": "2024-12-14", "citations": 1}, {"date": "2024-12-15", "citations": 1}, {"date": "2024-12-16", "citations": 1}, {"date": "2024-12-17", "citations": 1}, {"date": "2024-12-18", "citations": 1}, {"date": "2024-12-19", "citations": 1}, {"date": "2024-12-20", "citations": 1}, {"date": "2024-12-21", "citations": 1}, {"date": "2024-12-22", "citations": 1}, {"date": "2024-12-23", "citations": 1}, {"date": "2024-12-24", "citations": 1}, {"date": "2024-12-25", "citations": 1}, {"date": "2024-12-26", "citations": 1}, {"date": "2024-12-27", "citations": 1}, {"date": "2024-12-28", "citations": 1}, {"date": "2024-12-29", "citations": 1}, {"date": "2024-12-30", "citations": 1}, {"date": "2024-12-31", "citations": 1}, {"date": "2025-01-01", "citations": 1}, {"date": "2025-01-02", "citations": 1}, {"date": "2025-01-03", "citations": 1}, {"date": "2025-01-04", "citations": 1}, {"date": "2025-01-05", "citations": 1}, {"date": "2025-01-06", "citations": 1}, {"date": "2025-01-07", "citations": 1}, {"date": "2025-01-08", "citations": 1}, {"date": "2025-01-09", "citations": 1}, {"date": "2025-01-10", "citations": 1}, {"date": "2025-01-11", "citations": 1}, {"date": "2025-01-12", "citations": 1}, {"date": "2025-01-13", "citations": 1}, {"date": "2025-01-14", "citations": 1}, {"date": "2025-01-15", "citations": 1}, {"date": "2025-01-16", "citations": 1}, {"date": "2025-01-17", "citations": 1}, {"date": "2025-01-18", "citations": 1}, {"date": "2025-01-19", "citations": 1}, {"date": "2025-01-20", "citations": 1}, {"date": "2025-01-21", "citations": 1}, {"date": "2025-01-22", "citations": 1}, {"date": "2025-01-23", "citations": 1}, {"date": "2025-01-24", "citations": 1}, {"date": "2025-01-25", "citations": 1}, {"date": "2025-01-26", "citations": 1}, {"date": "2025-01-27", "citations": 1}, {"date": "2025-01-28", "citations": 1}, {"date": "2025-01-29", "citations": 1}, {"date": "2025-02-02", "citations": 2}, {"date": "2025-02-03", "citations": 2}, {"date": "2025-02-04", "citations": 2}, {"date": "2025-02-05", "citations": 2}, {"date": "2025-02-06", "citations": 2}, {"date": "2025-02-07", "citations": 2}, {"date": "2025-02-08", "citations": 2}, {"date": "2025-02-09", "citations": 2}, {"date": "2025-02-10", "citations": 2}, {"date": "2025-02-11", "citations": 2}, {"date": "2025-02-12", "citations": 2}, {"date": "2025-02-13", "citations": 2}, {"date": "2025-02-14", "citations": 3}, {"date": "2025-02-15", "citations": 3}, {"date": "2025-02-16", "citations": 3}, {"date": "2025-02-17", "citations": 3}, {"date": "2025-02-18", "citations": 3}, {"date": "2025-02-19", "citations": 3}, {"date": "2025-02-20", "citations": 3}, {"date": "2025-02-21", "citations": 3}, {"date": "2025-02-22", "citations": 3}, {"date": "2025-02-23", "citations": 3}, {"date": "2025-02-24", "citations": 3}, {"date": "2025-02-25", "citations": 3}, {"date": "2025-02-26", "citations": 3}, {"date": "2025-02-27", "citations": 3}, {"date": "2025-02-28", "citations": 3}, {"date": "2025-03-01", "citations": 3}, {"date": "2025-03-02", "citations": 3}, {"date": "2025-03-03", "citations": 3}, {"date": "2025-03-04", "citations": 3}, {"date": "2025-03-05", "citations": 4}, {"date": "2025-03-06", "citations": 4}, {"date": "2025-03-07", "citations": 4}, {"date": "2025-03-08", "citations": 4}, {"date": "2025-03-09", "citations": 4}, {"date": "2025-03-10", "citations": 4}, {"date": "2025-03-12", "citations": 6}, {"date": "2025-03-13", "citations": 7}, {"date": "2025-03-14", "citations": 7}, {"date": "2025-03-15", "citations": 7}, {"date": "2025-03-16", "citations": 7}, {"date": "2025-03-17", "citations": 7}, {"date": "2025-03-18", "citations": 7}, {"date": "2025-03-19", "citations": 7}, {"date": "2025-03-20", "citations": 7}, {"date": "2025-03-21", "citations": 7}, {"date": "2025-03-22", "citations": 7}, {"date": "2025-03-23", "citations": 6}, {"date": "2025-03-24", "citations": 7}, {"date": "2025-03-25", "citations": 7}, {"date": "2025-03-26", "citations": 7}, {"date": "2025-03-27", "citations": 7}, {"date": "2025-03-28", "citations": 8}, {"date": "2025-03-29", "citations": 8}, {"date": "2025-03-30", "citations": 8}, {"date": "2025-03-31", "citations": 8}, {"date": "2025-04-01", "citations": 8}, {"date": "2025-04-02", "citations": 8}, {"date": "2025-04-03", "citations": 8}, {"date": "2025-04-04", "citations": 9}, {"date": "2025-04-05", "citations": 9}, {"date": "2025-04-06", "citations": 9}, {"date": "2025-04-07", "citations": 9}, {"date": "2025-04-08", "citations": 9}, {"date": "2025-04-09", "citations": 9}, {"date": "2025-04-10", "citations": 9}, {"date": "2025-04-11", "citations": 9}, {"date": "2025-04-23", "citations": 9}, {"date": "2025-05-05", "citations": 10}, {"date": "2025-07-21", "citations": 17}, {"date": "2025-07-22", "citations": 17}, {"date": "2025-07-23", "citations": 17}, {"date": "2025-07-24", "citations": 17}, {"date": "2025-07-25", "citations": 17}, {"date": "2025-07-26", "citations": 17}, {"date": "2025-07-28", "citations": 17}, {"date": "2025-07-29", "citations": 17}, {"date": "2025-08-02", "citations": 18}, {"date": "2025-08-09", "citations": 18}, {"date": "2025-08-21", "citations": 18}, {"date": "2025-08-28", "citations": 20}, {"date": "2025-08-31", "citations": 20}, {"date": "2025-09-03", "citations": 20}, {"date": "2025-09-04", "citations": 20}, {"date": "2025-09-09", "citations": 20}, {"date": "2025-09-15", "citations": 20}, {"date": "2025-09-18", "citations": 20}, {"date": "2025-09-20", "citations": 21}, {"date": "2025-09-22", "citations": 21}, {"date": "2025-09-27", "citations": 21}, {"date": "2025-09-28", "citations": 21}, {"date": "2025-09-29", "citations": 21}, {"date": "2025-10-05", "citations": 23}, {"date": "2025-10-06", "citations": 23}, {"date": "2025-10-09", "citations": 23}, {"date": "2025-10-10", "citations": 23}, {"date": "2025-10-14", "citations": 23}, {"date": "2025-10-15", "citations": 23}, {"date": "2025-10-16", "citations": 23}, {"date": "2025-10-18", "citations": 23}, {"date": "2025-10-19", "citations": 23}, {"date": "2025-10-20", "citations": 23}, {"date": "2025-10-22", "citations": 23}, {"date": "2025-10-23", "citations": 23}, {"date": "2025-10-25", "citations": 27}, {"date": "2025-10-27", "citations": 28}, {"date": "2025-10-28", "citations": 28}, {"date": "2025-11-01", "citations": 29}, {"date": "2025-11-03", "citations": 29}, {"date": "2025-11-05", "citations": 30}, {"date": "2025-11-07", "citations": 32}, {"date": "2025-11-13", "citations": 33}, {"date": "2025-11-14", "citations": 33}, {"date": "2025-11-21", "citations": 33}, {"date": "2025-11-29", "citations": 34}, {"date": "2025-12-04", "citations": 34}, {"date": "2025-12-12", "citations": 34}, {"date": "2025-12-16", "citations": 34}, {"date": "2025-12-21", "citations": 34}, {"date": "2025-12-26", "citations": 36}, {"date": "2026-01-07", "citations": 36}, {"date": "2026-01-09", "citations": 36}, {"date": "2026-01-19", "citations": 37}, {"date": "2026-01-25", "citations": 40}, {"date": "2026-01-30", "citations": 42}, {"date": "2026-01-31", "citations": 42}, {"date": "2026-02-03", "citations": 42}, {"date": "2026-02-14", "citations": 42}, {"date": "2026-02-15", "citations": 42}, {"date": "2026-02-16", "citations": 44}, {"date": "2026-02-17", "citations": 44}, {"date": "2026-02-18", "citations": 44}, {"date": "2026-02-21", "citations": 46}, {"date": "2026-02-24", "citations": 47}, {"date": "2026-02-26", "citations": 47}, {"date": "2026-02-27", "citations": 47}, {"date": "2026-03-01", "citations": 48}, {"date": "2026-03-02", "citations": 48}, {"date": "2026-03-04", "citations": 48}, {"date": "2026-03-05", "citations": 48}, {"date": "2026-03-06", "citations": 48}, {"date": "2026-03-07", "citations": 49}, {"date": "2026-03-09", "citations": 49}, {"date": "2026-03-12", "citations": 49}, {"date": "2026-03-13", "citations": 49}, {"date": "2026-03-14", "citations": 49}, {"date": "2026-03-15", "citations": 49}, {"date": "2026-03-16", "citations": 49}, {"date": "2026-03-17", "citations": 49}, {"date": "2026-03-18", "citations": 49}, {"date": "2026-03-20", "citations": 49}, {"date": "2026-03-21", "citations": 49}, {"date": "2026-03-22", "citations": 52}, {"date": "2026-03-24", "citations": 52}, {"date": "2026-03-25", "citations": 52}, {"date": "2026-03-26", "citations": 52}, {"date": "2026-03-27", "citations": 52}, {"date": "2026-03-28", "citations": 52}, {"date": "2026-03-31", "citations": 52}, {"date": "2026-04-02", "citations": 52}, {"date": "2026-04-03", "citations": 53}, {"date": "2026-04-05", "citations": 53}, {"date": "2026-04-07", "citations": 53}, {"date": "2026-04-10", "citations": 53}, {"date": "2026-04-12", "citations": 53}, {"date": "2026-04-14", "citations": 53}, {"date": "2026-04-15", "citations": 53}, {"date": "2026-04-16", "citations": 53}, {"date": "2026-04-17", "citations": 53}, {"date": "2026-04-19", "citations": 53}, {"date": "2026-04-20", "citations": 53}, {"date": "2026-04-21", "citations": 53}, {"date": "2026-04-25", "citations": 54}, {"date": "2026-04-26", "citations": 58}, {"date": "2026-04-28", "citations": 59}, {"date": "2026-04-29", "citations": 60}, {"date": "2026-05-01", "citations": 60}, {"date": "2026-05-02", "citations": 60}, {"date": "2026-05-03", "citations": 60}, {"date": "2026-05-04", "citations": 60}, {"date": "2026-05-05", "citations": 60}, {"date": "2026-05-06", "citations": 60}, {"date": "2026-05-09", "citations": 60}, {"date": "2026-05-10", "citations": 60}, {"date": "2026-05-12", "citations": 60}, {"date": "2026-05-13", "citations": 60}, {"date": "2026-05-14", "citations": 60}, {"date": "2026-05-15", "citations": 60}, {"date": "2026-05-16", "citations": 60}, {"date": "2026-05-17", "citations": 60}, {"date": "2026-05-18", "citations": 60}, {"date": "2026-05-19", "citations": 60}, {"date": "2026-05-20", "citations": 60}, {"date": "2026-05-22", "citations": 60}, {"date": "2026-05-24", "citations": 60}, {"date": "2026-05-25", "citations": 60}, {"date": "2026-05-26", "citations": 60}, {"date": "2026-05-28", "citations": 60}, {"date": "2026-05-30", "citations": 60}, {"date": "2026-05-31", "citations": 60}, {"date": "2026-06-01", "citations": 60}, {"date": "2026-06-03", "citations": 60}], "LongGenBench: Long-context Generation Benchmark": [{"date": "2024-11-07", "citations": 2}, {"date": "2024-11-08", "citations": 2}, {"date": "2024-11-09", "citations": 2}, {"date": "2024-11-10", "citations": 2}, {"date": "2024-11-11", "citations": 2}, {"date": "2024-11-12", "citations": 2}, {"date": "2024-11-13", "citations": 2}, {"date": "2024-11-14", "citations": 2}, {"date": "2024-11-15", "citations": 2}, {"date": "2024-11-16", "citations": 2}, {"date": "2024-11-17", "citations": 2}, {"date": "2024-11-18", "citations": 2}, {"date": "2024-11-19", "citations": 2}, {"date": "2024-11-20", "citations": 2}, {"date": "2024-11-21", "citations": 2}, {"date": "2024-11-22", "citations": 2}, {"date": "2024-11-23", "citations": 2}, {"date": "2024-11-24", "citations": 2}, {"date": "2024-11-25", "citations": 2}, {"date": "2024-11-26", "citations": 2}, {"date": "2024-11-27", "citations": 2}, {"date": "2024-11-28", "citations": 2}, {"date": "2024-11-29", "citations": 2}, {"date": "2024-11-30", "citations": 2}, {"date": "2024-12-01", "citations": 2}, {"date": "2024-12-02", "citations": 2}, {"date": "2024-12-03", "citations": 2}, {"date": "2024-12-04", "citations": 2}, {"date": "2024-12-05", "citations": 2}, {"date": "2024-12-06", "citations": 2}, {"date": "2024-12-07", "citations": 2}, {"date": "2024-12-08", "citations": 2}, {"date": "2024-12-09", "citations": 2}, {"date": "2024-12-10", "citations": 2}, {"date": "2024-12-11", "citations": 2}, {"date": "2024-12-12", "citations": 2}, {"date": "2024-12-13", "citations": 2}, {"date": "2024-12-14", "citations": 2}, {"date": "2024-12-15", "citations": 2}, {"date": "2024-12-16", "citations": 2}, {"date": "2024-12-17", "citations": 2}, {"date": "2024-12-18", "citations": 2}, {"date": "2024-12-19", "citations": 2}, {"date": "2024-12-20", "citations": 2}, {"date": "2024-12-21", "citations": 2}, {"date": "2024-12-22", "citations": 3}, {"date": "2024-12-23", "citations": 3}, {"date": "2024-12-24", "citations": 3}, {"date": "2024-12-25", "citations": 3}, {"date": "2024-12-26", "citations": 3}, {"date": "2024-12-27", "citations": 3}, {"date": "2024-12-28", "citations": 3}, {"date": "2024-12-29", "citations": 3}, {"date": "2024-12-30", "citations": 3}, {"date": "2024-12-31", "citations": 3}, {"date": "2025-01-01", "citations": 3}, {"date": "2025-01-02", "citations": 3}, {"date": "2025-01-03", "citations": 3}, {"date": "2025-01-04", "citations": 3}, {"date": "2025-01-05", "citations": 3}, {"date": "2025-01-06", "citations": 3}, {"date": "2025-01-07", "citations": 3}, {"date": "2025-01-08", "citations": 3}, {"date": "2025-01-09", "citations": 3}, {"date": "2025-01-10", "citations": 3}, {"date": "2025-01-11", "citations": 3}, {"date": "2025-01-12", "citations": 3}, {"date": "2025-01-13", "citations": 3}, {"date": "2025-01-14", "citations": 3}, {"date": "2025-01-15", "citations": 3}, {"date": "2025-01-16", "citations": 3}, {"date": "2025-01-17", "citations": 3}, {"date": "2025-01-18", "citations": 3}, {"date": "2025-01-19", "citations": 3}, {"date": "2025-01-20", "citations": 3}, {"date": "2025-01-21", "citations": 3}, {"date": "2025-01-22", "citations": 3}, {"date": "2025-01-23", "citations": 3}, {"date": "2025-01-24", "citations": 3}, {"date": "2025-01-25", "citations": 3}, {"date": "2025-01-26", "citations": 3}, {"date": "2025-01-27", "citations": 3}, {"date": "2025-01-28", "citations": 3}, {"date": "2025-01-29", "citations": 3}, {"date": "2025-02-02", "citations": 3}, {"date": "2025-02-03", "citations": 3}, {"date": "2025-02-04", "citations": 3}, {"date": "2025-02-05", "citations": 3}, {"date": "2025-02-06", "citations": 3}, {"date": "2025-02-07", "citations": 3}, {"date": "2025-02-08", "citations": 3}, {"date": "2025-02-09", "citations": 3}, {"date": "2025-02-10", "citations": 3}, {"date": "2025-02-11", "citations": 3}, {"date": "2025-02-12", "citations": 3}, {"date": "2025-02-13", "citations": 3}, {"date": "2025-02-14", "citations": 3}, {"date": "2025-02-15", "citations": 3}, {"date": "2025-02-16", "citations": 3}, {"date": "2025-02-17", "citations": 3}, {"date": "2025-02-18", "citations": 3}, {"date": "2025-02-19", "citations": 3}, {"date": "2025-02-20", "citations": 3}, {"date": "2025-02-21", "citations": 3}, {"date": "2025-02-22", "citations": 3}, {"date": "2025-02-23", "citations": 3}, {"date": "2025-02-24", "citations": 3}, {"date": "2025-02-25", "citations": 3}, {"date": "2025-02-26", "citations": 3}, {"date": "2025-02-27", "citations": 3}, {"date": "2025-02-28", "citations": 4}, {"date": "2025-03-01", "citations": 4}, {"date": "2025-03-02", "citations": 4}, {"date": "2025-03-03", "citations": 4}, {"date": "2025-03-04", "citations": 4}, {"date": "2025-03-05", "citations": 4}, {"date": "2025-03-06", "citations": 4}, {"date": "2025-03-07", "citations": 4}, {"date": "2025-03-08", "citations": 4}, {"date": "2025-03-09", "citations": 4}, {"date": "2025-03-10", "citations": 4}, {"date": "2025-03-12", "citations": 4}, {"date": "2025-03-13", "citations": 4}, {"date": "2025-03-14", "citations": 5}, {"date": "2025-03-15", "citations": 5}, {"date": "2025-03-16", "citations": 5}, {"date": "2025-03-17", "citations": 5}, {"date": "2025-03-18", "citations": 5}, {"date": "2025-03-19", "citations": 5}, {"date": "2025-03-20", "citations": 5}, {"date": "2025-03-21", "citations": 5}, {"date": "2025-03-22", "citations": 5}, {"date": "2025-03-23", "citations": 5}, {"date": "2025-03-24", "citations": 5}, {"date": "2025-03-25", "citations": 5}, {"date": "2025-03-26", "citations": 5}, {"date": "2025-03-27", "citations": 5}, {"date": "2025-03-28", "citations": 6}, {"date": "2025-03-29", "citations": 6}, {"date": "2025-03-30", "citations": 6}, {"date": "2025-03-31", "citations": 6}, {"date": "2025-04-01", "citations": 6}, {"date": "2025-04-02", "citations": 6}, {"date": "2025-04-03", "citations": 6}, {"date": "2025-04-04", "citations": 6}, {"date": "2025-04-05", "citations": 6}, {"date": "2025-04-06", "citations": 6}, {"date": "2025-04-07", "citations": 6}, {"date": "2025-04-08", "citations": 6}, {"date": "2025-04-09", "citations": 6}, {"date": "2025-04-10", "citations": 6}, {"date": "2025-04-11", "citations": 6}, {"date": "2025-04-23", "citations": 7}, {"date": "2025-05-05", "citations": 7}, {"date": "2025-07-21", "citations": 21}, {"date": "2025-07-22", "citations": 21}, {"date": "2025-07-23", "citations": 21}, {"date": "2025-07-24", "citations": 21}, {"date": "2025-07-25", "citations": 22}, {"date": "2025-07-26", "citations": 21}, {"date": "2025-07-28", "citations": 23}, {"date": "2025-07-29", "citations": 24}, {"date": "2025-08-02", "citations": 24}, {"date": "2025-08-09", "citations": 24}, {"date": "2025-08-21", "citations": 25}, {"date": "2025-08-28", "citations": 24}, {"date": "2025-08-31", "citations": 25}, {"date": "2025-09-03", "citations": 25}, {"date": "2025-09-04", "citations": 25}, {"date": "2025-09-09", "citations": 26}, {"date": "2025-09-15", "citations": 28}, {"date": "2025-09-18", "citations": 28}, {"date": "2025-09-20", "citations": 28}, {"date": "2025-09-22", "citations": 28}, {"date": "2025-09-27", "citations": 28}, {"date": "2025-09-28", "citations": 28}, {"date": "2025-09-29", "citations": 28}, {"date": "2025-10-05", "citations": 28}, {"date": "2025-10-06", "citations": 28}, {"date": "2025-10-09", "citations": 28}, {"date": "2025-10-10", "citations": 29}, {"date": "2025-10-14", "citations": 29}, {"date": "2025-10-15", "citations": 29}, {"date": "2025-10-16", "citations": 29}, {"date": "2025-10-18", "citations": 29}, {"date": "2025-10-19", "citations": 29}, {"date": "2025-10-20", "citations": 29}, {"date": "2025-10-22", "citations": 29}, {"date": "2025-10-23", "citations": 29}, {"date": "2025-10-25", "citations": 29}, {"date": "2025-10-27", "citations": 30}, {"date": "2025-10-28", "citations": 30}, {"date": "2025-11-01", "citations": 30}, {"date": "2025-11-03", "citations": 30}, {"date": "2025-11-05", "citations": 32}, {"date": "2025-11-07", "citations": 32}, {"date": "2025-11-13", "citations": 33}, {"date": "2025-11-14", "citations": 33}, {"date": "2025-11-21", "citations": 33}, {"date": "2025-11-29", "citations": 34}, {"date": "2025-12-04", "citations": 36}, {"date": "2025-12-12", "citations": 35}, {"date": "2025-12-16", "citations": 35}, {"date": "2025-12-21", "citations": 35}, {"date": "2025-12-26", "citations": 35}, {"date": "2026-01-07", "citations": 35}, {"date": "2026-01-09", "citations": 35}, {"date": "2026-01-19", "citations": 36}, {"date": "2026-01-25", "citations": 37}, {"date": "2026-01-30", "citations": 37}, {"date": "2026-01-31", "citations": 37}, {"date": "2026-02-03", "citations": 37}, {"date": "2026-02-14", "citations": 39}, {"date": "2026-02-15", "citations": 39}, {"date": "2026-02-16", "citations": 43}, {"date": "2026-02-17", "citations": 43}, {"date": "2026-02-18", "citations": 43}, {"date": "2026-02-21", "citations": 43}, {"date": "2026-02-24", "citations": 43}, {"date": "2026-02-26", "citations": 43}, {"date": "2026-02-27", "citations": 43}, {"date": "2026-03-01", "citations": 43}, {"date": "2026-03-02", "citations": 43}, {"date": "2026-03-04", "citations": 43}, {"date": "2026-03-05", "citations": 43}, {"date": "2026-03-06", "citations": 44}, {"date": "2026-03-07", "citations": 44}, {"date": "2026-03-09", "citations": 45}, {"date": "2026-03-12", "citations": 45}, {"date": "2026-03-13", "citations": 45}, {"date": "2026-03-14", "citations": 45}, {"date": "2026-03-15", "citations": 45}, {"date": "2026-03-16", "citations": 45}, {"date": "2026-03-17", "citations": 45}, {"date": "2026-03-18", "citations": 45}, {"date": "2026-03-20", "citations": 45}, {"date": "2026-03-21", "citations": 45}, {"date": "2026-03-22", "citations": 47}, {"date": "2026-03-24", "citations": 47}, {"date": "2026-03-25", "citations": 47}, {"date": "2026-03-26", "citations": 47}, {"date": "2026-03-27", "citations": 47}, {"date": "2026-03-28", "citations": 47}, {"date": "2026-03-31", "citations": 47}, {"date": "2026-04-02", "citations": 47}, {"date": "2026-04-03", "citations": 47}, {"date": "2026-04-05", "citations": 47}, {"date": "2026-04-07", "citations": 47}, {"date": "2026-04-10", "citations": 47}, {"date": "2026-04-12", "citations": 47}, {"date": "2026-04-14", "citations": 47}, {"date": "2026-04-15", "citations": 47}, {"date": "2026-04-16", "citations": 47}, {"date": "2026-04-17", "citations": 47}, {"date": "2026-04-19", "citations": 47}, {"date": "2026-04-20", "citations": 47}, {"date": "2026-04-21", "citations": 47}, {"date": "2026-04-25", "citations": 47}, {"date": "2026-04-26", "citations": 48}, {"date": "2026-04-28", "citations": 48}, {"date": "2026-04-29", "citations": 48}, {"date": "2026-05-01", "citations": 48}, {"date": "2026-05-02", "citations": 48}, {"date": "2026-05-03", "citations": 50}, {"date": "2026-05-04", "citations": 50}, {"date": "2026-05-05", "citations": 50}, {"date": "2026-05-06", "citations": 50}, {"date": "2026-05-09", "citations": 50}, {"date": "2026-05-10", "citations": 50}, {"date": "2026-05-12", "citations": 50}, {"date": "2026-05-13", "citations": 50}, {"date": "2026-05-14", "citations": 50}, {"date": "2026-05-15", "citations": 51}, {"date": "2026-05-16", "citations": 52}, {"date": "2026-05-17", "citations": 52}, {"date": "2026-05-18", "citations": 52}, {"date": "2026-05-19", "citations": 52}, {"date": "2026-05-20", "citations": 52}, {"date": "2026-05-22", "citations": 54}, {"date": "2026-05-24", "citations": 54}, {"date": "2026-05-25", "citations": 55}, {"date": "2026-05-26", "citations": 56}, {"date": "2026-05-28", "citations": 56}, {"date": "2026-05-30", "citations": 56}, {"date": "2026-05-31", "citations": 56}, {"date": "2026-06-01", "citations": 57}, {"date": "2026-06-03", "citations": 57}], "Plum: Prompt Learning Using Metaheuristics": [{"date": "2024-11-07", "citations": null}, {"date": "2024-11-08", "citations": null}, {"date": "2024-11-09", "citations": null}, {"date": "2024-11-10", "citations": null}, {"date": "2024-11-11", "citations": null}, {"date": "2024-11-12", "citations": null}, {"date": "2024-11-13", "citations": null}, {"date": "2024-11-14", "citations": null}, {"date": "2024-11-15", "citations": null}, {"date": "2024-11-16", "citations": null}, {"date": "2024-11-17", "citations": null}, {"date": "2024-11-18", "citations": null}, {"date": "2024-11-19", "citations": null}, {"date": "2024-11-20", "citations": null}, {"date": "2024-11-21", "citations": null}, {"date": "2024-11-22", "citations": null}, {"date": "2024-11-23", "citations": null}, {"date": "2024-11-24", "citations": null}, {"date": "2024-11-25", "citations": null}, {"date": "2024-11-26", "citations": null}, {"date": "2024-11-27", "citations": null}, {"date": "2024-11-28", "citations": null}, {"date": "2024-11-29", "citations": null}, {"date": "2024-11-30", "citations": null}, {"date": "2024-12-01", "citations": null}, {"date": "2024-12-02", "citations": null}, {"date": "2024-12-03", "citations": null}, {"date": "2024-12-04", "citations": null}, {"date": "2024-12-05", "citations": null}, {"date": "2024-12-06", "citations": null}, {"date": "2024-12-07", "citations": null}, {"date": "2024-12-08", "citations": null}, {"date": "2024-12-09", "citations": null}, {"date": "2024-12-10", "citations": null}, {"date": "2024-12-11", "citations": null}, {"date": "2024-12-12", "citations": null}, {"date": "2024-12-13", "citations": null}, {"date": "2024-12-14", "citations": null}, {"date": "2024-12-15", "citations": null}, {"date": "2024-12-16", "citations": null}, {"date": "2024-12-17", "citations": null}, {"date": "2024-12-18", "citations": null}, {"date": "2024-12-19", "citations": null}, {"date": "2024-12-20", "citations": null}, {"date": "2024-12-21", "citations": null}, {"date": "2024-12-22", "citations": null}, {"date": "2024-12-23", "citations": null}, {"date": "2024-12-24", "citations": null}, {"date": "2024-12-25", "citations": null}, {"date": "2024-12-26", "citations": null}, {"date": "2024-12-27", "citations": null}, {"date": "2024-12-28", "citations": null}, {"date": "2024-12-29", "citations": null}, {"date": "2024-12-30", "citations": null}, {"date": "2024-12-31", "citations": null}, {"date": "2025-01-01", "citations": null}, {"date": "2025-01-02", "citations": null}, {"date": "2025-01-03", "citations": null}, {"date": "2025-01-04", "citations": null}, {"date": "2025-01-05", "citations": null}, {"date": "2025-01-06", "citations": null}, {"date": "2025-01-07", "citations": null}, {"date": "2025-01-08", "citations": null}, {"date": "2025-01-09", "citations": null}, {"date": "2025-01-10", "citations": null}, {"date": "2025-01-11", "citations": null}, {"date": "2025-01-12", "citations": null}, {"date": "2025-01-13", "citations": null}, {"date": "2025-01-14", "citations": null}, {"date": "2025-01-15", "citations": null}, {"date": "2025-01-16", "citations": null}, {"date": "2025-01-17", "citations": null}, {"date": "2025-01-18", "citations": null}, {"date": "2025-01-19", "citations": null}, {"date": "2025-01-20", "citations": null}, {"date": "2025-01-21", "citations": null}, {"date": "2025-01-22", "citations": null}, {"date": "2025-01-23", "citations": null}, {"date": "2025-01-24", "citations": null}, {"date": "2025-01-25", "citations": null}, {"date": "2025-01-26", "citations": null}, {"date": "2025-01-27", "citations": null}, {"date": "2025-01-28", "citations": null}, {"date": "2025-01-29", "citations": null}, {"date": "2025-02-02", "citations": null}, {"date": "2025-02-03", "citations": null}, {"date": "2025-02-04", "citations": null}, {"date": "2025-02-05", "citations": null}, {"date": "2025-02-06", "citations": null}, {"date": "2025-02-07", "citations": null}, {"date": "2025-02-08", "citations": null}, {"date": "2025-02-09", "citations": null}, {"date": "2025-02-10", "citations": null}, {"date": "2025-02-11", "citations": null}, {"date": "2025-02-12", "citations": null}, {"date": "2025-02-13", "citations": null}, {"date": "2025-02-14", "citations": null}, {"date": "2025-02-15", "citations": null}, {"date": "2025-02-16", "citations": null}, {"date": "2025-02-17", "citations": null}, {"date": "2025-02-18", "citations": null}, {"date": "2025-02-19", "citations": null}, {"date": "2025-02-20", "citations": null}, {"date": "2025-02-21", "citations": null}, {"date": "2025-02-22", "citations": null}, {"date": "2025-02-23", "citations": null}, {"date": "2025-02-24", "citations": null}, {"date": "2025-02-25", "citations": null}, {"date": "2025-02-26", "citations": null}, {"date": "2025-02-27", "citations": null}, {"date": "2025-02-28", "citations": null}, {"date": "2025-03-01", "citations": null}, {"date": "2025-03-02", "citations": null}, {"date": "2025-03-03", "citations": null}, {"date": "2025-03-04", "citations": null}, {"date": "2025-03-05", "citations": null}, {"date": "2025-03-06", "citations": null}, {"date": "2025-03-07", "citations": null}, {"date": "2025-03-08", "citations": null}, {"date": "2025-03-09", "citations": null}, {"date": "2025-03-10", "citations": null}, {"date": "2025-03-12", "citations": null}, {"date": "2025-03-13", "citations": null}, {"date": "2025-03-14", "citations": null}, {"date": "2025-03-15", "citations": null}, {"date": "2025-03-16", "citations": null}, {"date": "2025-03-17", "citations": null}, {"date": "2025-03-18", "citations": null}, {"date": "2025-03-19", "citations": null}, {"date": "2025-03-20", "citations": null}, {"date": "2025-03-21", "citations": null}, {"date": "2025-03-22", "citations": null}, {"date": "2025-03-23", "citations": null}, {"date": "2025-03-24", "citations": null}, {"date": "2025-03-25", "citations": null}, {"date": "2025-03-26", "citations": null}, {"date": "2025-03-27", "citations": null}, {"date": "2025-03-28", "citations": null}, {"date": "2025-03-29", "citations": null}, {"date": "2025-03-30", "citations": null}, {"date": "2025-03-31", "citations": null}, {"date": "2025-04-01", "citations": null}, {"date": "2025-04-02", "citations": null}, {"date": "2025-04-03", "citations": null}, {"date": "2025-04-04", "citations": null}, {"date": "2025-04-05", "citations": null}, {"date": "2025-04-06", "citations": null}, {"date": "2025-04-07", "citations": null}, {"date": "2025-04-08", "citations": null}, {"date": "2025-04-09", "citations": null}, {"date": "2025-04-10", "citations": null}, {"date": "2025-04-11", "citations": null}, {"date": "2025-04-23", "citations": null}, {"date": "2025-05-05", "citations": null}, {"date": "2025-07-21", "citations": null}, {"date": "2025-07-22", "citations": null}, {"date": "2025-07-23", "citations": null}, {"date": "2025-07-24", "citations": null}, {"date": "2025-07-25", "citations": null}, {"date": "2025-07-26", "citations": null}, {"date": "2025-07-28", "citations": null}, {"date": "2025-07-29", "citations": null}, {"date": "2025-08-02", "citations": null}, {"date": "2025-08-09", "citations": null}, {"date": "2025-08-21", "citations": 29}, {"date": "2025-08-28", "citations": 29}, {"date": "2025-08-31", "citations": 29}, {"date": "2025-09-03", "citations": 29}, {"date": "2025-09-04", "citations": 29}, {"date": "2025-09-09", "citations": 29}, {"date": "2025-09-15", "citations": 29}, {"date": "2025-09-18", "citations": 29}, {"date": "2025-09-20", "citations": 29}, {"date": "2025-09-22", "citations": 29}, {"date": "2025-09-27", "citations": 31}, {"date": "2025-09-28", "citations": 31}, {"date": "2025-09-29", "citations": 31}, {"date": "2025-10-05", "citations": 31}, {"date": "2025-10-06", "citations": 31}, {"date": "2025-10-09", "citations": 31}, {"date": "2025-10-10", "citations": 31}, {"date": "2025-10-14", "citations": 31}, {"date": "2025-10-15", "citations": 31}, {"date": "2025-10-16", "citations": 31}, {"date": "2025-10-18", "citations": 31}, {"date": "2025-10-19", "citations": 31}, {"date": "2025-10-20", "citations": 31}, {"date": "2025-10-22", "citations": 31}, {"date": "2025-10-23", "citations": 31}, {"date": "2025-10-25", "citations": 33}, {"date": "2025-10-27", "citations": 34}, {"date": "2025-10-28", "citations": 34}, {"date": "2025-11-01", "citations": 34}, {"date": "2025-11-03", "citations": 34}, {"date": "2025-11-05", "citations": 34}, {"date": "2025-11-07", "citations": 34}, {"date": "2025-11-13", "citations": 34}, {"date": "2025-11-14", "citations": 34}, {"date": "2025-11-21", "citations": 34}, {"date": "2025-11-29", "citations": 34}, {"date": "2025-12-04", "citations": 34}, {"date": "2025-12-12", "citations": 35}, {"date": "2025-12-16", "citations": 35}, {"date": "2025-12-21", "citations": 35}, {"date": "2025-12-26", "citations": 35}, {"date": "2026-01-07", "citations": 35}, {"date": "2026-01-09", "citations": 35}, {"date": "2026-01-19", "citations": 36}, {"date": "2026-01-25", "citations": 37}, {"date": "2026-01-30", "citations": 37}, {"date": "2026-01-31", "citations": 37}, {"date": "2026-02-03", "citations": 37}, {"date": "2026-02-14", "citations": 38}, {"date": "2026-02-15", "citations": 38}, {"date": "2026-02-16", "citations": 42}, {"date": "2026-02-17", "citations": 42}, {"date": "2026-02-18", "citations": 42}, {"date": "2026-02-21", "citations": 42}, {"date": "2026-02-24", "citations": 43}, {"date": "2026-02-26", "citations": 43}, {"date": "2026-02-27", "citations": 44}, {"date": "2026-03-01", "citations": 44}, {"date": "2026-03-02", "citations": 44}, {"date": "2026-03-04", "citations": 44}, {"date": "2026-03-05", "citations": 44}, {"date": "2026-03-06", "citations": 44}, {"date": "2026-03-07", "citations": 44}, {"date": "2026-03-09", "citations": 44}, {"date": "2026-03-12", "citations": 44}, {"date": "2026-03-13", "citations": 44}, {"date": "2026-03-14", "citations": 44}, {"date": "2026-03-15", "citations": 44}, {"date": "2026-03-16", "citations": 44}, {"date": "2026-03-17", "citations": 44}, {"date": "2026-03-18", "citations": 44}, {"date": "2026-03-20", "citations": 44}, {"date": "2026-03-21", "citations": 44}, {"date": "2026-03-22", "citations": 44}, {"date": "2026-03-24", "citations": 44}, {"date": "2026-03-25", "citations": 44}, {"date": "2026-03-26", "citations": 44}, {"date": "2026-03-27", "citations": 44}, {"date": "2026-03-28", "citations": 44}, {"date": "2026-03-31", "citations": 44}, {"date": "2026-04-02", "citations": 44}, {"date": "2026-04-03", "citations": 44}, {"date": "2026-04-05", "citations": 45}, {"date": "2026-04-07", "citations": 45}, {"date": "2026-04-10", "citations": 45}, {"date": "2026-04-12", "citations": 45}, {"date": "2026-04-14", "citations": 45}, {"date": "2026-04-15", "citations": 45}, {"date": "2026-04-16", "citations": 45}, {"date": "2026-04-17", "citations": 45}, {"date": "2026-04-19", "citations": 45}, {"date": "2026-04-20", "citations": 45}, {"date": "2026-04-21", "citations": 45}, {"date": "2026-04-25", "citations": 45}, {"date": "2026-04-26", "citations": 45}, {"date": "2026-04-28", "citations": 45}, {"date": "2026-04-29", "citations": 45}, {"date": "2026-05-01", "citations": 45}, {"date": "2026-05-02", "citations": 45}, {"date": "2026-05-03", "citations": 45}, {"date": "2026-05-04", "citations": 45}, {"date": "2026-05-05", "citations": 45}, {"date": "2026-05-06", "citations": 45}, {"date": "2026-05-09", "citations": 45}, {"date": "2026-05-10", "citations": 45}, {"date": "2026-05-12", "citations": 45}, {"date": "2026-05-13", "citations": 45}, {"date": "2026-05-14", "citations": 45}, {"date": "2026-05-15", "citations": 45}, {"date": "2026-05-16", "citations": 45}, {"date": "2026-05-17", "citations": 45}, {"date": "2026-05-18", "citations": 45}, {"date": "2026-05-19", "citations": 45}, {"date": "2026-05-20", "citations": 45}, {"date": "2026-05-22", "citations": 46}, {"date": "2026-05-24", "citations": 47}, {"date": "2026-05-25", "citations": 47}, {"date": "2026-05-26", "citations": 47}, {"date": "2026-05-28", "citations": 47}, {"date": "2026-05-30", "citations": 48}, {"date": "2026-05-31", "citations": 48}, {"date": "2026-06-01", "citations": 48}, {"date": "2026-06-03", "citations": 48}], "ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference": [{"date": "2024-11-07", "citations": null}, {"date": "2024-11-08", "citations": null}, {"date": "2024-11-09", "citations": null}, {"date": "2024-11-10", "citations": null}, {"date": "2024-11-11", "citations": null}, {"date": "2024-11-12", "citations": null}, {"date": "2024-11-13", "citations": null}, {"date": "2024-11-14", "citations": null}, {"date": "2024-11-15", "citations": null}, {"date": "2024-11-16", "citations": null}, {"date": "2024-11-17", "citations": null}, {"date": "2024-11-18", "citations": null}, {"date": "2024-11-19", "citations": null}, {"date": "2024-11-20", "citations": null}, {"date": "2024-11-21", "citations": null}, {"date": "2024-11-22", "citations": null}, {"date": "2024-11-23", "citations": null}, {"date": "2024-11-24", "citations": null}, {"date": "2024-11-25", "citations": null}, {"date": "2024-11-26", "citations": null}, {"date": "2024-11-27", "citations": null}, {"date": "2024-11-28", "citations": null}, {"date": "2024-11-29", "citations": null}, {"date": "2024-11-30", "citations": null}, {"date": "2024-12-01", "citations": null}, {"date": "2024-12-02", "citations": null}, {"date": "2024-12-03", "citations": null}, {"date": "2024-12-04", "citations": null}, {"date": "2024-12-05", "citations": null}, {"date": "2024-12-06", "citations": null}, {"date": "2024-12-07", "citations": null}, {"date": "2024-12-08", "citations": null}, {"date": "2024-12-09", "citations": null}, {"date": "2024-12-10", "citations": null}, {"date": "2024-12-11", "citations": null}, {"date": "2024-12-12", "citations": null}, {"date": "2024-12-13", "citations": null}, {"date": "2024-12-14", "citations": null}, {"date": "2024-12-15", "citations": null}, {"date": "2024-12-16", "citations": null}, {"date": "2024-12-17", "citations": null}, {"date": "2024-12-18", "citations": null}, {"date": "2024-12-19", "citations": null}, {"date": "2024-12-20", "citations": null}, {"date": "2024-12-21", "citations": null}, {"date": "2024-12-22", "citations": null}, {"date": "2024-12-23", "citations": null}, {"date": "2024-12-24", "citations": null}, {"date": "2024-12-25", "citations": null}, {"date": "2024-12-26", "citations": null}, {"date": "2024-12-27", "citations": null}, {"date": "2024-12-28", "citations": null}, {"date": "2024-12-29", "citations": null}, {"date": "2024-12-30", "citations": null}, {"date": "2024-12-31", "citations": null}, {"date": "2025-01-01", "citations": null}, {"date": "2025-01-02", "citations": null}, {"date": "2025-01-03", "citations": null}, {"date": "2025-01-04", "citations": null}, {"date": "2025-01-05", "citations": null}, {"date": "2025-01-06", "citations": null}, {"date": "2025-01-07", "citations": null}, {"date": "2025-01-08", "citations": null}, {"date": "2025-01-09", "citations": null}, {"date": "2025-01-10", "citations": null}, {"date": "2025-01-11", "citations": null}, {"date": "2025-01-12", "citations": null}, {"date": "2025-01-13", "citations": null}, {"date": "2025-01-14", "citations": null}, {"date": "2025-01-15", "citations": null}, {"date": "2025-01-16", "citations": null}, {"date": "2025-01-17", "citations": null}, {"date": "2025-01-18", "citations": null}, {"date": "2025-01-19", "citations": null}, {"date": "2025-01-20", "citations": null}, {"date": "2025-01-21", "citations": null}, {"date": "2025-01-22", "citations": null}, {"date": "2025-01-23", "citations": null}, {"date": "2025-01-24", "citations": null}, {"date": "2025-01-25", "citations": null}, {"date": "2025-01-26", "citations": null}, {"date": "2025-01-27", "citations": null}, {"date": "2025-01-28", "citations": null}, {"date": "2025-01-29", "citations": null}, {"date": "2025-02-02", "citations": null}, {"date": "2025-02-03", "citations": null}, {"date": "2025-02-04", "citations": null}, {"date": "2025-02-05", "citations": null}, {"date": "2025-02-06", "citations": null}, {"date": "2025-02-07", "citations": 0}, {"date": "2025-02-08", "citations": 0}, {"date": "2025-02-09", "citations": 0}, {"date": "2025-02-10", "citations": 0}, {"date": "2025-02-11", "citations": 0}, {"date": "2025-02-12", "citations": 0}, {"date": "2025-02-13", "citations": 0}, {"date": "2025-02-14", "citations": 0}, {"date": "2025-02-15", "citations": 0}, {"date": "2025-02-16", "citations": 0}, {"date": "2025-02-17", "citations": 0}, {"date": "2025-02-18", "citations": 0}, {"date": "2025-02-19", "citations": 0}, {"date": "2025-02-20", "citations": 0}, {"date": "2025-02-21", "citations": 0}, {"date": "2025-02-22", "citations": 0}, {"date": "2025-02-23", "citations": 0}, {"date": "2025-02-24", "citations": 0}, {"date": "2025-02-25", "citations": 0}, {"date": "2025-02-26", "citations": 0}, {"date": "2025-02-27", "citations": 0}, {"date": "2025-02-28", "citations": 0}, {"date": "2025-03-01", "citations": 0}, {"date": "2025-03-02", "citations": 0}, {"date": "2025-03-03", "citations": 0}, {"date": "2025-03-04", "citations": 0}, {"date": "2025-03-05", "citations": 0}, {"date": "2025-03-06", "citations": 0}, {"date": "2025-03-07", "citations": 0}, {"date": "2025-03-08", "citations": 0}, {"date": "2025-03-09", "citations": 0}, {"date": "2025-03-10", "citations": 0}, {"date": "2025-03-12", "citations": 0}, {"date": "2025-03-13", "citations": 0}, {"date": "2025-03-14", "citations": 0}, {"date": "2025-03-15", "citations": 0}, {"date": "2025-03-16", "citations": 0}, {"date": "2025-03-17", "citations": 0}, {"date": "2025-03-18", "citations": 0}, {"date": "2025-03-19", "citations": 0}, {"date": "2025-03-20", "citations": 0}, {"date": "2025-03-21", "citations": 0}, {"date": "2025-03-22", "citations": 0}, {"date": "2025-03-23", "citations": 0}, {"date": "2025-03-24", "citations": 0}, {"date": "2025-03-25", "citations": 0}, {"date": "2025-03-26", "citations": 0}, {"date": "2025-03-27", "citations": 0}, {"date": "2025-03-28", "citations": 0}, {"date": "2025-03-29", "citations": 0}, {"date": "2025-03-30", "citations": 0}, {"date": "2025-03-31", "citations": 0}, {"date": "2025-04-01", "citations": 0}, {"date": "2025-04-02", "citations": 0}, {"date": "2025-04-03", "citations": 0}, {"date": "2025-04-04", "citations": 0}, {"date": "2025-04-05", "citations": 2}, {"date": "2025-04-06", "citations": 2}, {"date": "2025-04-07", "citations": 2}, {"date": "2025-04-08", "citations": 2}, {"date": "2025-04-09", "citations": 2}, {"date": "2025-04-10", "citations": 2}, {"date": "2025-04-11", "citations": 2}, {"date": "2025-04-23", "citations": 2}, {"date": "2025-05-05", "citations": 3}, {"date": "2025-07-21", "citations": 4}, {"date": "2025-07-22", "citations": 4}, {"date": "2025-07-23", "citations": 4}, {"date": "2025-07-24", "citations": 4}, {"date": "2025-07-25", "citations": 5}, {"date": "2025-07-26", "citations": 4}, {"date": "2025-07-28", "citations": 5}, {"date": "2025-07-29", "citations": 5}, {"date": "2025-08-02", "citations": 5}, {"date": "2025-08-09", "citations": 5}, {"date": "2025-08-21", "citations": 5}, {"date": "2025-08-28", "citations": 5}, {"date": "2025-08-31", "citations": 5}, {"date": "2025-09-03", "citations": 5}, {"date": "2025-09-04", "citations": 5}, {"date": "2025-09-09", "citations": 5}, {"date": "2025-09-15", "citations": 5}, {"date": "2025-09-18", "citations": 5}, {"date": "2025-09-20", "citations": 6}, {"date": "2025-09-22", "citations": 6}, {"date": "2025-09-27", "citations": 6}, {"date": "2025-09-28", "citations": 6}, {"date": "2025-09-29", "citations": 6}, {"date": "2025-10-05", "citations": 6}, {"date": "2025-10-06", "citations": 6}, {"date": "2025-10-09", "citations": 6}, {"date": "2025-10-10", "citations": 6}, {"date": "2025-10-14", "citations": 6}, {"date": "2025-10-15", "citations": 6}, {"date": "2025-10-16", "citations": 6}, {"date": "2025-10-18", "citations": 6}, {"date": "2025-10-19", "citations": 6}, {"date": "2025-10-20", "citations": 6}, {"date": "2025-10-22", "citations": 7}, {"date": "2025-10-23", "citations": 7}, {"date": "2025-10-25", "citations": 7}, {"date": "2025-10-27", "citations": 7}, {"date": "2025-10-28", "citations": 7}, {"date": "2025-11-01", "citations": 7}, {"date": "2025-11-03", "citations": 7}, {"date": "2025-11-05", "citations": 8}, {"date": "2025-11-07", "citations": 9}, {"date": "2025-11-13", "citations": 10}, {"date": "2025-11-14", "citations": 10}, {"date": "2025-11-21", "citations": 10}, {"date": "2025-11-29", "citations": 10}, {"date": "2025-12-04", "citations": 10}, {"date": "2025-12-12", "citations": 10}, {"date": "2025-12-16", "citations": 11}, {"date": "2025-12-21", "citations": 11}, {"date": "2025-12-26", "citations": 11}, {"date": "2026-01-07", "citations": 11}, {"date": "2026-01-09", "citations": 11}, {"date": "2026-01-19", "citations": 11}, {"date": "2026-01-25", "citations": 13}, {"date": "2026-01-30", "citations": 15}, {"date": "2026-01-31", "citations": 16}, {"date": "2026-02-03", "citations": 16}, {"date": "2026-02-14", "citations": 17}, {"date": "2026-02-15", "citations": 17}, {"date": "2026-02-16", "citations": 20}, {"date": "2026-02-17", "citations": 20}, {"date": "2026-02-18", "citations": 20}, {"date": "2026-02-21", "citations": 20}, {"date": "2026-02-24", "citations": 20}, {"date": "2026-02-26", "citations": 20}, {"date": "2026-02-27", "citations": 20}, {"date": "2026-03-01", "citations": 21}, {"date": "2026-03-02", "citations": 21}, {"date": "2026-03-04", "citations": 21}, {"date": "2026-03-05", "citations": 22}, {"date": "2026-03-06", "citations": 22}, {"date": "2026-03-07", "citations": 23}, {"date": "2026-03-09", "citations": 24}, {"date": "2026-03-12", "citations": 24}, {"date": "2026-03-13", "citations": 24}, {"date": "2026-03-14", "citations": 24}, {"date": "2026-03-15", "citations": 24}, {"date": "2026-03-16", "citations": 25}, {"date": "2026-03-17", "citations": 25}, {"date": "2026-03-18", "citations": 25}, {"date": "2026-03-20", "citations": 25}, {"date": "2026-03-21", "citations": 26}, {"date": "2026-03-22", "citations": 26}, {"date": "2026-03-24", "citations": 26}, {"date": "2026-03-25", "citations": 26}, {"date": "2026-03-26", "citations": 26}, {"date": "2026-03-27", "citations": 26}, {"date": "2026-03-28", "citations": 26}, {"date": "2026-03-31", "citations": 26}, {"date": "2026-04-02", "citations": 26}, {"date": "2026-04-03", "citations": 27}, {"date": "2026-04-05", "citations": 27}, {"date": "2026-04-07", "citations": 27}, {"date": "2026-04-10", "citations": 27}, {"date": "2026-04-12", "citations": 27}, {"date": "2026-04-14", "citations": 27}, {"date": "2026-04-15", "citations": 27}, {"date": "2026-04-16", "citations": 27}, {"date": "2026-04-17", "citations": 28}, {"date": "2026-04-19", "citations": 29}, {"date": "2026-04-20", "citations": 29}, {"date": "2026-04-21", "citations": 29}, {"date": "2026-04-25", "citations": 29}, {"date": "2026-04-26", "citations": 29}, {"date": "2026-04-28", "citations": 30}, {"date": "2026-04-29", "citations": 30}, {"date": "2026-05-01", "citations": 30}, {"date": "2026-05-02", "citations": 30}, {"date": "2026-05-03", "citations": 30}, {"date": "2026-05-04", "citations": 30}, {"date": "2026-05-05", "citations": 30}, {"date": "2026-05-06", "citations": 30}, {"date": "2026-05-09", "citations": 30}, {"date": "2026-05-10", "citations": 31}, {"date": "2026-05-12", "citations": 32}, {"date": "2026-05-13", "citations": 32}, {"date": "2026-05-14", "citations": 32}, {"date": "2026-05-15", "citations": 32}, {"date": "2026-05-16", "citations": 33}, {"date": "2026-05-17", "citations": 33}, {"date": "2026-05-18", "citations": 33}, {"date": "2026-05-19", "citations": 33}, {"date": "2026-05-20", "citations": 33}, {"date": "2026-05-22", "citations": 34}, {"date": "2026-05-24", "citations": 34}, {"date": "2026-05-25", "citations": 34}, {"date": "2026-05-26", "citations": 35}, {"date": "2026-05-28", "citations": 35}, {"date": "2026-05-30", "citations": 35}, {"date": "2026-05-31", "citations": 36}, {"date": "2026-06-01", "citations": 36}, {"date": "2026-06-03", "citations": 36}], "ParZC: Parametric Zero-Cost Proxies for Efficient NAS": [{"date": "2024-11-07", "citations": 3}, {"date": "2024-11-08", "citations": 3}, {"date": "2024-11-09", "citations": 3}, {"date": "2024-11-10", "citations": 3}, {"date": "2024-11-11", "citations": 3}, {"date": "2024-11-12", "citations": 3}, {"date": "2024-11-13", "citations": 3}, {"date": "2024-11-14", "citations": 3}, {"date": "2024-11-15", "citations": 3}, {"date": "2024-11-16", "citations": 3}, {"date": "2024-11-17", "citations": 3}, {"date": "2024-11-18", "citations": 3}, {"date": "2024-11-19", "citations": 3}, {"date": "2024-11-20", "citations": 3}, {"date": "2024-11-21", "citations": 3}, {"date": "2024-11-22", "citations": 3}, {"date": "2024-11-23", "citations": 3}, {"date": "2024-11-24", "citations": 3}, {"date": "2024-11-25", "citations": 3}, {"date": "2024-11-26", "citations": 3}, {"date": "2024-11-27", "citations": 3}, {"date": "2024-11-28", "citations": 3}, {"date": "2024-11-29", "citations": 4}, {"date": "2024-11-30", "citations": 4}, {"date": "2024-12-01", "citations": 4}, {"date": "2024-12-02", "citations": 4}, {"date": "2024-12-03", "citations": 4}, {"date": "2024-12-04", "citations": 4}, {"date": "2024-12-05", "citations": 4}, {"date": "2024-12-06", "citations": 4}, {"date": "2024-12-07", "citations": 4}, {"date": "2024-12-08", "citations": 4}, {"date": "2024-12-09", "citations": 4}, {"date": "2024-12-10", "citations": 4}, {"date": "2024-12-11", "citations": 4}, {"date": "2024-12-12", "citations": 4}, {"date": "2024-12-13", "citations": 4}, {"date": "2024-12-14", "citations": 4}, {"date": "2024-12-15", "citations": 4}, {"date": "2024-12-16", "citations": 4}, {"date": "2024-12-17", "citations": 4}, {"date": "2024-12-18", "citations": 4}, {"date": "2024-12-19", "citations": 4}, {"date": "2024-12-20", "citations": 4}, {"date": "2024-12-21", "citations": 4}, {"date": "2024-12-22", "citations": 4}, {"date": "2024-12-23", "citations": 4}, {"date": "2024-12-24", "citations": 4}, {"date": "2024-12-25", "citations": 4}, {"date": "2024-12-26", "citations": 4}, {"date": "2024-12-27", "citations": 4}, {"date": "2024-12-28", "citations": 4}, {"date": "2024-12-29", "citations": 4}, {"date": "2024-12-30", "citations": 4}, {"date": "2024-12-31", "citations": 5}, {"date": "2025-01-01", "citations": 5}, {"date": "2025-01-02", "citations": 5}, {"date": "2025-01-03", "citations": 5}, {"date": "2025-01-04", "citations": 5}, {"date": "2025-01-05", "citations": 5}, {"date": "2025-01-06", "citations": 5}, {"date": "2025-01-07", "citations": 5}, {"date": "2025-01-08", "citations": 5}, {"date": "2025-01-09", "citations": 5}, {"date": "2025-01-10", "citations": 5}, {"date": "2025-01-11", "citations": 5}, {"date": "2025-01-12", "citations": 5}, {"date": "2025-01-13", "citations": 5}, {"date": "2025-01-14", "citations": 5}, {"date": "2025-01-15", "citations": 5}, {"date": "2025-01-16", "citations": 5}, {"date": "2025-01-17", "citations": 5}, {"date": "2025-01-18", "citations": 5}, {"date": "2025-01-19", "citations": 5}, {"date": "2025-01-20", "citations": 5}, {"date": "2025-01-21", "citations": 5}, {"date": "2025-01-22", "citations": 5}, {"date": "2025-01-23", "citations": 5}, {"date": "2025-01-24", "citations": 5}, {"date": "2025-01-25", "citations": 5}, {"date": "2025-01-26", "citations": 5}, {"date": "2025-01-27", "citations": 5}, {"date": "2025-01-28", "citations": 5}, {"date": "2025-01-29", "citations": 5}, {"date": "2025-02-02", "citations": 5}, {"date": "2025-02-03", "citations": 5}, {"date": "2025-02-04", "citations": 5}, {"date": "2025-02-05", "citations": 5}, {"date": "2025-02-06", "citations": 5}, {"date": "2025-02-07", "citations": 5}, {"date": "2025-02-08", "citations": 5}, {"date": "2025-02-09", "citations": 5}, {"date": "2025-02-10", "citations": 5}, {"date": "2025-02-11", "citations": 5}, {"date": "2025-02-12", "citations": 5}, {"date": "2025-02-13", "citations": 5}, {"date": "2025-02-14", "citations": 5}, {"date": "2025-02-15", "citations": 5}, {"date": "2025-02-16", "citations": 5}, {"date": "2025-02-17", "citations": 5}, {"date": "2025-02-18", "citations": 5}, {"date": "2025-02-19", "citations": 5}, {"date": "2025-02-20", "citations": 5}, {"date": "2025-02-21", "citations": 5}, {"date": "2025-02-22", "citations": 5}, {"date": "2025-02-23", "citations": 5}, {"date": "2025-02-24", "citations": 5}, {"date": "2025-02-25", "citations": 5}, {"date": "2025-02-26", "citations": 5}, {"date": "2025-02-27", "citations": 5}, {"date": "2025-02-28", "citations": 5}, {"date": "2025-03-01", "citations": 5}, {"date": "2025-03-02", "citations": 5}, {"date": "2025-03-03", "citations": 5}, {"date": "2025-03-04", "citations": 5}, {"date": "2025-03-05", "citations": 5}, {"date": "2025-03-06", "citations": 5}, {"date": "2025-03-07", "citations": 5}, {"date": "2025-03-08", "citations": 5}, {"date": "2025-03-09", "citations": 5}, {"date": "2025-03-10", "citations": 5}, {"date": "2025-03-12", "citations": 6}, {"date": "2025-03-13", "citations": 7}, {"date": "2025-03-14", "citations": 7}, {"date": "2025-03-15", "citations": 7}, {"date": "2025-03-16", "citations": 7}, {"date": "2025-03-17", "citations": 7}, {"date": "2025-03-18", "citations": 7}, {"date": "2025-03-19", "citations": 7}, {"date": "2025-03-20", "citations": 7}, {"date": "2025-03-21", "citations": 7}, {"date": "2025-03-22", "citations": 7}, {"date": "2025-03-23", "citations": 7}, {"date": "2025-03-24", "citations": 7}, {"date": "2025-03-25", "citations": 7}, {"date": "2025-03-26", "citations": 7}, {"date": "2025-03-27", "citations": 7}, {"date": "2025-03-28", "citations": 7}, {"date": "2025-03-29", "citations": 7}, {"date": "2025-03-30", "citations": 7}, {"date": "2025-03-31", "citations": 7}, {"date": "2025-04-01", "citations": 7}, {"date": "2025-04-02", "citations": 7}, {"date": "2025-04-03", "citations": 7}, {"date": "2025-04-04", "citations": 7}, {"date": "2025-04-05", "citations": 7}, {"date": "2025-04-06", "citations": 7}, {"date": "2025-04-07", "citations": 7}, {"date": "2025-04-08", "citations": 7}, {"date": "2025-04-09", "citations": 7}, {"date": "2025-04-10", "citations": 7}, {"date": "2025-04-11", "citations": 7}, {"date": "2025-04-23", "citations": 7}, {"date": "2025-05-05", "citations": 7}, {"date": "2025-07-21", "citations": 11}, {"date": "2025-07-22", "citations": 11}, {"date": "2025-07-23", "citations": 11}, {"date": "2025-07-24", "citations": 11}, {"date": "2025-07-25", "citations": 12}, {"date": "2025-07-26", "citations": 12}, {"date": "2025-07-28", "citations": 12}, {"date": "2025-07-29", "citations": 12}, {"date": "2025-08-02", "citations": 12}, {"date": "2025-08-09", "citations": 12}, {"date": "2025-08-21", "citations": 12}, {"date": "2025-08-28", "citations": 14}, {"date": "2025-08-31", "citations": 14}, {"date": "2025-09-03", "citations": 14}, {"date": "2025-09-04", "citations": 14}, {"date": "2025-09-09", "citations": 14}, {"date": "2025-09-15", "citations": 14}, {"date": "2025-09-18", "citations": 14}, {"date": "2025-09-20", "citations": 14}, {"date": "2025-09-22", "citations": 14}, {"date": "2025-09-27", "citations": 15}, {"date": "2025-09-28", "citations": 15}, {"date": "2025-09-29", "citations": 15}, {"date": "2025-10-05", "citations": 15}, {"date": "2025-10-06", "citations": 15}, {"date": "2025-10-09", "citations": 15}, {"date": "2025-10-10", "citations": 15}, {"date": "2025-10-14", "citations": 15}, {"date": "2025-10-15", "citations": 15}, {"date": "2025-10-16", "citations": 15}, {"date": "2025-10-18", "citations": 15}, {"date": "2025-10-19", "citations": 15}, {"date": "2025-10-20", "citations": 15}, {"date": "2025-10-22", "citations": 15}, {"date": "2025-10-23", "citations": 15}, {"date": "2025-10-25", "citations": 19}, {"date": "2025-10-27", "citations": 19}, {"date": "2025-10-28", "citations": 19}, {"date": "2025-11-01", "citations": 19}, {"date": "2025-11-03", "citations": 19}, {"date": "2025-11-05", "citations": 19}, {"date": "2025-11-07", "citations": 20}, {"date": "2025-11-13", "citations": 20}, {"date": "2025-11-14", "citations": 20}, {"date": "2025-11-21", "citations": 20}, {"date": "2025-11-29", "citations": 21}, {"date": "2025-12-04", "citations": 21}, {"date": "2025-12-12", "citations": 21}, {"date": "2025-12-16", "citations": 21}, {"date": "2025-12-21", "citations": 21}, {"date": "2025-12-26", "citations": 21}, {"date": "2026-01-07", "citations": 22}, {"date": "2026-01-09", "citations": 22}, {"date": "2026-01-19", "citations": 22}, {"date": "2026-01-25", "citations": 23}, {"date": "2026-01-30", "citations": 23}, {"date": "2026-01-31", "citations": 23}, {"date": "2026-02-03", "citations": 23}, {"date": "2026-02-14", "citations": 23}, {"date": "2026-02-15", "citations": 23}, {"date": "2026-02-16", "citations": 22}, {"date": "2026-02-17", "citations": 22}, {"date": "2026-02-18", "citations": 22}, {"date": "2026-02-21", "citations": 22}, {"date": "2026-02-24", "citations": 22}, {"date": "2026-02-26", "citations": 22}, {"date": "2026-02-27", "citations": 22}, {"date": "2026-03-01", "citations": 22}, {"date": "2026-03-02", "citations": 22}, {"date": "2026-03-04", "citations": 22}, {"date": "2026-03-05", "citations": 22}, {"date": "2026-03-06", "citations": 22}, {"date": "2026-03-07", "citations": 22}, {"date": "2026-03-09", "citations": 22}, {"date": "2026-03-12", "citations": 22}, {"date": "2026-03-13", "citations": 22}, {"date": "2026-03-14", "citations": 22}, {"date": "2026-03-15", "citations": 22}, {"date": "2026-03-16", "citations": 22}, {"date": "2026-03-17", "citations": 22}, {"date": "2026-03-18", "citations": 22}, {"date": "2026-03-20", "citations": 22}, {"date": "2026-03-21", "citations": 22}, {"date": "2026-03-22", "citations": 24}, {"date": "2026-03-24", "citations": 24}, {"date": "2026-03-25", "citations": 24}, {"date": "2026-03-26", "citations": 24}, {"date": "2026-03-27", "citations": 24}, {"date": "2026-03-28", "citations": 24}, {"date": "2026-03-31", "citations": 24}, {"date": "2026-04-02", "citations": 24}, {"date": "2026-04-03", "citations": 24}, {"date": "2026-04-05", "citations": 24}, {"date": "2026-04-07", "citations": 24}, {"date": "2026-04-10", "citations": 24}, {"date": "2026-04-12", "citations": 24}, {"date": "2026-04-14", "citations": 24}, {"date": "2026-04-15", "citations": 24}, {"date": "2026-04-16", "citations": 24}, {"date": "2026-04-17", "citations": 24}, {"date": "2026-04-19", "citations": 24}, {"date": "2026-04-20", "citations": 24}, {"date": "2026-04-21", "citations": 24}, {"date": "2026-04-25", "citations": 24}, {"date": "2026-04-26", "citations": 24}, {"date": "2026-04-28", "citations": 24}, {"date": "2026-04-29", "citations": 24}, {"date": "2026-05-01", "citations": 24}, {"date": "2026-05-02", "citations": 24}, {"date": "2026-05-03", "citations": 24}, {"date": "2026-05-04", "citations": 24}, {"date": "2026-05-05", "citations": 24}, {"date": "2026-05-06", "citations": 24}, {"date": "2026-05-09", "citations": 24}, {"date": "2026-05-10", "citations": 24}, {"date": "2026-05-12", "citations": 24}, {"date": "2026-05-13", "citations": 24}, {"date": "2026-05-14", "citations": 24}, {"date": "2026-05-15", "citations": 24}, {"date": "2026-05-16", "citations": 24}, {"date": "2026-05-17", "citations": 24}, {"date": "2026-05-18", "citations": 24}, {"date": "2026-05-19", "citations": 24}, {"date": "2026-05-20", "citations": 24}, {"date": "2026-05-22", "citations": 25}, {"date": "2026-05-24", "citations": 25}, {"date": "2026-05-25", "citations": 25}, {"date": "2026-05-26", "citations": 25}, {"date": "2026-05-28", "citations": 25}, {"date": "2026-05-30", "citations": 25}, {"date": "2026-05-31", "citations": 26}, {"date": "2026-06-01", "citations": 27}, {"date": "2026-06-03", "citations": 27}]}, "recent_changes": [{"date": "2026-06-03", "total_citations_increase": 0, "papers_with_changes": []}, {"date": "2026-06-01", "total_citations_increase": 6, "papers_with_changes": [{"title": "-mem: Efficient Online Memory for Large Language Models", "previous_citations": 0, "new_citations": 1, "increase": 1}, {"title": "Active prompting with chain-of-thought for large language models", "previous_citations": 422, "new_citations": 423, "increase": 1}, {"title": "FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management", "previous_citations": 5, "new_citations": 6, "increase": 1}, {"title": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning", "previous_citations": 181, "new_citations": 182, "increase": 1}, {"title": "LongGenBench: Long-context Generation Benchmark", "previous_citations": 56, "new_citations": 57, "increase": 1}, {"title": "ParZC: Parametric Zero-Cost Proxies for Efficient NAS", "previous_citations": 26, "new_citations": 27, "increase": 1}]}, {"date": "2026-05-31", "total_citations_increase": 7, "papers_with_changes": [{"title": "Active prompting with chain-of-thought for large language models", "previous_citations": 421, "new_citations": 422, "increase": 1}, {"title": "Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval", "previous_citations": 2, "new_citations": 3, "increase": 1}, {"title": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression", "previous_citations": 19, "new_citations": 20, "increase": 1}, {"title": "ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference", "previous_citations": 35, "new_citations": 36, "increase": 1}, {"title": "FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management", "previous_citations": 4, "new_citations": 5, "increase": 1}, {"title": "ParZC: Parametric Zero-Cost Proxies for Efficient NAS", "previous_citations": 25, "new_citations": 26, "increase": 1}, {"title": "SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching", "previous_citations": 1, "new_citations": 2, "increase": 1}]}, {"date": "2026-05-30", "total_citations_increase": 7, "papers_with_changes": [{"title": "3D Question Answering for City Scene Understanding", "previous_citations": 18, "new_citations": 19, "increase": 1}, {"title": "Active prompting with chain-of-thought for large language models", "previous_citations": 420, "new_citations": 421, "increase": 1}, {"title": "Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models", "previous_citations": 24, "new_citations": 25, "increase": 1}, {"title": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning", "previous_citations": 180, "new_citations": 181, "increase": 1}, {"title": "Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing", "previous_citations": 15, "new_citations": 16, "increase": 1}, {"title": "Plum: Prompt Learning Using Metaheuristics", "previous_citations": 47, "new_citations": 48, "increase": 1}, {"title": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models", "previous_citations": 16, "new_citations": 17, "increase": 1}]}, {"date": "2026-05-28", "total_citations_increase": 4, "papers_with_changes": [{"title": "Active prompting with chain-of-thought for large language models", "previous_citations": 418, "new_citations": 420, "increase": 2}, {"title": "3D Question Answering for City Scene Understanding", "previous_citations": 17, "new_citations": 18, "increase": 1}, {"title": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression", "previous_citations": 18, "new_citations": 19, "increase": 1}]}, {"date": "2026-05-26", "total_citations_increase": 3, "papers_with_changes": [{"title": "Active prompting with chain-of-thought for large language models", "previous_citations": 417, "new_citations": 418, "increase": 1}, {"title": "ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference", "previous_citations": 34, "new_citations": 35, "increase": 1}, {"title": "LongGenBench: Long-context Generation Benchmark", "previous_citations": 55, "new_citations": 56, "increase": 1}]}, {"date": "2026-05-25", "total_citations_increase": 5, "papers_with_changes": [{"title": "Active prompting with chain-of-thought for large language models", "previous_citations": 415, "new_citations": 417, "increase": 2}, {"title": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning", "previous_citations": 179, "new_citations": 180, "increase": 1}, {"title": "LongGenBench: Long-context Generation Benchmark", "previous_citations": 54, "new_citations": 55, "increase": 1}, {"title": "OracleKV: Oracle Guidance for Question-Independent KV Cache Compression", "previous_citations": 9, "new_citations": 10, "increase": 1}]}, {"date": "2026-05-24", "total_citations_increase": 2, "papers_with_changes": [{"title": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning", "previous_citations": 178, "new_citations": 179, "increase": 1}, {"title": "Plum: Prompt Learning Using Metaheuristics", "previous_citations": 46, "new_citations": 47, "increase": 1}]}, {"date": "2026-05-22", "total_citations_increase": 5, "papers_with_changes": [{"title": "LongGenBench: Long-context Generation Benchmark", "previous_citations": 52, "new_citations": 54, "increase": 2}, {"title": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression", "previous_citations": 17, "new_citations": 18, "increase": 1}, {"title": "Can LLMs Maintain Fundamental Abilities under KV Cache Compression?", "previous_citations": 18, "new_citations": 19, "increase": 1}, {"title": "ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference", "previous_citations": 33, "new_citations": 34, "increase": 1}, {"title": "ParZC: Parametric Zero-Cost Proxies for Efficient NAS", "previous_citations": 24, "new_citations": 25, "increase": 1}, {"title": "Plum: Prompt Learning Using Metaheuristics", "previous_citations": 45, "new_citations": 46, "increase": 1}]}, {"date": "2026-05-20", "total_citations_increase": 0, "papers_with_changes": []}], "active_papers_30d": [{"title": "Active prompting with chain-of-thought for large language models", "increase": 18}, {"title": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning", "increase": 12}, {"title": "LongGenBench: Long-context Generation Benchmark", "increase": 7}, {"title": "ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference", "increase": 6}, {"title": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression", "increase": 4}, {"title": "3D Question Answering for City Scene Understanding", "increase": 3}, {"title": "FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management", "increase": 3}, {"title": "ParZC: Parametric Zero-Cost Proxies for Efficient NAS", "increase": 3}, {"title": "Plum: Prompt Learning Using Metaheuristics", "increase": 3}, {"title": "Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval", "increase": 2}]};
     const DASHBOARD_DATA = window.DASHBOARD_DATA;
-    const palette = ["#237b4b", "#285f91", "#ba7a1d", "#b54a3d", "#5956a5", "#10827a", "#8a5a24", "#5f6f2a"];
+    const html = bind;
+    const view = wire;
+    const palette = ["#75e39e", "#83b7ff", "#f2c76b", "#ff806e", "#b8a2ff", "#71ded2", "#d99f69", "#b7d66d"];
+    const ranges = [
+      { label: "All", value: "all" },
+      { label: "1Y", value: "365" },
+      { label: "180D", value: "180" },
+      { label: "90D", value: "90" },
+      { label: "30D", value: "30" },
+    ];
     let selectedRange = "all";
+    let searchQuery = "";
 
     const layoutBase = {
       paper_bgcolor: "rgba(255,255,255,0)",
       plot_bgcolor: "rgba(255,255,255,0)",
-      font: { family: "Avenir Next, Helvetica Neue, Segoe UI, sans-serif", color: "#17201d", size: 12 },
+      font: { family: "Avenir Next, Helvetica Neue, Segoe UI, sans-serif", color: "#dcebe1", size: 12 },
       margin: { l: 48, r: 18, t: 8, b: 42 },
       hovermode: "x unified",
-      xaxis: { gridcolor: "#e6ebe6", zeroline: false },
-      yaxis: { gridcolor: "#e6ebe6", zeroline: false },
-      legend: { orientation: "h", y: 1.12, x: 0, font: { size: 11 } }
+      xaxis: { gridcolor: "rgba(215,238,222,0.10)", zeroline: false, tickfont: { color: "#99a99f" } },
+      yaxis: { gridcolor: "rgba(215,238,222,0.10)", zeroline: false, tickfont: { color: "#99a99f" } },
+      legend: { orientation: "h", y: 1.12, x: 0, font: { size: 11, color: "#dcebe1" } }
     };
     const plotConfig = { displayModeBar: false, responsive: true };
+
+    function formatNumber(value, digits = 0) {
+      return Number(value).toLocaleString(undefined, {
+        maximumFractionDigits: digits,
+        minimumFractionDigits: digits,
+      });
+    }
+
+    function signedNumber(value) {
+      const number = Number(value || 0);
+      return `${number >= 0 ? "+" : ""}${number.toLocaleString()}`;
+    }
+
+    function metricCards() {
+      const summary = DASHBOARD_DATA.summary;
+      return [
+        {
+          label: "Total citations",
+          value: formatNumber(summary.total_citations),
+          raw: summary.total_citations,
+          detail: `${signedNumber(summary.last_30_growth)} in the last 30 days`,
+          primary: true,
+        },
+        { label: "H-index", value: summary.h_index, raw: summary.h_index, detail: "Current Scholar index" },
+        { label: "i10-index", value: summary.i10_index, raw: summary.i10_index, detail: "Current Scholar index" },
+        { label: "Papers", value: summary.total_papers, raw: summary.total_papers, detail: "Tracked publications" },
+        {
+          label: "Samples",
+          value: summary.samples,
+          raw: summary.samples,
+          detail: `${summary.first_date} to ${summary.latest_date}`,
+        },
+        {
+          label: "Daily pace",
+          value: formatNumber(summary.citations_per_day, 1),
+          raw: summary.citations_per_day,
+          digits: 1,
+          detail: "Average citation growth",
+        },
+      ];
+    }
+
+    function renderSummary() {
+      html(document.getElementById("summaryGrid"))`
+        ${metricCards().map((metric, index) => view(metric)`
+          <div class=${metric.primary ? "metric primary" : "metric"} style=${`--delay: ${index * 70}ms`}>
+            <strong>${metric.label}</strong>
+            <span class="metric-value" data-value=${metric.raw} data-digits=${metric.digits || 0}>${metric.value}</span>
+            <small>${metric.detail}</small>
+          </div>
+        `)}
+      `;
+    }
+
+    function animateMetricValues() {
+      document.querySelectorAll(".metric-value").forEach((node) => {
+        const target = Number(node.dataset.value || 0);
+        const digits = Number(node.dataset.digits || 0);
+        const startedAt = performance.now();
+        const duration = 820 + Math.min(target, 900) * 0.18;
+
+        function tick(now) {
+          const progress = Math.min((now - startedAt) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          node.textContent = formatNumber(target * eased, digits);
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          } else {
+            node.textContent = formatNumber(target, digits);
+          }
+        }
+
+        requestAnimationFrame(tick);
+      });
+    }
+
+    function renderControls() {
+      html(document.getElementById("controlRow"))`
+        <div class="segments" role="group" aria-label="Time range">
+          ${ranges.map((range) => view(range)`
+            <button
+              type="button"
+              data-range=${range.value}
+              class=${selectedRange === range.value ? "active" : ""}
+              onclick=${() => setRange(range.value)}
+            >${range.label}</button>
+          `)}
+        </div>
+        <input
+          class="search"
+          id="paperSearch"
+          type="search"
+          placeholder="Filter papers"
+          value=${searchQuery}
+          oninput=${(event) => setSearch(event.target.value)}
+        >
+      `;
+    }
+
+    function renderRuntimeStatus() {
+      html(document.querySelector(".updated"))`
+        Last updated<br><strong>${DASHBOARD_DATA.summary.latest_date}</strong>
+        <div class="runtime-pill">hyperHTML live view</div>
+      `;
+    }
 
     function parseDate(item) {
       return new Date(item.date + "T00:00:00");
@@ -480,9 +753,9 @@
           type: "scatter",
           mode: "lines",
           name: "Citations",
-          line: { color: "#237b4b", width: 3 },
+          line: { color: "#75e39e", width: 3, shape: "spline" },
           fill: "tozeroy",
-          fillcolor: "rgba(35, 123, 75, 0.12)"
+          fillcolor: "rgba(117, 227, 158, 0.14)"
         },
         {
           x: series.map((item) => item.date),
@@ -491,7 +764,7 @@
           mode: "lines",
           name: "H-index",
           yaxis: "y2",
-          line: { color: "#285f91", width: 2 }
+          line: { color: "#83b7ff", width: 2, shape: "hv" }
         },
         {
           x: series.map((item) => item.date),
@@ -500,13 +773,14 @@
           mode: "lines",
           name: "i10-index",
           yaxis: "y2",
-          line: { color: "#ba7a1d", width: 2, dash: "dot" }
+          line: { color: "#f2c76b", width: 2, dash: "dot", shape: "hv" }
         }
       ];
       Plotly.newPlot("citationTrend", traces, {
         ...layoutBase,
+        transition: { duration: 420, easing: "cubic-in-out" },
         yaxis: { ...layoutBase.yaxis, title: "Citations" },
-        yaxis2: { title: "Index", overlaying: "y", side: "right", gridcolor: "rgba(0,0,0,0)" }
+        yaxis2: { title: "Index", overlaying: "y", side: "right", gridcolor: "rgba(0,0,0,0)", tickfont: { color: "#99a99f" } }
       }, plotConfig);
     }
 
@@ -517,12 +791,14 @@
         y: series.map((item) => item.increase),
         type: "bar",
         marker: {
-          color: series.map((item) => item.increase > 0 ? "#237b4b" : "#c8d1ca")
+          color: series.map((item) => item.increase > 0 ? "#75e39e" : "rgba(238,248,241,0.20)"),
+          line: { color: "rgba(255,255,255,0.18)", width: 1 }
         },
         name: "Daily increase"
       }], {
         ...layoutBase,
         margin: { l: 42, r: 16, t: 8, b: 42 },
+        transition: { duration: 360, easing: "cubic-in-out" },
         hovermode: "closest",
         showlegend: false
       }, plotConfig);
@@ -537,12 +813,13 @@
           type: "scatter",
           mode: "lines",
           name: title,
-          line: { color: palette[index % palette.length], width: 2 }
+          line: { color: palette[index % palette.length], width: 2, shape: "spline" }
         };
       });
       Plotly.newPlot("paperTrajectories", traces, {
         ...layoutBase,
         margin: { l: 42, r: 16, t: 8, b: 42 },
+        transition: { duration: 360, easing: "cubic-in-out" },
         legend: { orientation: "h", y: -0.22, x: 0, font: { size: 10 } }
       }, plotConfig);
     }
@@ -554,11 +831,12 @@
         y: papers.map((paper) => paper.title),
         type: "bar",
         orientation: "h",
-        marker: { color: papers.map((_, index) => palette[index % palette.length]) },
+        marker: { color: papers.map((_, index) => palette[index % palette.length]), line: { color: "rgba(255,255,255,0.18)", width: 1 } },
         hovertemplate: "%{y}<br>%{x} citations<extra></extra>"
       }], {
         ...layoutBase,
         margin: { l: 190, r: 18, t: 8, b: 36 },
+        transition: { duration: 360, easing: "cubic-in-out" },
         showlegend: false,
         yaxis: { ...layoutBase.yaxis, tickfont: { size: 10 } }
       }, plotConfig);
@@ -567,7 +845,9 @@
     function renderActivePapers() {
       const papers = DASHBOARD_DATA.active_papers_30d.slice().reverse();
       if (papers.length === 0) {
-        document.getElementById("activePapers").innerHTML = '<div class="empty">No paper-level citation changes recorded in the last 30 days.</div>';
+        html(document.getElementById("activePapers"))`
+          <div class="empty">No paper-level citation changes recorded in the last 30 days.</div>
+        `;
         return;
       }
       Plotly.newPlot("activePapers", [{
@@ -575,81 +855,89 @@
         y: papers.map((paper) => paper.title),
         type: "bar",
         orientation: "h",
-        marker: { color: "#285f91" },
+        marker: { color: "#83b7ff", line: { color: "rgba(255,255,255,0.18)", width: 1 } },
         hovertemplate: "%{y}<br>+%{x} citations<extra></extra>"
       }], {
         ...layoutBase,
         margin: { l: 190, r: 18, t: 8, b: 36 },
+        transition: { duration: 360, easing: "cubic-in-out" },
         showlegend: false,
         yaxis: { ...layoutBase.yaxis, tickfont: { size: 10 } }
       }, plotConfig);
     }
 
     function renderPaperList() {
-      const query = document.getElementById("paperSearch").value.trim().toLowerCase();
+      const query = searchQuery.trim().toLowerCase();
       const papers = DASHBOARD_DATA.top_papers.filter((paper) => paper.title.toLowerCase().includes(query));
       const list = document.getElementById("paperList");
       if (papers.length === 0) {
-        list.innerHTML = '<div class="empty">No matching papers.</div>';
+        html(list)`<div class="empty">No matching papers.</div>`;
         return;
       }
-      list.innerHTML = papers.map((paper, index) => `
+      html(list)`
+        ${papers.map((paper, index) => view(paper)`
         <div class="paper-row">
           <div>
-            <div class="paper-title">${index + 1}. ${escapeHtml(paper.title)}</div>
-            <div class="paper-meta">${escapeHtml(String(paper.year))}</div>
+            <div class="paper-title">${index + 1}. ${paper.title}</div>
+            <div class="paper-meta">${String(paper.year)}</div>
           </div>
           <div class="paper-count">${paper.citations.toLocaleString()}</div>
         </div>
-      `).join("");
+      `)}
+      `;
     }
 
     function renderRecentChanges() {
       const holder = document.getElementById("recentChanges");
       const changes = DASHBOARD_DATA.recent_changes;
       if (changes.length === 0) {
-        holder.innerHTML = '<div class="empty">No daily change records yet.</div>';
+        html(holder)`<div class="empty">No daily change records yet.</div>`;
         return;
       }
-      holder.innerHTML = changes.map((day) => {
+      html(holder)`
+        ${changes.map((day, index) => {
         const papers = (day.papers_with_changes || []).slice(0, 5);
-        const paperRows = papers.length
-          ? papers.map((paper) => `
-              <div class="change-paper">
-                <span>${escapeHtml(paper.title)}</span>
-                <strong>+${paper.increase}</strong>
-              </div>
-            `).join("")
-          : '<div class="change-paper"><span>No paper-level changes</span><strong>0</strong></div>';
         const increase = day.total_citations_increase || 0;
-        return `
-          <div class="change-day">
+        return view(day)`
+          <div class="change-day" style=${`--delay: ${index * 45}ms`}>
             <div class="change-head">
-              <span>${escapeHtml(day.date)}</span>
+              <span>${day.date}</span>
               <span>${increase >= 0 ? "+" : ""}${increase}</span>
             </div>
-            ${paperRows}
+            ${papers.length
+              ? papers.map((paper) => view(paper)`
+                <div class="change-paper">
+                  <span>${paper.title}</span>
+                  <strong>+${paper.increase}</strong>
+                </div>
+              `)
+              : view(day, "empty")`<div class="change-paper"><span>No paper-level changes</span><strong>0</strong></div>`}
           </div>
         `;
-      }).join("");
+      })}
+      `;
     }
 
-    function escapeHtml(value) {
-      return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
+    function setRange(range) {
+      selectedRange = range;
+      renderControls();
+      renderCharts();
     }
 
-    function renderAll() {
+    function setSearch(value) {
+      searchQuery = value;
+      renderControls();
+      renderPaperList();
+      const input = document.getElementById("paperSearch");
+      input.focus();
+      input.setSelectionRange(searchQuery.length, searchQuery.length);
+    }
+
+    function renderCharts() {
       if (!window.Plotly) {
         document.querySelectorAll(".plot").forEach((node) => {
-          node.innerHTML = '<div class="empty">Plotly CDN is unavailable. Summary metrics and paper lists are still visible.</div>';
+          html(node)`<div class="empty">Plotly CDN is unavailable. Summary metrics and paper lists are still visible.</div>`;
         });
-        renderPaperList();
-        renderRecentChanges();
         return;
       }
       renderCitationTrend();
@@ -657,19 +945,18 @@
       renderPaperTrajectories();
       renderPaperRanking();
       renderActivePapers();
+    }
+
+    function renderAll() {
+      renderRuntimeStatus();
+      renderSummary();
+      animateMetricValues();
+      renderControls();
+      renderCharts();
       renderPaperList();
       renderRecentChanges();
     }
 
-    document.querySelectorAll("[data-range]").forEach((button) => {
-      button.addEventListener("click", () => {
-        selectedRange = button.dataset.range;
-        document.querySelectorAll("[data-range]").forEach((item) => item.classList.remove("active"));
-        button.classList.add("active");
-        renderAll();
-      });
-    });
-    document.getElementById("paperSearch").addEventListener("input", renderPaperList);
     renderAll();
   </script>
 </body>
