@@ -1,29 +1,32 @@
 # Citation Statistics
 
-Last updated: 2026-06-03
+Last updated: 2026-06-04
 
 ## Overall Statistics
-- Total Citations: 1145
+- Total Citations: 1147
 - H-index: 15
 - i10-index: 18
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +2 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 36 | 37 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 182 | 183 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 423 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 182 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 183 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 57 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 48 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 36 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 37 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 27 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 25 | 2023 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 20 | 2025 |
@@ -60,6 +63,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-06-04 | 1147 | 15 |
 | 2026-06-03 | 1145 | 15 |
 | 2026-06-02 | 1145 | 15 |
 | 2026-06-01 | 1139 | 15 |
@@ -69,9 +73,11 @@ No paper-level citation changes recorded today.
 | 2026-05-27 | 1121 | 15 |
 | 2026-05-26 | 1118 | 15 |
 | 2026-05-25 | 1118 | 15 |
-| 2026-05-24 | 1113 | 15 |
 
 ## Citation Trends
+
+### Interactive Dashboard
+[Open citation dashboard](dashboard.html)
 
 ### Overall Trends
 ![Citation Trends](citation_trends.png)
