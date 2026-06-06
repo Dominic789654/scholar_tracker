@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-06-05
+Last updated: 2026-06-06
 
 ## Overall Statistics
 - Total Citations: 1148
@@ -9,28 +9,30 @@ Last updated: 2026-06-05
 
 ## Today's Citation Changes
 
-Total increase: +1 citations
+Total increase: +0 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 423 | 424 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 37 | 39 | +2 |
+| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 19 | 20 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 102 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 424 | 2023 |
+| Active prompting with chain-of-thought for large language models | 421 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 183 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 102 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 57 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 48 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 37 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 39 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 27 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 25 | 2023 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 20 | 2025 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 19 | 2025 |
-| 3D Question Answering for City Scene Understanding | 19 | 2024 |
+| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 20 | 2025 |
+| 3D Question Answering for City Scene Understanding | 18 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 17 | 2024 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 16 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 15 | 2025 |
@@ -48,6 +50,7 @@ Total increase: +1 citations
 | SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching | 2 | 2026 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 2 | 2025 |
 | -mem: Efficient Online Memory for Large Language Models | 1 | 2026 |
+| On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters | 0 | 2026 |
 | NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 0 | 2026 |
 | MinT: Managed Infrastructure for Training and Serving Millions of LLMs | 0 | 2026 |
 | Position: LLM Inference Should Be Evaluated as Energy-to-Token Production | 0 | 2026 |
@@ -62,6 +65,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-06-06 | 1148 | 15 |
 | 2026-06-05 | 1148 | 15 |
 | 2026-06-04 | 1147 | 15 |
 | 2026-06-03 | 1145 | 15 |
@@ -71,7 +75,6 @@ Total increase: +1 citations
 | 2026-05-29 | 1125 | 15 |
 | 2026-05-28 | 1121 | 15 |
 | 2026-05-27 | 1121 | 15 |
-| 2026-05-26 | 1118 | 15 |
 
 ## Citation Trends
 
