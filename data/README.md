@@ -1,7 +1,7 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-06-06*
+*Last Updated: 2026-06-07*
 
 ### Quick Summary
 | Metric | Value |
@@ -14,10 +14,7 @@
 
 ### Today's Changes
 - Total Citations Increase: +0
-- Papers with new citations:
-  - ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference: +2 citations
-  - Can LLMs Maintain Fundamental Abilities under KV Cache Compression?: +1 citations
-  - Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models: +1 citations
+- Papers with new citations: none
 
 ### Interactive Dashboard
 - [Open citation dashboard](dashboard.html)

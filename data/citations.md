@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-06-06
+Last updated: 2026-06-07
 
 ## Overall Statistics
 - Total Citations: 1148
@@ -11,11 +11,7 @@ Last updated: 2026-06-06
 
 Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 37 | 39 | +2 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 19 | 20 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 101 | 102 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -65,6 +61,7 @@ Total increase: +0 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-06-07 | 1148 | 15 |
 | 2026-06-06 | 1148 | 15 |
 | 2026-06-05 | 1148 | 15 |
 | 2026-06-04 | 1147 | 15 |
@@ -74,7 +71,6 @@ Total increase: +0 citations
 | 2026-05-31 | 1132 | 15 |
 | 2026-05-29 | 1125 | 15 |
 | 2026-05-28 | 1121 | 15 |
-| 2026-05-27 | 1121 | 15 |
 
 ## Citation Trends
 
