@@ -1,26 +1,29 @@
 # Citation Statistics
 
-Last updated: 2026-06-08
+Last updated: 2026-06-09
 
 ## Overall Statistics
-- Total Citations: 1148
+- Total Citations: 1152
 - H-index: 15
 - i10-index: 18
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +4 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| Active prompting with chain-of-thought for large language models | 421 | 424 | +3 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 61 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 421 | 2023 |
+| Active prompting with chain-of-thought for large language models | 424 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 183 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 102 | 2024 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 61 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 57 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 48 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 39 | 2025 |
@@ -61,6 +64,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-06-09 | 1152 | 15 |
 | 2026-06-08 | 1148 | 15 |
 | 2026-06-07 | 1148 | 15 |
 | 2026-06-06 | 1148 | 15 |
@@ -70,7 +74,6 @@ No paper-level citation changes recorded today.
 | 2026-06-02 | 1145 | 15 |
 | 2026-06-01 | 1139 | 15 |
 | 2026-05-31 | 1132 | 15 |
-| 2026-05-29 | 1125 | 15 |
 
 ## Citation Trends
 
