@@ -1,27 +1,27 @@
 # Citation Statistics
 
-Last updated: 2026-06-09
+Last updated: 2026-06-11
 
 ## Overall Statistics
-- Total Citations: 1152
+- Total Citations: 1154
 - H-index: 15
 - i10-index: 18
 
 ## Today's Citation Changes
 
-Total increase: +4 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 421 | 424 | +3 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 60 | 61 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 183 | 184 | +1 |
+| LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 0 | 1 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 424 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 183 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 184 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 102 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 61 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 57 | 2024 |
@@ -49,13 +49,13 @@ Total increase: +4 citations
 | SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching | 2 | 2026 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 2 | 2025 |
 | -mem: Efficient Online Memory for Large Language Models | 1 | 2026 |
+| LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 1 | 2026 |
 | On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters | 0 | 2026 |
 | NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 0 | 2026 |
 | MinT: Managed Infrastructure for Training and Serving Millions of LLMs | 0 | 2026 |
 | Position: LLM Inference Should Be Evaluated as Energy-to-Token Production | 0 | 2026 |
 | MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 0 | 2026 |
 | An Improved Autoregressive Evaluation Paradigm for Large Language Models | 0 | 2026 |
-| LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 0 | 2026 |
 | Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 0 | 2026 |
 | From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM | 0 | 2026 |
 | Is Privacy Always Prioritized over Learning? Probing LLMs' Value Priority Belief under External Perturbations | 0 | N/A |
@@ -64,6 +64,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-06-11 | 1154 | 15 |
 | 2026-06-09 | 1152 | 15 |
 | 2026-06-08 | 1148 | 15 |
 | 2026-06-07 | 1148 | 15 |
@@ -73,7 +74,6 @@ Total increase: +4 citations
 | 2026-06-03 | 1145 | 15 |
 | 2026-06-02 | 1145 | 15 |
 | 2026-06-01 | 1139 | 15 |
-| 2026-05-31 | 1132 | 15 |
 
 ## Citation Trends
 
