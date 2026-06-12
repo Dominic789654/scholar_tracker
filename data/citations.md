@@ -1,20 +1,19 @@
 # Citation Statistics
 
-Last updated: 2026-06-11
+Last updated: 2026-06-12
 
 ## Overall Statistics
-- Total Citations: 1154
+- Total Citations: 1155
 - H-index: 15
 - i10-index: 18
 
 ## Today's Citation Changes
 
-Total increase: +2 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 183 | 184 | +1 |
-| LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 0 | 1 | +1 |
+| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 7 | 8 | +1 |
 
 ## Paper Citations
 
@@ -38,9 +37,9 @@ Total increase: +2 citations
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 13 | 2025 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 11 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 10 | 2025 |
+| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 8 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 2024 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 7 | 2026 |
-| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 7 | 2025 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 6 | 2025 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 5 | 2025 |
 | Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval | 3 | 2025 |
@@ -64,6 +63,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-06-12 | 1155 | 15 |
 | 2026-06-11 | 1154 | 15 |
 | 2026-06-09 | 1152 | 15 |
 | 2026-06-08 | 1148 | 15 |
@@ -73,7 +73,6 @@ Total increase: +2 citations
 | 2026-06-04 | 1147 | 15 |
 | 2026-06-03 | 1145 | 15 |
 | 2026-06-02 | 1145 | 15 |
-| 2026-06-01 | 1139 | 15 |
 
 ## Citation Trends
 

@@ -4797,3 +4797,279 @@ src.exceptions.DataValidationError: Stats validation failed
 2026-06-11 01:51:43,776 - INFO - shutil.rmtree worked.
 2026-06-11 01:51:43,841 - INFO - TemporaryDirectory.cleanup() worked.
 2026-06-11 01:51:43,841 - INFO - shutil.rmtree worked.
+2026-06-12 01:49:38,121 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,121 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,122 - INFO - ScholarTracker initialized for author_query='John Doe', author_id='None'
+2026-06-12 01:49:38,122 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,123 - INFO - ScholarTracker initialized for author_query='John Doe', author_id='test_id'
+2026-06-12 01:49:38,123 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,124 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,124 - INFO - ScraperAPI is configured for proxy support
+2026-06-12 01:49:38,124 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,125 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,125 - INFO - ScraperAPI is configured for proxy support
+2026-06-12 01:49:38,125 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,126 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,126 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,126 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,126 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,127 - INFO - Validating collected stats...
+2026-06-12 01:49:38,127 - INFO - Stats validation passed
+2026-06-12 01:49:38,127 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,127 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,128 - INFO - Validating collected stats...
+2026-06-12 01:49:38,128 - ERROR - Invalid total_citations: -10
+2026-06-12 01:49:38,128 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,128 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,129 - INFO - Validating collected stats...
+2026-06-12 01:49:38,129 - ERROR - Inconsistent stats: 500 citations but h_index=0
+2026-06-12 01:49:38,129 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,129 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,130 - INFO - Validating collected stats...
+2026-06-12 01:49:38,130 - ERROR - No papers found in stats
+2026-06-12 01:49:38,130 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,130 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,131 - INFO - Validating collected stats...
+2026-06-12 01:49:38,131 - ERROR - h_index dropped from 5 to 0 - likely parsing error
+2026-06-12 01:49:38,131 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,131 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,132 - INFO - Validating collected stats...
+2026-06-12 01:49:38,132 - INFO - Stats validation passed
+2026-06-12 01:49:38,132 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,133 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,133 - INFO - Calculating citation changes...
+2026-06-12 01:49:38,133 - INFO - Found 2 papers with new citations.
+2026-06-12 01:49:38,133 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,134 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,134 - INFO - Calculating citation changes...
+2026-06-12 01:49:38,134 - INFO - No new citations found for any papers.
+2026-06-12 01:49:38,135 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,135 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,135 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,136 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,136 - INFO - Calculating citation changes...
+2026-06-12 01:49:38,136 - INFO - Found 1 papers with new citations.
+2026-06-12 01:49:38,137 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,137 - INFO - ScraperAPI is configured for proxy support
+2026-06-12 01:49:38,137 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,138 - INFO - Searching for author by ID: 'test_id' (attempt 1/1)
+2026-06-12 01:49:38,138 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-12 01:49:38,138 - INFO - Found author: Test Author
+2026-06-12 01:49:38,138 - INFO - Successfully collected stats for 1 papers.
+2026-06-12 01:49:38,138 - INFO - Validating collected stats...
+2026-06-12 01:49:38,138 - INFO - Stats validation passed
+2026-06-12 01:49:38,139 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,139 - INFO - ScraperAPI is configured for proxy support
+2026-06-12 01:49:38,139 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,139 - INFO - Searching for author by ID: 'test_id' (attempt 1/2)
+2026-06-12 01:49:38,140 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-12 01:49:38,140 - ERROR - Data fetch error (attempt 1/2): manual fetch failed
+2026-06-12 01:49:38,140 - INFO - Retrying in 0 seconds...
+2026-06-12 01:49:38,140 - INFO - Searching for author by ID: 'test_id' (attempt 2/2)
+2026-06-12 01:49:38,140 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-12 01:49:38,140 - ERROR - Data fetch error (attempt 2/2): manual fetch failed
+2026-06-12 01:49:38,140 - ERROR - All retry attempts failed. Last error: manual fetch failed
+2026-06-12 01:49:38,141 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,141 - INFO - ScraperAPI is configured for proxy support
+2026-06-12 01:49:38,141 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,142 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=test_id&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:49:38,142 - INFO - Attempting fetch via ScraperAPI...
+2026-06-12 01:49:38,142 - INFO - ScraperAPI fetch successful
+2026-06-12 01:49:38,143 - INFO - Successfully manually fetched data for Test Author: 100 citations, 1 papers
+2026-06-12 01:49:38,144 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,144 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,145 - INFO - Starting history update...
+2026-06-12 01:49:38,145 - INFO - No history file found. A new one will be created.
+2026-06-12 01:49:38,145 - INFO - Validating collected stats...
+2026-06-12 01:49:38,145 - INFO - Stats validation passed
+2026-06-12 01:49:38,145 - INFO - Appended new history entry for 2024-01-02.
+2026-06-12 01:49:38,145 - INFO - No previous stats to compare against.
+2026-06-12 01:49:38,145 - INFO - History update complete.
+2026-06-12 01:49:38,146 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,146 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,147 - INFO - Starting history update...
+2026-06-12 01:49:38,147 - INFO - Loaded 2 history entries from /tmp/pytest-of-runner/pytest-0/test_update_history_replaces_s0/citation_history.json
+2026-06-12 01:49:38,147 - INFO - Validating collected stats...
+2026-06-12 01:49:38,147 - INFO - Stats validation passed
+2026-06-12 01:49:38,147 - INFO - Refreshing existing entry for 2024-01-02.
+2026-06-12 01:49:38,148 - INFO - Calculating citation changes...
+2026-06-12 01:49:38,148 - INFO - Found 1 papers with new citations.
+2026-06-12 01:49:38,148 - INFO - Saved daily changes to /tmp/pytest-of-runner/pytest-0/test_update_history_replaces_s0/daily_changes.json
+2026-06-12 01:49:38,148 - INFO - History update complete.
+2026-06-12 01:49:38,149 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-12 01:49:38,149 - INFO - Free proxy support enabled
+2026-06-12 01:49:38,150 - INFO - Starting history update...
+2026-06-12 01:49:38,150 - INFO - Loaded 1 history entries from /tmp/pytest-of-runner/pytest-0/test_update_history_records_ze0/citation_history.json
+2026-06-12 01:49:38,150 - INFO - Validating collected stats...
+2026-06-12 01:49:38,150 - INFO - Stats validation passed
+2026-06-12 01:49:38,150 - INFO - Appended new history entry for 2024-01-02.
+2026-06-12 01:49:38,150 - INFO - Calculating citation changes...
+2026-06-12 01:49:38,150 - INFO - No new citations found for any papers.
+2026-06-12 01:49:38,150 - INFO - Saved daily changes to /tmp/pytest-of-runner/pytest-0/test_update_history_records_ze0/daily_changes.json
+2026-06-12 01:49:38,150 - INFO - History update complete.
+2026-06-12 01:49:39,340 - INFO - ScholarTracker initialized for author_query='None', author_id='VtK5lwUAAAAJ'
+2026-06-12 01:49:39,340 - INFO - ScholarTracker initialized for author_query='None', author_id='VtK5lwUAAAAJ'
+2026-06-12 01:49:39,341 - INFO - ScraperAPI is configured for proxy support
+2026-06-12 01:49:39,341 - INFO - ScraperAPI is configured for proxy support
+2026-06-12 01:49:39,341 - INFO - Free proxy support enabled
+2026-06-12 01:49:39,341 - INFO - Free proxy support enabled
+2026-06-12 01:49:39,341 - INFO - Starting history update...
+2026-06-12 01:49:39,341 - INFO - Starting history update...
+2026-06-12 01:49:39,341 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/5)
+2026-06-12 01:49:39,341 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/5)
+2026-06-12 01:49:39,341 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-12 01:49:39,341 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-12 01:49:39,341 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:49:39,341 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:49:39,341 - INFO - Attempting fetch via ScraperAPI...
+2026-06-12 01:49:39,341 - INFO - Attempting fetch via ScraperAPI...
+2026-06-12 01:49:39,515 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-12 01:49:39,515 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-12 01:49:39,516 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-12 01:49:39,516 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-12 01:49:39,516 - INFO - Trying direct request first...
+2026-06-12 01:49:39,516 - INFO - Trying direct request first...
+2026-06-12 01:49:40,046 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:49:40,046 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:49:46,308 - INFO - Got free proxy: http://151.243.153.157:8118
+2026-06-12 01:49:46,308 - INFO - Got free proxy: http://151.243.153.157:8118
+2026-06-12 01:49:46,308 - INFO - Trying with free proxy: http://151.243.153.157:8118
+2026-06-12 01:49:46,308 - INFO - Trying with free proxy: http://151.243.153.157:8118
+2026-06-12 01:50:17,130 - WARNING - Free proxy also failed: HTTPSConnectionPool(host='scholar.google.com', port=443): Read timed out. (read timeout=30)
+2026-06-12 01:50:17,130 - WARNING - Free proxy also failed: HTTPSConnectionPool(host='scholar.google.com', port=443): Read timed out. (read timeout=30)
+2026-06-12 01:50:17,130 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:17,130 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:17,130 - ERROR - Data fetch error (attempt 1/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:17,130 - ERROR - Data fetch error (attempt 1/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:17,130 - INFO - Retrying in 10 seconds...
+2026-06-12 01:50:17,130 - INFO - Retrying in 10 seconds...
+2026-06-12 01:50:27,131 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 2/5)
+2026-06-12 01:50:27,131 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 2/5)
+2026-06-12 01:50:27,131 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-12 01:50:27,131 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-12 01:50:27,131 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:27,131 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:27,131 - INFO - Attempting fetch via ScraperAPI...
+2026-06-12 01:50:27,131 - INFO - Attempting fetch via ScraperAPI...
+2026-06-12 01:50:27,179 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-12 01:50:27,179 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-12 01:50:27,179 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-12 01:50:27,179 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-12 01:50:27,179 - INFO - Trying direct request first...
+2026-06-12 01:50:27,179 - INFO - Trying direct request first...
+2026-06-12 01:50:27,633 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:27,633 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:35,302 - INFO - Got free proxy: http://113.160.132.26:8080
+2026-06-12 01:50:35,302 - INFO - Got free proxy: http://113.160.132.26:8080
+2026-06-12 01:50:35,302 - INFO - Trying with free proxy: http://113.160.132.26:8080
+2026-06-12 01:50:35,302 - INFO - Trying with free proxy: http://113.160.132.26:8080
+2026-06-12 01:50:38,927 - WARNING - Free proxy also failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgRxoIQaGOzLrdEGIi5okJL9PW37HPzxlM3B3nG8OMaZGGzIn-ga0kBIG9tUchdEQfFfDypSoveBMPqPMgJyUloBQw
+2026-06-12 01:50:38,927 - WARNING - Free proxy also failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgRxoIQaGOzLrdEGIi5okJL9PW37HPzxlM3B3nG8OMaZGGzIn-ga0kBIG9tUchdEQfFfDypSoveBMPqPMgJyUloBQw
+2026-06-12 01:50:38,927 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:38,927 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:38,927 - ERROR - Data fetch error (attempt 2/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:38,927 - ERROR - Data fetch error (attempt 2/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:38,928 - INFO - Retrying in 20 seconds...
+2026-06-12 01:50:38,928 - INFO - Retrying in 20 seconds...
+2026-06-12 01:50:58,929 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 3/5)
+2026-06-12 01:50:58,929 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 3/5)
+2026-06-12 01:50:58,929 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-12 01:50:58,929 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-12 01:50:58,929 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:58,929 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:58,929 - INFO - Attempting fetch via ScraperAPI...
+2026-06-12 01:50:58,929 - INFO - Attempting fetch via ScraperAPI...
+2026-06-12 01:50:59,043 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-12 01:50:59,043 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-12 01:50:59,044 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-12 01:50:59,044 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-12 01:50:59,044 - INFO - Trying direct request first...
+2026-06-12 01:50:59,044 - INFO - Trying direct request first...
+2026-06-12 01:50:59,304 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:50:59,304 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-12 01:51:00,872 - INFO - Got free proxy: http://217.142.238.66:1080
+2026-06-12 01:51:00,872 - INFO - Got free proxy: http://217.142.238.66:1080
+2026-06-12 01:51:00,872 - INFO - Trying with free proxy: http://217.142.238.66:1080
+2026-06-12 01:51:00,872 - INFO - Trying with free proxy: http://217.142.238.66:1080
+2026-06-12 01:51:06,596 - INFO - Successfully manually fetched data for Xiang Liu: 1155 citations, 39 papers
+2026-06-12 01:51:06,596 - INFO - Successfully manually fetched data for Xiang Liu: 1155 citations, 39 papers
+2026-06-12 01:51:06,597 - INFO - Found author: Xiang Liu
+2026-06-12 01:51:06,597 - INFO - Found author: Xiang Liu
+2026-06-12 01:51:06,598 - INFO - Successfully collected stats for 39 papers.
+2026-06-12 01:51:06,598 - INFO - Successfully collected stats for 39 papers.
+2026-06-12 01:51:06,598 - INFO - Validating collected stats...
+2026-06-12 01:51:06,598 - INFO - Validating collected stats...
+2026-06-12 01:51:06,598 - INFO - Stats validation passed
+2026-06-12 01:51:06,598 - INFO - Stats validation passed
+2026-06-12 01:51:06,604 - INFO - Loaded 305 history entries from data/citation_history.json
+2026-06-12 01:51:06,604 - INFO - Loaded 305 history entries from data/citation_history.json
+2026-06-12 01:51:06,604 - INFO - Validating collected stats...
+2026-06-12 01:51:06,604 - INFO - Validating collected stats...
+2026-06-12 01:51:06,604 - INFO - Stats validation passed
+2026-06-12 01:51:06,604 - INFO - Stats validation passed
+2026-06-12 01:51:06,634 - INFO - Appended new history entry for 2026-06-12.
+2026-06-12 01:51:06,634 - INFO - Appended new history entry for 2026-06-12.
+2026-06-12 01:51:06,634 - INFO - Calculating citation changes...
+2026-06-12 01:51:06,634 - INFO - Calculating citation changes...
+2026-06-12 01:51:06,634 - INFO - Found 1 papers with new citations.
+2026-06-12 01:51:06,634 - INFO - Found 1 papers with new citations.
+2026-06-12 01:51:06,634 - INFO - Saved daily changes to data/daily_changes.json
+2026-06-12 01:51:06,634 - INFO - Saved daily changes to data/daily_changes.json
+2026-06-12 01:51:06,634 - INFO - History update complete.
+2026-06-12 01:51:06,634 - INFO - History update complete.
+2026-06-12 01:51:06,648 - INFO - Generating citation trends chart
+2026-06-12 01:51:06,865 - INFO - Chromium init'ed with kwargs {}
+2026-06-12 01:51:06,867 - INFO - Found chromium path: /usr/bin/google-chrome
+2026-06-12 01:51:06,867 - INFO - Temp directory created: /tmp/tmp5725s4iu.
+2026-06-12 01:51:06,868 - INFO - Opening browser.
+2026-06-12 01:51:06,868 - INFO - Temp directory created: /tmp/tmpjbt2k00u.
+2026-06-12 01:51:06,868 - INFO - Temporary directory at: /tmp/tmpjbt2k00u
+2026-06-12 01:51:13,870 - INFO - Conforming 1 to file:///tmp/tmp5725s4iu/index.html
+2026-06-12 01:51:15,940 - INFO - Getting tab from queue (has 1)
+2026-06-12 01:51:15,940 - INFO - Got 0A9C
+2026-06-12 01:51:16,172 - INFO - Reloading tab 0A9C before return.
+2026-06-12 01:51:16,308 - INFO - Putting tab 0A9C back (queue size: 0).
+2026-06-12 01:51:16,308 - INFO - Waiting for all cleanups to finish.
+2026-06-12 01:51:16,308 - INFO - Exiting Kaleido.
+2026-06-12 01:51:16,308 - INFO - TemporaryDirectory.cleanup() worked.
+2026-06-12 01:51:16,308 - INFO - shutil.rmtree worked.
+2026-06-12 01:51:16,308 - INFO - Closing browser.
+2026-06-12 01:51:16,314 - INFO - TemporaryDirectory.cleanup() worked.
+2026-06-12 01:51:16,314 - INFO - shutil.rmtree worked.
+2026-06-12 01:51:16,314 - INFO - Closing browser.
+2026-06-12 01:51:16,314 - INFO - Cancelling tasks.
+2026-06-12 01:51:16,314 - INFO - Exiting Kaleido/Choreo.
+2026-06-12 01:51:16,434 - INFO - TemporaryDirectory.cleanup() worked.
+2026-06-12 01:51:16,434 - INFO - shutil.rmtree worked.
+2026-06-12 01:51:16,434 - INFO - Cancelling tasks.
+2026-06-12 01:51:16,434 - INFO - Exiting Kaleido/Choreo.
+2026-06-12 01:51:16,453 - INFO - Generating paper trends chart
+2026-06-12 01:51:16,456 - INFO - TemporaryDirectory.cleanup() worked.
+2026-06-12 01:51:16,456 - INFO - shutil.rmtree worked.
+2026-06-12 01:51:16,508 - INFO - Chromium init'ed with kwargs {}
+2026-06-12 01:51:16,508 - INFO - Found chromium path: /usr/bin/google-chrome
+2026-06-12 01:51:16,509 - INFO - Temp directory created: /tmp/tmpt083dbp5.
+2026-06-12 01:51:16,509 - INFO - Opening browser.
+2026-06-12 01:51:16,509 - INFO - Temp directory created: /tmp/tmp7489z1ka.
+2026-06-12 01:51:16,509 - INFO - Temporary directory at: /tmp/tmp7489z1ka
+2026-06-12 01:51:16,738 - INFO - Conforming 1 to file:///tmp/tmpt083dbp5/index.html
+2026-06-12 01:51:17,937 - INFO - Getting tab from queue (has 1)
+2026-06-12 01:51:17,937 - INFO - Got CC92
+2026-06-12 01:51:18,266 - INFO - Reloading tab CC92 before return.
+2026-06-12 01:51:18,399 - INFO - Putting tab CC92 back (queue size: 0).
+2026-06-12 01:51:18,399 - INFO - Waiting for all cleanups to finish.
+2026-06-12 01:51:18,399 - INFO - Exiting Kaleido.
+2026-06-12 01:51:18,399 - INFO - TemporaryDirectory.cleanup() worked.
+2026-06-12 01:51:18,400 - INFO - shutil.rmtree worked.
+2026-06-12 01:51:18,400 - INFO - Closing browser.
+2026-06-12 01:51:18,401 - INFO - TemporaryDirectory.cleanup() worked.
+2026-06-12 01:51:18,401 - INFO - shutil.rmtree worked.
+2026-06-12 01:51:18,401 - INFO - Closing browser.
+2026-06-12 01:51:18,402 - INFO - Cancelling tasks.
+2026-06-12 01:51:18,402 - INFO - Exiting Kaleido/Choreo.
+2026-06-12 01:51:18,471 - INFO - TemporaryDirectory.cleanup() worked.
+2026-06-12 01:51:18,471 - INFO - shutil.rmtree worked.
+2026-06-12 01:51:18,471 - INFO - Cancelling tasks.
+2026-06-12 01:51:18,471 - INFO - Exiting Kaleido/Choreo.
+2026-06-12 01:51:18,485 - INFO - TemporaryDirectory.cleanup() worked.
+2026-06-12 01:51:18,485 - INFO - shutil.rmtree worked.
