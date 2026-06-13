@@ -1,27 +1,29 @@
 # Citation Statistics
 
-Last updated: 2026-06-12
+Last updated: 2026-06-13
 
 ## Overall Statistics
-- Total Citations: 1155
+- Total Citations: 1160
 - H-index: 15
 - i10-index: 18
 
 ## Today's Citation Changes
 
-Total increase: +1 citations
+Total increase: +5 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 7 | 8 | +1 |
+| Active prompting with chain-of-thought for large language models | 424 | 427 | +3 |
+| 3D Question Answering for City Scene Understanding | 18 | 19 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 102 | 103 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 424 | 2023 |
+| Active prompting with chain-of-thought for large language models | 427 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 184 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 102 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 103 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 61 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 57 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 48 | 2024 |
@@ -30,7 +32,7 @@ Total increase: +1 citations
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 25 | 2023 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 20 | 2025 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 20 | 2025 |
-| 3D Question Answering for City Scene Understanding | 18 | 2024 |
+| 3D Question Answering for City Scene Understanding | 19 | 2024 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 17 | 2024 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 16 | 2025 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 15 | 2025 |
@@ -63,6 +65,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-06-13 | 1160 | 15 |
 | 2026-06-12 | 1155 | 15 |
 | 2026-06-11 | 1154 | 15 |
 | 2026-06-09 | 1152 | 15 |
@@ -72,7 +75,6 @@ Total increase: +1 citations
 | 2026-06-05 | 1148 | 15 |
 | 2026-06-04 | 1147 | 15 |
 | 2026-06-03 | 1145 | 15 |
-| 2026-06-02 | 1145 | 15 |
 
 ## Citation Trends
 
