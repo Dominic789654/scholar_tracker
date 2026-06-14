@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-06-13
+Last updated: 2026-06-14
 
 ## Overall Statistics
 - Total Citations: 1160
@@ -9,13 +9,9 @@ Last updated: 2026-06-13
 
 ## Today's Citation Changes
 
-Total increase: +5 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 424 | 427 | +3 |
-| 3D Question Answering for City Scene Understanding | 18 | 19 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 102 | 103 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -65,6 +61,7 @@ Total increase: +5 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-06-14 | 1160 | 15 |
 | 2026-06-13 | 1160 | 15 |
 | 2026-06-12 | 1155 | 15 |
 | 2026-06-11 | 1154 | 15 |
@@ -74,7 +71,6 @@ Total increase: +5 citations
 | 2026-06-06 | 1148 | 15 |
 | 2026-06-05 | 1148 | 15 |
 | 2026-06-04 | 1147 | 15 |
-| 2026-06-03 | 1145 | 15 |
 
 ## Citation Trends
 
