@@ -1,31 +1,32 @@
 # Citation Statistics
 
-Last updated: 2026-06-15
+Last updated: 2026-06-16
 
 ## Overall Statistics
-- Total Citations: 1161
+- Total Citations: 1163
 - H-index: 15
 - i10-index: 18
 
 ## Today's Citation Changes
 
-Total increase: +1 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 427 | 428 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 39 | 40 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 184 | 185 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 428 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 184 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 185 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 103 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 61 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 57 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 48 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 39 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 40 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 27 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 25 | 2023 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 20 | 2025 |
@@ -63,6 +64,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-06-16 | 1163 | 15 |
 | 2026-06-15 | 1161 | 15 |
 | 2026-06-14 | 1160 | 15 |
 | 2026-06-13 | 1160 | 15 |
@@ -72,7 +74,6 @@ Total increase: +1 citations
 | 2026-06-08 | 1148 | 15 |
 | 2026-06-07 | 1148 | 15 |
 | 2026-06-06 | 1148 | 15 |
-| 2026-06-05 | 1148 | 15 |
 
 ## Citation Trends
 
