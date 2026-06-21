@@ -1,35 +1,33 @@
 # Citation Statistics
 
-Last updated: 2026-06-20
+Last updated: 2026-06-21
 
 ## Overall Statistics
-- Total Citations: 1166
+- Total Citations: 1170
 - H-index: 15
 - i10-index: 18
 
 ## Today's Citation Changes
 
-Total increase: +3 citations
+Total increase: +4 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 40 | 41 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 61 | 62 | +1 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 15 | 16 | +1 |
-| Plum: Prompt Learning Using Metaheuristics | 48 | 49 | +1 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 17 | 18 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 185 | 187 | +2 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 41 | 42 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 103 | 104 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 427 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 185 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 103 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 187 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 104 | 2024 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 62 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 57 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 49 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 41 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 42 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 27 | 2024 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 25 | 2023 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 20 | 2025 |
@@ -53,6 +51,7 @@ Total increase: +3 citations
 | Ssr: Speculative parallel scaling reasoning in test-time | 2 | 2025 |
 | -mem: Efficient Online Memory for Large Language Models | 1 | 2026 |
 | LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 1 | 2026 |
+| Macaron-V1-Preview: 749B MoL Agent Model post-trained from GLM5.1 | 0 | 2026 |
 | On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters | 0 | 2026 |
 | NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 0 | 2026 |
 | MinT: Managed Infrastructure for Training and Serving Millions of LLMs | 0 | 2026 |
@@ -67,6 +66,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-06-21 | 1170 | 15 |
 | 2026-06-20 | 1166 | 15 |
 | 2026-06-19 | 1163 | 15 |
 | 2026-06-18 | 1163 | 15 |
@@ -76,7 +76,6 @@ Total increase: +3 citations
 | 2026-06-14 | 1160 | 15 |
 | 2026-06-13 | 1160 | 15 |
 | 2026-06-12 | 1155 | 15 |
-| 2026-06-11 | 1154 | 15 |
 
 ## Citation Trends
 
