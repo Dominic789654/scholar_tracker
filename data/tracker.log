@@ -7177,3 +7177,281 @@ src.exceptions.DataValidationError: Stats validation failed
 2026-06-21 01:51:48,345 - INFO - Exiting Kaleido/Choreo.
 2026-06-21 01:51:48,361 - INFO - TemporaryDirectory.cleanup() worked.
 2026-06-21 01:51:48,362 - INFO - shutil.rmtree worked.
+2026-06-22 01:52:15,701 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,701 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,702 - INFO - ScholarTracker initialized for author_query='John Doe', author_id='None'
+2026-06-22 01:52:15,702 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,702 - INFO - ScholarTracker initialized for author_query='John Doe', author_id='test_id'
+2026-06-22 01:52:15,702 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,703 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,704 - INFO - ScraperAPI is configured for proxy support
+2026-06-22 01:52:15,704 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,704 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,704 - INFO - ScraperAPI is configured for proxy support
+2026-06-22 01:52:15,704 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,705 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,705 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,706 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,706 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,706 - INFO - Validating collected stats...
+2026-06-22 01:52:15,706 - INFO - Stats validation passed
+2026-06-22 01:52:15,706 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,706 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,707 - INFO - Validating collected stats...
+2026-06-22 01:52:15,707 - ERROR - Invalid total_citations: -10
+2026-06-22 01:52:15,707 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,707 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,708 - INFO - Validating collected stats...
+2026-06-22 01:52:15,708 - ERROR - Inconsistent stats: 500 citations but h_index=0
+2026-06-22 01:52:15,708 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,708 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,708 - INFO - Validating collected stats...
+2026-06-22 01:52:15,708 - ERROR - No papers found in stats
+2026-06-22 01:52:15,709 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,709 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,709 - INFO - Validating collected stats...
+2026-06-22 01:52:15,710 - ERROR - h_index dropped from 5 to 0 - likely parsing error
+2026-06-22 01:52:15,710 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,710 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,710 - INFO - Validating collected stats...
+2026-06-22 01:52:15,710 - INFO - Stats validation passed
+2026-06-22 01:52:15,711 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,711 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,711 - INFO - Calculating citation changes...
+2026-06-22 01:52:15,711 - INFO - Found 2 papers with new citations.
+2026-06-22 01:52:15,712 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,712 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,712 - INFO - Calculating citation changes...
+2026-06-22 01:52:15,712 - INFO - No new citations found for any papers.
+2026-06-22 01:52:15,712 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,712 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,713 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,713 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,713 - INFO - Calculating citation changes...
+2026-06-22 01:52:15,713 - INFO - Found 1 papers with new citations.
+2026-06-22 01:52:15,714 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,714 - INFO - ScraperAPI is configured for proxy support
+2026-06-22 01:52:15,714 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,715 - INFO - Searching for author by ID: 'test_id' (attempt 1/1)
+2026-06-22 01:52:15,715 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:52:15,715 - INFO - Found author: Test Author
+2026-06-22 01:52:15,715 - INFO - Successfully collected stats for 1 papers.
+2026-06-22 01:52:15,715 - INFO - Validating collected stats...
+2026-06-22 01:52:15,715 - INFO - Stats validation passed
+2026-06-22 01:52:15,716 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,716 - INFO - ScraperAPI is configured for proxy support
+2026-06-22 01:52:15,716 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,716 - INFO - Searching for author by ID: 'test_id' (attempt 1/2)
+2026-06-22 01:52:15,716 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:52:15,716 - ERROR - Data fetch error (attempt 1/2): manual fetch failed
+2026-06-22 01:52:15,716 - INFO - Retrying in 0 seconds...
+2026-06-22 01:52:15,716 - INFO - Searching for author by ID: 'test_id' (attempt 2/2)
+2026-06-22 01:52:15,716 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:52:15,717 - ERROR - Data fetch error (attempt 2/2): manual fetch failed
+2026-06-22 01:52:15,717 - ERROR - All retry attempts failed. Last error: manual fetch failed
+2026-06-22 01:52:15,717 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,717 - INFO - ScraperAPI is configured for proxy support
+2026-06-22 01:52:15,717 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,718 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=test_id&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-22 01:52:15,718 - INFO - Attempting fetch via ScraperAPI...
+2026-06-22 01:52:15,718 - INFO - ScraperAPI fetch successful
+2026-06-22 01:52:15,719 - INFO - Successfully manually fetched data for Test Author: 100 citations, 1 papers
+2026-06-22 01:52:15,720 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,720 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,720 - INFO - Starting history update...
+2026-06-22 01:52:15,720 - INFO - No history file found. A new one will be created.
+2026-06-22 01:52:15,720 - INFO - Validating collected stats...
+2026-06-22 01:52:15,720 - INFO - Stats validation passed
+2026-06-22 01:52:15,721 - INFO - Appended new history entry for 2024-01-02.
+2026-06-22 01:52:15,721 - INFO - No previous stats to compare against.
+2026-06-22 01:52:15,721 - INFO - History update complete.
+2026-06-22 01:52:15,722 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,722 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,722 - INFO - Starting history update...
+2026-06-22 01:52:15,722 - INFO - Loaded 2 history entries from /tmp/pytest-of-runner/pytest-0/test_update_history_replaces_s0/citation_history.json
+2026-06-22 01:52:15,722 - INFO - Validating collected stats...
+2026-06-22 01:52:15,722 - INFO - Stats validation passed
+2026-06-22 01:52:15,722 - INFO - Refreshing existing entry for 2024-01-02.
+2026-06-22 01:52:15,722 - INFO - Calculating citation changes...
+2026-06-22 01:52:15,722 - INFO - Found 1 papers with new citations.
+2026-06-22 01:52:15,723 - INFO - Saved daily changes to /tmp/pytest-of-runner/pytest-0/test_update_history_replaces_s0/daily_changes.json
+2026-06-22 01:52:15,723 - INFO - History update complete.
+2026-06-22 01:52:15,724 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-06-22 01:52:15,724 - INFO - Free proxy support enabled
+2026-06-22 01:52:15,724 - INFO - Starting history update...
+2026-06-22 01:52:15,724 - INFO - Loaded 1 history entries from /tmp/pytest-of-runner/pytest-0/test_update_history_records_ze0/citation_history.json
+2026-06-22 01:52:15,724 - INFO - Validating collected stats...
+2026-06-22 01:52:15,724 - INFO - Stats validation passed
+2026-06-22 01:52:15,724 - INFO - Appended new history entry for 2024-01-02.
+2026-06-22 01:52:15,724 - INFO - Calculating citation changes...
+2026-06-22 01:52:15,724 - INFO - No new citations found for any papers.
+2026-06-22 01:52:15,725 - INFO - Saved daily changes to /tmp/pytest-of-runner/pytest-0/test_update_history_records_ze0/daily_changes.json
+2026-06-22 01:52:15,725 - INFO - History update complete.
+2026-06-22 01:52:16,691 - INFO - ScholarTracker initialized for author_query='None', author_id='VtK5lwUAAAAJ'
+2026-06-22 01:52:16,691 - INFO - ScholarTracker initialized for author_query='None', author_id='VtK5lwUAAAAJ'
+2026-06-22 01:52:16,691 - INFO - ScraperAPI is configured for proxy support
+2026-06-22 01:52:16,691 - INFO - ScraperAPI is configured for proxy support
+2026-06-22 01:52:16,691 - INFO - Free proxy support enabled
+2026-06-22 01:52:16,691 - INFO - Free proxy support enabled
+2026-06-22 01:52:16,691 - INFO - Starting history update...
+2026-06-22 01:52:16,691 - INFO - Starting history update...
+2026-06-22 01:52:16,691 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/5)
+2026-06-22 01:52:16,691 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/5)
+2026-06-22 01:52:16,691 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:52:16,691 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:52:16,691 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-22 01:52:16,691 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-22 01:52:16,691 - INFO - Attempting fetch via ScraperAPI...
+2026-06-22 01:52:16,691 - INFO - Attempting fetch via ScraperAPI...
+2026-06-22 01:52:19,416 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-22 01:52:19,416 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-22 01:52:19,416 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-22 01:52:19,416 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-22 01:52:19,416 - INFO - Trying direct request first...
+2026-06-22 01:52:19,416 - INFO - Trying direct request first...
+2026-06-22 01:52:19,921 - INFO - Successfully manually fetched data for Unknown: 0 citations, 0 papers
+2026-06-22 01:52:19,921 - INFO - Successfully manually fetched data for Unknown: 0 citations, 0 papers
+2026-06-22 01:52:19,922 - INFO - Found author: Unknown
+2026-06-22 01:52:19,922 - INFO - Found author: Unknown
+2026-06-22 01:52:19,922 - INFO - Successfully collected stats for 0 papers.
+2026-06-22 01:52:19,922 - INFO - Successfully collected stats for 0 papers.
+2026-06-22 01:52:19,923 - INFO - Validating collected stats...
+2026-06-22 01:52:19,923 - INFO - Validating collected stats...
+2026-06-22 01:52:19,923 - ERROR - No papers found in stats
+2026-06-22 01:52:19,923 - ERROR - No papers found in stats
+2026-06-22 01:52:19,923 - ERROR - Stats validation failed, returning None
+2026-06-22 01:52:19,923 - ERROR - Stats validation failed, returning None
+2026-06-22 01:52:19,923 - ERROR - Unexpected error (attempt 1/5): Stats validation failed
+2026-06-22 01:52:19,923 - ERROR - Unexpected error (attempt 1/5): Stats validation failed
+2026-06-22 01:52:19,923 - INFO - Retrying in 10 seconds...
+2026-06-22 01:52:19,923 - INFO - Retrying in 10 seconds...
+2026-06-22 01:52:29,923 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 2/5)
+2026-06-22 01:52:29,923 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 2/5)
+2026-06-22 01:52:29,923 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:52:29,923 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:52:29,923 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-22 01:52:29,923 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-22 01:52:29,923 - INFO - Attempting fetch via ScraperAPI...
+2026-06-22 01:52:29,923 - INFO - Attempting fetch via ScraperAPI...
+2026-06-22 01:52:30,115 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-22 01:52:30,115 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-22 01:52:30,116 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-22 01:52:30,116 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-22 01:52:30,116 - INFO - Trying direct request first...
+2026-06-22 01:52:30,116 - INFO - Trying direct request first...
+2026-06-22 01:52:30,317 - INFO - Successfully manually fetched data for Unknown: 0 citations, 0 papers
+2026-06-22 01:52:30,317 - INFO - Successfully manually fetched data for Unknown: 0 citations, 0 papers
+2026-06-22 01:52:30,318 - INFO - Found author: Unknown
+2026-06-22 01:52:30,318 - INFO - Found author: Unknown
+2026-06-22 01:52:30,319 - INFO - Successfully collected stats for 0 papers.
+2026-06-22 01:52:30,319 - INFO - Successfully collected stats for 0 papers.
+2026-06-22 01:52:30,319 - INFO - Validating collected stats...
+2026-06-22 01:52:30,319 - INFO - Validating collected stats...
+2026-06-22 01:52:30,319 - ERROR - No papers found in stats
+2026-06-22 01:52:30,319 - ERROR - No papers found in stats
+2026-06-22 01:52:30,319 - ERROR - Stats validation failed, returning None
+2026-06-22 01:52:30,319 - ERROR - Stats validation failed, returning None
+2026-06-22 01:52:30,319 - ERROR - Unexpected error (attempt 2/5): Stats validation failed
+2026-06-22 01:52:30,319 - ERROR - Unexpected error (attempt 2/5): Stats validation failed
+2026-06-22 01:52:30,319 - INFO - Retrying in 20 seconds...
+2026-06-22 01:52:30,319 - INFO - Retrying in 20 seconds...
+2026-06-22 01:52:50,319 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 3/5)
+2026-06-22 01:52:50,319 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 3/5)
+2026-06-22 01:52:50,320 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:52:50,320 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:52:50,320 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-22 01:52:50,320 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-22 01:52:50,320 - INFO - Attempting fetch via ScraperAPI...
+2026-06-22 01:52:50,320 - INFO - Attempting fetch via ScraperAPI...
+2026-06-22 01:52:50,508 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-22 01:52:50,508 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-22 01:52:50,508 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-22 01:52:50,508 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-22 01:52:50,508 - INFO - Trying direct request first...
+2026-06-22 01:52:50,508 - INFO - Trying direct request first...
+2026-06-22 01:52:50,682 - INFO - Successfully manually fetched data for Unknown: 0 citations, 0 papers
+2026-06-22 01:52:50,682 - INFO - Successfully manually fetched data for Unknown: 0 citations, 0 papers
+2026-06-22 01:52:50,683 - INFO - Found author: Unknown
+2026-06-22 01:52:50,683 - INFO - Found author: Unknown
+2026-06-22 01:52:50,684 - INFO - Successfully collected stats for 0 papers.
+2026-06-22 01:52:50,684 - INFO - Successfully collected stats for 0 papers.
+2026-06-22 01:52:50,684 - INFO - Validating collected stats...
+2026-06-22 01:52:50,684 - INFO - Validating collected stats...
+2026-06-22 01:52:50,684 - ERROR - No papers found in stats
+2026-06-22 01:52:50,684 - ERROR - No papers found in stats
+2026-06-22 01:52:50,684 - ERROR - Stats validation failed, returning None
+2026-06-22 01:52:50,684 - ERROR - Stats validation failed, returning None
+2026-06-22 01:52:50,684 - ERROR - Unexpected error (attempt 3/5): Stats validation failed
+2026-06-22 01:52:50,684 - ERROR - Unexpected error (attempt 3/5): Stats validation failed
+2026-06-22 01:52:50,684 - INFO - Retrying in 40 seconds...
+2026-06-22 01:52:50,684 - INFO - Retrying in 40 seconds...
+2026-06-22 01:53:30,684 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 4/5)
+2026-06-22 01:53:30,684 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 4/5)
+2026-06-22 01:53:30,684 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:53:30,684 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:53:30,684 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-22 01:53:30,684 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-22 01:53:30,685 - INFO - Attempting fetch via ScraperAPI...
+2026-06-22 01:53:30,685 - INFO - Attempting fetch via ScraperAPI...
+2026-06-22 01:53:30,878 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-22 01:53:30,878 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-22 01:53:30,878 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-22 01:53:30,878 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-22 01:53:30,878 - INFO - Trying direct request first...
+2026-06-22 01:53:30,878 - INFO - Trying direct request first...
+2026-06-22 01:53:31,366 - INFO - Successfully manually fetched data for Unknown: 0 citations, 0 papers
+2026-06-22 01:53:31,366 - INFO - Successfully manually fetched data for Unknown: 0 citations, 0 papers
+2026-06-22 01:53:31,367 - INFO - Found author: Unknown
+2026-06-22 01:53:31,367 - INFO - Found author: Unknown
+2026-06-22 01:53:31,368 - INFO - Successfully collected stats for 0 papers.
+2026-06-22 01:53:31,368 - INFO - Successfully collected stats for 0 papers.
+2026-06-22 01:53:31,368 - INFO - Validating collected stats...
+2026-06-22 01:53:31,368 - INFO - Validating collected stats...
+2026-06-22 01:53:31,368 - ERROR - No papers found in stats
+2026-06-22 01:53:31,368 - ERROR - No papers found in stats
+2026-06-22 01:53:31,368 - ERROR - Stats validation failed, returning None
+2026-06-22 01:53:31,368 - ERROR - Stats validation failed, returning None
+2026-06-22 01:53:31,368 - ERROR - Unexpected error (attempt 4/5): Stats validation failed
+2026-06-22 01:53:31,368 - ERROR - Unexpected error (attempt 4/5): Stats validation failed
+2026-06-22 01:53:31,368 - INFO - Retrying in 80 seconds...
+2026-06-22 01:53:31,368 - INFO - Retrying in 80 seconds...
+2026-06-22 01:54:51,368 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 5/5)
+2026-06-22 01:54:51,368 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 5/5)
+2026-06-22 01:54:51,369 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:54:51,369 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-06-22 01:54:51,369 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-22 01:54:51,369 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-06-22 01:54:51,369 - INFO - Attempting fetch via ScraperAPI...
+2026-06-22 01:54:51,369 - INFO - Attempting fetch via ScraperAPI...
+2026-06-22 01:54:51,561 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-22 01:54:51,561 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-06-22 01:54:51,561 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-22 01:54:51,561 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-06-22 01:54:51,561 - INFO - Trying direct request first...
+2026-06-22 01:54:51,561 - INFO - Trying direct request first...
+2026-06-22 01:54:52,079 - INFO - Successfully manually fetched data for Unknown: 0 citations, 0 papers
+2026-06-22 01:54:52,079 - INFO - Successfully manually fetched data for Unknown: 0 citations, 0 papers
+2026-06-22 01:54:52,080 - INFO - Found author: Unknown
+2026-06-22 01:54:52,080 - INFO - Found author: Unknown
+2026-06-22 01:54:52,080 - INFO - Successfully collected stats for 0 papers.
+2026-06-22 01:54:52,080 - INFO - Successfully collected stats for 0 papers.
+2026-06-22 01:54:52,080 - INFO - Validating collected stats...
+2026-06-22 01:54:52,080 - INFO - Validating collected stats...
+2026-06-22 01:54:52,080 - ERROR - No papers found in stats
+2026-06-22 01:54:52,080 - ERROR - No papers found in stats
+2026-06-22 01:54:52,080 - ERROR - Stats validation failed, returning None
+2026-06-22 01:54:52,080 - ERROR - Stats validation failed, returning None
+2026-06-22 01:54:52,081 - ERROR - Unexpected error (attempt 5/5): Stats validation failed
+2026-06-22 01:54:52,081 - ERROR - Unexpected error (attempt 5/5): Stats validation failed
+2026-06-22 01:54:52,081 - ERROR - Failed after 5 attempts
+Traceback (most recent call last):
+  File "/home/runner/work/scholar_tracker/scholar_tracker/src/scholar_tracker.py", line 422, in get_author_stats
+    raise DataValidationError("Stats validation failed")
+src.exceptions.DataValidationError: Stats validation failed
+2026-06-22 01:54:52,081 - ERROR - Failed after 5 attempts
+Traceback (most recent call last):
+  File "/home/runner/work/scholar_tracker/scholar_tracker/src/scholar_tracker.py", line 422, in get_author_stats
+    raise DataValidationError("Stats validation failed")
+src.exceptions.DataValidationError: Stats validation failed
+2026-06-22 01:54:52,081 - WARNING - Aborting history update because fetching stats failed.
+2026-06-22 01:54:52,081 - WARNING - Aborting history update because fetching stats failed.
