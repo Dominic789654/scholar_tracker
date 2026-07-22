@@ -36532,5 +36532,233 @@
         "year": "N/A"
       }
     ]
+  },
+  {
+    "date": "2026-07-22",
+    "total_citations": 1267,
+    "h_index": 15,
+    "i10_index": 18,
+    "papers": [
+      {
+        "title": "Introducing Macaron-V1",
+        "citations": 0,
+        "year": "2026"
+      },
+      {
+        "title": "UI4A: A Component-Native Harness for Generative UI",
+        "citations": 0,
+        "year": "2026"
+      },
+      {
+        "title": "LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget",
+        "citations": 0,
+        "year": "2026"
+      },
+      {
+        "title": "Macaron-V1-Preview: 749B MoL Agent Model post-trained from GLM5.1",
+        "citations": 0,
+        "year": "2026"
+      },
+      {
+        "title": "On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters",
+        "citations": 0,
+        "year": "2026"
+      },
+      {
+        "title": "NestedKV: Nested Memory Routing for Long-Context KV Cache Compression",
+        "citations": 0,
+        "year": "2026"
+      },
+      {
+        "title": "MinT: Managed Infrastructure for Training and Serving Millions of LLMs",
+        "citations": 0,
+        "year": "2026"
+      },
+      {
+        "title": "Position: LLM Inference Should Be Evaluated as Energy-to-Token Production",
+        "citations": 0,
+        "year": "2026"
+      },
+      {
+        "title": "-mem: Efficient Online Memory for Large Language Models",
+        "citations": 2,
+        "year": "2026"
+      },
+      {
+        "title": "MDN: Parallelizing Stepwise Momentum for Delta Linear Attention",
+        "citations": 0,
+        "year": "2026"
+      },
+      {
+        "title": "An Improved Autoregressive Evaluation Paradigm for Large Language Models",
+        "citations": 0,
+        "year": "2026"
+      },
+      {
+        "title": "DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference",
+        "citations": 7,
+        "year": "2026"
+      },
+      {
+        "title": "Reasoning Language Model Inference Serving Unveiled: An Empirical Study",
+        "citations": 2,
+        "year": "2026"
+      },
+      {
+        "title": "LLM Agent Memory: A Survey from a Unified Representation\u2013Management Perspective",
+        "citations": 4,
+        "year": "2026"
+      },
+      {
+        "title": "Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling",
+        "citations": 1,
+        "year": "2026"
+      },
+      {
+        "title": "From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM",
+        "citations": 0,
+        "year": "2026"
+      },
+      {
+        "title": "SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching",
+        "citations": 2,
+        "year": "2026"
+      },
+      {
+        "title": "ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference",
+        "citations": 68,
+        "year": "2025"
+      },
+      {
+        "title": "Beyond Single Embeddings: Capturing Diverse Targets with Multi-Query Retrieval",
+        "citations": 3,
+        "year": "2025"
+      },
+      {
+        "title": "City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning",
+        "citations": 3,
+        "year": "2025"
+      },
+      {
+        "title": "Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models",
+        "citations": 7,
+        "year": "2025"
+      },
+      {
+        "title": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+        "citations": 23,
+        "year": "2025"
+      },
+      {
+        "title": "Ssr: Speculative parallel scaling reasoning in test-time",
+        "citations": 3,
+        "year": "2025"
+      },
+      {
+        "title": "FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management",
+        "citations": 6,
+        "year": "2025"
+      },
+      {
+        "title": "Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring",
+        "citations": 8,
+        "year": "2025"
+      },
+      {
+        "title": "The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve?",
+        "citations": 13,
+        "year": "2025"
+      },
+      {
+        "title": "Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research",
+        "citations": 11,
+        "year": "2025"
+      },
+      {
+        "title": "EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models",
+        "citations": 18,
+        "year": "2025"
+      },
+      {
+        "title": "Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing",
+        "citations": 16,
+        "year": "2025"
+      },
+      {
+        "title": "Can LLMs Maintain Fundamental Abilities under KV Cache Compression?",
+        "citations": 25,
+        "year": "2025"
+      },
+      {
+        "title": "OracleKV: Oracle Guidance for Question-Independent KV Cache Compression",
+        "citations": 13,
+        "year": "2025"
+      },
+      {
+        "title": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+        "citations": 21,
+        "year": "2024"
+      },
+      {
+        "title": "LPZero: Language Model Zero-cost Proxy Search from Zero",
+        "citations": 9,
+        "year": "2024"
+      },
+      {
+        "title": "LongGenBench: Long-context Generation Benchmark",
+        "citations": 63,
+        "year": "2024"
+      },
+      {
+        "title": "Plum: Prompt Learning Using Metaheuristics",
+        "citations": 51,
+        "year": "2024"
+      },
+      {
+        "title": "3D Question Answering for City Scene Understanding",
+        "citations": 20,
+        "year": "2024"
+      },
+      {
+        "title": "Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models",
+        "citations": 110,
+        "year": "2024"
+      },
+      {
+        "title": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+        "citations": 196,
+        "year": "2024"
+      },
+      {
+        "title": "ParZC: Parametric Zero-Cost Proxies for Efficient NAS",
+        "citations": 28,
+        "year": "2024"
+      },
+      {
+        "title": "Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models",
+        "citations": 67,
+        "year": "2024"
+      },
+      {
+        "title": "Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models",
+        "citations": 25,
+        "year": "2023"
+      },
+      {
+        "title": "Active prompting with chain-of-thought for large language models",
+        "citations": 442,
+        "year": "2023"
+      },
+      {
+        "title": "Enhancing Knowledge Injection with Surrounding Backgrounds in Continual Training LLMs",
+        "citations": 0,
+        "year": "N/A"
+      },
+      {
+        "title": "Is Privacy Always Prioritized over Learning? Probing LLMs' Value Priority Belief under External Perturbations",
+        "citations": 0,
+        "year": "N/A"
+      }
+    ]
   }
 ]
