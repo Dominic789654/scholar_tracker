@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-07-22
+Last updated: 2026-07-23
 
 ## Overall Statistics
 - Total Citations: 1267
@@ -9,18 +9,9 @@ Last updated: 2026-07-22
 
 ## Today's Citation Changes
 
-Total increase: +29 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 49 | 68 | +19 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 22 | 25 | +3 |
-| LongGenBench: Long-context Generation Benchmark | 61 | 63 | +2 |
-| Active prompting with chain-of-thought for large language models | 441 | 442 | +1 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 22 | 23 | +1 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 8 | 9 | +1 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 27 | 28 | +1 |
-| Plum: Prompt Learning Using Metaheuristics | 50 | 51 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -75,6 +66,7 @@ Total increase: +29 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-07-23 | 1267 | 15 |
 | 2026-07-22 | 1267 | 15 |
 | 2026-07-17 | 1238 | 15 |
 | 2026-06-26 | 1177 | 15 |
@@ -84,7 +76,6 @@ Total increase: +29 citations
 | 2026-06-18 | 1163 | 15 |
 | 2026-06-17 | 1163 | 15 |
 | 2026-06-16 | 1163 | 15 |
-| 2026-06-15 | 1161 | 15 |
 
 ## Citation Trends
 
