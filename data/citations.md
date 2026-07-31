@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-07-29
+Last updated: 2026-07-31
 
 ## Overall Statistics
 - Total Citations: 1279
@@ -9,17 +9,9 @@ Last updated: 2026-07-29
 
 ## Today's Citation Changes
 
-Total increase: +12 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 68 | 79 | +11 |
-| 3D Question Answering for City Scene Understanding | 20 | 21 | +1 |
-| Active prompting with chain-of-thought for large language models | 442 | 443 | +1 |
-| City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 3 | 4 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 67 | 68 | +1 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 18 | 19 | +1 |
-| Plum: Prompt Learning Using Metaheuristics | 51 | 52 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -74,6 +66,7 @@ Total increase: +12 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-07-31 | 1279 | 15 |
 | 2026-07-29 | 1279 | 15 |
 | 2026-07-23 | 1267 | 15 |
 | 2026-07-22 | 1267 | 15 |
@@ -83,7 +76,6 @@ Total increase: +12 citations
 | 2026-06-20 | 1166 | 15 |
 | 2026-06-19 | 1163 | 15 |
 | 2026-06-18 | 1163 | 15 |
-| 2026-06-17 | 1163 | 15 |
 
 ## Citation Trends
 
