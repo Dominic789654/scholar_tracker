@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-08-04
+Last updated: 2026-08-08
 
 ## Overall Statistics
 - Total Citations: 1318
@@ -9,30 +9,9 @@ Last updated: 2026-08-04
 
 ## Today's Citation Changes
 
-Total increase: +39 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 443 | 450 | +7 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 22 | 26 | +4 |
-| LongGenBench: Long-context Generation Benchmark | 62 | 66 | +4 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 110 | 114 | +4 |
-| The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 12 | 15 | +3 |
-| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 6 | 8 | +2 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 68 | 70 | +2 |
-| Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 25 | 27 | +2 |
-| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 6 | 8 | +2 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 9 | 11 | +2 |
-| SONIC: Segmented optimized nexus for information compression in key-value caching | 2 | 4 | +2 |
-| 3D Question Answering for City Scene Understanding | 21 | 22 | +1 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 25 | 26 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 79 | 80 | +1 |
-| LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 3 | 4 | +1 |
-| MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 0 | 1 | +1 |
-| NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 0 | 1 | +1 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 28 | 29 | +1 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 11 | 12 | +1 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 21 | 22 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -88,6 +67,7 @@ Total increase: +39 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-08-08 | 1318 | 15 |
 | 2026-08-04 | 1318 | 15 |
 | 2026-07-31 | 1279 | 15 |
 | 2026-07-29 | 1279 | 15 |
@@ -97,7 +77,6 @@ Total increase: +39 citations
 | 2026-06-26 | 1177 | 15 |
 | 2026-06-21 | 1170 | 15 |
 | 2026-06-20 | 1166 | 15 |
-| 2026-06-19 | 1163 | 15 |
 
 ## Citation Trends
 
