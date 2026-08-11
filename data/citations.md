@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-08-10
+Last updated: 2026-08-11
 
 ## Overall Statistics
 - Total Citations: 1332
@@ -9,17 +9,9 @@ Last updated: 2026-08-10
 
 ## Today's Citation Changes
 
-Total increase: +14 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 450 | 454 | +4 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 195 | 199 | +4 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 80 | 82 | +2 |
-| -mem: Efficient Online Memory for Large Language Models | 2 | 3 | +1 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 19 | 20 | +1 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 12 | 13 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 114 | 115 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -75,6 +67,7 @@ Total increase: +14 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-08-11 | 1332 | 15 |
 | 2026-08-10 | 1332 | 15 |
 | 2026-08-08 | 1318 | 15 |
 | 2026-08-04 | 1318 | 15 |
@@ -84,7 +77,6 @@ Total increase: +14 citations
 | 2026-07-22 | 1267 | 15 |
 | 2026-07-17 | 1238 | 15 |
 | 2026-06-26 | 1177 | 15 |
-| 2026-06-21 | 1170 | 15 |
 
 ## Citation Trends
 
