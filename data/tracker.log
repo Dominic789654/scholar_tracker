@@ -7725,3 +7725,243 @@ src.exceptions.DataValidationError: Stats validation failed
 2026-08-11 03:02:02,091 - INFO - Exiting Kaleido/Choreo.
 2026-08-11 03:02:02,104 - INFO - TemporaryDirectory.cleanup() worked.
 2026-08-11 03:02:02,105 - INFO - shutil.rmtree worked.
+2026-08-12 03:20:57,086 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,086 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,087 - INFO - ScholarTracker initialized for author_query='John Doe', author_id='None'
+2026-08-12 03:20:57,087 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,088 - INFO - ScholarTracker initialized for author_query='John Doe', author_id='test_id'
+2026-08-12 03:20:57,088 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,090 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,090 - INFO - ScraperAPI is configured for proxy support
+2026-08-12 03:20:57,090 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,091 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,091 - INFO - ScraperAPI is configured for proxy support
+2026-08-12 03:20:57,091 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,092 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,092 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,093 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,093 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,093 - INFO - Validating collected stats...
+2026-08-12 03:20:57,093 - INFO - Stats validation passed
+2026-08-12 03:20:57,094 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,094 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,094 - INFO - Validating collected stats...
+2026-08-12 03:20:57,094 - ERROR - Invalid total_citations: -10
+2026-08-12 03:20:57,095 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,095 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,095 - INFO - Validating collected stats...
+2026-08-12 03:20:57,095 - ERROR - Inconsistent stats: 500 citations but h_index=0
+2026-08-12 03:20:57,096 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,096 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,097 - INFO - Validating collected stats...
+2026-08-12 03:20:57,097 - ERROR - No papers found in stats
+2026-08-12 03:20:57,097 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,097 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,098 - INFO - Validating collected stats...
+2026-08-12 03:20:57,098 - ERROR - h_index dropped from 5 to 0 - likely parsing error
+2026-08-12 03:20:57,099 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,099 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,099 - INFO - Validating collected stats...
+2026-08-12 03:20:57,099 - INFO - Stats validation passed
+2026-08-12 03:20:57,100 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,100 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,100 - INFO - Calculating citation changes...
+2026-08-12 03:20:57,100 - INFO - Found 2 papers with new citations.
+2026-08-12 03:20:57,101 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,101 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,102 - INFO - Calculating citation changes...
+2026-08-12 03:20:57,102 - INFO - No new citations found for any papers.
+2026-08-12 03:20:57,102 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,102 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,103 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,103 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,104 - INFO - Calculating citation changes...
+2026-08-12 03:20:57,104 - INFO - Found 1 papers with new citations.
+2026-08-12 03:20:57,105 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,105 - INFO - ScraperAPI is configured for proxy support
+2026-08-12 03:20:57,105 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,106 - INFO - Searching for author by ID: 'test_id' (attempt 1/1)
+2026-08-12 03:20:57,106 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:20:57,106 - INFO - Found author: Test Author
+2026-08-12 03:20:57,106 - INFO - Successfully collected stats for 1 papers.
+2026-08-12 03:20:57,106 - INFO - Validating collected stats...
+2026-08-12 03:20:57,106 - INFO - Stats validation passed
+2026-08-12 03:20:57,107 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,107 - INFO - ScraperAPI is configured for proxy support
+2026-08-12 03:20:57,107 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,108 - INFO - Searching for author by ID: 'test_id' (attempt 1/2)
+2026-08-12 03:20:57,108 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:20:57,108 - ERROR - Data fetch error (attempt 1/2): manual fetch failed
+2026-08-12 03:20:57,108 - INFO - Retrying in 0 seconds...
+2026-08-12 03:20:57,108 - INFO - Searching for author by ID: 'test_id' (attempt 2/2)
+2026-08-12 03:20:57,108 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:20:57,108 - ERROR - Data fetch error (attempt 2/2): manual fetch failed
+2026-08-12 03:20:57,108 - ERROR - All retry attempts failed. Last error: manual fetch failed
+2026-08-12 03:20:57,109 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,109 - INFO - ScraperAPI is configured for proxy support
+2026-08-12 03:20:57,110 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,110 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=test_id&pagesize=100&view_op=list_works&sortby=pubdate
+2026-08-12 03:20:57,110 - INFO - Attempting fetch via ScraperAPI...
+2026-08-12 03:20:57,110 - INFO - ScraperAPI fetch successful
+2026-08-12 03:20:57,112 - INFO - Successfully manually fetched data for Test Author: 100 citations, 1 papers
+2026-08-12 03:20:57,113 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,113 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,113 - INFO - Starting history update...
+2026-08-12 03:20:57,114 - INFO - No history file found. A new one will be created.
+2026-08-12 03:20:57,114 - INFO - Validating collected stats...
+2026-08-12 03:20:57,114 - INFO - Stats validation passed
+2026-08-12 03:20:57,114 - INFO - Appended new history entry for 2024-01-02.
+2026-08-12 03:20:57,114 - INFO - No previous stats to compare against.
+2026-08-12 03:20:57,114 - INFO - History update complete.
+2026-08-12 03:20:57,115 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,115 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,116 - INFO - Starting history update...
+2026-08-12 03:20:57,116 - INFO - Loaded 2 history entries from /tmp/pytest-of-runner/pytest-0/test_update_history_replaces_s0/citation_history.json
+2026-08-12 03:20:57,116 - INFO - Validating collected stats...
+2026-08-12 03:20:57,116 - INFO - Stats validation passed
+2026-08-12 03:20:57,116 - INFO - Refreshing existing entry for 2024-01-02.
+2026-08-12 03:20:57,116 - INFO - Calculating citation changes...
+2026-08-12 03:20:57,117 - INFO - Found 1 papers with new citations.
+2026-08-12 03:20:57,117 - INFO - Saved daily changes to /tmp/pytest-of-runner/pytest-0/test_update_history_replaces_s0/daily_changes.json
+2026-08-12 03:20:57,117 - INFO - History update complete.
+2026-08-12 03:20:57,118 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-08-12 03:20:57,118 - INFO - Free proxy support enabled
+2026-08-12 03:20:57,119 - INFO - Starting history update...
+2026-08-12 03:20:57,119 - INFO - Loaded 1 history entries from /tmp/pytest-of-runner/pytest-0/test_update_history_records_ze0/citation_history.json
+2026-08-12 03:20:57,119 - INFO - Validating collected stats...
+2026-08-12 03:20:57,119 - INFO - Stats validation passed
+2026-08-12 03:20:57,119 - INFO - Appended new history entry for 2024-01-02.
+2026-08-12 03:20:57,119 - INFO - Calculating citation changes...
+2026-08-12 03:20:57,119 - INFO - No new citations found for any papers.
+2026-08-12 03:20:57,120 - INFO - Saved daily changes to /tmp/pytest-of-runner/pytest-0/test_update_history_records_ze0/daily_changes.json
+2026-08-12 03:20:57,120 - INFO - History update complete.
+2026-08-12 03:20:58,156 - INFO - ScholarTracker initialized for author_query='None', author_id='VtK5lwUAAAAJ'
+2026-08-12 03:20:58,156 - INFO - ScholarTracker initialized for author_query='None', author_id='VtK5lwUAAAAJ'
+2026-08-12 03:20:58,156 - INFO - ScraperAPI is configured for proxy support
+2026-08-12 03:20:58,156 - INFO - ScraperAPI is configured for proxy support
+2026-08-12 03:20:58,157 - INFO - Free proxy support enabled
+2026-08-12 03:20:58,157 - INFO - Free proxy support enabled
+2026-08-12 03:20:58,157 - INFO - Starting history update...
+2026-08-12 03:20:58,157 - INFO - Starting history update...
+2026-08-12 03:20:58,157 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/5)
+2026-08-12 03:20:58,157 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/5)
+2026-08-12 03:20:58,157 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:20:58,157 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:20:58,157 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-08-12 03:20:58,157 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-08-12 03:20:58,158 - INFO - Attempting fetch via ScraperAPI...
+2026-08-12 03:20:58,158 - INFO - Attempting fetch via ScraperAPI...
+2026-08-12 03:20:58,364 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-08-12 03:20:58,364 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-08-12 03:20:58,364 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-08-12 03:20:58,364 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-08-12 03:20:58,364 - INFO - Trying direct request first...
+2026-08-12 03:20:58,364 - INFO - Trying direct request first...
+2026-08-12 03:20:58,763 - WARNING - Direct request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGJrN79MGIi75gRNLoZWUEuxafi6yt4uUPmUOCexBYQffGm-QliyzLS7JdAId78r-cMCjKA5fMgJyUloBQw
+2026-08-12 03:20:58,763 - WARNING - Direct request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGJrN79MGIi75gRNLoZWUEuxafi6yt4uUPmUOCexBYQffGm-QliyzLS7JdAId78r-cMCjKA5fMgJyUloBQw
+2026-08-12 03:21:35,579 - WARNING - Failed to get free proxy: There are no working proxies at this time.
+2026-08-12 03:21:35,579 - WARNING - Failed to get free proxy: There are no working proxies at this time.
+2026-08-12 03:21:35,580 - ERROR - Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGJrN79MGIi75gRNLoZWUEuxafi6yt4uUPmUOCexBYQffGm-QliyzLS7JdAId78r-cMCjKA5fMgJyUloBQw
+2026-08-12 03:21:35,580 - ERROR - Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGJrN79MGIi75gRNLoZWUEuxafi6yt4uUPmUOCexBYQffGm-QliyzLS7JdAId78r-cMCjKA5fMgJyUloBQw
+2026-08-12 03:21:35,580 - ERROR - Data fetch error (attempt 1/5): Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGJrN79MGIi75gRNLoZWUEuxafi6yt4uUPmUOCexBYQffGm-QliyzLS7JdAId78r-cMCjKA5fMgJyUloBQw
+2026-08-12 03:21:35,580 - ERROR - Data fetch error (attempt 1/5): Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGJrN79MGIi75gRNLoZWUEuxafi6yt4uUPmUOCexBYQffGm-QliyzLS7JdAId78r-cMCjKA5fMgJyUloBQw
+2026-08-12 03:21:35,580 - INFO - Retrying in 10 seconds...
+2026-08-12 03:21:35,580 - INFO - Retrying in 10 seconds...
+2026-08-12 03:21:45,580 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 2/5)
+2026-08-12 03:21:45,580 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 2/5)
+2026-08-12 03:21:45,581 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:21:45,581 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:21:45,581 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-08-12 03:21:45,581 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-08-12 03:21:45,581 - INFO - Attempting fetch via ScraperAPI...
+2026-08-12 03:21:45,581 - INFO - Attempting fetch via ScraperAPI...
+2026-08-12 03:21:45,758 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-08-12 03:21:45,758 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-08-12 03:21:45,758 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-08-12 03:21:45,758 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-08-12 03:21:45,758 - INFO - Trying direct request first...
+2026-08-12 03:21:45,758 - INFO - Trying direct request first...
+2026-08-12 03:21:46,346 - WARNING - Direct request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMnN79MGIi4Bzxthc05fhisWQ5_7fKfdB3BFOhpddMWiEiXRRT4vuPYF1_BeojFlpc-Me61RMgJyUloBQw
+2026-08-12 03:21:46,346 - WARNING - Direct request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMnN79MGIi4Bzxthc05fhisWQ5_7fKfdB3BFOhpddMWiEiXRRT4vuPYF1_BeojFlpc-Me61RMgJyUloBQw
+2026-08-12 03:22:22,746 - WARNING - Failed to get free proxy: There are no working proxies at this time.
+2026-08-12 03:22:22,746 - WARNING - Failed to get free proxy: There are no working proxies at this time.
+2026-08-12 03:22:22,747 - ERROR - Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMnN79MGIi4Bzxthc05fhisWQ5_7fKfdB3BFOhpddMWiEiXRRT4vuPYF1_BeojFlpc-Me61RMgJyUloBQw
+2026-08-12 03:22:22,747 - ERROR - Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMnN79MGIi4Bzxthc05fhisWQ5_7fKfdB3BFOhpddMWiEiXRRT4vuPYF1_BeojFlpc-Me61RMgJyUloBQw
+2026-08-12 03:22:22,747 - ERROR - Data fetch error (attempt 2/5): Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMnN79MGIi4Bzxthc05fhisWQ5_7fKfdB3BFOhpddMWiEiXRRT4vuPYF1_BeojFlpc-Me61RMgJyUloBQw
+2026-08-12 03:22:22,747 - ERROR - Data fetch error (attempt 2/5): Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMnN79MGIi4Bzxthc05fhisWQ5_7fKfdB3BFOhpddMWiEiXRRT4vuPYF1_BeojFlpc-Me61RMgJyUloBQw
+2026-08-12 03:22:22,749 - INFO - Retrying in 20 seconds...
+2026-08-12 03:22:22,749 - INFO - Retrying in 20 seconds...
+2026-08-12 03:22:42,749 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 3/5)
+2026-08-12 03:22:42,749 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 3/5)
+2026-08-12 03:22:42,750 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:22:42,750 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:22:42,750 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-08-12 03:22:42,750 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-08-12 03:22:42,750 - INFO - Attempting fetch via ScraperAPI...
+2026-08-12 03:22:42,750 - INFO - Attempting fetch via ScraperAPI...
+2026-08-12 03:22:42,972 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-08-12 03:22:42,972 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-08-12 03:22:42,972 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-08-12 03:22:42,972 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-08-12 03:22:42,972 - INFO - Trying direct request first...
+2026-08-12 03:22:42,972 - INFO - Trying direct request first...
+2026-08-12 03:22:43,339 - WARNING - Direct request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGIPO79MGIi5HbuKoX9qR-3wIzLWcNqDPodJoycM4jtoE3hs6_WqShUvDdcetOkbjCPO8Jv85MgJyUloBQw
+2026-08-12 03:22:43,339 - WARNING - Direct request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGIPO79MGIi5HbuKoX9qR-3wIzLWcNqDPodJoycM4jtoE3hs6_WqShUvDdcetOkbjCPO8Jv85MgJyUloBQw
+2026-08-12 03:23:19,469 - WARNING - Failed to get free proxy: There are no working proxies at this time.
+2026-08-12 03:23:19,469 - WARNING - Failed to get free proxy: There are no working proxies at this time.
+2026-08-12 03:23:19,470 - ERROR - Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGIPO79MGIi5HbuKoX9qR-3wIzLWcNqDPodJoycM4jtoE3hs6_WqShUvDdcetOkbjCPO8Jv85MgJyUloBQw
+2026-08-12 03:23:19,470 - ERROR - Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGIPO79MGIi5HbuKoX9qR-3wIzLWcNqDPodJoycM4jtoE3hs6_WqShUvDdcetOkbjCPO8Jv85MgJyUloBQw
+2026-08-12 03:23:19,470 - ERROR - Data fetch error (attempt 3/5): Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGIPO79MGIi5HbuKoX9qR-3wIzLWcNqDPodJoycM4jtoE3hs6_WqShUvDdcetOkbjCPO8Jv85MgJyUloBQw
+2026-08-12 03:23:19,470 - ERROR - Data fetch error (attempt 3/5): Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGIPO79MGIi5HbuKoX9qR-3wIzLWcNqDPodJoycM4jtoE3hs6_WqShUvDdcetOkbjCPO8Jv85MgJyUloBQw
+2026-08-12 03:23:19,472 - INFO - Retrying in 40 seconds...
+2026-08-12 03:23:19,472 - INFO - Retrying in 40 seconds...
+2026-08-12 03:23:59,472 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 4/5)
+2026-08-12 03:23:59,472 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 4/5)
+2026-08-12 03:23:59,473 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:23:59,473 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:23:59,473 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-08-12 03:23:59,473 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-08-12 03:23:59,473 - INFO - Attempting fetch via ScraperAPI...
+2026-08-12 03:23:59,473 - INFO - Attempting fetch via ScraperAPI...
+2026-08-12 03:23:59,567 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-08-12 03:23:59,567 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-08-12 03:23:59,567 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-08-12 03:23:59,567 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-08-12 03:23:59,568 - INFO - Trying direct request first...
+2026-08-12 03:23:59,568 - INFO - Trying direct request first...
+2026-08-12 03:23:59,901 - WARNING - Direct request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGM_O79MGIi7l9t4_eY9CgDc5cPqpduIwpOqlbTlsW6wgLIeQC0CunxFHhv6WUt1cUXBwXbFDMgJyUloBQw
+2026-08-12 03:23:59,901 - WARNING - Direct request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGM_O79MGIi7l9t4_eY9CgDc5cPqpduIwpOqlbTlsW6wgLIeQC0CunxFHhv6WUt1cUXBwXbFDMgJyUloBQw
+2026-08-12 03:24:36,195 - WARNING - Failed to get free proxy: There are no working proxies at this time.
+2026-08-12 03:24:36,195 - WARNING - Failed to get free proxy: There are no working proxies at this time.
+2026-08-12 03:24:36,196 - ERROR - Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGM_O79MGIi7l9t4_eY9CgDc5cPqpduIwpOqlbTlsW6wgLIeQC0CunxFHhv6WUt1cUXBwXbFDMgJyUloBQw
+2026-08-12 03:24:36,196 - ERROR - Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGM_O79MGIi7l9t4_eY9CgDc5cPqpduIwpOqlbTlsW6wgLIeQC0CunxFHhv6WUt1cUXBwXbFDMgJyUloBQw
+2026-08-12 03:24:36,196 - ERROR - Data fetch error (attempt 4/5): Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGM_O79MGIi7l9t4_eY9CgDc5cPqpduIwpOqlbTlsW6wgLIeQC0CunxFHhv6WUt1cUXBwXbFDMgJyUloBQw
+2026-08-12 03:24:36,196 - ERROR - Data fetch error (attempt 4/5): Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGM_O79MGIi7l9t4_eY9CgDc5cPqpduIwpOqlbTlsW6wgLIeQC0CunxFHhv6WUt1cUXBwXbFDMgJyUloBQw
+2026-08-12 03:24:36,198 - INFO - Retrying in 80 seconds...
+2026-08-12 03:24:36,198 - INFO - Retrying in 80 seconds...
+2026-08-12 03:25:56,200 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 5/5)
+2026-08-12 03:25:56,200 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 5/5)
+2026-08-12 03:25:56,200 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:25:56,200 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-08-12 03:25:56,200 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-08-12 03:25:56,200 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-08-12 03:25:56,200 - INFO - Attempting fetch via ScraperAPI...
+2026-08-12 03:25:56,200 - INFO - Attempting fetch via ScraperAPI...
+2026-08-12 03:25:56,398 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-08-12 03:25:56,398 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-08-12 03:25:56,398 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-08-12 03:25:56,398 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-08-12 03:25:56,398 - INFO - Trying direct request first...
+2026-08-12 03:25:56,398 - INFO - Trying direct request first...
+2026-08-12 03:25:56,859 - WARNING - Direct request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMTP79MGIi6nsBRe0YmVntugH6kuL92SN5mE80eTcqR08H89XH8kiLziShflmrGWIUJNqblCMgJyUloBQw
+2026-08-12 03:25:56,859 - WARNING - Direct request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMTP79MGIi6nsBRe0YmVntugH6kuL92SN5mE80eTcqR08H89XH8kiLziShflmrGWIUJNqblCMgJyUloBQw
+2026-08-12 03:26:33,614 - WARNING - Failed to get free proxy: There are no working proxies at this time.
+2026-08-12 03:26:33,614 - WARNING - Failed to get free proxy: There are no working proxies at this time.
+2026-08-12 03:26:33,614 - ERROR - Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMTP79MGIi6nsBRe0YmVntugH6kuL92SN5mE80eTcqR08H89XH8kiLziShflmrGWIUJNqblCMgJyUloBQw
+2026-08-12 03:26:33,614 - ERROR - Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMTP79MGIi6nsBRe0YmVntugH6kuL92SN5mE80eTcqR08H89XH8kiLziShflmrGWIUJNqblCMgJyUloBQw
+2026-08-12 03:26:33,614 - ERROR - Data fetch error (attempt 5/5): Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMTP79MGIi6nsBRe0YmVntugH6kuL92SN5mE80eTcqR08H89XH8kiLziShflmrGWIUJNqblCMgJyUloBQw
+2026-08-12 03:26:33,614 - ERROR - Data fetch error (attempt 5/5): Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMTP79MGIi6nsBRe0YmVntugH6kuL92SN5mE80eTcqR08H89XH8kiLziShflmrGWIUJNqblCMgJyUloBQw
+2026-08-12 03:26:33,616 - ERROR - All retry attempts failed. Last error: Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMTP79MGIi6nsBRe0YmVntugH6kuL92SN5mE80eTcqR08H89XH8kiLziShflmrGWIUJNqblCMgJyUloBQw
+2026-08-12 03:26:33,616 - ERROR - All retry attempts failed. Last error: Manual fetch failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgQodEjYGMTP79MGIi6nsBRe0YmVntugH6kuL92SN5mE80eTcqR08H89XH8kiLziShflmrGWIUJNqblCMgJyUloBQw
+2026-08-12 03:26:33,617 - WARNING - Aborting history update because fetching stats failed.
+2026-08-12 03:26:33,617 - WARNING - Aborting history update because fetching stats failed.
