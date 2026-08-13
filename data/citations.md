@@ -1,17 +1,20 @@
 # Citation Statistics
 
-Last updated: 2026-08-11
+Last updated: 2026-08-13
 
 ## Overall Statistics
-- Total Citations: 1332
+- Total Citations: 1334
 - H-index: 15
 - i10-index: 19
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +2 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 70 | 71 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 115 | 116 | +1 |
 
 ## Paper Citations
 
@@ -19,9 +22,9 @@ No paper-level citation changes recorded today.
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 454 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 199 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 115 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 116 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 82 | 2025 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 70 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 71 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 66 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 50 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 29 | 2024 |
@@ -67,6 +70,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-08-13 | 1334 | 15 |
 | 2026-08-11 | 1332 | 15 |
 | 2026-08-10 | 1332 | 15 |
 | 2026-08-08 | 1318 | 15 |
@@ -76,7 +80,6 @@ No paper-level citation changes recorded today.
 | 2026-07-23 | 1267 | 15 |
 | 2026-07-22 | 1267 | 15 |
 | 2026-07-17 | 1238 | 15 |
-| 2026-06-26 | 1177 | 15 |
 
 ## Citation Trends
 
