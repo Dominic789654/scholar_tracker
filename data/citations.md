@@ -1,9 +1,9 @@
 # Citation Statistics
 
-Last updated: 2026-08-21
+Last updated: 2026-08-24
 
 ## Overall Statistics
-- Total Citations: 1347
+- Total Citations: 1355
 - H-index: 15
 - i10-index: 19
 
@@ -13,22 +13,20 @@ Total increase: +8 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 199 | 201 | +2 |
-| Beyond single embeddings: Capturing diverse targets with multi-query retrieval | 3 | 4 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 84 | 85 | +1 |
-| City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 4 | 5 | +1 |
-| Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 1 | 2 | +1 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 11 | 12 | +1 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 29 | 30 | +1 |
+| Active prompting with chain-of-thought for large language models | 454 | 457 | +3 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 85 | 87 | +2 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 201 | 202 | +1 |
+| LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget | 0 | 1 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 117 | 118 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 454 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 201 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 117 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 85 | 2025 |
+| Active prompting with chain-of-thought for large language models | 457 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 202 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 118 | 2024 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 87 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 71 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 66 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 50 | 2024 |
@@ -56,13 +54,13 @@ Total increase: +8 citations
 | Ssr: Speculative parallel scaling reasoning in test-time | 3 | 2025 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 2 | 2026 |
 | Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 2 | 2026 |
+| LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget | 1 | 2026 |
 | NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 1 | 2026 |
 | MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 1 | 2026 |
 | Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA | 0 | 2026 |
 | Introducing Macaron-V1 | 0 | 2026 |
 | CoT-Core: Accelerating LLM Evaluation via CoT-Aware Coreset Selection | 0 | 2026 |
 | UI4A: A Component-Native Harness for Generative UI | 0 | 2026 |
-| LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget | 0 | 2026 |
 | Macaron-V1-Preview: 749B MoL Agent Model post-trained from GLM5.1 | 0 | 2026 |
 | On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters | 0 | 2026 |
 | MinT: Managed Infrastructure for Training and Serving Millions of LLMs | 0 | 2026 |
@@ -76,6 +74,7 @@ Total increase: +8 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-08-24 | 1355 | 15 |
 | 2026-08-21 | 1347 | 15 |
 | 2026-08-14 | 1339 | 15 |
 | 2026-08-13 | 1334 | 15 |
@@ -85,7 +84,6 @@ Total increase: +8 citations
 | 2026-08-04 | 1318 | 15 |
 | 2026-07-31 | 1279 | 15 |
 | 2026-07-29 | 1279 | 15 |
-| 2026-07-23 | 1267 | 15 |
 
 ## Citation Trends
 
