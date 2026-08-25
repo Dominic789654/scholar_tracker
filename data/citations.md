@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-08-24
+Last updated: 2026-08-25
 
 ## Overall Statistics
 - Total Citations: 1355
@@ -9,15 +9,9 @@ Last updated: 2026-08-24
 
 ## Today's Citation Changes
 
-Total increase: +8 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 454 | 457 | +3 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 85 | 87 | +2 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 201 | 202 | +1 |
-| LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget | 0 | 1 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 117 | 118 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -74,6 +68,7 @@ Total increase: +8 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-08-25 | 1355 | 15 |
 | 2026-08-24 | 1355 | 15 |
 | 2026-08-21 | 1347 | 15 |
 | 2026-08-14 | 1339 | 15 |
@@ -83,7 +78,6 @@ Total increase: +8 citations
 | 2026-08-08 | 1318 | 15 |
 | 2026-08-04 | 1318 | 15 |
 | 2026-07-31 | 1279 | 15 |
-| 2026-07-29 | 1279 | 15 |
 
 ## Citation Trends
 
