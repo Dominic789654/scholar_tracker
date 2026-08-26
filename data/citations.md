@@ -1,17 +1,19 @@
 # Citation Statistics
 
-Last updated: 2026-08-25
+Last updated: 2026-08-26
 
 ## Overall Statistics
-- Total Citations: 1355
+- Total Citations: 1356
 - H-index: 15
 - i10-index: 19
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +1 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 118 | 119 | +1 |
 
 ## Paper Citations
 
@@ -19,7 +21,7 @@ No paper-level citation changes recorded today.
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 457 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 202 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 118 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 119 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 87 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 71 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 66 | 2024 |
@@ -68,6 +70,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-08-26 | 1356 | 15 |
 | 2026-08-25 | 1355 | 15 |
 | 2026-08-24 | 1355 | 15 |
 | 2026-08-21 | 1347 | 15 |
@@ -77,7 +80,6 @@ No paper-level citation changes recorded today.
 | 2026-08-10 | 1332 | 15 |
 | 2026-08-08 | 1318 | 15 |
 | 2026-08-04 | 1318 | 15 |
-| 2026-07-31 | 1279 | 15 |
 
 ## Citation Trends
 
