@@ -1,27 +1,32 @@
 # Citation Statistics
 
-Last updated: 2026-08-27
+Last updated: 2026-08-28
 
 ## Overall Statistics
-- Total Citations: 1356
+- Total Citations: 1361
 - H-index: 15
 - i10-index: 19
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +5 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 119 | 121 | +2 |
+| Active prompting with chain-of-thought for large language models | 457 | 458 | +1 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 71 | 72 | +1 |
+| Ssr: Speculative parallel scaling reasoning in test-time | 3 | 4 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 457 | 2023 |
+| Active prompting with chain-of-thought for large language models | 458 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 202 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 119 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 121 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 87 | 2025 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 71 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 72 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 66 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 50 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 30 | 2024 |
@@ -45,7 +50,7 @@ No paper-level citation changes recorded today.
 | LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 4 | 2026 |
 | SONIC: Segmented optimized nexus for information compression in key-value caching | 4 | 2026 |
 | Beyond single embeddings: Capturing diverse targets with multi-query retrieval | 4 | 2025 |
-| Ssr: Speculative parallel scaling reasoning in test-time | 3 | 2025 |
+| Ssr: Speculative parallel scaling reasoning in test-time | 4 | 2025 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 2 | 2026 |
 | Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 2 | 2026 |
 | LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget | 1 | 2026 |
@@ -68,6 +73,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-08-28 | 1361 | 15 |
 | 2026-08-27 | 1356 | 15 |
 | 2026-08-26 | 1356 | 15 |
 | 2026-08-25 | 1355 | 15 |
@@ -77,7 +83,6 @@ No paper-level citation changes recorded today.
 | 2026-08-13 | 1334 | 15 |
 | 2026-08-11 | 1332 | 15 |
 | 2026-08-10 | 1332 | 15 |
-| 2026-08-08 | 1318 | 15 |
 
 ## Citation Trends
 
