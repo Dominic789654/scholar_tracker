@@ -1,22 +1,19 @@
 # Citation Statistics
 
-Last updated: 2026-08-28
+Last updated: 2026-08-29
 
 ## Overall Statistics
-- Total Citations: 1361
+- Total Citations: 1362
 - H-index: 15
 - i10-index: 19
 
 ## Today's Citation Changes
 
-Total increase: +5 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 119 | 121 | +2 |
-| Active prompting with chain-of-thought for large language models | 457 | 458 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 71 | 72 | +1 |
-| Ssr: Speculative parallel scaling reasoning in test-time | 3 | 4 | +1 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 72 | 73 | +1 |
 
 ## Paper Citations
 
@@ -26,7 +23,7 @@ Total increase: +5 citations
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 202 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 121 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 87 | 2025 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 72 | 2024 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 73 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 66 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 50 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 30 | 2024 |
@@ -73,6 +70,7 @@ Total increase: +5 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-08-29 | 1362 | 15 |
 | 2026-08-28 | 1361 | 15 |
 | 2026-08-27 | 1356 | 15 |
 | 2026-08-26 | 1356 | 15 |
@@ -82,7 +80,6 @@ Total increase: +5 citations
 | 2026-08-14 | 1339 | 15 |
 | 2026-08-13 | 1334 | 15 |
 | 2026-08-11 | 1332 | 15 |
-| 2026-08-10 | 1332 | 15 |
 
 ## Citation Trends
 
