@@ -1,7 +1,7 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-08-29*
+*Last Updated: 2026-08-30*
 
 ### Quick Summary
 | Metric | Value |
@@ -10,12 +10,11 @@
 | H-index | 15 |
 | i10-index | 19 |
 | Total Papers | 46 |
-| Recent Citation Growth | +1 |
+| Recent Citation Growth | +0 |
 
 ### Today's Changes
-- Total Citations Increase: +1
-- Papers with new citations:
-  - Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models: +1 citations
+- Total Citations Increase: +0
+- Papers with new citations: none
 
 ### Interactive Dashboard
 - [Open citation dashboard](dashboard.html)

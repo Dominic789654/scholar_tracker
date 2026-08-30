@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-08-29
+Last updated: 2026-08-30
 
 ## Overall Statistics
 - Total Citations: 1362
@@ -9,11 +9,9 @@ Last updated: 2026-08-29
 
 ## Today's Citation Changes
 
-Total increase: +1 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 72 | 73 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -70,6 +68,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-08-30 | 1362 | 15 |
 | 2026-08-29 | 1362 | 15 |
 | 2026-08-28 | 1361 | 15 |
 | 2026-08-27 | 1356 | 15 |
@@ -79,7 +78,6 @@ Total increase: +1 citations
 | 2026-08-21 | 1347 | 15 |
 | 2026-08-14 | 1339 | 15 |
 | 2026-08-13 | 1334 | 15 |
-| 2026-08-11 | 1332 | 15 |
 
 ## Citation Trends
 
