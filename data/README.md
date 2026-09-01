@@ -1,24 +1,24 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-08-31*
+*Last Updated: 2026-09-01*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 1367 |
+| Total Citations | 1371 |
 | H-index | 15 |
 | i10-index | 19 |
 | Total Papers | 46 |
-| Recent Citation Growth | +5 |
+| Recent Citation Growth | +4 |
 
 ### Today's Changes
-- Total Citations Increase: +5
+- Total Citations Increase: +4
 - Papers with new citations:
-  - Active prompting with chain-of-thought for large language models: +2 citations
-  - DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference: +1 citations
-  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +1 citations
-  - MDN: Parallelizing Stepwise Momentum for Delta Linear Attention: +1 citations
+  - ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference: +1 citations
+  - Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models: +1 citations
+  - LongGenBench: Long-context Generation Benchmark: +1 citations
+  - Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models: +1 citations
 
 ### Interactive Dashboard
 - [Open citation dashboard](dashboard.html)

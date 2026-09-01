@@ -1,22 +1,22 @@
 # Citation Statistics
 
-Last updated: 2026-08-31
+Last updated: 2026-09-01
 
 ## Overall Statistics
-- Total Citations: 1367
+- Total Citations: 1371
 - H-index: 15
 - i10-index: 19
 
 ## Today's Citation Changes
 
-Total increase: +5 citations
+Total increase: +4 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Active prompting with chain-of-thought for large language models | 458 | 460 | +2 |
-| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 8 | 9 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 202 | 203 | +1 |
-| MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 1 | 2 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 87 | 88 | +1 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 73 | 74 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 66 | 67 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 121 | 122 | +1 |
 
 ## Paper Citations
 
@@ -24,10 +24,10 @@ Total increase: +5 citations
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 460 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 203 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 121 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 87 | 2025 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 73 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 66 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 122 | 2024 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 88 | 2025 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 74 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 67 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 50 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 30 | 2024 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 27 | 2025 |
@@ -73,6 +73,7 @@ Total increase: +5 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-09-01 | 1371 | 15 |
 | 2026-08-31 | 1367 | 15 |
 | 2026-08-30 | 1362 | 15 |
 | 2026-08-29 | 1362 | 15 |
@@ -82,7 +83,6 @@ Total increase: +5 citations
 | 2026-08-25 | 1355 | 15 |
 | 2026-08-24 | 1355 | 15 |
 | 2026-08-21 | 1347 | 15 |
-| 2026-08-14 | 1339 | 15 |
 
 ## Citation Trends
 
