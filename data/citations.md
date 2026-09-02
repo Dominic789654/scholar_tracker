@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-09-01
+Last updated: 2026-09-02
 
 ## Overall Statistics
 - Total Citations: 1371
@@ -9,14 +9,9 @@ Last updated: 2026-09-01
 
 ## Today's Citation Changes
 
-Total increase: +4 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 87 | 88 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 73 | 74 | +1 |
-| LongGenBench: Long-context Generation Benchmark | 66 | 67 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 121 | 122 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -73,6 +68,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-09-02 | 1371 | 15 |
 | 2026-09-01 | 1371 | 15 |
 | 2026-08-31 | 1367 | 15 |
 | 2026-08-30 | 1362 | 15 |
@@ -82,7 +78,6 @@ Total increase: +4 citations
 | 2026-08-26 | 1356 | 15 |
 | 2026-08-25 | 1355 | 15 |
 | 2026-08-24 | 1355 | 15 |
-| 2026-08-21 | 1347 | 15 |
 
 ## Citation Trends
 
