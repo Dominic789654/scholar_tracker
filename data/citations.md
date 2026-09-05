@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-09-04
+Last updated: 2026-09-05
 
 ## Overall Statistics
 - Total Citations: 1377
@@ -9,13 +9,9 @@ Last updated: 2026-09-04
 
 ## Today's Citation Changes
 
-Total increase: +5 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 88 | 90 | +2 |
-| Plum: Prompt Learning Using Metaheuristics | 50 | 52 | +2 |
-| LongGenBench: Long-context Generation Benchmark | 67 | 68 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -72,6 +68,7 @@ Total increase: +5 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-09-05 | 1377 | 15 |
 | 2026-09-04 | 1377 | 15 |
 | 2026-09-03 | 1372 | 15 |
 | 2026-09-02 | 1371 | 15 |
@@ -81,7 +78,6 @@ Total increase: +5 citations
 | 2026-08-29 | 1362 | 15 |
 | 2026-08-28 | 1361 | 15 |
 | 2026-08-27 | 1356 | 15 |
-| 2026-08-26 | 1356 | 15 |
 
 ## Citation Trends
 
