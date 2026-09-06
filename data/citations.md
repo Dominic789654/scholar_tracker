@@ -1,17 +1,19 @@
 # Citation Statistics
 
-Last updated: 2026-09-05
+Last updated: 2026-09-06
 
 ## Overall Statistics
-- Total Citations: 1377
+- Total Citations: 1378
 - H-index: 15
 - i10-index: 19
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +1 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| Beyond single embeddings: Capturing diverse targets with multi-query retrieval | 4 | 5 | +1 |
 
 ## Paper Citations
 
@@ -40,11 +42,11 @@ No paper-level citation changes recorded today.
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 8 | 2025 |
 | Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 8 | 2025 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 6 | 2025 |
+| Beyond single embeddings: Capturing diverse targets with multi-query retrieval | 5 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 5 | 2025 |
 | -mem: Efficient Online Memory for Large Language Models | 4 | 2026 |
 | LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 4 | 2026 |
 | SONIC: Segmented optimized nexus for information compression in key-value caching | 4 | 2026 |
-| Beyond single embeddings: Capturing diverse targets with multi-query retrieval | 4 | 2025 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 4 | 2025 |
 | MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 2 | 2026 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 2 | 2026 |
@@ -68,6 +70,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-09-06 | 1378 | 15 |
 | 2026-09-05 | 1377 | 15 |
 | 2026-09-04 | 1377 | 15 |
 | 2026-09-03 | 1372 | 15 |
@@ -77,7 +80,6 @@ No paper-level citation changes recorded today.
 | 2026-08-30 | 1362 | 15 |
 | 2026-08-29 | 1362 | 15 |
 | 2026-08-28 | 1361 | 15 |
-| 2026-08-27 | 1356 | 15 |
 
 ## Citation Trends
 
