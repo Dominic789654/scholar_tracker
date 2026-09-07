@@ -1,9 +1,9 @@
 # Citation Statistics
 
-Last updated: 2026-09-06
+Last updated: 2026-09-07
 
 ## Overall Statistics
-- Total Citations: 1378
+- Total Citations: 1379
 - H-index: 15
 - i10-index: 19
 
@@ -13,7 +13,7 @@ Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Beyond single embeddings: Capturing diverse targets with multi-query retrieval | 4 | 5 | +1 |
+| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 26 | 27 | +1 |
 
 ## Paper Citations
 
@@ -28,8 +28,8 @@ Total increase: +1 citations
 | Plum: Prompt Learning Using Metaheuristics | 52 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 30 | 2024 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 27 | 2025 |
+| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 27 | 2025 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 27 | 2023 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 26 | 2025 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 22 | 2024 |
 | 3D Question Answering for City Scene Understanding | 22 | 2024 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 20 | 2025 |
@@ -70,6 +70,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-09-07 | 1379 | 15 |
 | 2026-09-06 | 1378 | 15 |
 | 2026-09-05 | 1377 | 15 |
 | 2026-09-04 | 1377 | 15 |
@@ -79,7 +80,6 @@ Total increase: +1 citations
 | 2026-08-31 | 1367 | 15 |
 | 2026-08-30 | 1362 | 15 |
 | 2026-08-29 | 1362 | 15 |
-| 2026-08-28 | 1361 | 15 |
 
 ## Citation Trends
 
