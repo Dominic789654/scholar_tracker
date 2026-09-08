@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-09-07
+Last updated: 2026-09-08
 
 ## Overall Statistics
 - Total Citations: 1379
@@ -9,11 +9,9 @@ Last updated: 2026-09-07
 
 ## Today's Citation Changes
 
-Total increase: +1 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 26 | 27 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -70,6 +68,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-09-08 | 1379 | 15 |
 | 2026-09-07 | 1379 | 15 |
 | 2026-09-06 | 1378 | 15 |
 | 2026-09-05 | 1377 | 15 |
@@ -79,7 +78,6 @@ Total increase: +1 citations
 | 2026-09-01 | 1371 | 15 |
 | 2026-08-31 | 1367 | 15 |
 | 2026-08-30 | 1362 | 15 |
-| 2026-08-29 | 1362 | 15 |
 
 ## Citation Trends
 
