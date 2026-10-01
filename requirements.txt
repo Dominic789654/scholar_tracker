@@ -3,6 +3,8 @@
 # Or use pyproject.toml: pip install -e .
 
 scholarly>=1.7.11
+# scholarly uses the bibtexparser v1 API (bibdatabase, bparser, loads/dumps).
+bibtexparser<2
 plotly>=5.18.0
 pandas>=2.1.3
 kaleido>=0.2.1
