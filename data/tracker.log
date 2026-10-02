@@ -3248,3 +3248,223 @@
 2026-10-01 07:50:06,209 - INFO - Exiting Kaleido/Choreo.
 2026-10-01 07:50:06,223 - INFO - TemporaryDirectory.cleanup() worked.
 2026-10-01 07:50:06,223 - INFO - shutil.rmtree worked.
+2026-10-02 06:38:03,401 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,402 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,402 - INFO - ScholarTracker initialized for author_query='John Doe', author_id='None'
+2026-10-02 06:38:03,402 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,403 - INFO - ScholarTracker initialized for author_query='John Doe', author_id='test_id'
+2026-10-02 06:38:03,403 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,404 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,404 - INFO - ScraperAPI is configured for proxy support
+2026-10-02 06:38:03,404 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,405 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,405 - INFO - ScraperAPI is configured for proxy support
+2026-10-02 06:38:03,405 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,406 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,406 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,406 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,406 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,406 - INFO - Validating collected stats...
+2026-10-02 06:38:03,406 - INFO - Stats validation passed
+2026-10-02 06:38:03,407 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,407 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,407 - INFO - Validating collected stats...
+2026-10-02 06:38:03,407 - ERROR - Invalid total_citations: -10
+2026-10-02 06:38:03,408 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,408 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,408 - INFO - Validating collected stats...
+2026-10-02 06:38:03,408 - ERROR - Inconsistent stats: 500 citations but h_index=0
+2026-10-02 06:38:03,409 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,409 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,409 - INFO - Validating collected stats...
+2026-10-02 06:38:03,409 - ERROR - No papers found in stats
+2026-10-02 06:38:03,409 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,409 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,410 - INFO - Validating collected stats...
+2026-10-02 06:38:03,410 - ERROR - h_index dropped from 5 to 0 - likely parsing error
+2026-10-02 06:38:03,410 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,410 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,410 - INFO - Validating collected stats...
+2026-10-02 06:38:03,410 - INFO - Stats validation passed
+2026-10-02 06:38:03,411 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,411 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,411 - INFO - Calculating citation changes...
+2026-10-02 06:38:03,411 - INFO - Found 2 papers with new citations.
+2026-10-02 06:38:03,412 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,412 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,412 - INFO - Calculating citation changes...
+2026-10-02 06:38:03,412 - INFO - No new citations found for any papers.
+2026-10-02 06:38:03,413 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,413 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,413 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,413 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,414 - INFO - Calculating citation changes...
+2026-10-02 06:38:03,414 - INFO - Found 1 papers with new citations.
+2026-10-02 06:38:03,414 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,414 - INFO - ScraperAPI is configured for proxy support
+2026-10-02 06:38:03,414 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,415 - INFO - Searching for author by ID: 'test_id' (attempt 1/1)
+2026-10-02 06:38:03,415 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-10-02 06:38:03,415 - INFO - Found author: Test Author
+2026-10-02 06:38:03,415 - INFO - Successfully collected stats for 1 papers.
+2026-10-02 06:38:03,415 - INFO - Validating collected stats...
+2026-10-02 06:38:03,415 - INFO - Stats validation passed
+2026-10-02 06:38:03,416 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,416 - INFO - ScraperAPI is configured for proxy support
+2026-10-02 06:38:03,416 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,416 - INFO - Searching for author by ID: 'test_id' (attempt 1/2)
+2026-10-02 06:38:03,417 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-10-02 06:38:03,417 - ERROR - Data fetch error (attempt 1/2): manual fetch failed
+2026-10-02 06:38:03,417 - INFO - Retrying in 0 seconds...
+2026-10-02 06:38:03,417 - INFO - Searching for author by ID: 'test_id' (attempt 2/2)
+2026-10-02 06:38:03,417 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-10-02 06:38:03,417 - ERROR - Data fetch error (attempt 2/2): manual fetch failed
+2026-10-02 06:38:03,417 - ERROR - All retry attempts failed. Last error: manual fetch failed
+2026-10-02 06:38:03,418 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,418 - INFO - ScraperAPI is configured for proxy support
+2026-10-02 06:38:03,418 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,419 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=test_id&pagesize=100&view_op=list_works&sortby=pubdate
+2026-10-02 06:38:03,419 - INFO - Attempting fetch via ScraperAPI...
+2026-10-02 06:38:03,419 - INFO - ScraperAPI fetch successful
+2026-10-02 06:38:03,420 - INFO - Successfully manually fetched data for Test Author: 100 citations, 1 papers
+2026-10-02 06:38:03,421 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,421 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,421 - INFO - Starting history update...
+2026-10-02 06:38:03,421 - INFO - No history file found. A new one will be created.
+2026-10-02 06:38:03,421 - INFO - Validating collected stats...
+2026-10-02 06:38:03,421 - INFO - Stats validation passed
+2026-10-02 06:38:03,421 - INFO - Appended new history entry for 2024-01-02.
+2026-10-02 06:38:03,422 - INFO - No previous stats to compare against.
+2026-10-02 06:38:03,422 - INFO - History update complete.
+2026-10-02 06:38:03,422 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,423 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,423 - INFO - Starting history update...
+2026-10-02 06:38:03,423 - INFO - Loaded 2 history entries from /tmp/pytest-of-runner/pytest-0/test_update_history_replaces_s0/citation_history.json
+2026-10-02 06:38:03,423 - INFO - Validating collected stats...
+2026-10-02 06:38:03,423 - INFO - Stats validation passed
+2026-10-02 06:38:03,423 - INFO - Refreshing existing entry for 2024-01-02.
+2026-10-02 06:38:03,423 - INFO - Calculating citation changes...
+2026-10-02 06:38:03,423 - INFO - Found 1 papers with new citations.
+2026-10-02 06:38:03,424 - INFO - Saved daily changes to /tmp/pytest-of-runner/pytest-0/test_update_history_replaces_s0/daily_changes.json
+2026-10-02 06:38:03,424 - INFO - History update complete.
+2026-10-02 06:38:03,425 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-10-02 06:38:03,425 - INFO - Free proxy support enabled
+2026-10-02 06:38:03,425 - INFO - Starting history update...
+2026-10-02 06:38:03,425 - INFO - Loaded 1 history entries from /tmp/pytest-of-runner/pytest-0/test_update_history_records_ze0/citation_history.json
+2026-10-02 06:38:03,425 - INFO - Validating collected stats...
+2026-10-02 06:38:03,425 - INFO - Stats validation passed
+2026-10-02 06:38:03,425 - INFO - Appended new history entry for 2024-01-02.
+2026-10-02 06:38:03,425 - INFO - Calculating citation changes...
+2026-10-02 06:38:03,425 - INFO - No new citations found for any papers.
+2026-10-02 06:38:03,426 - INFO - Saved daily changes to /tmp/pytest-of-runner/pytest-0/test_update_history_records_ze0/daily_changes.json
+2026-10-02 06:38:03,426 - INFO - History update complete.
+2026-10-02 06:38:04,257 - INFO - ScholarTracker initialized for author_query='None', author_id='VtK5lwUAAAAJ'
+2026-10-02 06:38:04,257 - INFO - ScholarTracker initialized for author_query='None', author_id='VtK5lwUAAAAJ'
+2026-10-02 06:38:04,257 - INFO - ScraperAPI is configured for proxy support
+2026-10-02 06:38:04,257 - INFO - ScraperAPI is configured for proxy support
+2026-10-02 06:38:04,257 - INFO - Free proxy support enabled
+2026-10-02 06:38:04,257 - INFO - Free proxy support enabled
+2026-10-02 06:38:04,257 - INFO - Starting history update...
+2026-10-02 06:38:04,257 - INFO - Starting history update...
+2026-10-02 06:38:04,257 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/5)
+2026-10-02 06:38:04,257 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/5)
+2026-10-02 06:38:04,257 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-10-02 06:38:04,257 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-10-02 06:38:04,257 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-10-02 06:38:04,257 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-10-02 06:38:04,258 - INFO - Attempting fetch via ScraperAPI...
+2026-10-02 06:38:04,258 - INFO - Attempting fetch via ScraperAPI...
+2026-10-02 06:38:04,456 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-10-02 06:38:04,456 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-10-02 06:38:04,456 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-10-02 06:38:04,456 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-10-02 06:38:04,456 - INFO - Trying direct request first...
+2026-10-02 06:38:04,456 - INFO - Trying direct request first...
+2026-10-02 06:38:04,757 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-10-02 06:38:04,757 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-10-02 06:38:06,745 - INFO - Got free proxy: http://154.201.127.230:8080
+2026-10-02 06:38:06,745 - INFO - Got free proxy: http://154.201.127.230:8080
+2026-10-02 06:38:06,746 - INFO - Trying with free proxy: http://154.201.127.230:8080
+2026-10-02 06:38:06,746 - INFO - Trying with free proxy: http://154.201.127.230:8080
+2026-10-02 06:38:10,178 - INFO - Successfully manually fetched data for Xiang Liu: 1410 citations, 47 papers
+2026-10-02 06:38:10,178 - INFO - Successfully manually fetched data for Xiang Liu: 1410 citations, 47 papers
+2026-10-02 06:38:10,179 - INFO - Found author: Xiang Liu
+2026-10-02 06:38:10,179 - INFO - Found author: Xiang Liu
+2026-10-02 06:38:10,179 - INFO - Successfully collected stats for 47 papers.
+2026-10-02 06:38:10,179 - INFO - Successfully collected stats for 47 papers.
+2026-10-02 06:38:10,179 - INFO - Validating collected stats...
+2026-10-02 06:38:10,179 - INFO - Validating collected stats...
+2026-10-02 06:38:10,179 - INFO - Stats validation passed
+2026-10-02 06:38:10,179 - INFO - Stats validation passed
+2026-10-02 06:38:10,185 - INFO - Loaded 345 history entries from data/citation_history.json
+2026-10-02 06:38:10,185 - INFO - Loaded 345 history entries from data/citation_history.json
+2026-10-02 06:38:10,185 - INFO - Validating collected stats...
+2026-10-02 06:38:10,185 - INFO - Validating collected stats...
+2026-10-02 06:38:10,185 - INFO - Stats validation passed
+2026-10-02 06:38:10,185 - INFO - Stats validation passed
+2026-10-02 06:38:10,215 - INFO - Appended new history entry for 2026-10-02.
+2026-10-02 06:38:10,215 - INFO - Appended new history entry for 2026-10-02.
+2026-10-02 06:38:10,215 - INFO - Calculating citation changes...
+2026-10-02 06:38:10,215 - INFO - Calculating citation changes...
+2026-10-02 06:38:10,215 - INFO - No new citations found for any papers.
+2026-10-02 06:38:10,215 - INFO - No new citations found for any papers.
+2026-10-02 06:38:10,216 - INFO - Saved daily changes to data/daily_changes.json
+2026-10-02 06:38:10,216 - INFO - Saved daily changes to data/daily_changes.json
+2026-10-02 06:38:10,216 - INFO - History update complete.
+2026-10-02 06:38:10,216 - INFO - History update complete.
+2026-10-02 06:38:10,228 - INFO - Generating citation trends chart
+2026-10-02 06:38:10,457 - INFO - Chromium init'ed with kwargs {}
+2026-10-02 06:38:10,457 - INFO - Found chromium path: /usr/bin/google-chrome
+2026-10-02 06:38:10,458 - INFO - Temp directory created: /tmp/tmpwpdklkoy.
+2026-10-02 06:38:10,458 - INFO - Opening browser.
+2026-10-02 06:38:10,458 - INFO - Temp directory created: /tmp/tmpxztaxnx4.
+2026-10-02 06:38:10,458 - INFO - Temporary directory at: /tmp/tmpxztaxnx4
+2026-10-02 06:38:12,197 - INFO - Conforming 1 to file:///tmp/tmpwpdklkoy/index.html
+2026-10-02 06:38:13,502 - INFO - Getting tab from queue (has 1)
+2026-10-02 06:38:13,502 - INFO - Got CB3D
+2026-10-02 06:38:13,582 - INFO - Reloading tab CB3D before return.
+2026-10-02 06:38:13,669 - INFO - Putting tab CB3D back (queue size: 0).
+2026-10-02 06:38:13,669 - INFO - Waiting for all cleanups to finish.
+2026-10-02 06:38:13,669 - INFO - Exiting Kaleido.
+2026-10-02 06:38:13,670 - INFO - TemporaryDirectory.cleanup() worked.
+2026-10-02 06:38:13,670 - INFO - shutil.rmtree worked.
+2026-10-02 06:38:13,670 - INFO - Closing browser.
+2026-10-02 06:38:13,682 - INFO - TemporaryDirectory.cleanup() worked.
+2026-10-02 06:38:13,682 - INFO - shutil.rmtree worked.
+2026-10-02 06:38:13,682 - INFO - Closing browser.
+2026-10-02 06:38:13,682 - INFO - Cancelling tasks.
+2026-10-02 06:38:13,682 - INFO - Exiting Kaleido/Choreo.
+2026-10-02 06:38:13,809 - INFO - TemporaryDirectory.cleanup() worked.
+2026-10-02 06:38:13,809 - INFO - shutil.rmtree worked.
+2026-10-02 06:38:13,809 - INFO - Cancelling tasks.
+2026-10-02 06:38:13,809 - INFO - Exiting Kaleido/Choreo.
+2026-10-02 06:38:13,828 - INFO - Generating paper trends chart
+2026-10-02 06:38:13,830 - INFO - TemporaryDirectory.cleanup() worked.
+2026-10-02 06:38:13,830 - INFO - shutil.rmtree worked.
+2026-10-02 06:38:13,872 - INFO - Chromium init'ed with kwargs {}
+2026-10-02 06:38:13,873 - INFO - Found chromium path: /usr/bin/google-chrome
+2026-10-02 06:38:13,873 - INFO - Temp directory created: /tmp/tmpwy2gjauo.
+2026-10-02 06:38:13,873 - INFO - Opening browser.
+2026-10-02 06:38:13,874 - INFO - Temp directory created: /tmp/tmpqa8_770o.
+2026-10-02 06:38:13,874 - INFO - Temporary directory at: /tmp/tmpqa8_770o
+2026-10-02 06:38:14,101 - INFO - Conforming 1 to file:///tmp/tmpwy2gjauo/index.html
+2026-10-02 06:38:15,244 - INFO - Getting tab from queue (has 1)
+2026-10-02 06:38:15,245 - INFO - Got 0B37
+2026-10-02 06:38:15,490 - INFO - Reloading tab 0B37 before return.
+2026-10-02 06:38:15,578 - INFO - Putting tab 0B37 back (queue size: 0).
+2026-10-02 06:38:15,578 - INFO - Waiting for all cleanups to finish.
+2026-10-02 06:38:15,578 - INFO - Exiting Kaleido.
+2026-10-02 06:38:15,578 - INFO - TemporaryDirectory.cleanup() worked.
+2026-10-02 06:38:15,579 - INFO - shutil.rmtree worked.
+2026-10-02 06:38:15,579 - INFO - Closing browser.
+2026-10-02 06:38:15,579 - INFO - TemporaryDirectory.cleanup() worked.
+2026-10-02 06:38:15,579 - INFO - shutil.rmtree worked.
+2026-10-02 06:38:15,579 - INFO - Closing browser.
+2026-10-02 06:38:15,579 - INFO - Cancelling tasks.
+2026-10-02 06:38:15,580 - INFO - Exiting Kaleido/Choreo.
+2026-10-02 06:38:15,656 - INFO - TemporaryDirectory.cleanup() worked.
+2026-10-02 06:38:15,656 - INFO - shutil.rmtree worked.
+2026-10-02 06:38:15,656 - INFO - Cancelling tasks.
+2026-10-02 06:38:15,656 - INFO - Exiting Kaleido/Choreo.
+2026-10-02 06:38:15,668 - INFO - TemporaryDirectory.cleanup() worked.
+2026-10-02 06:38:15,668 - INFO - shutil.rmtree worked.

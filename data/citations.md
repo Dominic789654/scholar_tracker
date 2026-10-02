@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-10-01
+Last updated: 2026-10-02
 
 ## Overall Statistics
 - Total Citations: 1410
@@ -9,25 +9,9 @@ Last updated: 2026-10-01
 
 ## Today's Citation Changes
 
-Total increase: +31 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| -mem: Efficient Online Memory for Large Language Models | 4 | 9 | +5 |
-| Active prompting with chain-of-thought for large language models | 461 | 465 | +4 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 27 | 30 | +3 |
-| EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 20 | 23 | +3 |
-| City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 5 | 7 | +2 |
-| LongGenBench: Long-context Generation Benchmark | 68 | 70 | +2 |
-| ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 30 | 32 | +2 |
-| Plum: Prompt Learning Using Metaheuristics | 52 | 54 | +2 |
-| δ-mem: Efficient online memory for large language models, 2026 | 0 | 2 | +2 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 90 | 91 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 203 | 204 | +1 |
-| LPZero: Language Model Zero-cost Proxy Search from Zero | 12 | 13 | +1 |
-| Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 13 | 14 | +1 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 22 | 23 | +1 |
-| Ssr: Speculative parallel scaling reasoning in test-time | 4 | 5 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -85,6 +69,7 @@ Total increase: +31 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-02 | 1410 | 15 |
 | 2026-10-01 | 1410 | 15 |
 | 2026-09-08 | 1379 | 15 |
 | 2026-09-07 | 1379 | 15 |
@@ -94,7 +79,6 @@ Total increase: +31 citations
 | 2026-09-03 | 1372 | 15 |
 | 2026-09-02 | 1371 | 15 |
 | 2026-09-01 | 1371 | 15 |
-| 2026-08-31 | 1367 | 15 |
 
 ## Citation Trends
 
