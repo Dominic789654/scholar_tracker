@@ -1,55 +1,65 @@
 # Citation Statistics
 
-Last updated: 2026-10-02
+Last updated: 2026-10-03
 
 ## Overall Statistics
-- Total Citations: 1410
+- Total Citations: 1421
 - H-index: 15
-- i10-index: 19
+- i10-index: 21
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +11 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| δ-mem: Efficient online memory for large language models, 2026 | 0 | 3 | +3 |
+| -mem: Efficient Online Memory for Large Language Models | 9 | 11 | +2 |
+| MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 2 | 4 | +2 |
+| Active prompting with chain-of-thought for large language models | 465 | 466 | +1 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 30 | 31 | +1 |
+| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 9 | 10 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 70 | 71 | +1 |
+| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 16 | 17 | +1 |
+| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 13 | 14 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 465 | 2023 |
+| Active prompting with chain-of-thought for large language models | 466 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 204 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 122 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 91 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 74 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 70 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 71 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 54 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 32 | 2024 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 30 | 2025 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 31 | 2025 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 27 | 2025 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 27 | 2023 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 23 | 2025 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 23 | 2024 |
 | 3D Question Answering for City Scene Understanding | 22 | 2024 |
-| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 16 | 2025 |
+| Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 17 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 15 | 2025 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 14 | 2025 |
-| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 13 | 2025 |
+| OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 14 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 13 | 2024 |
-| -mem: Efficient Online Memory for Large Language Models | 9 | 2026 |
-| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 9 | 2026 |
+| -mem: Efficient Online Memory for Large Language Models | 11 | 2026 |
+| DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 10 | 2026 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 8 | 2025 |
 | Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 8 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 7 | 2025 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 6 | 2025 |
 | Beyond single embeddings: Capturing diverse targets with multi-query retrieval | 5 | 2025 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 5 | 2025 |
+| MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 4 | 2026 |
 | LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 4 | 2026 |
 | SONIC: Segmented optimized nexus for information compression in key-value caching | 4 | 2026 |
-| MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 2 | 2026 |
+| δ-mem: Efficient online memory for large language models, 2026 | 3 | 2024 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 2 | 2026 |
 | Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 2 | 2026 |
-| δ-mem: Efficient online memory for large language models, 2026 | 2 | N/A |
 | LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget | 1 | 2026 |
 | NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 1 | 2026 |
 | Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA | 0 | 2026 |
@@ -69,6 +79,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-03 | 1421 | 15 |
 | 2026-10-02 | 1410 | 15 |
 | 2026-10-01 | 1410 | 15 |
 | 2026-09-08 | 1379 | 15 |
@@ -78,7 +89,6 @@ No paper-level citation changes recorded today.
 | 2026-09-04 | 1377 | 15 |
 | 2026-09-03 | 1372 | 15 |
 | 2026-09-02 | 1371 | 15 |
-| 2026-09-01 | 1371 | 15 |
 
 ## Citation Trends
 
