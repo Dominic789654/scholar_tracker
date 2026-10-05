@@ -1,29 +1,30 @@
 # Citation Statistics
 
-Last updated: 2026-10-04
+Last updated: 2026-10-05
 
 ## Overall Statistics
-- Total Citations: 1423
+- Total Citations: 1427
 - H-index: 15
 - i10-index: 21
 
 ## Today's Citation Changes
 
-Total increase: +2 citations
+Total increase: +4 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 91 | 92 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 204 | 205 | +1 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 23 | 25 | +2 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 92 | 93 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 205 | 206 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 466 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 205 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 206 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 122 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 92 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 93 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 74 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 71 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 54 | 2024 |
@@ -31,8 +32,8 @@ Total increase: +2 citations
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 31 | 2025 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 27 | 2025 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 27 | 2023 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 25 | 2024 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 23 | 2025 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 23 | 2024 |
 | 3D Question Answering for City Scene Understanding | 22 | 2024 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 17 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 15 | 2025 |
@@ -72,6 +73,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-05 | 1427 | 15 |
 | 2026-10-04 | 1423 | 15 |
 | 2026-10-03 | 1421 | 15 |
 | 2026-10-02 | 1410 | 15 |
@@ -81,7 +83,6 @@ Total increase: +2 citations
 | 2026-09-06 | 1378 | 15 |
 | 2026-09-05 | 1377 | 15 |
 | 2026-09-04 | 1377 | 15 |
-| 2026-09-03 | 1372 | 15 |
 
 ## Citation Trends
 
