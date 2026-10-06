@@ -1,21 +1,19 @@
 # Citation Statistics
 
-Last updated: 2026-10-05
+Last updated: 2026-10-06
 
 ## Overall Statistics
-- Total Citations: 1427
+- Total Citations: 1428
 - H-index: 15
 - i10-index: 21
 
 ## Today's Citation Changes
 
-Total increase: +4 citations
+Total increase: +1 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 23 | 25 | +2 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 92 | 93 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 205 | 206 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 122 | 123 | +1 |
 
 ## Paper Citations
 
@@ -23,7 +21,7 @@ Total increase: +4 citations
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 466 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 206 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 122 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 123 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 93 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 74 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 71 | 2024 |
@@ -73,6 +71,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-06 | 1428 | 15 |
 | 2026-10-05 | 1427 | 15 |
 | 2026-10-04 | 1423 | 15 |
 | 2026-10-03 | 1421 | 15 |
@@ -82,7 +81,6 @@ Total increase: +4 citations
 | 2026-09-07 | 1379 | 15 |
 | 2026-09-06 | 1378 | 15 |
 | 2026-09-05 | 1377 | 15 |
-| 2026-09-04 | 1377 | 15 |
 
 ## Citation Trends
 

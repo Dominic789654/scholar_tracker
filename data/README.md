@@ -1,23 +1,21 @@
 # Citation Statistics Overview
 
 ## Latest Statistics
-*Last Updated: 2026-10-05*
+*Last Updated: 2026-10-06*
 
 ### Quick Summary
 | Metric | Value |
 | ------ | ----- |
-| Total Citations | 1427 |
+| Total Citations | 1428 |
 | H-index | 15 |
 | i10-index | 21 |
 | Total Papers | 47 |
-| Recent Citation Growth | +4 |
+| Recent Citation Growth | +1 |
 
 ### Today's Changes
-- Total Citations Increase: +4
+- Total Citations Increase: +1
 - Papers with new citations:
-  - Should We Really Edit Language Models? On the Evaluation of Edited Language Models: +2 citations
-  - ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference: +1 citations
-  - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning: +1 citations
+  - Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models: +1 citations
 
 ### Interactive Dashboard
 - [Open citation dashboard](dashboard.html)
