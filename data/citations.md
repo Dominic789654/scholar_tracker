@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-10-06
+Last updated: 2026-10-07
 
 ## Overall Statistics
 - Total Citations: 1428
@@ -9,11 +9,9 @@ Last updated: 2026-10-06
 
 ## Today's Citation Changes
 
-Total increase: +1 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 122 | 123 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -71,6 +69,7 @@ Total increase: +1 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-07 | 1428 | 15 |
 | 2026-10-06 | 1428 | 15 |
 | 2026-10-05 | 1427 | 15 |
 | 2026-10-04 | 1423 | 15 |
@@ -80,7 +79,6 @@ Total increase: +1 citations
 | 2026-09-08 | 1379 | 15 |
 | 2026-09-07 | 1379 | 15 |
 | 2026-09-06 | 1378 | 15 |
-| 2026-09-05 | 1377 | 15 |
 
 ## Citation Trends
 
