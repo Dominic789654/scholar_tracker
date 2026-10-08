@@ -1,17 +1,19 @@
 # Citation Statistics
 
-Last updated: 2026-10-07
+Last updated: 2026-10-08
 
 ## Overall Statistics
-- Total Citations: 1428
+- Total Citations: 1430
 - H-index: 15
 - i10-index: 21
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +2 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 93 | 95 | +2 |
 
 ## Paper Citations
 
@@ -20,7 +22,7 @@ No paper-level citation changes recorded today.
 | Active prompting with chain-of-thought for large language models | 466 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 206 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 123 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 93 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 95 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 74 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 71 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 54 | 2024 |
@@ -69,6 +71,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-08 | 1430 | 15 |
 | 2026-10-07 | 1428 | 15 |
 | 2026-10-06 | 1428 | 15 |
 | 2026-10-05 | 1427 | 15 |
@@ -78,7 +81,6 @@ No paper-level citation changes recorded today.
 | 2026-10-01 | 1410 | 15 |
 | 2026-09-08 | 1379 | 15 |
 | 2026-09-07 | 1379 | 15 |
-| 2026-09-06 | 1378 | 15 |
 
 ## Citation Trends
 
