@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-10-08
+Last updated: 2026-10-09
 
 ## Overall Statistics
 - Total Citations: 1430
@@ -9,11 +9,9 @@ Last updated: 2026-10-08
 
 ## Today's Citation Changes
 
-Total increase: +2 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 93 | 95 | +2 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -71,6 +69,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-09 | 1430 | 15 |
 | 2026-10-08 | 1430 | 15 |
 | 2026-10-07 | 1428 | 15 |
 | 2026-10-06 | 1428 | 15 |
@@ -80,7 +79,6 @@ Total increase: +2 citations
 | 2026-10-02 | 1410 | 15 |
 | 2026-10-01 | 1410 | 15 |
 | 2026-09-08 | 1379 | 15 |
-| 2026-09-07 | 1379 | 15 |
 
 ## Citation Trends
 
