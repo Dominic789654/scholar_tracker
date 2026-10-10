@@ -1,28 +1,33 @@
 # Citation Statistics
 
-Last updated: 2026-10-09
+Last updated: 2026-10-10
 
 ## Overall Statistics
-- Total Citations: 1430
+- Total Citations: 1435
 - H-index: 15
 - i10-index: 21
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +5 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 206 | 208 | +2 |
+| -mem: Efficient Online Memory for Large Language Models | 11 | 12 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 95 | 96 | +1 |
+| LongGenBench: Long-context Generation Benchmark | 71 | 72 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 466 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 206 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 208 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 123 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 95 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 96 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 74 | 2024 |
-| LongGenBench: Long-context Generation Benchmark | 71 | 2024 |
+| LongGenBench: Long-context Generation Benchmark | 72 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 54 | 2024 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 32 | 2024 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 31 | 2025 |
@@ -36,7 +41,7 @@ No paper-level citation changes recorded today.
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 14 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 14 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 13 | 2024 |
-| -mem: Efficient Online Memory for Large Language Models | 11 | 2026 |
+| -mem: Efficient Online Memory for Large Language Models | 12 | 2026 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 10 | 2026 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 8 | 2025 |
 | Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 8 | 2025 |
@@ -69,6 +74,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-10 | 1435 | 15 |
 | 2026-10-09 | 1430 | 15 |
 | 2026-10-08 | 1430 | 15 |
 | 2026-10-07 | 1428 | 15 |
@@ -78,7 +84,6 @@ No paper-level citation changes recorded today.
 | 2026-10-03 | 1421 | 15 |
 | 2026-10-02 | 1410 | 15 |
 | 2026-10-01 | 1410 | 15 |
-| 2026-09-08 | 1379 | 15 |
 
 ## Citation Trends
 
