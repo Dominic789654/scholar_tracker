@@ -1,47 +1,51 @@
 # Citation Statistics
 
-Last updated: 2026-10-11
+Last updated: 2026-10-12
 
 ## Overall Statistics
-- Total Citations: 1439
+- Total Citations: 1448
 - H-index: 15
 - i10-index: 21
 
 ## Today's Citation Changes
 
-Total increase: +4 citations
+Total increase: +9 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| 3D Question Answering for City Scene Understanding | 22 | 23 | +1 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 31 | 32 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 208 | 209 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 123 | 124 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 96 | 98 | +2 |
+| -mem: Efficient Online Memory for Large Language Models | 12 | 13 | +1 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 32 | 33 | +1 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 74 | 75 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 209 | 210 | +1 |
+| Position: LLM Inference Should Be Evaluated as Energy-to-Token Production | 0 | 1 | +1 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 124 | 125 | +1 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 25 | 26 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 466 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 209 | 2024 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 124 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 96 | 2025 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 74 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 210 | 2024 |
+| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 125 | 2024 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 98 | 2025 |
+| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 75 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 72 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 54 | 2024 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 32 | 2025 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 33 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 32 | 2024 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 27 | 2025 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 27 | 2023 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 25 | 2024 |
+| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 26 | 2024 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 23 | 2025 |
 | 3D Question Answering for City Scene Understanding | 23 | 2024 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 17 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 15 | 2025 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 14 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 14 | 2025 |
+| -mem: Efficient Online Memory for Large Language Models | 13 | 2026 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 13 | 2024 |
-| -mem: Efficient Online Memory for Large Language Models | 12 | 2026 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 10 | 2026 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 8 | 2025 |
 | Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 8 | 2025 |
@@ -57,6 +61,7 @@ Total increase: +4 citations
 | Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 2 | 2026 |
 | LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget | 1 | 2026 |
 | NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 1 | 2026 |
+| Position: LLM Inference Should Be Evaluated as Energy-to-Token Production | 1 | 2026 |
 | Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA | 0 | 2026 |
 | Introducing Macaron-V1 | 0 | 2026 |
 | CoT-Core: Accelerating LLM Evaluation via CoT-Aware Coreset Selection | 0 | 2026 |
@@ -64,7 +69,6 @@ Total increase: +4 citations
 | Macaron-V1-Preview: 749B MoL Agent Model post-trained from GLM5.1 | 0 | 2026 |
 | On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters | 0 | 2026 |
 | MinT: Managed Infrastructure for Training and Serving Millions of LLMs | 0 | 2026 |
-| Position: LLM Inference Should Be Evaluated as Energy-to-Token Production | 0 | 2026 |
 | An Improved Autoregressive Evaluation Paradigm for Large Language Models | 0 | 2026 |
 | From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM | 0 | 2026 |
 | Enhancing Knowledge Injection with Surrounding Backgrounds in Continual Training LLMs | 0 | N/A |
@@ -74,6 +78,7 @@ Total increase: +4 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-12 | 1448 | 15 |
 | 2026-10-11 | 1439 | 15 |
 | 2026-10-10 | 1435 | 15 |
 | 2026-10-09 | 1430 | 15 |
@@ -83,7 +88,6 @@ Total increase: +4 citations
 | 2026-10-05 | 1427 | 15 |
 | 2026-10-04 | 1423 | 15 |
 | 2026-10-03 | 1421 | 15 |
-| 2026-10-02 | 1410 | 15 |
 
 ## Citation Trends
 
