@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-10-12
+Last updated: 2026-10-13
 
 ## Overall Statistics
 - Total Citations: 1448
@@ -9,18 +9,9 @@ Last updated: 2026-10-12
 
 ## Today's Citation Changes
 
-Total increase: +9 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 96 | 98 | +2 |
-| -mem: Efficient Online Memory for Large Language Models | 12 | 13 | +1 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 32 | 33 | +1 |
-| Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 74 | 75 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 209 | 210 | +1 |
-| Position: LLM Inference Should Be Evaluated as Energy-to-Token Production | 0 | 1 | +1 |
-| Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 124 | 125 | +1 |
-| Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 25 | 26 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -78,6 +69,7 @@ Total increase: +9 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-13 | 1448 | 15 |
 | 2026-10-12 | 1448 | 15 |
 | 2026-10-11 | 1439 | 15 |
 | 2026-10-10 | 1435 | 15 |
@@ -87,7 +79,6 @@ Total increase: +9 citations
 | 2026-10-06 | 1428 | 15 |
 | 2026-10-05 | 1427 | 15 |
 | 2026-10-04 | 1423 | 15 |
-| 2026-10-03 | 1421 | 15 |
 
 ## Citation Trends
 
