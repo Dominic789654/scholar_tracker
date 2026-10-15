@@ -1,29 +1,33 @@
 # Citation Statistics
 
-Last updated: 2026-10-14
+Last updated: 2026-10-15
 
 ## Overall Statistics
-- Total Citations: 1450
+- Total Citations: 1457
 - H-index: 15
 - i10-index: 21
 
 ## Today's Citation Changes
 
-Total increase: +2 citations
+Total increase: +7 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 98 | 99 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 210 | 211 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 211 | 213 | +2 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 99 | 100 | +1 |
+| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 8 | 9 | +1 |
+| MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 4 | 5 | +1 |
+| NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 1 | 2 | +1 |
+| SONIC: Segmented optimized nexus for information compression in key-value caching | 4 | 5 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 466 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 211 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 213 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 125 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 99 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 100 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 75 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 72 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 54 | 2024 |
@@ -41,20 +45,20 @@ Total increase: +2 citations
 | -mem: Efficient Online Memory for Large Language Models | 13 | 2026 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 13 | 2024 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 10 | 2026 |
-| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 8 | 2025 |
+| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 9 | 2025 |
 | Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 8 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 7 | 2025 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 6 | 2025 |
+| MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 5 | 2026 |
+| SONIC: Segmented optimized nexus for information compression in key-value caching | 5 | 2026 |
 | Beyond single embeddings: Capturing diverse targets with multi-query retrieval | 5 | 2025 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 5 | 2025 |
-| MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 4 | 2026 |
 | LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 4 | 2026 |
-| SONIC: Segmented optimized nexus for information compression in key-value caching | 4 | 2026 |
 | δ-mem: Efficient online memory for large language models, 2026 | 3 | 2024 |
+| NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 2 | 2026 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 2 | 2026 |
 | Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 2 | 2026 |
 | LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget | 1 | 2026 |
-| NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 1 | 2026 |
 | Position: LLM Inference Should Be Evaluated as Energy-to-Token Production | 1 | 2026 |
 | Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA | 0 | 2026 |
 | Introducing Macaron-V1 | 0 | 2026 |
@@ -72,6 +76,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-15 | 1457 | 15 |
 | 2026-10-14 | 1450 | 15 |
 | 2026-10-13 | 1448 | 15 |
 | 2026-10-12 | 1448 | 15 |
@@ -81,7 +86,6 @@ Total increase: +2 citations
 | 2026-10-08 | 1430 | 15 |
 | 2026-10-07 | 1428 | 15 |
 | 2026-10-06 | 1428 | 15 |
-| 2026-10-05 | 1427 | 15 |
 
 ## Citation Trends
 
