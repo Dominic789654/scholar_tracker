@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-10-15
+Last updated: 2026-10-16
 
 ## Overall Statistics
 - Total Citations: 1457
@@ -9,16 +9,9 @@ Last updated: 2026-10-15
 
 ## Today's Citation Changes
 
-Total increase: +7 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 211 | 213 | +2 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 99 | 100 | +1 |
-| FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 8 | 9 | +1 |
-| MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 4 | 5 | +1 |
-| NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 1 | 2 | +1 |
-| SONIC: Segmented optimized nexus for information compression in key-value caching | 4 | 5 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -76,6 +69,7 @@ Total increase: +7 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-16 | 1457 | 15 |
 | 2026-10-15 | 1457 | 15 |
 | 2026-10-14 | 1450 | 15 |
 | 2026-10-13 | 1448 | 15 |
@@ -85,7 +79,6 @@ Total increase: +7 citations
 | 2026-10-09 | 1430 | 15 |
 | 2026-10-08 | 1430 | 15 |
 | 2026-10-07 | 1428 | 15 |
-| 2026-10-06 | 1428 | 15 |
 
 ## Citation Trends
 
