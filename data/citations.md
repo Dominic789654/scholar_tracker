@@ -1,36 +1,46 @@
 # Citation Statistics
 
-Last updated: 2026-10-16
+Last updated: 2026-10-17
 
 ## Overall Statistics
-- Total Citations: 1457
+- Total Citations: 1472
 - H-index: 15
 - i10-index: 21
 
 ## Today's Citation Changes
 
-Total increase: +0 citations
+Total increase: +15 citations
 
-No paper-level citation changes recorded today.
+| Paper | Previous | New | Increase |
+| ----- | -------- | --- | -------- |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 33 | 36 | +3 |
+| Liuyue, Bo Li, Xuming Hu, and Xiaowen Chu. ChunkKV: Semantic-preserving KV cache compression for efficient long-context LLM inference | 0 | 3 | +3 |
+| Chunkkv: Semantic-preserving kv cache compression for efficient long-context llm inference, 2025c | 0 | 2 | +2 |
+| Liuyue, Bo Li, Xuming Hu, and Xiaowen Chu. 2026a. ChunkKV: Semantic-preserving KV cache compression for efficient long-context LLM inference | 0 | 2 | +2 |
+| 3D Question Answering for City Scene Understanding | 23 | 24 | +1 |
+| Active prompting with chain-of-thought for large language models | 466 | 467 | +1 |
+| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 8 | 9 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 100 | 101 | +1 |
+| City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 7 | 8 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 466 | 2023 |
+| Active prompting with chain-of-thought for large language models | 467 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 213 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 125 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 100 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 101 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 75 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 72 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 54 | 2024 |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 33 | 2025 |
+| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 36 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 32 | 2024 |
 | Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 27 | 2025 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 27 | 2023 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 26 | 2024 |
+| 3D Question Answering for City Scene Understanding | 24 | 2024 |
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 23 | 2025 |
-| 3D Question Answering for City Scene Understanding | 23 | 2024 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 17 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 15 | 2025 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 14 | 2025 |
@@ -39,18 +49,21 @@ No paper-level citation changes recorded today.
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 13 | 2024 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 10 | 2026 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 9 | 2025 |
-| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 8 | 2025 |
-| City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 7 | 2025 |
+| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 9 | 2025 |
+| City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 8 | 2025 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 6 | 2025 |
 | MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 5 | 2026 |
 | SONIC: Segmented optimized nexus for information compression in key-value caching | 5 | 2026 |
 | Beyond single embeddings: Capturing diverse targets with multi-query retrieval | 5 | 2025 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 5 | 2025 |
 | LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 4 | 2026 |
+| Liuyue, Bo Li, Xuming Hu, and Xiaowen Chu. ChunkKV: Semantic-preserving KV cache compression for efficient long-context LLM inference | 3 | 2026 |
 | δ-mem: Efficient online memory for large language models, 2026 | 3 | 2024 |
 | NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 2 | 2026 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 2 | 2026 |
 | Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 2 | 2026 |
+| Liuyue, Bo Li, Xuming Hu, and Xiaowen Chu. 2026a. ChunkKV: Semantic-preserving KV cache compression for efficient long-context LLM inference | 2 | N/A |
+| Chunkkv: Semantic-preserving kv cache compression for efficient long-context llm inference, 2025c | 2 | N/A |
 | LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget | 1 | 2026 |
 | Position: LLM Inference Should Be Evaluated as Energy-to-Token Production | 1 | 2026 |
 | Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA | 0 | 2026 |
@@ -69,6 +82,7 @@ No paper-level citation changes recorded today.
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-17 | 1472 | 15 |
 | 2026-10-16 | 1457 | 15 |
 | 2026-10-15 | 1457 | 15 |
 | 2026-10-14 | 1450 | 15 |
@@ -78,7 +92,6 @@ No paper-level citation changes recorded today.
 | 2026-10-10 | 1435 | 15 |
 | 2026-10-09 | 1430 | 15 |
 | 2026-10-08 | 1430 | 15 |
-| 2026-10-07 | 1428 | 15 |
 
 ## Citation Trends
 
