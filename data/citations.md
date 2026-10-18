@@ -1,42 +1,38 @@
 # Citation Statistics
 
-Last updated: 2026-10-17
+Last updated: 2026-10-18
 
 ## Overall Statistics
-- Total Citations: 1472
+- Total Citations: 1479
 - H-index: 15
 - i10-index: 21
 
 ## Today's Citation Changes
 
-Total increase: +15 citations
+Total increase: +7 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 33 | 36 | +3 |
-| Liuyue, Bo Li, Xuming Hu, and Xiaowen Chu. ChunkKV: Semantic-preserving KV cache compression for efficient long-context LLM inference | 0 | 3 | +3 |
-| Chunkkv: Semantic-preserving kv cache compression for efficient long-context llm inference, 2025c | 0 | 2 | +2 |
-| Liuyue, Bo Li, Xuming Hu, and Xiaowen Chu. 2026a. ChunkKV: Semantic-preserving KV cache compression for efficient long-context LLM inference | 0 | 2 | +2 |
-| 3D Question Answering for City Scene Understanding | 23 | 24 | +1 |
-| Active prompting with chain-of-thought for large language models | 466 | 467 | +1 |
-| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 8 | 9 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 100 | 101 | +1 |
-| City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 7 | 8 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 101 | 103 | +2 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 213 | 215 | +2 |
+| Active prompting with chain-of-thought for large language models | 467 | 468 | +1 |
+| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 27 | 28 | +1 |
+| CoT-Core: Accelerating LLM Evaluation via CoT-Aware Coreset Selection | 0 | 1 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
-| Active prompting with chain-of-thought for large language models | 467 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 213 | 2024 |
+| Active prompting with chain-of-thought for large language models | 468 | 2023 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 215 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 125 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 101 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 103 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 75 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 72 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 54 | 2024 |
 | Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression | 36 | 2025 |
 | ParZC: Parametric Zero-Cost Proxies for Efficient NAS | 32 | 2024 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 27 | 2025 |
+| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 28 | 2025 |
 | Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models | 27 | 2023 |
 | Should We Really Edit Language Models? On the Evaluation of Edited Language Models | 26 | 2024 |
 | 3D Question Answering for City Scene Understanding | 24 | 2024 |
@@ -64,11 +60,11 @@ Total increase: +15 citations
 | Janus-Q: End-to-End Event-Driven Trading via Hierarchical-Gated Reward Modeling | 2 | 2026 |
 | Liuyue, Bo Li, Xuming Hu, and Xiaowen Chu. 2026a. ChunkKV: Semantic-preserving KV cache compression for efficient long-context LLM inference | 2 | N/A |
 | Chunkkv: Semantic-preserving kv cache compression for efficient long-context llm inference, 2025c | 2 | N/A |
+| CoT-Core: Accelerating LLM Evaluation via CoT-Aware Coreset Selection | 1 | 2026 |
 | LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget | 1 | 2026 |
 | Position: LLM Inference Should Be Evaluated as Energy-to-Token Production | 1 | 2026 |
 | Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA | 0 | 2026 |
 | Introducing Macaron-V1 | 0 | 2026 |
-| CoT-Core: Accelerating LLM Evaluation via CoT-Aware Coreset Selection | 0 | 2026 |
 | UI4A: A Component-Native Harness for Generative UI | 0 | 2026 |
 | Macaron-V1-Preview: 749B MoL Agent Model post-trained from GLM5.1 | 0 | 2026 |
 | On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters | 0 | 2026 |
@@ -82,6 +78,7 @@ Total increase: +15 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-18 | 1479 | 15 |
 | 2026-10-17 | 1472 | 15 |
 | 2026-10-16 | 1457 | 15 |
 | 2026-10-15 | 1457 | 15 |
@@ -91,7 +88,6 @@ Total increase: +15 citations
 | 2026-10-11 | 1439 | 15 |
 | 2026-10-10 | 1435 | 15 |
 | 2026-10-09 | 1430 | 15 |
-| 2026-10-08 | 1430 | 15 |
 
 ## Citation Trends
 
