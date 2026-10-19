@@ -1,30 +1,28 @@
 # Citation Statistics
 
-Last updated: 2026-10-18
+Last updated: 2026-10-19
 
 ## Overall Statistics
-- Total Citations: 1479
+- Total Citations: 1482
 - H-index: 15
 - i10-index: 21
 
 ## Today's Citation Changes
 
-Total increase: +7 citations
+Total increase: +3 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 101 | 103 | +2 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 213 | 215 | +2 |
-| Active prompting with chain-of-thought for large language models | 467 | 468 | +1 |
-| Can LLMs Maintain Fundamental Abilities under KV Cache Compression? | 27 | 28 | +1 |
-| CoT-Core: Accelerating LLM Evaluation via CoT-Aware Coreset Selection | 0 | 1 | +1 |
+| -mem: Efficient Online Memory for Large Language Models | 13 | 14 | +1 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 215 | 216 | +1 |
+| Liuyue, Bo Li, Xuming Hu, and Xiaowen Chu. ChunkKV: Semantic-preserving KV cache compression for efficient long-context LLM inference | 3 | 4 | +1 |
 
 ## Paper Citations
 
 | Paper | Citations | Year |
 | ----- | --------- | ---- |
 | Active prompting with chain-of-thought for large language models | 468 | 2023 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 215 | 2024 |
+| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 216 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 125 | 2024 |
 | ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 103 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 75 | 2024 |
@@ -39,9 +37,9 @@ Total increase: +7 citations
 | EssayJudge: A Multi-Granular Benchmark for Assessing Automated Essay Scoring Capabilities of Multimodal Large Language Models | 23 | 2025 |
 | Mediator: Memory-efficient llm merging with less parameter conflicts and uncertainty based routing | 17 | 2025 |
 | The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve? | 15 | 2025 |
+| -mem: Efficient Online Memory for Large Language Models | 14 | 2026 |
 | Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research | 14 | 2025 |
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 14 | 2025 |
-| -mem: Efficient Online Memory for Large Language Models | 13 | 2026 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 13 | 2024 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 10 | 2026 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 9 | 2025 |
@@ -53,7 +51,7 @@ Total increase: +7 citations
 | Beyond single embeddings: Capturing diverse targets with multi-query retrieval | 5 | 2025 |
 | Ssr: Speculative parallel scaling reasoning in test-time | 5 | 2025 |
 | LLM Agent Memory: A Survey from a Unified Representation–Management Perspective | 4 | 2026 |
-| Liuyue, Bo Li, Xuming Hu, and Xiaowen Chu. ChunkKV: Semantic-preserving KV cache compression for efficient long-context LLM inference | 3 | 2026 |
+| Liuyue, Bo Li, Xuming Hu, and Xiaowen Chu. ChunkKV: Semantic-preserving KV cache compression for efficient long-context LLM inference | 4 | 2026 |
 | δ-mem: Efficient online memory for large language models, 2026 | 3 | 2024 |
 | NestedKV: Nested Memory Routing for Long-Context KV Cache Compression | 2 | 2026 |
 | Reasoning Language Model Inference Serving Unveiled: An Empirical Study | 2 | 2026 |
@@ -78,6 +76,7 @@ Total increase: +7 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-19 | 1482 | 15 |
 | 2026-10-18 | 1479 | 15 |
 | 2026-10-17 | 1472 | 15 |
 | 2026-10-16 | 1457 | 15 |
@@ -87,7 +86,6 @@ Total increase: +7 citations
 | 2026-10-12 | 1448 | 15 |
 | 2026-10-11 | 1439 | 15 |
 | 2026-10-10 | 1435 | 15 |
-| 2026-10-09 | 1430 | 15 |
 
 ## Citation Trends
 
