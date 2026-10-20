@@ -1,21 +1,19 @@
 # Citation Statistics
 
-Last updated: 2026-10-19
+Last updated: 2026-10-20
 
 ## Overall Statistics
-- Total Citations: 1482
+- Total Citations: 1488
 - H-index: 15
 - i10-index: 21
 
 ## Today's Citation Changes
 
-Total increase: +3 citations
+Total increase: +6 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| -mem: Efficient Online Memory for Large Language Models | 13 | 14 | +1 |
-| LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 215 | 216 | +1 |
-| Liuyue, Bo Li, Xuming Hu, and Xiaowen Chu. ChunkKV: Semantic-preserving KV cache compression for efficient long-context LLM inference | 3 | 4 | +1 |
+| Semantic Integrity Matters: Benchmarking and Preserving High-Density Reasoning in KV Cache Compression | 0 | 6 | +6 |
 
 ## Paper Citations
 
@@ -46,6 +44,7 @@ Total increase: +3 citations
 | Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 9 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 8 | 2025 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 6 | 2025 |
+| Semantic Integrity Matters: Benchmarking and Preserving High-Density Reasoning in KV Cache Compression | 6 | 2025 |
 | MDN: Parallelizing Stepwise Momentum for Delta Linear Attention | 5 | 2026 |
 | SONIC: Segmented optimized nexus for information compression in key-value caching | 5 | 2026 |
 | Beyond single embeddings: Capturing diverse targets with multi-query retrieval | 5 | 2025 |
@@ -76,6 +75,7 @@ Total increase: +3 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-20 | 1488 | 15 |
 | 2026-10-19 | 1482 | 15 |
 | 2026-10-18 | 1479 | 15 |
 | 2026-10-17 | 1472 | 15 |
@@ -85,7 +85,6 @@ Total increase: +3 citations
 | 2026-10-13 | 1448 | 15 |
 | 2026-10-12 | 1448 | 15 |
 | 2026-10-11 | 1439 | 15 |
-| 2026-10-10 | 1435 | 15 |
 
 ## Citation Trends
 
