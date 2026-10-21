@@ -1,19 +1,20 @@
 # Citation Statistics
 
-Last updated: 2026-10-20
+Last updated: 2026-10-21
 
 ## Overall Statistics
-- Total Citations: 1488
+- Total Citations: 1490
 - H-index: 15
-- i10-index: 21
+- i10-index: 22
 
 ## Today's Citation Changes
 
-Total increase: +6 citations
+Total increase: +2 citations
 
 | Paper | Previous | New | Increase |
 | ----- | -------- | --- | -------- |
-| Semantic Integrity Matters: Benchmarking and Preserving High-Density Reasoning in KV Cache Compression | 0 | 6 | +6 |
+| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 9 | 10 | +1 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 103 | 104 | +1 |
 
 ## Paper Citations
 
@@ -22,7 +23,7 @@ Total increase: +6 citations
 | Active prompting with chain-of-thought for large language models | 468 | 2023 |
 | LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning | 216 | 2024 |
 | Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models | 125 | 2024 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 103 | 2025 |
+| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 104 | 2025 |
 | Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models | 75 | 2024 |
 | LongGenBench: Long-context Generation Benchmark | 72 | 2024 |
 | Plum: Prompt Learning Using Metaheuristics | 54 | 2024 |
@@ -40,8 +41,8 @@ Total increase: +6 citations
 | OracleKV: Oracle Guidance for Question-Independent KV Cache Compression | 14 | 2025 |
 | LPZero: Language Model Zero-cost Proxy Search from Zero | 13 | 2024 |
 | DiffAdapt: Difficulty-Adaptive Reasoning for Token-Efficient LLM Inference | 10 | 2026 |
+| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 10 | 2025 |
 | FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management | 9 | 2025 |
-| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 9 | 2025 |
 | City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning | 8 | 2025 |
 | Antkv: Anchor token-aware sub-bit vector quantization for kv cache in large language models | 6 | 2025 |
 | Semantic Integrity Matters: Benchmarking and Preserving High-Density Reasoning in KV Cache Compression | 6 | 2025 |
@@ -75,6 +76,7 @@ Total increase: +6 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-21 | 1490 | 15 |
 | 2026-10-20 | 1488 | 15 |
 | 2026-10-19 | 1482 | 15 |
 | 2026-10-18 | 1479 | 15 |
@@ -84,7 +86,6 @@ Total increase: +6 citations
 | 2026-10-14 | 1450 | 15 |
 | 2026-10-13 | 1448 | 15 |
 | 2026-10-12 | 1448 | 15 |
-| 2026-10-11 | 1439 | 15 |
 
 ## Citation Trends
 
