@@ -1,6 +1,6 @@
 # Citation Statistics
 
-Last updated: 2026-10-21
+Last updated: 2026-10-22
 
 ## Overall Statistics
 - Total Citations: 1490
@@ -9,12 +9,9 @@ Last updated: 2026-10-21
 
 ## Today's Citation Changes
 
-Total increase: +2 citations
+Total increase: +0 citations
 
-| Paper | Previous | New | Increase |
-| ----- | -------- | --- | -------- |
-| Cafes: A collaborative multi-agent framework for multi-granular multimodal essay scoring | 9 | 10 | +1 |
-| ChunkKV: Semantic-preserving kv cache compression for efficient long-context llm inference | 103 | 104 | +1 |
+No paper-level citation changes recorded today.
 
 ## Paper Citations
 
@@ -76,6 +73,7 @@ Total increase: +2 citations
 
 | Date | Total Citations | H-index |
 | ---- | --------------- | ------- |
+| 2026-10-22 | 1490 | 15 |
 | 2026-10-21 | 1490 | 15 |
 | 2026-10-20 | 1488 | 15 |
 | 2026-10-19 | 1482 | 15 |
@@ -85,7 +83,6 @@ Total increase: +2 citations
 | 2026-10-15 | 1457 | 15 |
 | 2026-10-14 | 1450 | 15 |
 | 2026-10-13 | 1448 | 15 |
-| 2026-10-12 | 1448 | 15 |
 
 ## Citation Trends
 
