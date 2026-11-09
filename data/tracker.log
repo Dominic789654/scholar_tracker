@@ -1087,3 +1087,263 @@
 2026-11-08 06:57:10,955 - ERROR - All retry attempts failed. Last error: Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
 2026-11-08 06:57:10,956 - WARNING - Aborting history update because fetching stats failed.
 2026-11-08 06:57:10,956 - WARNING - Aborting history update because fetching stats failed.
+2026-11-09 07:34:51,158 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,158 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,159 - INFO - ScholarTracker initialized for author_query='John Doe', author_id='None'
+2026-11-09 07:34:51,159 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,160 - INFO - ScholarTracker initialized for author_query='John Doe', author_id='test_id'
+2026-11-09 07:34:51,160 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,161 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,161 - INFO - ScraperAPI is configured for proxy support
+2026-11-09 07:34:51,161 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,162 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,162 - INFO - ScraperAPI is configured for proxy support
+2026-11-09 07:34:51,162 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,163 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,163 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,163 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,164 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,164 - INFO - Validating collected stats...
+2026-11-09 07:34:51,164 - INFO - Stats validation passed
+2026-11-09 07:34:51,164 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,164 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,165 - INFO - Validating collected stats...
+2026-11-09 07:34:51,165 - ERROR - Invalid total_citations: -10
+2026-11-09 07:34:51,165 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,165 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,166 - INFO - Validating collected stats...
+2026-11-09 07:34:51,166 - ERROR - Inconsistent stats: 500 citations but h_index=0
+2026-11-09 07:34:51,166 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,166 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,167 - INFO - Validating collected stats...
+2026-11-09 07:34:51,167 - ERROR - No papers found in stats
+2026-11-09 07:34:51,167 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,167 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,168 - INFO - Validating collected stats...
+2026-11-09 07:34:51,168 - ERROR - h_index dropped from 5 to 0 - likely parsing error
+2026-11-09 07:34:51,168 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,168 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,168 - INFO - Validating collected stats...
+2026-11-09 07:34:51,169 - INFO - Stats validation passed
+2026-11-09 07:34:51,169 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,169 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,170 - INFO - Calculating citation changes...
+2026-11-09 07:34:51,170 - INFO - Found 2 papers with new citations.
+2026-11-09 07:34:51,170 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,170 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,171 - INFO - Calculating citation changes...
+2026-11-09 07:34:51,171 - INFO - No new citations found for any papers.
+2026-11-09 07:34:51,171 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,171 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,172 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,172 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,172 - INFO - Calculating citation changes...
+2026-11-09 07:34:51,172 - INFO - Found 1 papers with new citations.
+2026-11-09 07:34:51,173 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,173 - INFO - ScraperAPI is configured for proxy support
+2026-11-09 07:34:51,173 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,174 - INFO - Searching for author by ID: 'test_id' (attempt 1/1)
+2026-11-09 07:34:51,174 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:34:51,174 - INFO - Found author: Test Author
+2026-11-09 07:34:51,174 - INFO - Successfully collected stats for 1 papers.
+2026-11-09 07:34:51,174 - INFO - Validating collected stats...
+2026-11-09 07:34:51,174 - INFO - Stats validation passed
+2026-11-09 07:34:51,175 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,175 - INFO - ScraperAPI is configured for proxy support
+2026-11-09 07:34:51,175 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,176 - INFO - Searching for author by ID: 'test_id' (attempt 1/2)
+2026-11-09 07:34:51,176 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:34:51,176 - ERROR - Data fetch error (attempt 1/2): manual fetch failed
+2026-11-09 07:34:51,176 - INFO - Retrying in 0 seconds...
+2026-11-09 07:34:51,176 - INFO - Searching for author by ID: 'test_id' (attempt 2/2)
+2026-11-09 07:34:51,176 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:34:51,176 - ERROR - Data fetch error (attempt 2/2): manual fetch failed
+2026-11-09 07:34:51,176 - ERROR - All retry attempts failed. Last error: manual fetch failed
+2026-11-09 07:34:51,177 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,177 - INFO - ScraperAPI is configured for proxy support
+2026-11-09 07:34:51,177 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,178 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=test_id&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:34:51,178 - INFO - Attempting fetch via ScraperAPI...
+2026-11-09 07:34:51,178 - INFO - ScraperAPI fetch successful
+2026-11-09 07:34:51,179 - INFO - Successfully manually fetched data for Test Author: 100 citations, 1 papers
+2026-11-09 07:34:51,180 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,180 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,180 - INFO - Starting history update...
+2026-11-09 07:34:51,180 - INFO - No history file found. A new one will be created.
+2026-11-09 07:34:51,180 - INFO - Validating collected stats...
+2026-11-09 07:34:51,180 - INFO - Stats validation passed
+2026-11-09 07:34:51,181 - INFO - Appended new history entry for 2024-01-02.
+2026-11-09 07:34:51,181 - INFO - No previous stats to compare against.
+2026-11-09 07:34:51,181 - INFO - History update complete.
+2026-11-09 07:34:51,182 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,182 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,183 - INFO - Starting history update...
+2026-11-09 07:34:51,183 - INFO - Loaded 2 history entries from /tmp/pytest-of-runner/pytest-0/test_update_history_replaces_s0/citation_history.json
+2026-11-09 07:34:51,183 - INFO - Validating collected stats...
+2026-11-09 07:34:51,183 - INFO - Stats validation passed
+2026-11-09 07:34:51,183 - INFO - Refreshing existing entry for 2024-01-02.
+2026-11-09 07:34:51,183 - INFO - Calculating citation changes...
+2026-11-09 07:34:51,183 - INFO - Found 1 papers with new citations.
+2026-11-09 07:34:51,184 - INFO - Saved daily changes to /tmp/pytest-of-runner/pytest-0/test_update_history_replaces_s0/daily_changes.json
+2026-11-09 07:34:51,184 - INFO - History update complete.
+2026-11-09 07:34:51,185 - INFO - ScholarTracker initialized for author_query='None', author_id='test_id'
+2026-11-09 07:34:51,185 - INFO - Free proxy support enabled
+2026-11-09 07:34:51,185 - INFO - Starting history update...
+2026-11-09 07:34:51,185 - INFO - Loaded 1 history entries from /tmp/pytest-of-runner/pytest-0/test_update_history_records_ze0/citation_history.json
+2026-11-09 07:34:51,185 - INFO - Validating collected stats...
+2026-11-09 07:34:51,185 - INFO - Stats validation passed
+2026-11-09 07:34:51,186 - INFO - Appended new history entry for 2024-01-02.
+2026-11-09 07:34:51,186 - INFO - Calculating citation changes...
+2026-11-09 07:34:51,186 - INFO - No new citations found for any papers.
+2026-11-09 07:34:51,186 - INFO - Saved daily changes to /tmp/pytest-of-runner/pytest-0/test_update_history_records_ze0/daily_changes.json
+2026-11-09 07:34:51,186 - INFO - History update complete.
+2026-11-09 07:34:52,116 - INFO - ScholarTracker initialized for author_query='None', author_id='VtK5lwUAAAAJ'
+2026-11-09 07:34:52,116 - INFO - ScholarTracker initialized for author_query='None', author_id='VtK5lwUAAAAJ'
+2026-11-09 07:34:52,116 - INFO - ScraperAPI is configured for proxy support
+2026-11-09 07:34:52,116 - INFO - ScraperAPI is configured for proxy support
+2026-11-09 07:34:52,116 - INFO - Free proxy support enabled
+2026-11-09 07:34:52,116 - INFO - Free proxy support enabled
+2026-11-09 07:34:52,116 - INFO - Starting history update...
+2026-11-09 07:34:52,116 - INFO - Starting history update...
+2026-11-09 07:34:52,116 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/5)
+2026-11-09 07:34:52,116 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 1/5)
+2026-11-09 07:34:52,116 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:34:52,116 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:34:52,116 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:34:52,116 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:34:52,117 - INFO - Attempting fetch via ScraperAPI...
+2026-11-09 07:34:52,117 - INFO - Attempting fetch via ScraperAPI...
+2026-11-09 07:34:52,305 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-11-09 07:34:52,305 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-11-09 07:34:52,306 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-11-09 07:34:52,306 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-11-09 07:34:52,306 - INFO - Trying direct request first...
+2026-11-09 07:34:52,306 - INFO - Trying direct request first...
+2026-11-09 07:34:52,870 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:34:52,870 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:07,937 - INFO - Got free proxy: http://165.154.162.73:8888
+2026-11-09 07:35:07,937 - INFO - Got free proxy: http://165.154.162.73:8888
+2026-11-09 07:35:07,937 - INFO - Trying with free proxy: http://165.154.162.73:8888
+2026-11-09 07:35:07,937 - INFO - Trying with free proxy: http://165.154.162.73:8888
+2026-11-09 07:35:09,288 - WARNING - Free proxy also failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgSlmqJJGKzvxdcGIi6nTcPCmWolwpaP8YMHZg4LroMY74d_IF_IbO-nXq79U8YD-IOunL7TXddbcd2GMgJyUloBQ2CT_dDXvMrRpo0B
+2026-11-09 07:35:09,288 - WARNING - Free proxy also failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgSlmqJJGKzvxdcGIi6nTcPCmWolwpaP8YMHZg4LroMY74d_IF_IbO-nXq79U8YD-IOunL7TXddbcd2GMgJyUloBQ2CT_dDXvMrRpo0B
+2026-11-09 07:35:09,288 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:09,288 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:09,289 - ERROR - Data fetch error (attempt 1/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:09,289 - ERROR - Data fetch error (attempt 1/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:09,289 - INFO - Retrying in 10 seconds...
+2026-11-09 07:35:09,289 - INFO - Retrying in 10 seconds...
+2026-11-09 07:35:19,289 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 2/5)
+2026-11-09 07:35:19,289 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 2/5)
+2026-11-09 07:35:19,289 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:35:19,289 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:35:19,289 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:19,289 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:19,289 - INFO - Attempting fetch via ScraperAPI...
+2026-11-09 07:35:19,289 - INFO - Attempting fetch via ScraperAPI...
+2026-11-09 07:35:19,393 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-11-09 07:35:19,393 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-11-09 07:35:19,393 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-11-09 07:35:19,393 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-11-09 07:35:19,393 - INFO - Trying direct request first...
+2026-11-09 07:35:19,393 - INFO - Trying direct request first...
+2026-11-09 07:35:19,839 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:19,839 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:24,771 - INFO - Got free proxy: http://47.254.31.207:1080
+2026-11-09 07:35:24,771 - INFO - Got free proxy: http://47.254.31.207:1080
+2026-11-09 07:35:24,771 - INFO - Trying with free proxy: http://47.254.31.207:1080
+2026-11-09 07:35:24,771 - INFO - Trying with free proxy: http://47.254.31.207:1080
+2026-11-09 07:35:25,497 - WARNING - Free proxy also failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:25,497 - WARNING - Free proxy also failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:25,497 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:25,497 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:25,497 - ERROR - Data fetch error (attempt 2/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:25,497 - ERROR - Data fetch error (attempt 2/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:25,500 - INFO - Retrying in 20 seconds...
+2026-11-09 07:35:25,500 - INFO - Retrying in 20 seconds...
+2026-11-09 07:35:45,500 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 3/5)
+2026-11-09 07:35:45,500 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 3/5)
+2026-11-09 07:35:45,500 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:35:45,500 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:35:45,500 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:45,500 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:45,500 - INFO - Attempting fetch via ScraperAPI...
+2026-11-09 07:35:45,500 - INFO - Attempting fetch via ScraperAPI...
+2026-11-09 07:35:45,640 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-11-09 07:35:45,640 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-11-09 07:35:45,640 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-11-09 07:35:45,640 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-11-09 07:35:45,640 - INFO - Trying direct request first...
+2026-11-09 07:35:45,640 - INFO - Trying direct request first...
+2026-11-09 07:35:46,062 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:46,062 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:48,349 - INFO - Got free proxy: http://4.144.146.21:80
+2026-11-09 07:35:48,349 - INFO - Got free proxy: http://4.144.146.21:80
+2026-11-09 07:35:48,349 - INFO - Trying with free proxy: http://4.144.146.21:80
+2026-11-09 07:35:48,349 - INFO - Trying with free proxy: http://4.144.146.21:80
+2026-11-09 07:35:49,846 - WARNING - Free proxy also failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:49,846 - WARNING - Free proxy also failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:49,846 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:49,846 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:49,846 - ERROR - Data fetch error (attempt 3/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:49,846 - ERROR - Data fetch error (attempt 3/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:35:49,846 - INFO - Retrying in 40 seconds...
+2026-11-09 07:35:49,846 - INFO - Retrying in 40 seconds...
+2026-11-09 07:36:29,847 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 4/5)
+2026-11-09 07:36:29,847 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 4/5)
+2026-11-09 07:36:29,847 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:36:29,847 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:36:29,847 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:36:29,847 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:36:29,847 - INFO - Attempting fetch via ScraperAPI...
+2026-11-09 07:36:29,847 - INFO - Attempting fetch via ScraperAPI...
+2026-11-09 07:36:29,935 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-11-09 07:36:29,935 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-11-09 07:36:29,935 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-11-09 07:36:29,935 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-11-09 07:36:29,935 - INFO - Trying direct request first...
+2026-11-09 07:36:29,935 - INFO - Trying direct request first...
+2026-11-09 07:36:30,324 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:36:30,324 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:36:42,157 - INFO - Got free proxy: http://184.75.221.82:3118
+2026-11-09 07:36:42,157 - INFO - Got free proxy: http://184.75.221.82:3118
+2026-11-09 07:36:42,157 - INFO - Trying with free proxy: http://184.75.221.82:3118
+2026-11-09 07:36:42,157 - INFO - Trying with free proxy: http://184.75.221.82:3118
+2026-11-09 07:36:43,265 - WARNING - Free proxy also failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgS4S91SGIrwxdcGIi4e60Q7YFanD4A0CpmdLyF7mNliep6a7I0GZJeM2o5pWuCQn-7ewzbCojHnINK5MgJyUloBQ2Dl9sSworGx2B0
+2026-11-09 07:36:43,265 - WARNING - Free proxy also failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fhl%3Den%26user%3DVtK5lwUAAAAJ%26pagesize%3D100%26view_op%3Dlist_works%26sortby%3Dpubdate&hl=en&q=EgS4S91SGIrwxdcGIi4e60Q7YFanD4A0CpmdLyF7mNliep6a7I0GZJeM2o5pWuCQn-7ewzbCojHnINK5MgJyUloBQ2Dl9sSworGx2B0
+2026-11-09 07:36:43,266 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:36:43,266 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:36:43,266 - ERROR - Data fetch error (attempt 4/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:36:43,266 - ERROR - Data fetch error (attempt 4/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:36:43,268 - INFO - Retrying in 80 seconds...
+2026-11-09 07:36:43,268 - INFO - Retrying in 80 seconds...
+2026-11-09 07:38:03,268 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 5/5)
+2026-11-09 07:38:03,268 - INFO - Searching for author by ID: 'VtK5lwUAAAAJ' (attempt 5/5)
+2026-11-09 07:38:03,268 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:38:03,268 - INFO - ScraperAPI key detected, using manual fetch path first
+2026-11-09 07:38:03,268 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:03,268 - INFO - Manually fetching data from: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:03,268 - INFO - Attempting fetch via ScraperAPI...
+2026-11-09 07:38:03,268 - INFO - Attempting fetch via ScraperAPI...
+2026-11-09 07:38:03,450 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-11-09 07:38:03,450 - WARNING - ScraperAPI failed: ScraperAPI returned status 401, trying direct request...
+2026-11-09 07:38:03,450 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-11-09 07:38:03,450 - INFO - Attempting fetch with automatic fallback (direct -> free proxy)...
+2026-11-09 07:38:03,450 - INFO - Trying direct request first...
+2026-11-09 07:38:03,450 - INFO - Trying direct request first...
+2026-11-09 07:38:03,892 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:03,892 - WARNING - Direct request failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:11,306 - INFO - Got free proxy: http://47.254.31.207:1080
+2026-11-09 07:38:11,306 - INFO - Got free proxy: http://47.254.31.207:1080
+2026-11-09 07:38:11,306 - INFO - Trying with free proxy: http://47.254.31.207:1080
+2026-11-09 07:38:11,306 - INFO - Trying with free proxy: http://47.254.31.207:1080
+2026-11-09 07:38:11,997 - WARNING - Free proxy also failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:11,997 - WARNING - Free proxy also failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:11,997 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:11,997 - ERROR - Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:11,997 - ERROR - Data fetch error (attempt 5/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:11,997 - ERROR - Data fetch error (attempt 5/5): Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:12,000 - ERROR - All retry attempts failed. Last error: Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:12,000 - ERROR - All retry attempts failed. Last error: Manual fetch failed: 403 Client Error: Forbidden for url: https://scholar.google.com/citations?hl=en&user=VtK5lwUAAAAJ&pagesize=100&view_op=list_works&sortby=pubdate
+2026-11-09 07:38:12,000 - WARNING - Aborting history update because fetching stats failed.
+2026-11-09 07:38:12,000 - WARNING - Aborting history update because fetching stats failed.
